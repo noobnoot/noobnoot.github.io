@@ -68,10 +68,12 @@
         }
 
         .nav-tab.active {
+            color: black;
             background-color: var(--kinda-light);
         }
 
         .tab-content {
+            display: none;
             padding: 14px 16px;
             background-color: var(--kinda-light);
         }
@@ -80,14 +82,16 @@
             margin: 0 10vw;
             padding: 5vw 5vw;
             background-color: white;
+            min-height: 100vmin;
         }
 
         .title {
-            font-size: 24px;
+            margin: 30px 0 20px 0;
         }
 
         .title .l0rge {
-            font-size: 34px;
+            font-size: 1.75em;
+            line-height: 50%;
         }
 
         .school-header {
@@ -1393,7 +1397,7 @@
             <h2 class="title"><span class="l0rge">Republic Act 10627</span><br>The Anti-Bullying Act of 2017</h2>
             <nav>
                 <button class="nav-tab" onclick="chooseTab(event, 'about')">ABOUT</button>
-                <button class="nav-tab" onclick="chooseTab(event, 'content'">CONTENT</button>
+                <button class="nav-tab" onclick="chooseTab(event, 'content')">CONTENT</button>
                 <button class="nav-tab" onclick="chooseTab(event, 'references')">REFERENCES</button>
             </nav>
 
@@ -1427,7 +1431,7 @@
                     
             </div>
 
-            <div class="references">
+            <div id="references" class="tab-content">
 
                 <p>Anybody, arguably, would be quite familiar with the notion of bullying. When you inflict harm, in any way or form, towards an individual, one would call it bullying. But note that there are various definitions of bullying that depends on context.</p>
                 
