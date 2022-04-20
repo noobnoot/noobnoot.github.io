@@ -24,6 +24,7 @@
     <title>RA 10627</title>
     <style>
         
+        /** INDEX **/
 
         :root {
             --kinda-light: #EEE;
@@ -36,7 +37,7 @@
             margin: 10px 0;
         }
 
-        h5 {
+        h4 {
             font-size: 1em;
         }
 
@@ -45,6 +46,16 @@
             background-color: var(--indigogo);
             margin: 0;
         }
+
+        .wrapper-body {
+            height: auto;
+            min-height: calc(100vh - 10vw);
+            margin: 0 10vw;
+            padding: 5vw;
+            background-color: white;
+        }
+
+        /** NAVIGATION BAR **/
 
         nav {
             display: flex;
@@ -76,22 +87,10 @@
             background-color: var(--kinda-light);
         }
 
-        .tab-content {
-            display: none;
-            padding: 14px 16px;
-            background-color: var(--kinda-light);
-        }
-
-        .wrapper-body {
-            height: auto;
-            min-height: calc(100vh - 10vw);
-            margin: 0 10vw;
-            padding: 5vw 5vw;
-            background-color: white;
-        }
+        /** HEADER **/
 
         .title {
-            margin: 30px 0 20px 0;
+            margin: 20px 0;
         }
 
         .title .l0rge {
@@ -121,10 +120,87 @@
             margin-left: auto;
         }
 
+        /** TAB CONTENTS **/
+
+        .tab-content {
+            display: none;
+            flex-direction: row;
+            padding: 20px;
+            background-color: var(--kinda-light);
+        }
+
+        .tab-content .content-text {
+            padding: 0 0 0 20px;
+        }
+
+        .tab-content .content-text p {
+            margin: 0 0 15px 0;
+        }
+
+        .tab-content .content-art {
+            --temp: 50%;
+            display: flex;
+            min-height: var(--temp);
+            min-width: var(--temp);
+            text-align: right;
+            flex-direction: row;
+            align-items: flex-end;
+            background-image: url(https://media.istockphoto.com/vectors/bullying-pointing-fingers-haters-crowd-sad-character-hugging-his-vector-id1177131449?k=20&m=1177131449&s=170667a&w=0&h=_AYvAsw0_ZWxIrbpUzNmW_xnyiPAzf1bXlppB0VXrDQ=);
+            background-size: cover;
+            background-position: center;
+        }
+
+        .tab-content .content-art a {
+            text-align: right;
+            display: block;
+            width: 100%;
+            padding: 5px;
+            background-color: var(--indigogo);
+            color: white;
+            font-size: 10px;
+        }
+
+        /** TAB CONTENT NAV **/
+
+        .content-nav {
+            padding-top: 20px;
+            min-width: 20%;
+            display: flex;
+            flex-direction: column;
+            background-color: var(--indigogo);
+        }
+
+        .content-nav-tab {
+            display: block;
+            background-color: inherit;
+            outline: none;
+            cursor: pointer;
+            border: none;
+            padding: 8px 10px;
+            transition: 0.3s;
+            color: white;
+            font-size: 16px;
+            font-family: inherit;
+        }
+
+        .content-nav-tab:hover {
+            color: black;
+            background-color: var(--kinda-light);
+        }
+
+        .content-nav-tab.active {
+            color: black;
+            background-color: var(--kinda-light);
+        }
+
         @media screen and (max-width: 700px) {
 
             body {
                 font-size: 14px;
+            }
+
+            h4 {
+                font-size: 1em;
             }
 
             .wrapper-body{
@@ -151,6 +227,10 @@
                 font-family: inherit;
             }
 
+            ul {
+                padding-inline-start: 20px;
+            }
+
         }
 
     </style>
@@ -163,6 +243,7 @@
         <header>
 
             <div class="school-header">
+
                 <!-- I highly suggest not opening this two divs. -->
                 <div>
                     <img src="data:image/jpg;base64,/9j/4AAQSkZJRgABAQEAYABgAAD/2wBDAAMCAgMCAgMDAwMEAwMEBQgFBQQEBQoH
@@ -1423,14 +1504,16 @@
                 </div>
                 
                 <div>
-                    <h5>Systems Plus College Foundation<br>College of Social Sciences and Education</h5>
+                    <h4>Systems Plus College Foundation<br>College of Social Sciences and Education</h4>
                 </div>
+
                 <div>
                     <h5>April 2022</h5>
                 </div>
+
             </div>
             <hr>
-            <h2 class="title"><span class="l0rge">Republic Act 10627</span><br>The Anti-Bullying Act of 2017</h2>
+            <h2 class="title"><span class="l0rge">Republic Act 10627</span><br>The Anti-Bullying Act of 2013</h2>
             <nav>
                 <button class="nav-tab" onclick="chooseTab(event, 'about')">ABOUT</button>
                 <button class="nav-tab" onclick="chooseTab(event, 'content')">CONTENT</button>
@@ -1442,29 +1525,41 @@
         <section>
 
             <div id="about" class="tab-content">
-                Republic Act of 10627, known as the “Anti-Bullying Act of 2013”, is “an act requiring all elementary and secondary schools to adopt policies to prevent and address the acts of bullying in their institutions” (Official Gazette of the Republic of the Philippines, 2013).
+                <div class="content-art">
+                    <a href="https://www.istockphoto.com/vector/bullying-pointing-fingers-haters-crowd-sad-character-hugging-his-knees-aggression-gm1177131449-328499899">Credit: Image by nadia_bormotova</a>
+                </div>
+                <div class="content-text">
+                    <p>The <b>Republic Act 10627</b>, much known as the <b>Anti-Bullying Act of 2013</b>, is "an act requiring all elementary and secondary schools to adopt policies to prevent and address the acts of bullying in their institutions" (Cardona, Agnes, & Marlu, 2015). It was approved on the 12th of September 2013 by the ruling of the former Philippine President Benigno S. Aquino III.</p>
+                    <p>The Anti-Bullying Act of 2013 pairs up with the DepEd Order No. 40, S. 2012 or the Child Protection Policy in protecting and safeguarding the children and their rights against the adverse effects of bullying.</p>
+                </div>
             </div>
 
             <div id="content" class="tab-content">
 
-                <p>Anybody, arguably, would be quite familiar with the notion of bullying. When you inflict harm, in any way or form, towards an individual, one would call it bullying. But note that there are various definitions of bullying that depends on context.</p>
+                <div class="content-nav">
+                    <button class="content-nav-tab" onclick="chooseContentTab(event, 'about')">Section 1</button>
+                    <button class="content-nav-tab" onclick="chooseContentTab(event, 'content')">Section 2</button>
+                    <button class="content-nav-tab" onclick="chooseContentTab(event, 'references')">Section 3</button>
+                </div>
+                <div class="content-text">
+                    <p>Anybody, arguably, would be quite familiar with the notion of bullying. When you inflict harm, in any way or form, towards an individual, one would call it bullying. But note that there are various definitions of bullying that depends on context.</p>
                 
-                <h2>2.1	Definitions</h2>
-                <ul>
-                    <li>Cardona et. al. (2015) defines bullying as an act of repeated physical, verbal, social, or psychosocial aggressive behavior towards an individual or group.</li>
-                    <li>UNICEF Canada (2012) defines bullying as “a serious form of violence against children which has a significant and lifelong physical and mental health effect upon the victim, as well as many other personal and social consequences for both the child victims and perpetrators.”</li>
-                    <li>In Section 2 of the Anti-Bullying Act of 2013, bullying is defined as “any severe or repeated use of one or more students of a written, verbal or electronic expression, or a physical act or gesture, or any combination thereof, directed at another student” (Official Gazette of the Republic of the Philippines, 2013).</li>
-                </ul>
-
-                <h2>2.2	Acts of Bullying</h2>
-                <p>Aside from the definition given in Section 2 of the Anti-Bullying Act of 2013, the Section 2 of the Act also considers the following as an act of “bullying”:</p>
-                <ul>
-                    <li>Any unwanted physical contact between the bully and the victim.</li>
-                    <li>Any act that causes damage to a victim’s psyche and/or emotional well-being.</li>
-                    <li>Any slanderous statement or accusation that causes the victim undue emotional distress.</li>
-                    <li>Any act/form of cyberbullying (any bullying done through the use of technology or any electronic means) towards an individual.</li>
-                </ul>
-                    
+                    <h2>2.1	Definitions</h2>
+                    <ul>
+                        <li>Cardona et. al. (2015) defines bullying as an act of repeated physical, verbal, social, or psychosocial aggressive behavior towards an individual or group.</li>
+                        <li>UNICEF Canada (2012) defines bullying as “a serious form of violence against children which has a significant and lifelong physical and mental health effect upon the victim, as well as many other personal and social consequences for both the child victims and perpetrators.”</li>
+                        <li>In Section 2 of the Anti-Bullying Act of 2013, bullying is defined as “any severe or repeated use of one or more students of a written, verbal or electronic expression, or a physical act or gesture, or any combination thereof, directed at another student” (Official Gazette of the Republic of the Philippines, 2013).</li>
+                    </ul>
+    
+                    <h2>2.2	Acts of Bullying</h2>
+                    <p>Aside from the definition given in Section 2 of the Anti-Bullying Act of 2013, the Section 2 of the Act also considers the following as an act of “bullying”:</p>
+                    <ul>
+                        <li>Any unwanted physical contact between the bully and the victim.</li>
+                        <li>Any act that causes damage to a victim’s psyche and/or emotional well-being.</li>
+                        <li>Any slanderous statement or accusation that causes the victim undue emotional distress.</li>
+                        <li>Any act/form of cyberbullying (any bullying done through the use of technology or any electronic means) towards an individual.</li>
+                    </ul>
+                </div>
             </div>
 
             <div id="references" class="tab-content">
@@ -1501,7 +1596,7 @@
             var firstTabContent = document.getElementsByClassName("tab-content")[0];
             var firstNavTab = document.getElementsByClassName("nav-tab")[0];
             firstNavTab.className += " active";
-            firstTabContent.style.display = "block";
+            firstTabContent.style.display = "flex";
         }
 
         function chooseTab(event, tabContentName) {
@@ -1516,7 +1611,7 @@
                 deactivateTabButton(navTabs[i]);
             }
 
-            document.getElementById(tabContentName).style.display = "block";
+            document.getElementById(tabContentName).style.display = "flex";
             activateTabButton(event.currentTarget);
         }
 
