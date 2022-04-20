@@ -86,6 +86,10 @@
             font-size: 24px;
         }
 
+        .title .l0rge {
+            font-size: 34px;
+        }
+
         .school-header {
             display: flex;
             align-items: center;
@@ -116,6 +120,7 @@
     <div class="wrapper-body">
 
         <header>
+
             <div class="school-header">
                 <!-- I highly suggest not opening this two divs. -->
                 <div>
@@ -1384,24 +1389,23 @@
                     <h5>April 2022</h5>
                 </div>
             </div>
-            
-            <h1 class="title">RA 10627 or the Anti-bullying Act of 2017</h1>
             <hr>
+            <h2 class="title"><span class="l0rge">Republic Act 10627</span><br>The Anti-Bullying Act of 2017</h2>
             <nav>
-                <button class="nav-tab">ABOUT</button>
-                <button class="nav-tab">CONTENT</button>
-                <button class="nav-tab">REFERENCES</button>
+                <button class="nav-tab" onclick="chooseTab(event, 'about')">ABOUT</button>
+                <button class="nav-tab" onclick="chooseTab(event, 'content'">CONTENT</button>
+                <button class="nav-tab" onclick="chooseTab(event, 'references')">REFERENCES</button>
             </nav>
 
         </header>
 
         <section>
 
-            <div class="tab-content">
+            <div id="about" class="tab-content">
                 Republic Act of 10627, known as the “Anti-Bullying Act of 2013”, is “an act requiring all elementary and secondary schools to adopt policies to prevent and address the acts of bullying in their institutions” (Official Gazette of the Republic of the Philippines, 2013).
             </div>
 
-            <div class="tab-content">
+            <div id="content" class="tab-content">
 
                 <p>Anybody, arguably, would be quite familiar with the notion of bullying. When you inflict harm, in any way or form, towards an individual, one would call it bullying. But note that there are various definitions of bullying that depends on context.</p>
                 
@@ -1423,12 +1427,27 @@
                     
             </div>
 
+            <div class="references">
+
+                <p>Anybody, arguably, would be quite familiar with the notion of bullying. When you inflict harm, in any way or form, towards an individual, one would call it bullying. But note that there are various definitions of bullying that depends on context.</p>
+                
+                <h2>References</h2>
+                <ul>
+                    <li>Cardona et. al. (2015) defines bullying as an act of repeated physical, verbal, social, or psychosocial aggressive behavior towards an individual or group.</li>
+                    <li>UNICEF Canada (2012) defines bullying as “a serious form of violence against children which has a significant and lifelong physical and mental health effect upon the victim, as well as many other personal and social consequences for both the child victims and perpetrators.”</li>
+                    <li>In Section 2 of the Anti-Bullying Act of 2013, bullying is defined as “any severe or repeated use of one or more students of a written, verbal or electronic expression, or a physical act or gesture, or any combination thereof, directed at another student” (Official Gazette of the Republic of the Philippines, 2013).</li>
+                </ul>
+                    
+            </div>
+
         </section>
 
     </div>
 
     <script>
-        function openCity(evt, cityName) {
+
+        function chooseTab(evt, cityName) {
+
             var i, tabcontent, tablinks;
             tabcontent = document.getElementsByClassName("tab-content");
             for (i = 0; i < tabcontent.length; i++) {
@@ -1440,7 +1459,9 @@
             }
             document.getElementById(cityName).style.display = "block";
             evt.currentTarget.className += " active";
+
         }
+
     </script>
 
 </body>
