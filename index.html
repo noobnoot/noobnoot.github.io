@@ -33,6 +33,10 @@
             --bad-color-idk: rgb(211, 159, 45);
         }
 
+        * {
+            box-sizing: border-box;
+        }
+
         h1, h2, h3, h4, h5, h6, p {
             margin: 10px 0;
         }
@@ -124,7 +128,8 @@
 
         .tab-content {
             display: none;
-            flex-direction: row;
+            grid-template-columns: 50% 50%;
+            grid-template-rows: 1fr;
             padding: 20px;
             background-color: var(--kinda-light);
         }
@@ -138,16 +143,15 @@
         }
 
         .tab-content .content-art {
-            --temp: 50%;
             display: flex;
-            min-height: var(--temp);
-            min-width: var(--temp);
+            flex-direction: column;
             text-align: right;
-            flex-direction: row;
             align-items: flex-end;
-            background-image: url(https://media.istockphoto.com/vectors/bullying-pointing-fingers-haters-crowd-sad-character-hugging-his-vector-id1177131449?k=20&m=1177131449&s=170667a&w=0&h=_AYvAsw0_ZWxIrbpUzNmW_xnyiPAzf1bXlppB0VXrDQ=);
-            background-size: cover;
-            background-position: center;
+        }
+
+        .tab-content .content-art img {
+            display: block;
+            width: 100%;
         }
 
         .tab-content .content-art a {
@@ -229,6 +233,16 @@
 
             ul {
                 padding-inline-start: 20px;
+            }
+
+            .tab-content {
+                display: none;
+                grid-template-columns: 1fr;
+                grid-template-rows: auto;
+            }
+
+            .tab-content .content-text {
+                padding: 20px 10px 0 10px;
             }
 
         }
@@ -1526,6 +1540,7 @@
 
             <div id="about" class="tab-content">
                 <div class="content-art">
+                    <img src="https://media.istockphoto.com/vectors/bullying-pointing-fingers-haters-crowd-sad-character-hugging-his-vector-id1177131449?k=20&m=1177131449&s=170667a&w=0&h=_AYvAsw0_ZWxIrbpUzNmW_xnyiPAzf1bXlppB0VXrDQ=" alt="">
                     <a href="https://www.istockphoto.com/vector/bullying-pointing-fingers-haters-crowd-sad-character-hugging-his-knees-aggression-gm1177131449-328499899">Credit: Image by nadia_bormotova</a>
                 </div>
                 <div class="content-text">
@@ -1596,7 +1611,7 @@
             var firstTabContent = document.getElementsByClassName("tab-content")[0];
             var firstNavTab = document.getElementsByClassName("nav-tab")[0];
             firstNavTab.className += " active";
-            firstTabContent.style.display = "flex";
+            firstTabContent.style.display = "grid";
         }
 
         function chooseTab(event, tabContentName) {
@@ -1611,7 +1626,7 @@
                 deactivateTabButton(navTabs[i]);
             }
 
-            document.getElementById(tabContentName).style.display = "flex";
+            document.getElementById(tabContentName).style.display = "grid";
             activateTabButton(event.currentTarget);
         }
 
