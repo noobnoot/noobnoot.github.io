@@ -37,18 +37,14 @@
             box-sizing: border-box;
         }
 
-        h1, h2, h3, h4, h5, h6, p {
-            margin: 10px 0;
-        }
-
-        h4 {
-            font-size: 1em;
-        }
-
         body {
-            font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             background-color: var(--indigogo);
             margin: 0;
+        }
+
+        ul li, ol li {
+            margin-bottom: 5px;
         }
 
         .wrapper-body {
@@ -108,7 +104,7 @@
         }
 
         .school-header div {
-            margin: 0 5px;
+            margin: 0 15px;
         }
 
         .school-header div img {
@@ -116,11 +112,7 @@
             height: 50px;
         }
 
-        .school-header div h5 {
-            margin: 0 10px;
-        }
-
-        .school-header div:last-of-type {
+        .school-header h4:last-of-type {
             margin-left: auto;
         }
 
@@ -129,17 +121,12 @@
         .tab-content {
             display: none;
             grid-template-columns: 50% 50%;
-            grid-template-rows: 1fr;
             padding: 20px;
             background-color: var(--kinda-light);
         }
 
         .tab-content .content-text {
-            padding: 0 0 0 20px;
-        }
-
-        .tab-content .content-text p {
-            margin: 0 0 15px 0;
+            padding-left: 20px;
         }
 
         .tab-content .content-art {
@@ -167,11 +154,15 @@
         /** TAB CONTENT NAV **/
 
         .content-nav {
-            padding-top: 20px;
-            min-width: 20%;
             display: flex;
             flex-direction: column;
             background-color: var(--indigogo);
+        }
+
+        /** sorry I just have to put this **/
+
+        #content {
+            grid-template-columns: 1fr 3fr;
         }
 
         .content-nav-tab {
@@ -203,10 +194,6 @@
                 font-size: 14px;
             }
 
-            h4 {
-                font-size: 1em;
-            }
-
             .wrapper-body{
                 margin: 0 5vw;
             }
@@ -216,7 +203,7 @@
                 flex-direction: column;
             }
 
-            .school-header div {
+            .school-header h4 {
                 margin: 5px 0;
             }
 
@@ -231,7 +218,7 @@
                 font-family: inherit;
             }
 
-            ul {
+            ul, ol {
                 padding-inline-start: 20px;
             }
 
@@ -242,7 +229,18 @@
             }
 
             .tab-content .content-text {
-                padding: 20px 10px 0 10px;
+                padding: 10px;
+            }
+
+            #content {
+                grid-template-columns: 1fr;
+            }
+
+            .content-nav {
+                max-height: 250px;
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                grid-template-rows: 1fr 1fr 1fr;
             }
 
         }
@@ -1517,13 +1515,8 @@
                         Kk6knOo22+r1YBRRRWYBRRRQAUUUUAFFFFABRRRQB//Z" alt="">
                 </div>
                 
-                <div>
-                    <h4>Systems Plus College Foundation<br>College of Social Sciences and Education</h4>
-                </div>
-
-                <div>
-                    <h5>April 2022</h5>
-                </div>
+                <h4>Systems Plus College Foundation<br>College of Social Sciences and Education</h4>
+                <h4>April 2022</h4>
 
             </div>
             <hr>
@@ -1544,7 +1537,7 @@
                     <a href="https://www.istockphoto.com/vector/bullying-pointing-fingers-haters-crowd-sad-character-hugging-his-knees-aggression-gm1177131449-328499899">Credit: Image by nadia_bormotova</a>
                 </div>
                 <div class="content-text">
-                    <p>The <b>Republic Act 10627</b>, much known as the <b>Anti-Bullying Act of 2013</b>, is "an act requiring all elementary and secondary schools to adopt policies to prevent and address the acts of bullying in their institutions" (Cardona, Agnes, & Marlu, 2015). It was approved on the 12th of September 2013 by the ruling of the former Philippine President Benigno S. Aquino III.</p>
+                    <p>The <b>Republic Act 10627</b>, much known as the <b>Anti-Bullying Act of 2013</b>, is "an act requiring all elementary and secondary schools to adopt policies to prevent and address the acts of bullying in their institutions" (Official Gazette of the Republic of the Philippines, 2013). It was approved on the 12th of September 2013 by the ruling of the former Philippine President Benigno S. Aquino III.</p>
                     <p>The Anti-Bullying Act of 2013 pairs up with the DepEd Order No. 40, S. 2012 or the Child Protection Policy in protecting and safeguarding the children and their rights against the adverse effects of bullying.</p>
                 </div>
             </div>
@@ -1552,21 +1545,32 @@
             <div id="content" class="tab-content">
 
                 <div class="content-nav">
-                    <button class="content-nav-tab" onclick="chooseContentTab(event, 'about')">Section 1</button>
-                    <button class="content-nav-tab" onclick="chooseContentTab(event, 'content')">Section 2</button>
-                    <button class="content-nav-tab" onclick="chooseContentTab(event, 'references')">Section 3</button>
+                    <button class="content-nav-tab" onclick="chooseContentTab(event, 'section 1')">Section 1</button>
+                    <button class="content-nav-tab" onclick="chooseContentTab(event, 'section 2')">Section 2</button>
+                    <button class="content-nav-tab" onclick="chooseContentTab(event, 'section 3')">Section 3</button>
+                    <button class="content-nav-tab" onclick="chooseContentTab(event, 'section 4')">Section 4</button>
+                    <button class="content-nav-tab" onclick="chooseContentTab(event, 'section 5')">Section 5</button>
+                    <button class="content-nav-tab" onclick="chooseContentTab(event, 'section 6')">Section 6</button>
                 </div>
-                <div class="content-text">
+
+                <div id="section 1" class="content-text">
+                    <h1>1: Introduction</h1>
+                    <p>The first section of the Republic Act of 10627 introduces and hereby proclaims the Act to be known as the "Anti-bullying Act of 2017" offically.</p>
+                </div>
+
+                <div id="section 2" class="content-text">
+
+                    <h2>2: What is Bullying?</h2>
                     <p>Anybody, arguably, would be quite familiar with the notion of bullying. When you inflict harm, in any way or form, towards an individual, one would call it bullying. But note that there are various definitions of bullying that depends on context.</p>
                 
-                    <h2>2.1	Definitions</h2>
+                    <h3>2.1	Definitions</h3>
                     <ul>
                         <li>Cardona et. al. (2015) defines bullying as an act of repeated physical, verbal, social, or psychosocial aggressive behavior towards an individual or group.</li>
                         <li>UNICEF Canada (2012) defines bullying as “a serious form of violence against children which has a significant and lifelong physical and mental health effect upon the victim, as well as many other personal and social consequences for both the child victims and perpetrators.”</li>
                         <li>In Section 2 of the Anti-Bullying Act of 2013, bullying is defined as “any severe or repeated use of one or more students of a written, verbal or electronic expression, or a physical act or gesture, or any combination thereof, directed at another student” (Official Gazette of the Republic of the Philippines, 2013).</li>
                     </ul>
     
-                    <h2>2.2	Acts of Bullying</h2>
+                    <h3>2.2	Acts of Bullying</h3>
                     <p>Aside from the definition given in Section 2 of the Anti-Bullying Act of 2013, the Section 2 of the Act also considers the following as an act of “bullying”:</p>
                     <ul>
                         <li>Any unwanted physical contact between the bully and the victim.</li>
@@ -1574,18 +1578,40 @@
                         <li>Any slanderous statement or accusation that causes the victim undue emotional distress.</li>
                         <li>Any act/form of cyberbullying (any bullying done through the use of technology or any electronic means) towards an individual.</li>
                     </ul>
+
                 </div>
+
+                <div id="section 3" class="content-text">
+
+                    <h2>3: Schools toward Bullying</h2>
+                    <p>Section 3 of the RA 10627 covers the adoption of educational institutions toward the policies that address bullying. The policies shall include provisions that can be divided into eight subsections (3A-3H): </p>
+                
+                    <ol type="A">
+                        <li>Section 3A involves the prohibition of the following acts:</li>
+                        <ol>
+                            <li>Any acts of bullying on school grounds or through technology or an electronic device by the school.</li>
+                            <li>Prevent any act or possibilities that could create a hostile environment at school for the victim.</li>
+                            <li>Protect the person who reports, provides information, or witnesses any act of bullying.</li>
+                        </ol>
+                        <li>UNICEF Canada (2012) defines bullying as “a serious form of violence against children which has a significant and lifelong physical and mental health effect upon the victim, as well as many other personal and social consequences for both the child victims and perpetrators.”</li>
+                        <li>In Section 2 of the Anti-Bullying Act of 2013, bullying is defined as “any severe or repeated use of one or more students of a written, verbal or electronic expression, or a physical act or gesture, or any combination thereof, directed at another student” (Official Gazette of the Republic of the Philippines, 2013).</li>
+                    </ol>
+
+                </div>
+
             </div>
 
             <div id="references" class="tab-content">
 
-                <p>Anybody, arguably, would be quite familiar with the notion of bullying. When you inflict harm, in any way or form, towards an individual, one would call it bullying. But note that there are various definitions of bullying that depends on context.</p>
-                <h2>References</h2>
-                <ul>
-                    <li>Cardona et. al. (2015) defines bullying as an act of repeated physical, verbal, social, or psychosocial aggressive behavior towards an individual or group.</li>
-                    <li>UNICEF Canada (2012) defines bullying as “a serious form of violence against children which has a significant and lifelong physical and mental health effect upon the victim, as well as many other personal and social consequences for both the child victims and perpetrators.”</li>
-                    <li>In Section 2 of the Anti-Bullying Act of 2013, bullying is defined as “any severe or repeated use of one or more students of a written, verbal or electronic expression, or a physical act or gesture, or any combination thereof, directed at another student” (Official Gazette of the Republic of the Philippines, 2013).</li>
-                </ul>
+                <div class="content-text">
+                    <p>Anybody, arguably, would be quite familiar with the notion of bullying. When you inflict harm, in any way or form, towards an individual, one would call it bullying. But note that there are various definitions of bullying that depends on context.</p>
+                    <h2>References</h2>
+                    <ul>
+                        <li>Cardona et. al. (2015) defines bullying as an act of repeated physical, verbal, social, or psychosocial aggressive behavior towards an individual or group.</li>
+                        <li>UNICEF Canada (2012) defines bullying as “a serious form of violence against children which has a significant and lifelong physical and mental health effect upon the victim, as well as many other personal and social consequences for both the child victims and perpetrators.”</li>
+                        <li>In Section 2 of the Anti-Bullying Act of 2013, bullying is defined as “any severe or repeated use of one or more students of a written, verbal or electronic expression, or a physical act or gesture, or any combination thereof, directed at another student” (Official Gazette of the Republic of the Philippines, 2013).</li>
+                    </ul>
+                </div>
                     
             </div>
 
@@ -1608,10 +1634,38 @@
         }
 
         window.onload = function onload() {
+            
             var firstTabContent = document.getElementsByClassName("tab-content")[0];
             var firstNavTab = document.getElementsByClassName("nav-tab")[0];
-            firstNavTab.className += " active";
+            var contentTexts = document.querySelectorAll("#content .content-text");
+            var firstContentNavTab = document.getElementsByClassName("content-nav-tab")[0];
+            activateTabButton(firstContentNavTab);
+
+            for (let i = 1; i < contentTexts.length; i++) {
+                hideTabContent(contentTexts[i]);
+            }
+
+            activateTabButton(firstNavTab.className);
             firstTabContent.style.display = "grid";
+
+        }
+
+        function chooseContentTab(event, tabContentName) {
+
+            var contentTexts = document.querySelectorAll("#content .content-text");
+            var tabButtons = document.getElementsByClassName("content-nav-tab");
+
+            for (let i = 0; i < contentTexts.length; i++) {
+                hideTabContent(contentTexts[i]);
+            }
+
+            for (let i = 0; i < tabButtons.length; i++) {
+                deactivateTabButton(tabButtons[i]);
+            }
+
+            document.getElementById(tabContentName).style.display = "block";
+            activateTabButton(event.currentTarget);
+
         }
 
         function chooseTab(event, tabContentName) {
