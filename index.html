@@ -1697,7 +1697,7 @@
                 hideTabContent(contentTexts[i]);
             }
 
-            activateTabButton(firstNavTab.className);
+            activateTabButton(firstNavTab);
             firstTabContent.style.display = "grid";
 
         }
@@ -1721,6 +1721,7 @@
         }
 
         function chooseTab(event, tabContentName) {
+
             var tabContent = document.getElementsByClassName("tab-content");
             var navTabs = document.getElementsByClassName("nav-tab");
 
@@ -1734,6 +1735,7 @@
 
             document.getElementById(tabContentName).style.display = "grid";
             activateTabButton(event.currentTarget);
+            
         }
 
     </script>
