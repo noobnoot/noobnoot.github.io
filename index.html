@@ -30,6 +30,7 @@
         :root {
             --kinda-light: #EEE;
             --indigogo: rgb(31, 8, 150);
+            --background-img: url("https://images.creativemarket.com/0.1.0/ps/2321248/1160/772/m1/fpnw/wm1/cover-.jpg?1487898325&s=1b088f3d83e0354fa15b61d49486a787");
         }
 
         * {
@@ -46,6 +47,18 @@
             font-size: 18px;
             margin: 0;
             min-width: 400px;
+        }
+
+        body::after {
+            content: "";
+            z-index: -1;
+            opacity: 25%;
+            position: fixed;
+            top: 0;
+            min-width: 100%;
+            min-height: 100%;
+            display: block;
+            background: var(--background-img);
         }
 
         ul li, ol li {
@@ -68,12 +81,14 @@
 
         nav {
             display: flex;
-            background-color: var(--indigogo);
+            background-image: linear-gradient( rgba(31, 8,  150, .75), rgba(31, 8, 150, .75) ),
+            var(--background-img);
+            background-size: cover;
         }
 
         .nav-tab {
             display: block;
-            background-color: inherit;
+            background-color: transparent;
             float: left;
             outline: none;
             cursor: pointer;
@@ -167,7 +182,8 @@
             padding: 25px 0;
             display: flex;
             flex-direction: column;
-            background-color: var(--indigogo);
+            background-image: linear-gradient( rgba(31, 8,  150, .75), rgba(31, 8, 150, .75) ),
+            var(--background-img);
         }
 
         /** sorry I just have to put this **/
@@ -1634,7 +1650,7 @@
                         <li><b>Section 3B</b> identifies the disciplinary actions that may be taken against a perpetrator for an act of bullying. In this section, the perpetrator of an act of bullying is mandated to undergo a rehabilitation program that will be administered by the institution concerned.</li>
                         <li><b>Section 3C</b> mandates institutions to establish clear procedures and strategies for:</li>
                         <ol>
-                            <li>Reporting bullying or retaliation (“revenge” in layman’s terms) occurrences.</li>
+                            <li>Reporting bullying or retaliation (“revenge” in layman’s terms) occurrences. </li>
                             <li>Responding to and investigating reports of bullying or revenge as soon as possible.</li>
                             <li>Restoring a victim's sense of safety and determining the student's need for protection.</li>
                             <li>Protecting the person who reports a bullying incident.</li>
