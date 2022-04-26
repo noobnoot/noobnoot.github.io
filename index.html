@@ -37,7 +37,7 @@
             box-sizing: border-box;
         }
 
-        h1, h2, h3, h4, h5, h6 {
+        h1, h2, h3, h4, h5, h6, p {
             margin: 12px 0;
         }
 
@@ -62,7 +62,7 @@
         }
 
         ul li, ol li {
-            margin-bottom: 8px;
+            margin: 8px;
         }
 
         .wrapper-body {
@@ -170,7 +170,7 @@
         /** TAB CONTENT NAV **/
 
         #content {
-            grid-template-columns: 1fr 2fr;
+            grid-template-columns: 1fr 3fr;
             gap: 1vw;
         }
 
@@ -227,6 +227,11 @@
 
         .question-container .question {
             padding-left: calc(10px + 1.5vw);
+        }
+
+        .question-container p, .question-container ul li {
+            font-size: 0.9em;
+            color: #444;
         }
 
         @media screen and (max-width: 700px) {
@@ -1571,13 +1576,6 @@
             <div id="objectives" class="tab-content" style="grid-template-columns: 1fr;">
                 <div class="content-text">
                     <h1>Objectives</h1>
-                    <div class="question-container">
-                        <div class="ribbon"></div>
-                        <div class="question">
-                            <h3>Question to Ponder:</h3>
-                            <p>According to the Act, which of the following is not a learning institution covered in RA 10627?</p>
-                        </div>
-                    </div>
                     <p>The objectives of this lesson are as follows:</p>
                     <ul>
                         <li>Understand the essence and purpose of the Anti-Bullying Act of 2013 for safety and security in the learning environment.</li>
@@ -1590,8 +1588,15 @@
             <div id="about" class="tab-content">
                 <div class="content-art"></div>
                 <div class="content-text">
-                    <h1>What is the Republic Act 10627?</h1>
+                    <h1>Republic Act 10627</h1>
                     <p>The <b>Republic Act 10627</b>, much known as the <b>Anti-Bullying Act of 2013</b>, is “an act requiring all elementary and secondary schools to adopt policies to prevent and address the acts of bullying in their institutions” (Official Gazette of the Republic of the Philippines, 2013). In the Implementing Rules and Regulations of the RA 10627, the Act now covers institutions that include private and public kindergarten schools and learning centers.</p>
+                    <div class="question-container">
+                        <div class="ribbon"></div>
+                        <div class="question">
+                            <h4>Question to Ponder:</h4>
+                            <p>Why do we need the "Anti-Bullying Act of 2013" if schools can just devise their own policies to address bullying?</p>
+                        </div>
+                    </div>
                     <p>The Anti-Bullying Act of 2013 pairs up with the DepEd Order No. 40, S. 2012 or the Child Protection Policy in protecting and safeguarding the children and their rights against the adverse effects of bullying.</p>
                 </div>
             </div>
@@ -1616,20 +1621,37 @@
 
                     <h2>Section 2: Defining Bullying</h2>
                     <p>Anybody, arguably, would be quite familiar with the notion of bullying. When you inflict harm, in any way or form, towards an individual, one would call it bullying. But note that there are various definitions of bullying that depends on context.</p>
-                
+                    <p>In Section 2 of the Anti-Bullying Act of 2013, bullying is defined as “any severe or repeated use of one or more students of a written, verbal or electronic expression, or a physical act or gesture, or any combination thereof, directed at another student” (Official Gazette of the Republic of the Philippines, 2013).</p>
+                    <div class="question-container">
+                        <div class="ribbon"></div>
+                        <div class="question">
+                            <h3>Question to Ponder:</h3>
+                            <p>Does disagreement between two students considered an act of bullying?</p>
+                        </div>
+                    </div>
                     <h3>Definitions of Bullying</h3>
                     <ul>
                         <li>Cardona et. al. (2015) defines bullying as an act of repeated physical, verbal, social, or psychosocial aggressive behavior towards an individual or group.</li>
                         <li>UNICEF Canada (2012) defines bullying as “a serious form of violence against children which has a significant and lifelong physical and mental health effect upon the victim, as well as many other personal and social consequences for both the child victims and perpetrators.”</li>
-                        <li>In Section 2 of the Anti-Bullying Act of 2013, bullying is defined as “any severe or repeated use of one or more students of a written, verbal or electronic expression, or a physical act or gesture, or any combination thereof, directed at another student” (Official Gazette of the Republic of the Philippines, 2013).</li>
-                        <li>Additionally, as written in IRR of RA 10627, "bullying" shall also include:</li>
+                        <li>As an addition to the definition given by the Section 2, the IRR of RA 10627 also considers the following  as an instance of  "bullying":</li>
                         <ul>
                             <li><b>Social bullying</b> refers to any planned, repetitive, and hostile social behavior meant to harm others or belittle another individual or group.</li>
                             <li><b>Gender-based bullying</b> is defined as any act that humiliates or excludes a person based on their gender identity or sexual orientation (SOGI).</li>
                             <li><b>Cyber-bullying</b> refers to bullying done through the use of technology or any electronic means. This includes any conduct resulting in harassment, intimidation, or humiliation, such as but not limited to texting, email, instant messaging, chatting, internet, social media, online games, or other platforms or formats as specified in DepEd Order No. 40, S. 2012.</li>
                         </ul>
                     </ul>
-    
+                    <div class="question-container">
+                        <div class="ribbon"></div>
+                        <div class="question">
+                            <h3>Question to Ponder:</h3>
+                            <p>Consider the following situations:</p>
+                            <ul>
+                                <li>Alex hits Andrei's shoulder by fist. Andrei almost stumbles to the ground, yet the two laugh down the hallway.</li>
+                                <li>Ms. Anna, a teacher, tells her student, Julia, that her eyes look ugly in a joking manner. Julia, the student, kept silent. Instead, she bends her head from uneasiness.</li>
+                            </ul>
+                            <p>Using the definition of bullying given, do you consider the above situations an act of bullying?</p>
+                        </div>
+                    </div>
                     <h3>Acts of Bullying</h3>
                     <p>Aside from the definition given in Section 2 of the Anti-Bullying Act of 2013, the Section 2 of the Act also considers the following as an act of “bullying”:</p>
                     <ul>
@@ -1649,10 +1671,17 @@
                     <ol type="A">
                         <li><b>Section 3A</b> involves the prohibition of the following acts:</li>
                         <ol>
-                            <li>Bullying on school grounds or through the use of technology or an electronic device by the school is prohibited.</li>
-                            <li>Prevent any act or possibility that could put the victim in a hostile setting at school.</li>
+                            <li>Bullying on school grounds, including the properties adjacent to a school ground, or through the use of technology or an electronic device by the school is prohibited.</li>
+                            <li>Prevent any act or possibility that could put the victim in a hostile setting at school or could infringe the rights of the victim at school.</li>
                             <li>Protect anyone who witnesses, reports, or offers information about bullying.</li>
                         </ol>
+                        <div class="question-container">
+                            <div class="ribbon"></div>
+                            <div class="question">
+                                <h4>Question to Ponder:</h4>
+                                <p>Can you give a possible way to protect a bullying victim in a school?</p>
+                            </div>
+                        </div>
                         <li><b>Section 3B</b> identifies the disciplinary actions that may be taken against a perpetrator for an act of bullying. In this section, the perpetrator of an act of bullying is mandated to undergo a rehabilitation program that will be administered by the institution concerned.</li>
                         <li><b>Section 3C</b> mandates institutions to establish clear procedures and strategies for:</li>
                         <ol>
@@ -1664,6 +1693,13 @@
                             </li>
                         </ol>
                         <li><b>Section 3D</b> stands to enable students to anonymously report bullying or retaliation. However, there will be no disciplinary action to be taken against the perpetrator.</li>
+                        <div class="question-container">
+                            <div class="ribbon"></div>
+                            <div class="question">
+                                <h4>Question to Ponder:</h4>
+                                <p>Why do you think the school cannot file a disciplinary action against the perpetrator when a student anonymously reports a bullying incident?</p>
+                            </div>
+                        </div>
                         <li><b>Section 3E</b> covers false bullying accusations toward a student. It implements that the one who knowingly does the false accusation shall be subjected to disciplinary action.</li>
                         <li><b>Section 3F</b> enforces schools to educate students on the notion of bullying and the policies alongside it.</li>
                         <li><b>Section 3G</b> enforces schools to educate parents on the notion of bullying and the policies alongside it.</li>
@@ -1683,7 +1719,6 @@
                         <li>Notify the perpetrator's parents or guardians.</li>
                         <li>Encourage the victim's parents or guardians to inquire about the steps taken to prevent repeated bullying or retaliation.</li>
                     </ol>
-
                 </div>
 
                 <div id="section 5" class="content-text">
