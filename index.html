@@ -37,8 +37,8 @@
             box-sizing: border-box;
         }
 
-        a {
-            text-decoration: none;
+        h1, h2, h3, h4, h5, h6 {
+            margin: 12px 0;
         }
 
         body {
@@ -81,8 +81,7 @@
 
         nav {
             display: flex;
-            background-image: linear-gradient( rgba(31, 8,  150, .75), rgba(31, 8, 150, .75) ),
-            var(--background-img);
+            background-image: linear-gradient( rgba(31, 8,  150, .75), rgba(31, 8, 150, .75) ), var(--background-img);
             background-size: cover;
         }
 
@@ -144,21 +143,23 @@
 
         .tab-content {
             display: none;
-            grid-template-columns: 1fr 1fr;
-            gap: 10px;
-            padding: 20px;
+            grid-template-columns: 1fr;
+            padding: 3vw;
+            gap: 2vh;
             background-color: var(--kinda-light);
+            grid-template-rows: auto;
         }
 
         .tab-content .content-text {
-            padding: 0 10px;
+            padding: 0 1vw 0 2vw;
         }
 
         .tab-content .content-art {
-            display: flex;
-            flex-direction: column;
-            text-align: right;
-            align-items: flex-end;
+            background: url("https://www.humanium.org/en/wp-content/uploads/2021/10/shutterstock_1503499058-scaled.jpg");
+            background-size: cover;
+            background-position: center;
+            min-height: 200px;
+            max-height: 400px;
         }
 
         .tab-content .content-art img {
@@ -166,31 +167,21 @@
             width: 100%;
         }
 
-        .tab-content .content-art a {
-            text-align: right;
-            display: block;
-            width: 100%;
-            padding: 5px;
-            background-color: var(--indigogo);
-            color: white;
-            font-size: 10px;
-        }
-
         /** TAB CONTENT NAV **/
+
+        #content {
+            grid-template-columns: 1fr 2fr;
+            gap: 1vw;
+        }
 
         .content-nav {
             padding: 25px 0;
             display: flex;
             flex-direction: column;
-            background-image: linear-gradient( rgba(31, 8,  150, .75), rgba(31, 8, 150, .75) ),
-            var(--background-img);
+            background-image: linear-gradient( rgba(31, 8,  150, .75), rgba(31, 8, 150, .75) ), var(--background-img);
         }
 
         /** sorry I just have to put this **/
-
-        #content {
-            grid-template-columns: 1fr 3fr;
-        }
 
         .content-nav-tab {
             display: block;
@@ -221,6 +212,21 @@
             font-size: 0.8em;
             padding: 25px 25px 0 25px;
             color: #666;
+        }
+
+        /** QUESTION **/
+
+        .question-container {
+            display: grid;
+            grid-template-columns: 1fr 24fr;
+        }
+
+        .question-container .ribbon {
+            background-image: linear-gradient( rgba(31, 8,  150, .75), rgba(31, 8, 150, .75) ), var(--background-img);
+        }
+
+        .question-container .question {
+            padding-left: calc(10px + 1.5vw);
         }
 
         @media screen and (max-width: 700px) {
@@ -258,12 +264,6 @@
                 padding-inline-start: 20px;
             }
 
-            .tab-content {
-                display: none;
-                grid-template-columns: 1fr;
-                grid-template-rows: auto;
-            }
-
             #content {
                 grid-template-columns: 1fr;
             }
@@ -294,7 +294,6 @@
         <header>
 
             <div class="school-header">
-
                 <!-- I highly suggest not opening this two divs. -->
                 <div>
                     <img src="data:image/jpg;base64,/9j/4AAQSkZJRgABAQEAYABgAAD/2wBDAAMCAgMCAgMDAwMEAwMEBQgFBQQEBQoH
@@ -1553,10 +1552,8 @@
                         /s9aLdab4A8E+EfA+nX0/wBpubXw/o9vpkNxLtC+Y6Qoqs20AbiCcADtXXUUV+e1
                         Kk6knOo22+r1YBRRRWYBRRRQAUUUUAFFFFABRRRQB//Z" alt="[webpage_cassed_logo.jpg]">
                 </div>
-                
                 <h4>Systems Plus College Foundation<br>College of Social Sciences and Education</h4>
                 <h4>April 2022</h4>
-
             </div>
             <hr>
             <h2 class="title"><span class="l0rge">Republic Act 10627</span><br>The Anti-Bullying Act of 2013</h2>
@@ -1574,25 +1571,28 @@
             <div id="objectives" class="tab-content" style="grid-template-columns: 1fr;">
                 <div class="content-text">
                     <h1>Objectives</h1>
+                    <div class="question-container">
+                        <div class="ribbon"></div>
+                        <div class="question">
+                            <h3>Question to Ponder:</h3>
+                            <p>According to the Act, which of the following is not a learning institution covered in RA 10627?</p>
+                        </div>
+                    </div>
                     <p>The objectives of this lesson are as follows:</p>
                     <ul>
                         <li>Understand the essence and purpose of the Anti-Bullying Act of 2013 for safety and security in the learning environment.</li>
                         <li>Identify, from the perspective of the Act, whether aggressive situations between students are considered bullying or not.</li>
                         <li>Classify possible actions to be taken when a situation of bullying or retaliation occurred among students.</li>
                     </ul>
+                    <p>Note that this written report will only tackle the first six (6) sections under the Act.</p>
                 </div>
             </div>
-
             <div id="about" class="tab-content">
-                <div class="content-art">
-                    <img src="https://media.istockphoto.com/vectors/bullying-pointing-fingers-haters-crowd-sad-character-hugging-his-vector-id1177131449?k=20&m=1177131449&s=170667a&w=0&h=_AYvAsw0_ZWxIrbpUzNmW_xnyiPAzf1bXlppB0VXrDQ=" alt="[webpage-art-bullying.png]">
-                    <a href="https://www.istockphoto.com/vector/bullying-pointing-fingers-haters-crowd-sad-character-hugging-his-knees-aggression-gm1177131449-328499899">Credit: Image by nadia_bormotova</a>
-                </div>
+                <div class="content-art"></div>
                 <div class="content-text">
                     <h1>What is the Republic Act 10627?</h1>
-                    <p>The <b>Republic Act 10627</b>, much known as the <b>Anti-Bullying Act of 2013</b>, is "an act requiring all elementary and secondary schools to adopt policies to prevent and address the acts of bullying in their institutions" (Official Gazette of the Republic of the Philippines, 2013). It was approved on the 12th of September 2013 by the ruling of the former Philippine President Benigno S. Aquino III.</p>
+                    <p>The <b>Republic Act 10627</b>, much known as the <b>Anti-Bullying Act of 2013</b>, is “an act requiring all elementary and secondary schools to adopt policies to prevent and address the acts of bullying in their institutions” (Official Gazette of the Republic of the Philippines, 2013). In the Implementing Rules and Regulations of the RA 10627, the Act now covers institutions that include private and public kindergarten schools and learning centers.</p>
                     <p>The Anti-Bullying Act of 2013 pairs up with the DepEd Order No. 40, S. 2012 or the Child Protection Policy in protecting and safeguarding the children and their rights against the adverse effects of bullying.</p>
-                    <p>Note that the content in this webpage will only take the first six (6) sections under the Act.</p>
                 </div>
             </div>
 
@@ -1608,23 +1608,29 @@
                 </div>
 
                 <div id="section 1" class="content-text">
-                    <h1>1: Introduction</h1>
+                    <h1>Section 1: The Anti-Bullying Act of 2013</h1>
                     <p>The first section of the Republic Act of 10627 introduces and hereby proclaims the Act to be known as the "Anti-bullying Act of 2013" officially.</p>
                 </div>
 
                 <div id="section 2" class="content-text">
 
-                    <h2>2: Definining Bullying</h2>
+                    <h2>Section 2: Defining Bullying</h2>
                     <p>Anybody, arguably, would be quite familiar with the notion of bullying. When you inflict harm, in any way or form, towards an individual, one would call it bullying. But note that there are various definitions of bullying that depends on context.</p>
                 
-                    <h3>2.1	Definitions</h3>
+                    <h3>Definitions of Bullying</h3>
                     <ul>
                         <li>Cardona et. al. (2015) defines bullying as an act of repeated physical, verbal, social, or psychosocial aggressive behavior towards an individual or group.</li>
                         <li>UNICEF Canada (2012) defines bullying as “a serious form of violence against children which has a significant and lifelong physical and mental health effect upon the victim, as well as many other personal and social consequences for both the child victims and perpetrators.”</li>
                         <li>In Section 2 of the Anti-Bullying Act of 2013, bullying is defined as “any severe or repeated use of one or more students of a written, verbal or electronic expression, or a physical act or gesture, or any combination thereof, directed at another student” (Official Gazette of the Republic of the Philippines, 2013).</li>
+                        <li>Additionally, as written in IRR of RA 10627, "bullying" shall also include:</li>
+                        <ul>
+                            <li><b>Social bullying</b> refers to any planned, repetitive, and hostile social behavior meant to harm others or belittle another individual or group.</li>
+                            <li><b>Gender-based bullying</b> is defined as any act that humiliates or excludes a person based on their gender identity or sexual orientation (SOGI).</li>
+                            <li><b>Cyber-bullying</b> refers to bullying done through the use of technology or any electronic means. This includes any conduct resulting in harassment, intimidation, or humiliation, such as but not limited to texting, email, instant messaging, chatting, internet, social media, online games, or other platforms or formats as specified in DepEd Order No. 40, S. 2012.</li>
+                        </ul>
                     </ul>
     
-                    <h3>2.2	Acts of Bullying</h3>
+                    <h3>Acts of Bullying</h3>
                     <p>Aside from the definition given in Section 2 of the Anti-Bullying Act of 2013, the Section 2 of the Act also considers the following as an act of “bullying”:</p>
                     <ul>
                         <li>Any unwanted physical contact between the bully and the victim.</li>
@@ -1637,7 +1643,7 @@
 
                 <div id="section 3" class="content-text">
 
-                    <h2>3: Schools toward Bullying</h2>
+                    <h2>Section 3: Schools toward Bullying</h2>
                     <p>Section 3 of the RA 10627 covers the adoption of educational institutions toward the policies that address bullying. The policies shall include provisions that can be divided into eight subsections (3A-3H): </p>
                 
                     <ol type="A">
@@ -1668,7 +1674,7 @@
 
                 <div id="section 4" class="content-text">
 
-                    <h2>4: Addressing Bullying Policies</h2>
+                    <h2>Section 4: Addressing Bullying Policies</h2>
                     <p>Schools are held accountable for putting in place and maintaining anti-bullying measures. Any instance of bullying or retribution witnessed by school personnel and administrators, students, parents, and volunteers should be immediately reported to the school administration or officers responsible. The school will investigate as soon as it receives the information. If the bullying has been confirmed, the school must take the steps outlined in the sections below:
                     </p>
                     <ol type="A">
@@ -1682,14 +1688,14 @@
 
                 <div id="section 5" class="content-text">
 
-                    <h2>5: Reporting Requirements</h2>
+                    <h2>Section 5: Reporting Requirements</h2>
                     <p>This section maintains schools to mandate and implement anti-bullying policies provided that they should inform the school division superintendents. Additionally, at the beginning of each school year, schools shall submit all relevant information and statistics on acts of bullying and retaliation.</p>
 
                 </div>
 
                 <div id="section 6" class="content-text">
 
-                    <h2>6: Sanction for Noncompliance</h2>
+                    <h2>Section 6: Sanction for Noncompliance</h2>
                     <p>If a school administrator fails to comply with the requirements of this act, the Secretary of the Department of Education shall pursue appropriate administrative actions.</p>
 
                 </div>
