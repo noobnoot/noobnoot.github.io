@@ -1,0 +1,264 @@
+
+/** INDEX **/
+
+:root {
+    --kinda-light: #EEE;
+    --indigogo: rgb(31, 8, 150);
+    --background-img: url("https://images.creativemarket.com/0.1.0/ps/2321248/1160/772/m1/fpnw/wm1/cover-.jpg?1487898325&s=1b088f3d83e0354fa15b61d49486a787");
+}
+
+* {
+    box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+    margin: 12px 0;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: var(--indigogo);
+    font-size: 18px;
+    margin: 0;
+}
+
+body::after {
+    content: "";
+    z-index: -1;
+    opacity: 25%;
+    position: fixed;
+    top: 0;
+    min-width: 100%;
+    min-height: 100%;
+    display: block;
+    background: var(--background-img);
+}
+
+ul li, ol li {
+    margin: 8px;
+}
+
+.wrapper-body {
+    height: auto;
+    min-height: calc(100vh - 10vw);
+    margin: 0 10vw;
+    padding: 5vw;
+    background-color: white;
+}
+
+.word-break-wrap {
+    word-break: break-all;
+}
+
+/** NAVIGATION BAR **/
+
+nav {
+    display: flex;
+    background-image: linear-gradient( rgba(31, 8,  150, .75), rgba(31, 8, 150, .75) ), var(--background-img);
+    background-size: cover;
+}
+
+.nav-tab {
+    display: block;
+    background-color: transparent;
+    float: left;
+    outline: none;
+    cursor: pointer;
+    border: none;
+    padding: 8px 14px;
+    transition: 0.3s;
+    letter-spacing: 2.5px;
+    color: white;
+    font-size: 16px;
+    font-family: inherit;
+}
+
+.nav-tab:hover {
+    color: black;
+    background-color: var(--kinda-light);
+}
+
+.nav-tab.active {
+    color: black;
+    background-color: var(--kinda-light);
+}
+
+/** HEADER **/
+
+.title {
+    margin: 20px 0;
+}
+
+.title .l0rge {
+    font-size: 1.75em;
+}
+
+.school-header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.school-header div {
+    margin: 0 15px;
+}
+
+.school-header div img {
+    width: 50px;
+    height: 50px;
+}
+
+.school-header h4:last-of-type {
+    margin-left: auto;
+}
+
+/** TAB CONTENTS **/
+
+.tab-content {
+    display: none;
+    grid-template-columns: 1fr;
+    padding: 3vw;
+    gap: 2vh;
+    background-color: var(--kinda-light);
+    grid-template-rows: auto;
+}
+
+.tab-content .content-text {
+    padding: 0 1vw 0 2vw;
+}
+
+.tab-content .content-art {
+    background: url("https://www.humanium.org/en/wp-content/uploads/2021/10/shutterstock_1503499058-scaled.jpg");
+    background-size: cover;
+    background-position: center;
+    min-height: 200px;
+    max-height: 400px;
+}
+
+.tab-content .content-art img {
+    display: block;
+    width: 100%;
+}
+
+/** TAB CONTENT NAV **/
+
+#content {
+    grid-template-columns: 1fr 3fr;
+    gap: 1vw;
+}
+
+.content-nav {
+    padding: 25px 0;
+    display: flex;
+    flex-direction: column;
+    background-image: linear-gradient( rgba(31, 8,  150, .75), rgba(31, 8, 150, .75) ), var(--background-img);
+}
+
+/** sorry I just have to put this **/
+
+.content-nav-tab {
+    display: block;
+    background-color: inherit;
+    outline: none;
+    cursor: pointer;
+    border: none;
+    padding: 8px 10px;
+    transition: 0.3s;
+    color: white;
+    font-size: 16px;
+    font-family: inherit;
+}
+
+.content-nav-tab:hover {
+    color: black;
+    background-color: var(--kinda-light);
+}
+
+.content-nav-tab.active {
+    color: black;
+    background-color: var(--kinda-light);
+}
+
+/** FOOTER **/
+
+footer {
+    font-size: 0.8em;
+    padding: 25px 25px 0 25px;
+    color: #666;
+}
+
+/** QUESTION **/
+
+.question-container {
+    display: grid;
+    grid-template-columns: 1fr 24fr;
+    background: #DDD;
+}
+
+.question-container .ribbon {
+    background-image: linear-gradient( rgba(31, 8,  150, .75), rgba(31, 8, 150, .75) ), var(--background-img);
+}
+
+.question-container .question {
+    padding: calc(2px + 1vw) calc(5px + 1.5vw);
+}
+
+.question-container p, .question-container ul li {
+    font-size: 0.9em;
+    color: #444;
+}
+
+@media screen and (max-width: 700px) {
+
+    body {
+        font-size: 14px;
+    }
+
+    .wrapper-body{
+        margin: 0 5vw;
+    }
+
+    .school-header {
+        text-align: center;
+        flex-direction: column;
+    }
+
+    .school-header h4 {
+        margin: 5px 0;
+    }
+
+    .title {
+        font-size: 1em;
+        margin: 14px 0;
+    }
+
+    .nav-tab {
+        font-size: 10px;
+        letter-spacing: 1px;
+        font-family: inherit;
+        padding: 6px 8px;
+    }
+
+    ul, ol {
+        padding-inline-start: 20px;
+    }
+
+    #content {
+        grid-template-columns: 1fr;
+    }
+
+    .content-nav {
+        padding: 0px;
+        max-height: 250px;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+
+    .content-nav .content-nav-tab {
+        font-size: 10px;
+        letter-spacing: 0.5px;
+        text-transform: uppercase;
+    }
+
+}
