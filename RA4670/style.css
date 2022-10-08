@@ -256,6 +256,7 @@ footer {
     }
 
     .content-nav .content-nav-tab {
+        padding: 25px 0px;
         font-size: 10px;
         letter-spacing: 0.5px;
         text-transform: uppercase;
