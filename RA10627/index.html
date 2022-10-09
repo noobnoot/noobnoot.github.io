@@ -81,8 +81,10 @@
                     <div class="question-container">
                         <div class="ribbon"></div>
                         <div class="question">
-                            <h4>Question to Ponder:</h4>
-                            <p>Why do we need the "Anti-Bullying Act of 2013" if schools can just devise their own policies to address bullying?</p>
+                            <h4 onclick="toggleQuestion(event, 'Q1')">Question to Ponder:</h4>
+                            <div id="Q1" class="content">
+                                <p>Why do we need the "Anti-Bullying Act of 2013" if schools can just devise their own policies to address bullying?</p>
+                            </div>
                         </div>
                     </div>
                     <p>The Anti-Bullying Act of 2013 pairs up with the DepEd Order No. 40, S. 2012 or the Child Protection Policy in protecting and safeguarding the children and their rights against the adverse effects of bullying.</p>
@@ -119,8 +121,10 @@
                     <div class="question-container">
                         <div class="ribbon"></div>
                         <div class="question">
-                            <h3>Question to Ponder:</h3>
-                            <p>Does disagreement between two students considered an act of bullying?</p>
+                            <h4 onclick="toggleQuestion(event, 'Q2')">Question to Ponder:</h4>
+                            <div id="Q2" class="content">
+                                <p>Does disagreement between two students considered an act of bullying?</p>
+                            </div>
                         </div>
                     </div>
                     <h3>Definitions of Bullying</h3>
@@ -137,13 +141,15 @@
                     <div class="question-container">
                         <div class="ribbon"></div>
                         <div class="question">
-                            <h3>Question to Ponder:</h3>
-                            <p>Consider the following situations:</p>
-                            <ul>
-                                <li>Alex hits Andrei's shoulder by fist. Andrei almost stumbles to the ground, yet the two laugh down the hallway.</li>
-                                <li>Ms. Anna, a teacher, tells her student, Julia, that her eyes look ugly in a joking manner. Julia, the student, kept silent. Instead, she bends her head from uneasiness.</li>
-                            </ul>
-                            <p>Using the definition of bullying given, do you consider the above situations an act of bullying?</p>
+                            <h4 onclick="toggleQuestion(event, 'Q3')">Question to Ponder:</h4>
+                            <div id="Q3" class="content">
+                                <p>Consider the following situations:</p>
+                                <ul>
+                                    <li>Alex hits Andrei's shoulder by fist. Andrei almost stumbles to the ground, yet the two laugh down the hallway.</li>
+                                    <li>Ms. Anna, a teacher, tells her student, Julia, that her eyes look ugly in a joking manner. Julia, the student, kept silent. Instead, she bends her head from uneasiness.</li>
+                                </ul>
+                                <p>Using the definition of bullying given, do you consider the above situations an act of bullying?</p>
+                            </div>
                         </div>
                     </div>
                     <h3>Acts of Bullying</h3>
@@ -172,8 +178,10 @@
                         <div class="question-container">
                             <div class="ribbon"></div>
                             <div class="question">
-                                <h4>Question to Ponder:</h4>
-                                <p>Can you give a possible way to protect a bullying victim in a school?</p>
+                                <h4 onclick="toggleQuestion(event, 'Q4')">Question to Ponder:</h4>
+                                <div id="Q4" class="content">
+                                    <p>Can you give a possible way to protect a bullying victim in a school?</p>
+                                </div>
                             </div>
                         </div>
                         <li><b>Section 3B</b> identifies the disciplinary actions that may be taken against a perpetrator for an act of bullying. In this section, the perpetrator of an act of bullying is mandated to undergo a rehabilitation program that will be administered by the institution concerned.</li>
@@ -190,8 +198,10 @@
                         <div class="question-container">
                             <div class="ribbon"></div>
                             <div class="question">
-                                <h4>Question to Ponder:</h4>
-                                <p>Why do you think the school cannot file a disciplinary action against the perpetrator when a student anonymously reports a bullying incident?</p>
+                                <h4 onclick="toggleQuestion(event, 'Q5')">Question to Ponder:</h4>
+                                <div id="Q5" class="content">
+                                    <p>Why do you think the school cannot file a disciplinary action against the perpetrator when a student anonymously reports a bullying incident?</p>
+                                </div>
                             </div>
                         </div>
                         <li><b>Section 3E</b> covers false bullying accusations toward a student. It implements that the one who knowingly does the false accusation shall be subjected to disciplinary action.</li>
@@ -318,6 +328,18 @@
             document.getElementById(tabContentName).style.display = "grid";
             activateTabButton(event.currentTarget);
             
+        }
+
+        function toggleQuestion(event, questionId) {
+        
+            var content = document.getElementById(questionId);
+            console.log( content.style.display );
+            if ( content.style.display != "block" ) {
+                content.style.display = "block";
+            } else {
+                content.style.display = "none";
+            }
+
         }
 
     </script>
