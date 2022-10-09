@@ -25,6 +25,15 @@
     <title>RA 10627</title>
     <link rel="stylesheet" href="../basePotatoStyle.css">
 
+    <style>
+    
+        :root {
+            --accent-color: rgba(20, 80, 40, 0.75);
+            --background-img: url("https://images.creativemarket.com/0.1.0/ps/2321248/1160/772/m1/fpnw/wm1/cover-.jpg?1487898325&s=1b088f3d83e0354fa15b61d49486a787");
+        }
+
+    </style>
+
 </head>
 <body>
 
@@ -38,13 +47,15 @@
                     <img src="../images/cassed-logo.png" alt="CASSED Logo">
                 </div>
                 <h4>Systems Plus College Foundation<br>College of Social Sciences and Education</h4>
-                <h4>April 2022</h4>
+                <h4>October 2022</h4>
             </div>
+
             <hr>
+
             <h2 class="title"><span class="l0rge">Republic Act 4670</span><br>The Magna Carta for Public School Teachers</h2>
+
             <nav>
-                <button class="nav-tab" onclick="chooseTab(event, 'objectives')">OBJECTIVES</button>
-                <button class="nav-tab" onclick="chooseTab(event, 'about')">ABOUT</button>
+                <button class="nav-tab" onclick="chooseTab(event, 'introduction')">INTRODUCTION</button>
                 <button class="nav-tab" onclick="chooseTab(event, 'content')">CONTENT</button>
                 <button class="nav-tab" onclick="chooseTab(event, 'references')">REFERENCES</button>
             </nav>
@@ -53,32 +64,24 @@
 
         <section>
 
-            <div id="objectives" class="tab-content" style="grid-template-columns: 1fr;">
+            <div id="introduction" class="tab-content" style="grid-template-columns: 1fr;">
+
                 <div class="content-text">
-                    <h1>Objectives</h1>
-                    <p>The objectives of this lesson are as follows:</p>
-                    <ul>
-                        <li>Understand the essence and purpose of the Anti-Bullying Act of 2013 for safety and security in the learning environment.</li>
-                        <li>Identify, from the perspective of the Act, whether aggressive situations between students are considered bullying or not.</li>
-                        <li>Classify possible actions to be taken when a situation of bullying or retaliation occurred among students.</li>
-                    </ul>
-                    <p>Note that this written report will only tackle the first six (6) sections under the Act.</p>
-                </div>
-            </div>
-            <div id="about" class="tab-content">
-                <div class="content-art"></div>
-                <div class="content-text">
-                    <h1>Republic Act 10627</h1>
-                    <p>The <b>Republic Act 10627</b>, much known as the <b>Anti-Bullying Act of 2013</b>, is “an act requiring all elementary and secondary schools to adopt policies to prevent and address the acts of bullying in their institutions” (Official Gazette of the Republic of the Philippines, 2013). In the Implementing Rules and Regulations of the RA 10627, the Act now covers institutions that include private and public kindergarten schools and learning centers.</p>
+                    <h1>Introduction</h1>
+                    <p>The <b>Magna Carta for Public School Teachers</b>, also known as <b>Republic Act No. 4670</b>, outlines the professional rights and protections that our public school teachers are entitled to in light of the demands and degree of difficulty involved in their profession.</p>
                     <div class="question-container">
                         <div class="ribbon"></div>
                         <div class="question">
-                            <h4>Question to Ponder:</h4>
-                            <p>Why do we need the "Anti-Bullying Act of 2013" if schools can just devise their own policies to address bullying?</p>
+                            <h4 onclick="toggleQuestion(event, 'Q1')">Hold on. What is the Magna Carta?</h4>
+                            <div id="Q1" class="content">
+                                <p><b>Magna Carta</b>, which means <b>'The Great Charter,’</b> is legal writing that establishes the rights and privileges of an entity.</p>
+                                <p>The term came from Europe when King John of England signed a charter of liberties as a countermeasure to the threat of civil war.</p>
+                            </div>
                         </div>
                     </div>
-                    <p>The Anti-Bullying Act of 2013 pairs up with the DepEd Order No. 40, S. 2012 or the Child Protection Policy in protecting and safeguarding the children and their rights against the adverse effects of bullying.</p>
+                    <p>This Act is composed of 7 chapters and 35 sections. So, to avoid making this a long, tiring report, we summarized and removed some of the sections that aren’t relevant for discussion.</p>
                 </div>
+
             </div>
 
             <div id="content" class="tab-content">
@@ -240,7 +243,7 @@
         </section>
 
         <footer>
-            This webpage is a part of our final requirement in the subject The Children and Adolescent Learner’s Learning Principles presented by the Group 2. You can contact us using this email <u>jorenlangbid2223@gmail.com</u> for queries, suggestions, corrections, and other concerns.
+            This webpage is a part of our requirement in the subject <b>The Teaching Profession</b> presented by the <b>Mr. Joren C. Langbid</b> and <b>Ms. Nicole Rhadlee Hardee</b>. You can contact us using this email <u>jorenlangbid2223@gmail.com</u> for queries, suggestions, corrections, and other concerns.
         </footer>
 
     </div>
@@ -310,6 +313,20 @@
             document.getElementById(tabContentName).style.display = "grid";
             activateTabButton(event.currentTarget);
             
+        }
+
+        function toggleQuestion(event, questionId) {
+        
+            var content = document.getElementById(questionId);
+            console.log( content.style.display );
+            if ( content.style.display != "block" ) {
+                content.style.display = "block";
+                content.style.maxHeight = "1000px";
+            } else {
+                content.style.display = "none";
+                content.style.maxHeight = "0px";
+            }
+
         }
 
     </script>

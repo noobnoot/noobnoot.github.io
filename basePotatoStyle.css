@@ -3,8 +3,6 @@
 
 :root {
     --kinda-light: #EEE;
-    --indigogo: rgb(31, 8, 150);
-    --background-img: url("https://images.creativemarket.com/0.1.0/ps/2321248/1160/772/m1/fpnw/wm1/cover-.jpg?1487898325&s=1b088f3d83e0354fa15b61d49486a787");
 }
 
 * {
@@ -17,7 +15,6 @@ h1, h2, h3, h4, h5, h6, p {
 
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: var(--indigogo);
     font-size: 18px;
     margin: 0;
 }
@@ -25,13 +22,12 @@ body {
 body::after {
     content: "";
     z-index: -1;
-    opacity: 25%;
     position: fixed;
     top: 0;
     min-width: 100%;
     min-height: 100%;
     display: block;
-    background: var(--background-img);
+    background-image: linear-gradient( var(--accent-color), var(--accent-color) ), var(--background-img);
 }
 
 ul li, ol li {
@@ -54,7 +50,7 @@ ul li, ol li {
 
 nav {
     display: flex;
-    background-image: linear-gradient( rgba(31, 8,  150, .75), rgba(31, 8, 150, .75) ), var(--background-img);
+    background-image: linear-gradient( var(--accent-color), var(--accent-color) ), var(--background-img);
     background-size: cover;
 }
 
@@ -151,7 +147,7 @@ nav {
     padding: 25px 0;
     display: flex;
     flex-direction: column;
-    background-image: linear-gradient( rgba(31, 8,  150, .75), rgba(31, 8, 150, .75) ), var(--background-img);
+    background-image: linear-gradient( var(--accent-color), var(--accent-color) ), var(--background-img);
 }
 
 /** sorry I just have to put this **/
@@ -190,17 +186,35 @@ footer {
 /** QUESTION **/
 
 .question-container {
+    margin: 16px 0;
     display: grid;
     grid-template-columns: 1fr 24fr;
     background: #DDD;
 }
 
 .question-container .ribbon {
-    background-image: linear-gradient( rgba(31, 8,  150, .75), rgba(31, 8, 150, .75) ), var(--background-img);
+    background-image: linear-gradient( var(--accent-color), var(--accent-color) ), var(--background-img);
 }
 
 .question-container .question {
-    padding: calc(2px + 1vw) calc(5px + 1.5vw);
+    display: flex;
+    flex-direction: column;
+}
+
+.question-container .question h4 {
+    margin: 0;
+    padding: calc(2px + 1.5vw);
+    border-bottom: #BBB 1px solid;
+}
+
+.question-container .question h4:hover {
+    background: #BBB;
+    cursor: pointer;
+}
+
+.question-container .question .content {
+    padding: 0 calc(2px + 1.5vw);
+    display: none;
 }
 
 .question-container p, .question-container ul li {
