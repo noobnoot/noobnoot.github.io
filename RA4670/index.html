@@ -67,8 +67,13 @@
             <div id="introduction" class="tab-content" style="grid-template-columns: 1fr;">
 
                 <div class="content-text">
+
                     <h1>Introduction</h1>
-                    <p>The <b>Magna Carta for Public School Teachers</b>, also known as <b>Republic Act No. 4670</b>, outlines the professional rights and protections that our public school teachers are entitled to in light of the demands and degree of difficulty involved in their profession.</p>
+
+                    <p>
+                        The <b>Magna Carta for Public School Teachers</b>, also known as <b>Republic Act No. 4670</b>, outlines the professional rights and protections that our public school teachers are entitled to in light of the demands and degree of difficulty involved in their profession.
+                    </p>
+
                     <div class="question-container">
                         <div class="ribbon"></div>
                         <div class="question">
@@ -79,7 +84,11 @@
                             </div>
                         </div>
                     </div>
-                    <p>This Act is composed of 7 chapters and 35 sections. So, to avoid making this a long, tiring report, we summarized and removed some of the sections that aren’t relevant for discussion.</p>
+
+                    <p>
+                        This Act is composed of 7 chapters and 35 sections. So, to avoid making this a long, tiring report, we summarized and removed some of the sections that aren’t relevant for discussion.
+                    </p>
+        
                     <p>The chapters and their number of sections are outlined below:</p>
                     <ol type="I" class="marginless-list">
                         <li>Declaration of Policy Coverage (2)</li>
@@ -102,6 +111,7 @@
                     <button class="content-nav-tab" onclick="chooseContentTab(event, 'chapter 3')">Chapter III</button>
                     <button class="content-nav-tab" onclick="chooseContentTab(event, 'chapter 4')">Chapter IV</button>
                     <button class="content-nav-tab" onclick="chooseContentTab(event, 'chapter 5')">Chapter V</button>
+                    <button class="content-nav-tab" onclick="chooseContentTab(event, 'chapter 6')">Chapter VI</button>
                 </div>
 
                 <div id="chapter 1" class="content-text">
@@ -120,7 +130,18 @@
 
                     <h4>Section 2: Title Definition</h4>
                     <p>This act shall be known as the “Magna Carta for Public School Teachers” and shall apply to public school teachers except those in the professional staff of state colleges and universities.</p>
-                    <p>The term “teacher” shall mean all personnel engaged in classroom teaching, at any level, on a full-time basis (including guidance counselors, school librarians, industrial arts or vocational instructors, supervisors, administrators, etc.) but shall not include school nurses, school physicians, school dentists, and other school employees.</p>
+                    <div class="question-container">
+                        <div class="ribbon"></div>
+                        <div class="question">
+                            <h4 onclick="toggleQuestion(event, 'Q2')">Under this act, what is the definition of a 'teacher'?</h4>
+                            <div id="Q2" class="content">
+                                <p>
+                                    The term <b>“teacher”</b> shall mean all personnel engaged in classroom teaching, at any level, on a full-time basis (including guidance counselors, school librarians, industrial arts or vocational instructors, supervisors, administrators, etc.) but shall not include school nurses, school physicians, school dentists, and other school employees.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <p></p>
 
                 </div>
 
@@ -261,11 +282,22 @@
                     <p>
                         Additional compensation is given to teachers engaging in co-curricular and out-of-school activities and any other activities outside of the normal duties of any teacher. The additional compensation is equivalent to at least 25% of his/her regular remuneration.
                     </p>
+                    <div class="question-container">
+                        <div class="ribbon"></div>
+                        <div class="question">
+                            <h4 onclick="toggleQuestion(event, 'Q3')">Remuneration?</h4>
+                            <div id="Q3" class="content">
+                                <p>
+                                    <b>Remuneration</b> is just the fancy term for salary or the compensation you gain on a job.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
                     <p>
                         In the case of those teachers and school officials not engaged in actual classroom instruction, they gain compensation of 25% of their regular remuneration on the excess of 8 work hours.
                     </p>
                     <p>
-                        In alignment with this section, other agencies utilizing the services of teachers shall pay the additional compensation required. Moreover, Education authorities shall refuse the rendition of teacher service without assurance that the teachers shall be paid the respective remuneration.
+                        In alignment with this section, other agencies utilizing the services of teachers shall pay the additional compensation required.
                     </p>
 
                     <h4>Section 15. Criteria for Salaries</h4>
@@ -356,6 +388,27 @@
                     <h4>Section 26. Salary Increase Upon Retirement</h4>
                     <p>
                         Teachers of eligible retirement age who fulfilled the minimum service years shall be given one range salary raise upon retirement, which becomes the basis for the sum of the retirement pay and the monthly benefits thereafter.
+                    </p>
+
+                </div>
+
+                <div id="chapter 6" class="content-text">
+
+                    <h2>VI. Teacher's Organization</h2>
+
+                    <h4>Section 27. Freedom to Organize</h4>
+                    <p>
+                        Teachers has the right to establish and join organizations of their choosing, local or national, to defend their interests.
+                    </p>
+
+                    <h4>Section 28. Discrimination Against Teachers Prohibited</h4>
+                    <p>
+                        It shall be unlawful for any person to commit any acts of discrimination or dismissal against teachers because of his membership or participation in an organization.
+                    </p>
+
+                    <h4>Section 29. National Teacher’s Organization</h4>
+                    <p>
+                        National teachers' organizations must follow national educational policies and professional standards.
                     </p>
 
                 </div>
@@ -456,10 +509,8 @@
             console.log( content.style.display );
             if ( content.style.display != "block" ) {
                 content.style.display = "block";
-                content.style.maxHeight = "1000px";
             } else {
                 content.style.display = "none";
-                content.style.maxHeight = "0px";
             }
 
         }
