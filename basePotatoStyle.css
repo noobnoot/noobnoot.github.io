@@ -34,6 +34,44 @@ ul li, ol li {
     margin: 8px;
 }
 
+.cite {
+    border-left: #BBB 8px solid;
+    padding: 10px;
+    font-style: italic;
+}
+
+.marginless-list li {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+table {
+    border-collapse: collapse;
+    font-size: 0.85em;
+    width: 100%;
+}
+
+th, td {
+    border: #BBB 2px solid;
+}
+
+td, th {
+    padding: 6px;
+}
+
+tr td:first-of-type {
+    text-align: center;
+}
+
+tr ul {
+    margin: 0;
+    padding-left: 24px;
+}
+
+tr ul li {
+    margin: 0;
+}
+
 .wrapper-body {
     height: auto;
     min-height: calc(100vh - 10vw);
