@@ -176,14 +176,15 @@ nav {
 }
 
 .content-art {
+    display: flex;
+    align-items: center;
     margin: 10px 0;
     height: 30vh;
     overflow: hidden;
+    max-height: 30vh;
 }
 
 .content-art img {
-    position: relative;
-    top: -50px;
     width: 100%;
 }
 
