@@ -1,6 +1,6 @@
 <!--
 
-    Created by Joren Langbid, SEM02A
+    Created by Joren Langbid
     Systems Plus College Foundation
     April 2022
 
@@ -9,9 +9,6 @@
     palette that are used in this page.
 
     Resources:
-
-        Image in `About` by nadia_bormotov from https://www.istockphoto.com/vector/bullying-pointing-fingers-haters-crowd-sad-character-hugging-his-knees-aggression-gm1177131449-328499899
-        Color Pallete: https://www.color-hex.com/color-palette/1011553
 
 -->
 
@@ -22,17 +19,19 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>RA 4670</title>
+    <title>Rizal's Exile in Dapitan</title>
     <link rel="stylesheet" href="../basePotatoStyle.css">
 
     <style>
     
         :root {
-            --accent-color: rgba(20, 80, 40, 0.75);
+            --accent-color: rgba(127, 43, 10, 0.75);
             --background-img: url("https://images.creativemarket.com/0.1.0/ps/2321248/1160/772/m1/fpnw/wm1/cover-.jpg?1487898325&s=1b088f3d83e0354fa15b61d49486a787");
         }
 
     </style>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
 
 </head>
 <body>
@@ -43,44 +42,74 @@
 
             <div class="school-header">
                 <div>
-                    <img src="../images/spcf-logo.png" alt="SPCF Logo">
-                    <img src="../images/cassed-logo.png" alt="CASSED Logo">
+                    <img src="../_images/spcf-logo.png" alt="SPCF Logo">
+                    <img src="../_images/cassed-logo.png" alt="CASSED Logo">
                 </div>
-                <h4>Systems Plus College Foundation<br>College of Social Sciences and Education</h4>
-                <h4>October 2022</h4>
+                <div>
+                    <h4>Systems Plus College Foundation<br>College of Social Sciences and Education</h4>
+                </div>
+                <div>
+                    <h4>April 2022</h4>
+                </div>
             </div>
 
             <hr>
 
-            <h2 class="title"><span class="l0rge">Republic Act 4670</span><br>The Magna Carta for Public School Teachers</h2>
+            <h2 class="title"><span class="l0rge">Rizal's Exile in Dapitan</span><br>Life and Works of Rizal</h2>
 
             <nav>
-                <button class="nav-tab" onclick="chooseTab(event, 'introduction')">INTRODUCTION</button>
-                <button class="nav-tab" onclick="chooseTab(event, 'content')">CONTENT</button>
-                <button class="nav-tab" onclick="chooseTab(event, 'references')">REFERENCES</button>
+                <button class="nav-tab">INTRODUCTION</button>
+                <button class="nav-tab">CONTENT</button>
+                <button class="nav-tab">REFERENCES</button>
             </nav>
 
         </header>
 
         <section>
 
-            <div id="introduction" class="tab-content" style="grid-template-columns: 1fr;">
+            <div class="tab-content">
 
                 <div class="content-text">
 
                     <h1>Introduction</h1>
 
                     <p>
-                        The <b>Magna Carta for Public School Teachers</b>, also known as <b>Republic Act No. 4670</b>, outlines the professional rights and protections that our public school teachers are entitled to in light of the demands and degree of difficulty involved in their profession. It was approved in <b>1966</b> and composed of 7 chapters and 35 sections.
+                        On the 26th of June 1892, Jose Rizal's arrival in Manila caused quite a turmoil in the country. He was known for achievements which the Spaniards had feared. And by this time, his works are openly known in the country and by the Spaniards.
+                    </p>
+
+                    <div class="content-art">
+                        <img style="top: -12px;" src="https://kahimyang.com/resources-13/rizal-madrid.webp" alt="">
+                    </div>
+                    <p class="subtitle">Photo from <a href="https://kahimyang.com/kauswagan/articles/735/today-in-philippine-history-july-3-1892-dr-jose-rizal-founded-the-la-liga-filipina">The Kahimyang Project</a>.</p>
+
+                    <p>
+                        As he had planned, on July 3rd of the same year, Rizal founded <b><i>La Liga Filipina</i></b> in Tondo, Manila. The organization’s goal was to have a Filipino representative in the Spanish Cortes—not for a revolution that Spaniards had speculated.
+                    </p>
+
+                    <p>
+                        Days later, unsurprisingly, the Spanish authority arrested Rizal to be exiled in Dapitan for four years.
                     </p>
 
                     <div class="question-container">
                         <div class="ribbon"></div>
                         <div class="question">
-                            <h4 onclick="toggleQuestion(event, 'Q1')">Hold on. What is the Magna Carta?</h4>
-                            <div id="Q1" class="content">
-                                <p><b>Magna Carta</b>, which means <b>'The Great Charter,’</b> is legal writing that establishes the rights and privileges of an entity.</p>
-                                <p>The term came from Europe when King John of England signed a charter of liberties as a countermeasure to the threat of civil war.</p>
+                            <h4>Why was Rizal arrested and exiled to Dapitan?</h4>
+                            <div id="Q1" class="question-content">
+                                <p>The following constitute charges the Spanish government accused to Rizal for him to be exiled in Dapitan for four years:</p>
+                                <ul>
+                                    <li>
+                                        For publishing anti-Catholic and anti-friar books and articles,
+                                    </li>
+                                    <li>
+                                        possessing handbills of <i>Pobres Frailes</i>—a leaflet about Dominican friars and their corrupt acts—in which advocacies violated the Spanish Government,
+                                    </li>
+                                    <li>
+                                        dedicating his novel, <i>Noli me Tangere</i> and <i>El Filibusterismo</i> to the <i>GomBurZa</i> (Gomez, Burgos, Zamora) “emphasizing” on the novel’s title page that the only salvation for the Philippines was separation from the mother country, and
+                                    </li>
+                                    <li>
+                                        criticizing the religion and aiming for its exclusion from Filipino culture.
+                                    </li>
+                                </ul>
                             </div>
                         </div>
                     </div>
@@ -89,323 +118,129 @@
 
             </div>
 
-            <div id="content" class="tab-content">
+            <div class="tab-content structured-content">
 
                 <div class="content-nav">
-                    <button class="content-nav-tab" onclick="chooseContentTab(event, 'chapter 1')"><span class="media-hide">Chapter</span> I</button>
-                    <button class="content-nav-tab" onclick="chooseContentTab(event, 'chapter 2')"><span class="media-hide">Chapter</span> II</button>
-                    <button class="content-nav-tab" onclick="chooseContentTab(event, 'chapter 3')"><span class="media-hide">Chapter</span> III</button>
-                    <button class="content-nav-tab" onclick="chooseContentTab(event, 'chapter 4')"><span class="media-hide">Chapter</span> IV</button>
-                    <button class="content-nav-tab" onclick="chooseContentTab(event, 'chapter 5')"><span class="media-hide">Chapter</span> V</button>
-                    <button class="content-nav-tab" onclick="chooseContentTab(event, 'chapter 6')"><span class="media-hide">Chapter</span> VI</button>
+                    <button class="content-nav-tab">Arrival on Dapitan</span></button>
+                    <button class="content-nav-tab">Rizal and Dapitan</span></button>
+                    <button class="content-nav-tab">Founding of Katipunan</span></button>
+                    <button class="content-nav-tab">Farewell to Dapitan</span></button>
                 </div>
 
-                <div id="chapter 1" class="content-text">
+                <div class="content-text">
 
-                    <h1>I. Declaration of Policy Coverage</h1>
+                    <h1>I. Arrival on Dapitan</h1>
 
-                    <h4>Section 1: Declaration of Policy</h4>
-                    <p>The act’s policy is to promote and improve</p>
-                    <ol>
-                        <li>the social and economic status of public school teachers,</li>
-                        <li>their living and working conditions,</li>
-                        <li>their terms of employment, and</li>
-                        <li>their career prospects so they may compare favorably with other career opportunities; while</li>
-                        <li>attracting more on the teaching profession with proper qualifications.</li>
-                    </ol>
+                    <p>Rizal arrived in Dapitan, Zamboanga Del Norte on the night of 17th July. He was guarded by <b>Ricardo Carcinero</b>, the politico-military governor of Dapitan, in a streamer named <i>Cebu</i>.</p>
 
-                    <h4>Section 2: Title Definition</h4>
-                    <p>This act shall be known as the “Magna Carta for Public School Teachers” and shall apply to public school teachers except those in the professional staff of state colleges and universities.</p>
+                    <div class="content-art">
+                        <img style="top: -100px;" src="https://live.staticflickr.com/2262/5724606115_f010145647_b.jpg" alt="">
+                    </div>
+                    <p class="subtitle">Photo by <a href="https://www.flickr.com/photos/rgregidor/5724606115">Ryan Regidor</a>.</p>
+
+                    <p>Opposite to Rizal’s expectations, Carcinero and Spanish guards treated him with utmost modesty and respect. And on the same night, he met two friars named <b>Fr. Antonio Obach</b> and <b>Fr. Pablo Pastells</b>.</p>
+
+                    <p>Fr. Obach gave Rizal choices where he would stay: (1) stay at the house of Carcinero or (2) stay at the convent with Fr. Obach and the priests. However, Fr. Obach had conditions for Rizal to stay at the convent with the priests. That is, Rizal must</p>
+
+                    <ul>
+                        <li>publicly retract his errors concerning religion,</li>
+                        <li>perform church rites and confess his past life, and</li>
+                        <li>conduct himself in an exemplary manner as a Spanish subject and a man of religion.</li>
+                    </ul>
+
                     <div class="question-container">
                         <div class="ribbon"></div>
                         <div class="question">
-                            <h4 onclick="toggleQuestion(event, 'Q2')">Under this Act, what do we mean by a 'teacher'?</h4>
-                            <div id="Q2" class="content">
-                                <p>
-                                    The term <b>“teacher”</b> shall mean all personnel engaged in classroom teaching, at any level, on a full-time basis (including guidance counselors, school librarians, industrial arts or vocational instructors, supervisors, administrators, etc.) but shall not include school nurses, school physicians, school dentists, and other school employees.
-                                </p>
+                            <h4>What did Rizal chose?</h4>
+                            <div class="question-content">
+                                <p>Rizal chose to stay with Carcinero. Allegedly, Rizal and Carcinero both enjoyed the company of one another as Carcinero treated Rizal more like a visitor than a captive. He even allowed Rizal to move freely inside the Dapitan.</p>
                             </div>
                         </div>
                     </div>
 
                 </div>
 
-                <div id="chapter 2" class="content-text">
+                <div class="content-text">
 
-                    <h2>II. Recruitment and Career</h2>
+                    <h2>II. Rizal and Dapitan</h2>
                     
-                    <h4>Section 3. Recruitment and Qualification</h4>
-                    <p>
-                        With respect to DepEd’s existing recruitment policy, the following shall constitute the minimum education qualifications for teacher applicants:
-                    </p>
-                    <table>
-                        <tr>
-                            <th>Sector</th>
-                            <th>Minimum Requirement(s)</th>
-                        </tr>
-                        <tr>
-                            <td>Kindergartens and Elementary Grades</td>
-                            <td>
-                                <ul>
-                                    <li>Bachelor’s degree in Elementary Education</li>
-                                </ul> 
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>Secondary</td>
-                            <td>
-                                <ul>
-                                    <li>Bachelor’s degree in Education or its equivalent</li>
-                                    <li>Bachelor’s degree in Arts or Science with at least 18 professional units in Education</li>
-                                </ul>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>Secondary Vocational (and 2 Year Technical Courses)</td>
-                            <td>
-                                <ul>
-                                    <li>Bachelor’s degree in the field of specialization with at least 18 professional units in Education</li>
-                                </ul>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>Collegiate Levels</td>
-                            <td>
-                                <ul>
-                                    <li>Master’s Degree with the specific area of specialization</li>
-                                </ul>
-                            </td>
-                        </tr>
-                    </table>
-                    <p>
-                        In certain cases, the school superintendent may appoint–on temporary status–a teacher during the absence of eligible applicants.
-                    </p>
-                    <p>
-                        Moreover, all applicants are mandated to take competitive examinations in which preference in hiring is affected by their respective ranks in the examination.
-                    </p>
+                    <p>On September 21, Rizal won a PHP 20,000 lottery together with Carcinero. His portion amounts to PHP 6,200, which he used to buy land in barangay Talisay, where Rizal built a house, a school, and an eye clinic.</p>
 
-                    <h4>Section 4. Probationary Period</h4>
-                    <p>
-                        Hired teachers who possess the minimum educational qualifications, but lack the appropriate civil service eligibility, are put into provisional status for a year or so.
-                    </p>
+                    <p>Soon, Rizal had many visitors in Dapitan, one of which was <b>George Taufer</b>—who had problems with his eyesight and had an appointment with Rizal—with his eighteen-year-old adopted daughter <b>Josephine Bracken</b> who came along.</p>
 
-                    <h4>Section 5. Tenure of Office</h4>
-                    <p>
-                        Stability on employment and security of tenure shall be assured the teachers as provided under existing laws.
-                    </p>
-                    <p>
-                        Moreover, a teacher with provisional status shall be held in an extended permanent status if the teacher rendered at least 10 years of continuous, efficient, and faithful service in the position.
-                    </p>
+                    <div class="content-art">
+                        <img style="top: -100px" src="https://i.pinimg.com/564x/7e/b3/51/7eb35102cc03119316ca0aa1f20963b7.jpg" alt="">
+                    </div>
+                    <p class="subtitle">Photo from <a href="http://senorenrique.blogspot.com/2006_12_01_archive.html">senorenrique.blogspot.com</a>.</p>
 
-                    <h4>Section 6. Consent for Transfer Transportation Expenses</h4>
-                    <p class="cite">“No teacher shall be transferred without his consent from one station to another.”</p>
-                    <p>
-                        The teacher subject to an unjustified transfer can appeal his/her case to the Director of Public Schools or the Director of Vocational Education. If the pending case is approved, the transfer is rejected.
-                    </p>
-                    <p>
-                        Transfers in the three months before any local or national election are not allowed.
-                    </p>
-                    <p>
-                        The Government covers the necessary transfer expenses of the teacher and his/her family if the transfer is approved.
-                    </p>
+                    <p>During that time, Rizal had a relationship with Josephine Bracken, even wanting to get married only to get opposed by Fr. Obach. Defiant, Obach once again insists Rizal retract his beliefs and confess his errors. Despite that, the couple considered themselves official. The couple even had a son, who soon died because the infant was born prematurely.</p>
 
-                    <h4>Section 7. Code of Professional Conduct for Teachers</h4>
-                    <p>
-                        Each teacher must have an available copy of the Code of Professional Conduct for Teachers. Alternatively, the office of the school principal or head teacher must hold copies of the Code where they may be accessible to teachers.
-                    </p>
-
-                    <h4>Section 8. Safeguards in Disciplinary Procedure</h4>
-                    <p>
-                        Teachers subject to any disciplinary procedure shall have
-                    </p>
-                    <ul>
-                        <li>the right to be informed, in writing, of the charges;</li>
-                        <li>the right to full access to the evidence in the case;</li>
-                        <li>the right to defend oneself and to be defended by a representative of his choice and/or by his organization</li>
-                        <li>the right to appeal to designated authorities</li>
-                    </ul>
-                    <p>
-                        Moreover, no publicity shall be imposed against a teacher during the pendency of the case.
-                    </p>
-                    
-                    <h4>Section 9. Administrative Charges</h4>
-                    <p>
-                        Formal administrative charges against a teacher shall go first on the committee of the School Superintendent of the Division or duly authorized eligible parties in the division where the teacher belongs. The responsible authorities will formulate recommendations  to the Director of Public Schools.
-                    </p>
-
-                    <h4>Section 10. No Discrimination</h4>
-                    <p class="cite">
-                        “There shall be no discrimination whatsoever in the entrance to the teaching profession, or during its exercise, or in the termination of services, based on other than professional consideration.”
-                    </p>
-
-                    <h4>Section 11. Married Teachers</h4>
-                    <p class="cite">
-                        “Whenever possible, the proper authorities shall take all steps to enable married couples, both of whom are public school teachers, to be employed in the same locality.”
-                    </p>
-
-                    <h4>Section 12. Academic Freedom</h4>
-                    <p class="cite">
-                        “Teachers shall enjoy academic freedom in the discharge of their professional duties, particularly with regard to teaching and classroom methods.”
-                    </p>
+                    <p>Rizal’s affection for Bracken was pretty obvious. However, Rizal’s relatives and friends distrust Josephine, suspiciously thinking that she might be a spy from the Spanish government.</p>
 
                 </div>
 
-                <div id="chapter 3" class="content-text">
+                <div class="content-text">
 
-                    <h2>III. Hours of Work and Renumeration</h2>
+                    <h2>III. Founding of Katipunan</h2>
+
+                    <div class="content-art">
+                        <img style="top: -50px" src="https://2.bp.blogspot.com/-cbJO2nzdVGo/XDro1B7EGhI/AAAAAAAAOM0/QM8VkwGL4wQ6Fa0rgNE0u_wSFPgcrGC1QCLcBGAs/s1600/Screen%2BShot%2B2019-01-13%2Bat%2B3.26.38%2BPM.png" alt="">
+                    </div>
+                    <p class="subtitle">Photo from <a href="https://piovalenzuela150.blogspot.com/2019/01/">piovalenzuela150.blogspot.com</a>.</p>
+
                     
-                    <h4>Section 13. Teaching Hours</h4>
-                    <p>
-                        Actual classroom instruction shall not be required to be more than six hours a day for the teacher to have time for preparation, correction of student’s works, and other work incidentals to the teaching duty.
-                    </p>
-                    <p>
-                        Exigencies of service may require the teacher to render more than six hours a day, but not exceeding eight hours, of classroom instruction.
-                    </p>
+                    <p>Soon, maybe far later, another visitor was Pio Valenzuela—an emissary of Andres Bonifacio—telling Rizal about the founding of Katipunan and asking for advice on how to launch a revolution.</p>
 
-                    <h4>Section 14. Additional Compensation</h4>
-                    <p>
-                        Additional compensation is given to teachers engaging in co-curricular and out-of-school activities and any other activities outside of the normal duties of any teacher. The additional compensation is equivalent to at least 25% of his/her regular remuneration.
-                    </p>
                     <div class="question-container">
                         <div class="ribbon"></div>
                         <div class="question">
-                            <h4 onclick="toggleQuestion(event, 'Q3')">Remuneration?</h4>
-                            <div id="Q3" class="content">
-                                <p>
-                                    <b>Remuneration</b> is just the fancy term for salary or the compensation you gain on a job.
-                                </p>
+                            <h4>What was Rizal's response?</h4>
+                            <div class="question-content">
+                                <p>With cadency, Rizal outspokenly objected to the idea of the revolution for the reason of</p>
+                                <ul>
+                                    <li>the Filipino people lacked preparedness for such a devastating revolution, and</li>
+                                    <li>the Katipunan lacked weaponry—considering how large the Spanish military strength.</li>
+                                </ul>
+                                <p>Rizal also warned that many innocents would die, giving them an insight into the possible consequences of the revolution.</p>
                             </div>
                         </div>
                     </div>
-                    <p>
-                        In the case of those teachers and school officials not engaged in actual classroom instruction, they gain compensation of 25% of their regular remuneration on the excess of 8 work hours.
-                    </p>
-                    <p>
-                        In alignment with this section, other agencies utilizing the services of teachers shall pay the additional compensation required.
-                    </p>
-
-                    <h4>Section 15. Criteria for Salaries</h4>
-                    <p>Teacher salaries shall correspond to the following criteria:</p>
-                    <ul>
-                        <li>they shall compare favorably with those paid in other occupations requiring equivalent or similar qualifications, training, and abilities;</li>
-                        <li>they shall be such as to insure teachers a reasonable standard of life for themselves and their families; and</li>
-                        <li>they shall be properly graded so as to recognize the fact that certain positions require higher qualifications and greater responsibility than others.</li>
-                    </ul>
-                    
-                     
-                    <h4>Section 16. Salary Scale</h4>
-                    <p>
-                        If the teacher’s efficiency rating is at least satisfactory, the teacher’s salary will follow a gradual progression by means of regular increments, granted automatically after three years.
-                    </p>
-                    
-                    <h4>Section 17. Equality in Salary Scales</h4>
-                    <p>
-                        Teachers’ salary scales managed by the municipal or provincial government shall not be less than the provided by the National Government.
-                    </p>
-                    
-                    <h4>Section 18. Cost of Living Allowance</h4>
-                    <p class="cite">
-                        “Teacher's salaries shall, at the very least, keep pace with the rise in the cost of living by the payment of a cost-of-living allowance.”
-                    </p>
-                    <p>
-                        Annually, the Secretary of Education shall recommend to Congress the appropriation of the necessary funds for the cost-of-living allowances of teachers employed by the National Government.
-                    </p>
-
-                    <h4>Section 19. Special Hardship Allowances</h4>
-                    <p>
-                        Teachers subject to hardship such as difficulty commuting to the place of work or other hazards present to the place of employment shall be compensated special hardship allowances equivalent to at least 25% of their monthly salary.
-                    </p>
-                    
-                    <h4>Section 20. Salaries to be Paid in Legal Tender</h4>
-                    <p>
-                        Salaries of teachers shall be paid corresponding to the Philippine currency or its equivalent in checks or treasury warrants.
-                    </p>
-                    
-                    <h4>Section 21. Deductions Prohibited</h4>
-                    <p>Salaries of teachers are not deductible whatsoever except</p>
-                    <ul>
-                        <li>lawful dues and fees owing to the Philippine Public School Teacher Association, and</li>
-                        <li>premiums property due on insurance policies.</li>
-                    </ul>
                     
                 </div>
 
-                <div id="chapter 4" class="content-text">
+                <div class="content-text">
 
-                    <h2>IV. Health Measures and Injury Benefits</h2>
+                    <h2>IV. Farewell to Dapitan</h2>
 
-                    <h4>Section 22. Medical Examination and Treatment</h4>
-                    <p>
-                        Teachers are mandated to have a free-of-charge medical examination before they take up teaching, repeating annually. Medical examinations requiring medical treatment and/or hospitalization are provided free by the government entity responsible.
-                    </p>
-                    <p>
-                        Teachers may also take necessary medical care with the right to be repaid for their traveling expenses if the facility is reasonably distant.
-                    </p>
+                    <p>On July 31, 1896, Rizal left Dapitan and soon arrived in Manila to supposedly go overseas once again. His trip, however, was continuously, suspiciously delayed.</p>
 
-                    <h4>Section 23. Compensation for Injuries </h4>
-                    <p>
-                        Teachers shall be protected against employment injuries (including physical and nervous strain) and shall be recognized as compensable in accordance with existing laws.
-                    </p>
-                    
-                </div>
+                    <div class="content-art">
+                        <img src="https://philippinefolklifemuseum.org/wp-content/uploads/Bonifacio-Cry_of_Pugadlawin-1896.jpg" alt="">
+                    </div>
+                    <p class="subtitle">Photo from <a href="https://philippinefolklifemuseum.org/portfolio-items/andres-bonifacio/attachment/bonifacio-cry_of_pugadlawin-1896/">Philippine Folklife Museum Foundation</a>.</p>
 
-                <div id="chapter 5" class="content-text">
+                    <p>Weeks later, on August 26 of the same year, Bonifacio and the Katipunan raised the <b>Cry of Revolution</b> (<i>Sigaw sa Pugadlawin</i>) in the hills of Balintawak. Soon, governor-general Ramon Blanco declared a "state of war" in the provinces of Manila, Bulacan, Cavite, Pampanga, Tarlac, Laguna, Batangas, and Nueva Ecija and place them under martial law.</p>
 
-                    <h2>V. Leave and Retirement Benefits</h2>
-
-                    <h4>Section 24. Study Leave</h4>
-                    <p>
-                        Teachers shall be entitled to study leave in accordance with the school calendar not exceeding one school year after seven years of service.
-                    </p>
-                    <p>
-                        During the leave, teachers can get at least 60% of their monthly salary for a year. This can extend if and only if the teacher needs an additional semester to finish his thesis for a graduate study in education or allied courses.
-                    </p>
-                    <p>
-                        The teacher must take the regular study load and pass at least 70% of his courses in order to gain his/her compensation.
-                    </p>
-
-                    <h4>Section 25. Indefinite Leave</h4>
-                    <p class="cite">
-                        “An indefinite sick leave of absence shall be granted to teachers when the nature of the illness demands a long treatment that will exceed one year at the least.”
-                    </p>
-
-                    <h4>Section 26. Salary Increase Upon Retirement</h4>
-                    <p>
-                        Teachers of eligible retirement age who fulfilled the minimum service years shall be given one range salary raise upon retirement, which becomes the basis for the sum of the retirement pay and the monthly benefits thereafter.
-                    </p>
-
-                </div>
-
-                <div id="chapter 6" class="content-text">
-
-                    <h2>VI. Teacher's Organization</h2>
-
-                    <h4>Section 27. Freedom to Organize</h4>
-                    <p>
-                        Teachers has the right to establish and join organizations of their choosing, local or national, to defend their interests.
-                    </p>
-
-                    <h4>Section 28. Discrimination Against Teachers Prohibited</h4>
-                    <p>
-                        It shall be unlawful for any person to commit any acts of discrimination or dismissal against teachers because of his membership or participation in an organization.
-                    </p>
-
-                    <h4>Section 29. National Teacher’s Organization</h4>
-                    <p>
-                        National teachers' organizations must follow national educational policies and professional standards.
-                    </p>
+                    <p>By that, Rizal was stuck in Manila as he received letters that had charged him as one of the perpetrators of the raging revolution.</p>
 
                 </div>
 
             </div>
 
-            <div id="references" class="tab-content" style="grid-template-columns: 1fr;">
+            <div class="tab-content">
 
                 <div class="content-text">
                     <h2>References</h2>
                     <ul>
                         <li>
-                            Republic Act No. 4670. (n.d.). Retrieved October 8, 2022, from <span class="word-break-wrap">https://lawphil.net/statutes/repacts/ra1966/ra_4670_1966.html</span>
+                            Cabañero, M. (2021, April 18). <i>RIZAL’S EXILE, ARREST, AND EXECUTION [Video]</i>. YouTube. Retrieved from: <span class="word-break-wrap">https://www.youtube.com/watch?v=HVPPe8FaSRQ&feature=youtu.be</span> 
+                        </li>
+                        <li>
+                            Guerrero, L. M., & Quirino, C. (2020). <i>The First Filipino: A Biography of José Rizal</i>. Anvil History.
+                        </li>
+                        <li>
+                            <i>Jose Rizal: Persecution and Exile in Dapitan - Wikipilipinas</i>. (n.d.). Retrieved from: 
+                            <span class="word-break-wrap">https://en.wikipilipinas.org/view/Jose_Rizal:_Persecution_and_Exile_in_Dapitan</span> 
                         </li>
                     </ul>
                 </div>
@@ -415,7 +250,7 @@
         </section>
 
         <footer>
-            This webpage is a part of our requirement in the subject <b>The Teaching Profession</b> presented by <b>Mr. Joren C. Langbid</b> and <b>Ms. Nicole Rhadlee Hardee</b>. You can contact us using this email <u>jorenlangbid2223@gmail.com</u> for queries, suggestions, corrections, and other concerns.
+            This webpage is a part of our requirement in the subject <b>Life and Works of Rizal</b> presented by <b>Mr. Joren C. Langbid</b> and <b>Mr. Daniel Andres Bacan</b>. You can contact us using this email <u>jorenlangbid2223@gmail.com</u> for queries, suggestions, corrections, and other concerns.
         </footer>
 
     </div>

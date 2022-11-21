@@ -31,7 +31,11 @@ body::after {
 }
 
 ul li, ol li {
-    margin: 8px;
+    margin: 8px 0;
+}
+
+table {
+    margin: 16px 0;
 }
 
 .cite {
@@ -52,7 +56,7 @@ ul li, ol li {
 
 table {
     border-collapse: collapse;
-    font-size: 0.85em;
+    font-size: 0.9em;
     width: 100%;
 }
 
@@ -99,16 +103,16 @@ nav {
 
 .nav-tab {
     display: block;
+    flex: 1;
     background-color: transparent;
-    float: left;
     outline: none;
     cursor: pointer;
     border: none;
     padding: 8px 14px;
     transition: 0.3s;
-    letter-spacing: 2.5px;
+    letter-spacing: 2px;
     color: white;
-    font-size: 16px;
+    font-size: 0.9em;
     font-family: inherit;
 }
 
@@ -126,10 +130,11 @@ nav {
 
 .title {
     margin: 20px 0;
+    line-height: 125%;
 }
 
 .title .l0rge {
-    font-size: 1.75em;
+    font-size: 1.5em;
 }
 
 .school-header {
@@ -138,23 +143,22 @@ nav {
     align-items: center;
 }
 
-.school-header div {
-    margin: 0 15px;
-}
-
 .school-header div img {
-    width: 50px;
-    height: 50px;
+    height: 60px;
 }
 
-.school-header h4:last-of-type {
-    margin-left: auto;
+.school-header div:nth-child(2) {
+    margin-left: 1em;
+    flex: 1;
+}
+
+.school-header div:last-of-type {
+    text-align: end;
 }
 
 /** TAB CONTENTS **/
 
 .tab-content {
-    display: none;
     grid-template-columns: 1fr;
     padding: 3vw;
     gap: 2vh;
@@ -162,29 +166,28 @@ nav {
     grid-template-rows: auto;
 }
 
-.tab-content .content-text {
-    padding: 0 1vw 0 2vw;
+.structured-content {
+    grid-template-columns: 3fr 10fr;
+    gap: 1vw;
 }
 
-.tab-content .content-art {
-    background: url("https://www.humanium.org/en/wp-content/uploads/2021/10/shutterstock_1503499058-scaled.jpg");
-    background-size: cover;
-    background-position: center;
-    min-height: 200px;
-    max-height: 400px;
+.content-text {
+    padding: 0 2vw;
 }
 
-.tab-content .content-art img {
-    display: block;
+.content-art {
+    margin: 10px 0;
+    height: 30vh;
+    overflow: hidden;
+}
+
+.content-art img {
+    position: relative;
+    top: -50px;
     width: 100%;
 }
 
 /** TAB CONTENT NAV **/
-
-#content {
-    grid-template-columns: 1fr 3fr;
-    gap: 1vw;
-}
 
 .content-nav {
     position: relative;
@@ -206,7 +209,7 @@ nav {
     padding: 8px 10px;
     transition: 0.3s;
     color: white;
-    font-size: 16px;
+    font-size: 0.9em;
     font-family: inherit;
 }
 
@@ -223,9 +226,15 @@ nav {
 /** FOOTER **/
 
 footer {
-    font-size: 0.8em;
+    font-size: 0.9em;
     padding: 25px 25px 0 25px;
     color: #666;
+}
+
+.subtitle {
+    font-size: 0.8em;
+    margin: 8px 0;
+    color: #444;
 }
 
 /** QUESTION **/
@@ -250,7 +259,6 @@ footer {
     margin: 0;
     padding: calc(2px + 1vw) calc(2px + 1.5vw);
     border-bottom: #BBB 1px solid;
-    font-size: 0.9em;
     font-style: italic;
 }
 
@@ -259,29 +267,22 @@ footer {
     cursor: pointer;
 }
 
-.question-container .question .content {
+.question-container .question .question-content {
     padding: 0 calc(2px + 1.5vw);
-    display: none;
+    -webkit-transition: transform 0.5s ease-out;
+    -moz-transition: transform 0.5s ease-out;
+    -ms-transition: transform 0.5s ease-out;
+    transition: transform 0.5s ease-out;
 }
 
 .question-container p, .question-container ul li {
-    font-size: 0.85em;
-    color: #444;
+    font-size: 0.9em;
 }
 
-@media screen and (max-width: 850px) {
-
-    body {
-        font-size: 14px;
-    }
-
-    h1, h2, h3, h4, h5, h6, p {
-        margin: 8px 0;
-    }
-    
+@media screen and (max-width: 750px) {
 
     .wrapper-body{
-        margin: 0 5vw;
+        margin: 0;
     }
 
     .school-header {
@@ -289,17 +290,11 @@ footer {
         flex-direction: column;
     }
 
-    .school-header h4 {
-        margin: 5px 0;
-    }
-
-    .title {
-        font-size: 1em;
-        margin: 14px 0;
+    .school-header div {
+        margin: 0 !important; 
     }
 
     .nav-tab {
-        font-size: 10px;
         letter-spacing: 1px;
         font-family: inherit;
         padding: 6px 8px;
@@ -309,23 +304,24 @@ footer {
         padding-inline-start: 20px;
     }
 
-    #content {
+    .structured-content {
         grid-template-columns: 1fr;
     }
 
     .content-nav {
-        position:relative;
+        position: relative;
         left: -3vw;
-        width: calc(100% + 6vw);
+        min-width: calc(100% + 6vw);
         padding: 0 6vw;
         max-height: 250px;
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+        display: flex;
+        flex-direction: row;
     }
 
     .content-nav .content-nav-tab {
-        padding: 16px 0px;
-        font-size: calc(10px + 1vw);
+        padding: 16px 10px;
+        flex: 1;
+        font-size: 1em;
         font-weight: bold;
         text-transform: uppercase;
     }
@@ -334,4 +330,28 @@ footer {
         display: none;
     }
 
+}
+
+@media screen and (max-width: 858px) {
+    body {
+        font-size: 18px;
+    }
+}
+ 
+@media screen and (max-width: 780px) {
+    body {
+        font-size: 16px;
+    }
+}
+ 
+@media screen and (max-width: 702px) {
+    body {
+        font-size: 14px;
+    }
+}
+ 
+@media screen and (max-width: 624px) {
+    body {
+        font-size: 12px;
+    }
 }

@@ -1,6 +1,6 @@
 <!--
 
-    Created by Joren Langbid, SEM02A
+    Created by Joren Langbid
     Systems Plus College Foundation
     April 2022
 
@@ -9,9 +9,6 @@
     palette that are used in this page.
 
     Resources:
-
-        Image in `About` by nadia_bormotov from https://www.istockphoto.com/vector/bullying-pointing-fingers-haters-crowd-sad-character-hugging-his-knees-aggression-gm1177131449-328499899
-        Color Pallete: https://www.color-hex.com/color-palette/1011553
 
 -->
 
@@ -33,6 +30,8 @@
 
     </style>
 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+
 </head>
 <body>
 
@@ -41,27 +40,33 @@
         <header>
 
             <div class="school-header">
+                
                 <div>
-                    <img src="../images/spcf-logo.png" alt="SPCF Logo">
-                    <img src="../images/cassed-logo.png" alt="CASSED Logo">
+                    <img src="../_images/spcf-logo.png" alt="SPCF Logo">
+                    <img src="../_images/cassed-logo.png" alt="CASSED Logo">
                 </div>
-                <h4>Systems Plus College Foundation<br>College of Social Sciences and Education</h4>
-                <h4>April 2022</h4>
+                <div>
+                    <h4>Systems Plus College Foundation<br>College of Social Sciences and Education</h4>
+                </div>
+                <div>
+                    <h4>April 2022</h4>
+                </div>
+                
             </div>
             <hr>
             <h2 class="title"><span class="l0rge">Republic Act 10627</span><br>The Anti-Bullying Act of 2013</h2>
             <nav>
-                <button class="nav-tab" onclick="chooseTab(event, 'objectives')">OBJECTIVES</button>
-                <button class="nav-tab" onclick="chooseTab(event, 'about')">ABOUT</button>
-                <button class="nav-tab" onclick="chooseTab(event, 'content')">CONTENT</button>
-                <button class="nav-tab" onclick="chooseTab(event, 'references')">REFERENCES</button>
+                <button class="nav-tab">OBJECTIVES</button>
+                <button class="nav-tab">ABOUT</button>
+                <button class="nav-tab">CONTENT</button>
+                <button class="nav-tab">REFERENCES</button>
             </nav>
 
         </header>
 
         <section>
 
-            <div id="objectives" class="tab-content" style="grid-template-columns: 1fr;">
+            <div class="tab-content">
                 <div class="content-text">
                     <h1>Objectives</h1>
                     <p>The objectives of this lesson are as follows:</p>
@@ -73,20 +78,28 @@
                     <p>Note that this written report will only tackle the first six (6) sections under the Act.</p>
                 </div>
             </div>
-            <div id="about" class="tab-content">
-                <div class="content-art"></div>
+
+            <div class="tab-content">
                 <div class="content-text">
+
+                    <div class="content-art">
+                        <img src="https://www.humanium.org/en/wp-content/uploads/2021/10/shutterstock_1503499058-scaled.jpg" alt="">
+                    </div>
+                    <p class="subtitle">Image from <a href="https://www.humanium.org/en/school-bullying/">Humanism.org</a>.</p>
+
                     <h1>Republic Act 10627</h1>
                     <p>The <b>Republic Act 10627</b>, much known as the <b>Anti-Bullying Act of 2013</b>, is “an act requiring all elementary and secondary schools to adopt policies to prevent and address the acts of bullying in their institutions” (Official Gazette of the Republic of the Philippines, 2013). In the Implementing Rules and Regulations of the RA 10627, the Act now covers institutions that include private and public kindergarten schools and learning centers.</p>
+                    
                     <div class="question-container">
                         <div class="ribbon"></div>
                         <div class="question">
-                            <h4 onclick="toggleQuestion(event, 'Q1')">Question to Ponder:</h4>
-                            <div id="Q1" class="content">
+                            <h4>Question to Ponder:</h4>
+                            <div class="question-content">
                                 <p>Why do we need the "Anti-Bullying Act of 2013" if schools can just devise their own policies to address bullying?</p>
                             </div>
                         </div>
                     </div>
+
                     <p>The Anti-Bullying Act of 2013 pairs up with the DepEd Order No. 40, S. 2012 or the Child Protection Policy in protecting and safeguarding the children and their rights against the adverse effects of bullying.</p>
                 </div>
             </div>
@@ -94,12 +107,12 @@
             <div id="content" class="tab-content">
 
                 <div class="content-nav">
-                    <button class="content-nav-tab" onclick="chooseContentTab(event, 'section 1')">Section 1</button>
-                    <button class="content-nav-tab" onclick="chooseContentTab(event, 'section 2')">Section 2</button>
-                    <button class="content-nav-tab" onclick="chooseContentTab(event, 'section 3')">Section 3</button>
-                    <button class="content-nav-tab" onclick="chooseContentTab(event, 'section 4')">Section 4</button>
-                    <button class="content-nav-tab" onclick="chooseContentTab(event, 'section 5')">Section 5</button>
-                    <button class="content-nav-tab" onclick="chooseContentTab(event, 'section 6')">Section 6</button>
+                    <button class="content-nav-tab" onclick="chooseContentTab(event, 'section 1')"><span class="media-hide">Section</span> 1</button>
+                    <button class="content-nav-tab" onclick="chooseContentTab(event, 'section 2')"><span class="media-hide">Section</span> 2</button>
+                    <button class="content-nav-tab" onclick="chooseContentTab(event, 'section 3')"><span class="media-hide">Section</span> 3</button>
+                    <button class="content-nav-tab" onclick="chooseContentTab(event, 'section 4')"><span class="media-hide">Section</span> 4</button>
+                    <button class="content-nav-tab" onclick="chooseContentTab(event, 'section 5')"><span class="media-hide">Section</span> 5</button>
+                    <button class="content-nav-tab" onclick="chooseContentTab(event, 'section 6')"><span class="media-hide">Section</span> 6</button>
                 </div>
 
                 <div id="section 1" class="content-text">
@@ -121,8 +134,8 @@
                     <div class="question-container">
                         <div class="ribbon"></div>
                         <div class="question">
-                            <h4 onclick="toggleQuestion(event, 'Q2')">Question to Ponder:</h4>
-                            <div id="Q2" class="content">
+                            <h4>Question to Ponder:</h4>
+                            <div class="question-content">
                                 <p>Does disagreement between two students considered an act of bullying?</p>
                             </div>
                         </div>
@@ -141,8 +154,8 @@
                     <div class="question-container">
                         <div class="ribbon"></div>
                         <div class="question">
-                            <h4 onclick="toggleQuestion(event, 'Q3')">Question to Ponder:</h4>
-                            <div id="Q3" class="content">
+                            <h4>Question to Ponder:</h4>
+                            <div class="question-content">
                                 <p>Consider the following situations:</p>
                                 <ul>
                                     <li>Alex hits Andrei's shoulder by fist. Andrei almost stumbles to the ground, yet the two laugh down the hallway.</li>
@@ -163,7 +176,7 @@
 
                 </div>
 
-                <div id="section 3" class="content-text">
+                <div class="content-text">
 
                     <h2>Section 3: Schools toward Bullying</h2>
                     <p>Section 3 of the RA 10627 covers the adoption of educational institutions toward the policies that address bullying. The policies shall include provisions that can be divided into eight subsections (3A-3H): </p>
@@ -212,7 +225,7 @@
 
                 </div>
 
-                <div id="section 4" class="content-text">
+                <div class="content-text">
 
                     <h2>Section 4: Addressing Bullying Policies</h2>
                     <p>Schools are held accountable for putting in place and maintaining anti-bullying measures. Any instance of bullying or retribution witnessed by school personnel and administrators, students, parents, and volunteers should be immediately reported to the school administration or officers responsible. The school will investigate as soon as it receives the information. If the bullying has been confirmed, the school must take the steps outlined in the sections below:
@@ -225,14 +238,14 @@
                     </ol>
                 </div>
 
-                <div id="section 5" class="content-text">
+                <div class="content-text">
 
                     <h2>Section 5: Reporting Requirements</h2>
                     <p>This section maintains schools to mandate and implement anti-bullying policies provided that they should inform the school division superintendents. Additionally, at the beginning of each school year, schools shall submit all relevant information and statistics on acts of bullying and retaliation.</p>
 
                 </div>
 
-                <div id="section 6" class="content-text">
+                <div class="content-text">
 
                     <h2>Section 6: Sanction for Noncompliance</h2>
                     <p>If a school administrator fails to comply with the requirements of this act, the Secretary of the Department of Education shall pursue appropriate administrative actions.</p>

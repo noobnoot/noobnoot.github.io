@@ -1,6 +1,6 @@
 <!--
 
-    Created by Joren Langbid, SEM02A
+    Created by Joren Langbid
     Systems Plus College Foundation
     April 2022
 
@@ -9,9 +9,6 @@
     palette that are used in this page.
 
     Resources:
-
-        Image in `About` by nadia_bormotov from https://www.istockphoto.com/vector/bullying-pointing-fingers-haters-crowd-sad-character-hugging-his-knees-aggression-gm1177131449-328499899
-        Color Pallete: https://www.color-hex.com/color-palette/1011553
 
 -->
 
@@ -34,6 +31,8 @@
 
     </style>
 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+
 </head>
 <body>
 
@@ -43,11 +42,15 @@
 
             <div class="school-header">
                 <div>
-                    <img src="../images/spcf-logo.png" alt="SPCF Logo">
-                    <img src="../images/cassed-logo.png" alt="CASSED Logo">
+                    <img src="../_images/spcf-logo.png" alt="SPCF Logo">
+                    <img src="../_images/cassed-logo.png" alt="CASSED Logo">
                 </div>
-                <h4>Systems Plus College Foundation<br>College of Social Sciences and Education</h4>
-                <h4>October 2022</h4>
+                <div>
+                    <h4>Systems Plus College Foundation<br>College of Social Sciences and Education</h4>
+                </div>
+                <div>
+                    <h4>April 2022</h4>
+                </div>
             </div>
 
             <hr>
@@ -55,30 +58,28 @@
             <h2 class="title"><span class="l0rge">Republic Act 4670</span><br>The Magna Carta for Public School Teachers</h2>
 
             <nav>
-                <button class="nav-tab" onclick="chooseTab(event, 'introduction')">INTRODUCTION</button>
-                <button class="nav-tab" onclick="chooseTab(event, 'content')">CONTENT</button>
-                <button class="nav-tab" onclick="chooseTab(event, 'references')">REFERENCES</button>
+                <button class="nav-tab">INTRODUCTION</button>
+                <button class="nav-tab">CONTENT</button>
+                <button class="nav-tab">REFERENCES</button>
             </nav>
 
         </header>
 
         <section>
 
-            <div id="introduction" class="tab-content" style="grid-template-columns: 1fr;">
+            <div id="introduction" class="tab-content">
 
                 <div class="content-text">
 
                     <h1>Introduction</h1>
-
                     <p>
                         The <b>Magna Carta for Public School Teachers</b>, also known as <b>Republic Act No. 4670</b>, outlines the professional rights and protections that our public school teachers are entitled to in light of the demands and degree of difficulty involved in their profession. It was approved in <b>1966</b> and composed of 7 chapters and 35 sections.
                     </p>
-
                     <div class="question-container">
                         <div class="ribbon"></div>
                         <div class="question">
-                            <h4 onclick="toggleQuestion(event, 'Q1')">Hold on. What is the Magna Carta?</h4>
-                            <div id="Q1" class="content">
+                            <h4>Hold on. What is the Magna Carta?</h4>
+                            <div class="question-content">
                                 <p><b>Magna Carta</b>, which means <b>'The Great Charter,’</b> is legal writing that establishes the rights and privileges of an entity.</p>
                                 <p>The term came from Europe when King John of England signed a charter of liberties as a countermeasure to the threat of civil war.</p>
                             </div>
@@ -89,15 +90,15 @@
 
             </div>
 
-            <div id="content" class="tab-content">
+            <div id="content" class="tab-content structured-content">
 
                 <div class="content-nav">
-                    <button class="content-nav-tab" onclick="chooseContentTab(event, 'chapter 1')"><span class="media-hide">Chapter</span> I</button>
-                    <button class="content-nav-tab" onclick="chooseContentTab(event, 'chapter 2')"><span class="media-hide">Chapter</span> II</button>
-                    <button class="content-nav-tab" onclick="chooseContentTab(event, 'chapter 3')"><span class="media-hide">Chapter</span> III</button>
-                    <button class="content-nav-tab" onclick="chooseContentTab(event, 'chapter 4')"><span class="media-hide">Chapter</span> IV</button>
-                    <button class="content-nav-tab" onclick="chooseContentTab(event, 'chapter 5')"><span class="media-hide">Chapter</span> V</button>
-                    <button class="content-nav-tab" onclick="chooseContentTab(event, 'chapter 6')"><span class="media-hide">Chapter</span> VI</button>
+                    <button class="content-nav-tab"><span class="media-hide">Chapter</span> I</button>
+                    <button class="content-nav-tab"><span class="media-hide">Chapter</span> II</button>
+                    <button class="content-nav-tab"><span class="media-hide">Chapter</span> III</button>
+                    <button class="content-nav-tab"><span class="media-hide">Chapter</span> IV</button>
+                    <button class="content-nav-tab"><span class="media-hide">Chapter</span> V</button>
+                    <button class="content-nav-tab"><span class="media-hide">Chapter</span> VI</button>
                 </div>
 
                 <div id="chapter 1" class="content-text">
@@ -116,11 +117,12 @@
 
                     <h4>Section 2: Title Definition</h4>
                     <p>This act shall be known as the “Magna Carta for Public School Teachers” and shall apply to public school teachers except those in the professional staff of state colleges and universities.</p>
+
                     <div class="question-container">
                         <div class="ribbon"></div>
                         <div class="question">
-                            <h4 onclick="toggleQuestion(event, 'Q2')">Under this Act, what do we mean by a 'teacher'?</h4>
-                            <div id="Q2" class="content">
+                            <h4>Under this Act, what do we mean by a 'teacher'?</h4>
+                            <div class="question-content">
                                 <p>
                                     The term <b>“teacher”</b> shall mean all personnel engaged in classroom teaching, at any level, on a full-time basis (including guidance counselors, school librarians, industrial arts or vocational instructors, supervisors, administrators, etc.) but shall not include school nurses, school physicians, school dentists, and other school employees.
                                 </p>
@@ -130,7 +132,7 @@
 
                 </div>
 
-                <div id="chapter 2" class="content-text">
+                <div class="content-text">
 
                     <h2>II. Recruitment and Career</h2>
                     
@@ -248,9 +250,21 @@
                         “Teachers shall enjoy academic freedom in the discharge of their professional duties, particularly with regard to teaching and classroom methods.”
                     </p>
 
+                    <div class="question-container">
+                        <div class="ribbon"></div>
+                        <div class="question">
+                            <h4>What do we mean by academic freedom?</h4>
+                            <div class="question-content">
+                                <p>
+                                    <b>Academic freedom</b> is "the freedom of teachers and students to teach, study, and pursue knowledge and research without unreasonable interference or restriction" (Britannica, 2020).
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
                 </div>
 
-                <div id="chapter 3" class="content-text">
+                <div class="content-text">
 
                     <h2>III. Hours of Work and Renumeration</h2>
                     
@@ -269,10 +283,10 @@
                     <div class="question-container">
                         <div class="ribbon"></div>
                         <div class="question">
-                            <h4 onclick="toggleQuestion(event, 'Q3')">Remuneration?</h4>
-                            <div id="Q3" class="content">
+                            <h4>What is the difference between co-curricular and extra-curricular activities?</h4>
+                            <div class="question-content">
                                 <p>
-                                    <b>Remuneration</b> is just the fancy term for salary or the compensation you gain on a job.
+                                    <b>Co-curricular activities</b> are inclined to the school’s academic curriculum while <b>extra-curricular</b> ones are not; that is, hosting a math club is co-curricular and coaching a volleyball team is extra-curricular.
                                 </p>
                             </div>
                         </div>
@@ -330,7 +344,7 @@
                     
                 </div>
 
-                <div id="chapter 4" class="content-text">
+                <div class="content-text">
 
                     <h2>IV. Health Measures and Injury Benefits</h2>
 
@@ -349,7 +363,7 @@
                     
                 </div>
 
-                <div id="chapter 5" class="content-text">
+                <div class="content-text">
 
                     <h2>V. Leave and Retirement Benefits</h2>
 
@@ -376,7 +390,7 @@
 
                 </div>
 
-                <div id="chapter 6" class="content-text">
+                <div class="content-text">
 
                     <h2>VI. Teacher's Organization</h2>
 
@@ -399,13 +413,16 @@
 
             </div>
 
-            <div id="references" class="tab-content" style="grid-template-columns: 1fr;">
+            <div class="tab-content">
 
                 <div class="content-text">
                     <h2>References</h2>
                     <ul>
                         <li>
                             Republic Act No. 4670. (n.d.). Retrieved October 8, 2022, from <span class="word-break-wrap">https://lawphil.net/statutes/repacts/ra1966/ra_4670_1966.html</span>
+                        </li>
+                        <li>
+                            Britannica, T. Editors of Encyclopaedia (2020, April 13). academic freedom. Encyclopedia Britannica. <span class="word-break-wrap">https://www.britannica.com/topic/academic-freedom</span>
                         </li>
                     </ul>
                 </div>

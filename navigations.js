@@ -1,85 +1,63 @@
 //
-// NAVIGATIONS
+// SPAGHETTI NAVIGATIONS
 // navigations.js 
 // by Joren C. Langbid
+//
+// Note: This script requires jquery to function.
 //
 // This script handles all the functionality of 'tabs' and
 // the click-to-open-elements accross the page.
 //
 
-function hideTabContent(element) {
-    element.style.display = "none";
-}
+$(document).ready(function() {
 
-function activateTabButton(element) {
-    element.className += " active";
-}
+    // Initialize components
 
-function deactivateTabButton(element) {
-    element.className = element.className.replace(" active", "");
-}
+    $(".tab-content").hide();
+    $(".tab-content").first().show();
 
-window.onload = function onload() {
-    
-    var firstTabContent = document.getElementsByClassName("tab-content")[0];
-    var firstNavTab = document.getElementsByClassName("nav-tab")[0];
-    var contentTexts = document.querySelectorAll("#content .content-text");
-    var firstContentNavTab = document.getElementsByClassName("content-nav-tab")[0];
-    activateTabButton(firstContentNavTab);
+    $(".structured-content .content-text").hide();
 
-    for (let i = 1; i < contentTexts.length; i++) {
-        hideTabContent(contentTexts[i]);
-    }
+    // only shows the first content-text of a structured-content
+    var structuredContents = $(".structured-content");
+    for (var i = 0; i < structuredContents.length; i++)
+        structuredContents.eq(i).children(".content-text").first().css("display", "block");
 
-    activateTabButton(firstNavTab);
-    firstTabContent.style.display = "grid";
+    $(".nav-tab").first().toggleClass("active");
+    $(".content-nav .content-nav-tab:first-child").toggleClass("active");
+    $(".question > .question-content").slideToggle();
 
-}
+    // Event listeners
 
-function chooseContentTab(event, tabContentName) {
+    $(".question h4").click(function() {
+        $(".question > .question-content").slideToggle(1000);
+    });
 
-    var contentTexts = document.querySelectorAll("#content .content-text");
-    var tabButtons = document.getElementsByClassName("content-nav-tab");
+    $(".nav-tab").click(function() {
 
-    for (let i = 0; i < contentTexts.length; i++) {
-        hideTabContent(contentTexts[i]);
-    }
+        var navTabs = $(this).parent().children();
+        var index = navTabs.index(this);
 
-    for (let i = 0; i < tabButtons.length; i++) {
-        deactivateTabButton(tabButtons[i]);
-    }
+        navTabs.removeClass("active");
+        $(this).addClass("active");
 
-    document.getElementById(tabContentName).style.display = "block";
-    activateTabButton(event.currentTarget);
+        $(".tab-content").hide();
+        $(".tab-content").eq(index).css("display", "grid");
 
-}
+    });
 
-function chooseTab(event, tabContentName) {
+    $(".content-nav-tab").click(function() {
 
-    var tabContent = document.getElementsByClassName("tab-content");
-    var navTabs = document.getElementsByClassName("nav-tab");
+        var structuredContents = $(this).parent().parent().children(".content-text");
+        var sections = $(this).parent().children();
+        var index = sections.index(this);
 
-    for (let i = 0; i < tabContent.length; i++) {
-        hideTabContent(tabContent[i]);
-    }
-    
-    for (let i = 0; i < navTabs.length; i++) {
-        deactivateTabButton(navTabs[i]);
-    }
+        sections.removeClass("active");
+        $(this).addClass("active");
 
-    document.getElementById(tabContentName).style.display = "grid";
-    activateTabButton(event.currentTarget);
-    
-}
+        structuredContents.hide();
+        structuredContents.eq(index).css("display", "block");
 
-function toggleQuestion(event, questionId) {
+    });
 
-    var content = document.getElementById(questionId);
-    console.log( content.style.display );
-    if ( content.style.display != "block" ) {
-        content.style.display = "block";
-    } else {
-        content.style.display = "none";
-    }
-
-}
+});
