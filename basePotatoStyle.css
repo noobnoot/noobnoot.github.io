@@ -176,16 +176,28 @@ nav {
 }
 
 .content-art {
-    display: flex;
-    align-items: center;
+    object-fit: cover;
     margin: 10px 0;
-    height: 30vh;
     overflow: hidden;
-    max-height: 30vh;
 }
 
 .content-art img {
     width: 100%;
+    min-height: 100%;
+}
+
+.align-center {
+    display: flex;
+    align-items: center;
+}
+
+.align-bottom {
+    display: flex;
+    align-items: flex-end;
+}
+
+.limit-height {
+    max-height: 30vh;
 }
 
 /** TAB CONTENT NAV **/
