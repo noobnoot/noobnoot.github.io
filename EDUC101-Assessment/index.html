@@ -27,7 +27,8 @@
     <style>
     
         :root {
-            --accent-color: rgba(0, 70, 113, 0.817);
+            --accent-color: rgba(162, 86, 0, 0.75);
+            --anti-accent-color: #FEFEFE;
             --background-img: url("https://images.creativemarket.com/0.1.0/ps/2321248/1160/772/m1/fpnw/wm1/cover-.jpg?1487898325&s=1b088f3d83e0354fa15b61d49486a787");
         }
 
@@ -38,22 +39,22 @@
 </head>
 <body>
 
+    <div id="image-preview-modal">
+        <img src="">
+        <p class="subtitle"></p>
+    </div>
+
     <div class="wrapper-body">
 
         <header>
 
             <div class="school-header">
-                
                 <div>
                     <img src="https://i.postimg.cc/cJ62t4xT/spcf-logo.png" alt="SPCF Logo">
                     <img src="https://i.postimg.cc/y6J6Cs0m/cassed-logo.png" alt="CASSED Logo">
                 </div>
-                <div>
-                    <h4>Systems Plus College Foundation<br>College of Social Sciences and Education</h4>
-                </div>
-                <div>
-                    <h4>November 2022</h4>
-                </div>
+                <p>Systems Plus College Foundation<br>College of Social Sciences and Education</p>    
+                <p>April 2022</p>
             </div>
             <hr>
             <h3 class="title"><span class="l0rge">Assessment, Learning Resources, and Instructional Accommodations:</span><br>Introduction and Types of Assessment</h3>
@@ -73,26 +74,23 @@
                     
                     <h1>Introduction</h1>
 
-                    <div class="content-art">
+                    <div class="content-art align-center limit-height">
                         <img src="https://iris.peabody.vanderbilt.edu/wp-content/uploads/2018/06/micro_accommodations_p01_d.jpg" alt="">
                     </div>
                     <p class="subtitle">Image from <a href="https://iris.peabody.vanderbilt.edu/">IRIS Center</a>.</p>
                     
                     <p>
-                        Assessments play an important role in facilitating classroom inclusion. It helps educators distinguish not just student needs but also what accommodation to consider for the disadvantaged ones.
+                        Assessments play a fundamental role in facilitating classroom inclusion. It helps educators distinguish not just student needs but also what accommodation to consider for the disadvantaged ones.
                     </p>
                     <p>
                         So, to honor this ground, ponder the question below:
                     </p>
 
-                    <div class="question-container">
-                        <div class="ribbon"></div>
-                        <div class="question">
+                    <div class="slidedown-modal">
+                        <div class="modal-body">
                             <h4>Question to Ponder:</h4>
-                            <div class="question-content">
-                                <p>
-                                    How do we address students at a disadvantage and students with a disability in a classroom setting?
-                                </p>
+                            <div class="modal-content">
+                                <p>How do we address students at a disadvantage/disability in a classroom setting?</p>
                             </div>
                         </div>
                     </div>
@@ -112,37 +110,39 @@
 
                     <h1>Assessment</h1>
                     <p>
-                        <b>Assessment</b> refers to the wide variety of methods or tools that educators use to evaluate, measure, and document the academic readiness, learning progress, skill acquisition, or educational needs of students.
+                        <b>Assessment</b> refers to the variety of methods or tools teachers use to evaluate, measure, or document students’ academic readiness, learning progress, skill acquisition, or educational needs.
                     </p>
-                    <div class="question-container">
-                        <div class="ribbon"></div>
-                        <div class="question">
-                            <h4>How do we classify assessments?</h4>
-                            <div id="Q2" class="question-content">
-                                <p> There are many classifications of assessment used by educators, which include but are not limited to the following:</p>
+
+                    <div class="slidedown-modal">
+                        <div class="modal-body">
+                            <h4>How do we classify assessment?</h4>
+                            <div class="modal-content">
+                                <p>Classifications of assessment include but are not limited to the following:</p>
                                 <ul>
                                     <li>
-                                        <b>Pre-assessments</b> or <b>diagnostic assessments</b> are administered before students begin a lesson, unit, course, or academic program. 
+                                        <b>Pre-assessments</b> (or <b>diagnostic assessments</b>) – are administered before students begin a lesson, unit, course, or academic program. Students do not need to know most, or even any, of the material evaluated by pre-assessments.
                                     </li>
                                     <li>
-                                        <b>Formative assessments</b> are in-process evaluations of student learning that are typically administered multiple times during a unit, course, or academic program.
+                                        <b>Formative assessments</b> – are in-process evaluations of student learning that are typically administered multiple times during a unit, course, or academic program.
                                     </li>
                                     <li>
-                                        <b>Summative assessments</b> are used to evaluate student learning after a specific instructional period—typically at the end of a unit, course, semester, program, or school year. 
+                                        <b>Summative assessments</b> – are used to evaluate student learning after a specific instructional period—typically at the end of a unit, course, semester, program, or school year. 
                                     </li>
                                     <li>
-                                        <b>Placement assessments</b> are used to “place” students into a course, course level, or academic program.
+                                        <b>Placement assessments</b> – are used to “place” students into a course, course level, or academic program.
                                     </li>
                                     <li>
-                                        <b>Screening assessments</b> determine whether students may need specialized assistance or services or are ready to begin a course, grade level, or academic program.
+                                        <b>Screening assessments</b> – determine whether students need specialized assistance or services or are ready to begin a course, grade level, or academic program.
                                     </li>
                                 </ul>
                             </div>
                         </div>
                     </div>
+
                     <p>
-                        Assessments can be also classified by their purpose (e.g. assessment <i>of</i> learning, assessment <i>for</i> learning, and assessment <i>as</i> learning).
+                        Moreover, another classification of assessments is by their purpose (i.e., assessment <i>of</i> learning, assessment <i>for</i> learning, and assessment <i>as</i> learning).
                     </p>
+
                     <p class="subtitle">(Assessment Definition, 2015)</p>
 
                 </div>
@@ -154,29 +154,31 @@
                         <b>Learning resources</b> are any resource–print and non-print materials–and online/open-access resources which support and enhance–directly or indirectly–learning and teaching.
                     </p>
                     <p>
-                        These may include <b>printed or digital materials</b> (textbooks, flashcards, computer software), <b>tools, equipment, and aids</b>, (chalkboard, computer, projector), and <b>facilities</b> (classroom, school gym, science/computer laboratory).
+                        These may include <b>printed or digital materials</b> (textbooks, flashcards, computer software), <b>tools, equipment, and aids</b> (chalkboard, computer, projector), and <b>facilities</b> (classroom, school gym, science/computer laboratory).
                     </p>
-                    <div class="question-container">
-                        <div class="ribbon"></div>
-                        <div class="question">
+
+                    <div class="slidedown-modal">
+                        <div class="modal-body">
                             <h4>What about the learning resources for disabled students?</h4>
-                            <div class="question-content">
+                            <div class="modal-content">
+                                
                                 <p>We have specialized learning formats that include but are not limited to the following:</p>
                                 <ul>
                                     <li>
                                         <b>Braille</b> is a system of reading and writing through touch, made up of raised dot patterns for letters, numbers, and punctuation marks.
                                     </li>
                                     <li>
-                                        <b>Large prints</b> are hard copies that larger than the standard ones and sometimes there may be more white space for students who had difficulty focusing on the text.
+                                        <b>Large prints</b> are hard copies that are larger than the standard ones. Sometimes there may be extra white space for students having difficulty focusing on the text.
                                     </li>
                                     <li>
-                                        <b>Audio</b> formats provide information through recorded or non-recorded speech. It may be synthesized electronic speech spoken by a computer or other device.
+                                        <b>Audio formats</b> provide information through recorded or non-recorded speech. These may include synthesized electronic speech spoken by a computer or other device.
                                     </li>
                                     <li>
-                                        <b>Digital text</b> presents information through text, audio, images, or any combination of these. Some are modified to address students who had difficulty seeing colors.
+                                        <b>Digital text</b> presents information through text, audio, images, or even any combination of these. Some are modified to address students having difficulty seeing colors.
                                     </li>
                                 </ul>
                                 <p class="subtitle">(PACER Center & the National Center on Accessible Instructional Materials at CAST, 2011)</p>
+
                             </div>
                         </div>
                     </div>
@@ -187,21 +189,23 @@
 
                     <h1>Instructional Accommodations</h1>
                     <p>
-                        <b>Instructional accommodations</b> are the changes in the way a student accesses learning, without changing the actual standards a student is working toward.
+                        <b>Instructional accommodations</b> change the student’s way of accessing academic content or progressing through the learning goal. Note that these accommodations don’t change the standards a student is trying to achieve/accomplish.
                     </p>
-                    <p>In addition, Lee (2022) delved deeper and devised different types of accommodations:</p>
+                    <p>
+                        Lee (2022) delved deeper and devised different accommodation types:
+                    </p>
                     <ul>
                         <li><b>Presentation</b>: A change in the way information is presented.</li>
-                        <li><b>Response</b>: A change in the way people complete assignments or work.</li>
+                        <li><b>Response</b>: A change in the way students complete assignments or work.</li>
                         <li><b>Setting</b>: A change in the learning or working environment.</li>
                         <li><b>Timing and scheduling</b>: A change to the time for a task.</li>
                     </ul>
 
-                    <div class="question-container">
-                        <div class="ribbon"></div>
-                        <div class="question">
+                    <div class="slidedown-modal">
+                        <div class="modal-body">
                             <h4>Examples of accommodation based on disability/disadvantage</h4>
-                            <div class="question-content">
+                            <div class="modal-content">
+                                
                                 <table>
                                     <tr>
                                         <th>Disability or Disadvantage</th>
@@ -259,6 +263,7 @@
                                         </td>
                                     </tr>
                                 </table>
+
                             </div>
                         </div>
                     </div>
@@ -279,12 +284,29 @@
 
                     <h1>Observation checklists</h1>
                     <p>
-                        <b>Observation checklists</b> are a set of questions or descriptions that assists an observer in evaluating an individual's performance and behavior. Additionally, it can be used for diagnosis purposes so that educators can devise the best accommodation to consider if there is a need.
+                        <b>Observation checklists</b> are questions or descriptions that assist an observer in evaluating an individual's performance and behavior. Additionally, it can be used for diagnosis purposes so that educators can devise the best accommodation to consider if there is a need.
                     </p>
                     <p>
                         Below are some observation checklists for learning disabilities from the National Center for Learning Disabilities (n.d.): 
                     </p>
-                    <div class="img-gallery">[gallery]</div>
+                    
+                    <div class="slidedown-modal">
+                        <div class="modal-body">
+                            <h4>Gallery</h4>
+                            <div class="modal-content">
+                                <div class="image-grid">
+                                    <img src="https://i.postimg.cc/wjJLn7xM/d1.png" alt="d1.png" ref="© National Center for Learning Disabilities">
+                                    <img src="https://i.postimg.cc/8PxLyhSx/d2.png" alt="d2.png" ref="© National Center for Learning Disabilities">
+                                    <img src="https://i.postimg.cc/XvkF7mC0/d3.png" alt="d3.png" ref="© National Center for Learning Disabilities">
+                                    <img src="https://i.postimg.cc/yxd0GjWC/d4.png" alt="d4.png" ref="© National Center for Learning Disabilities">
+                                    <img src="https://i.postimg.cc/WpWGkBfN/d5.png" alt="d5.png" ref="© National Center for Learning Disabilities">
+                                    <img src="https://i.postimg.cc/vBXWXkYv/d6.png" alt="d6.png" ref="© National Center for Learning Disabilities">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <p>You can check out this file at this <a href="https://pedineurologists.com/learning-disabilities-checklist.pdf">link</a>.</p>
 
                 </div>
 
@@ -294,7 +316,18 @@
                     <p>
                         <b>Anecdotal records</b> are narrative records (or can be short stories/comments) that educators use to document a significant incident that they have observed. These can help the teacher to understand their pupils realistically.
                     </p>
-                    <div class="img-gallery">[gallery]</div>
+
+                    <div class="slidedown-modal">
+                        <div class="modal-body">
+                            <h4>Gallery</h4>
+                            <div class="modal-content">
+                                <div class="image-grid" style="grid-template-columns: 1fr 1fr;">
+                                    <img src="https://i.postimg.cc/TPVZjVWq/anecdotal-2.png" alt="a1.png" ref="© Laraisa Zamora and Yolanda Hernandez">
+                                    <img src="https://s3.studylib.net/store/data/025459709_1-9d85c2fba58eb99c20e6adef8a21a537.png" alt="a2.png" ref="© Dolores National High School @ Ormoc City, Leyte">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
 
                 </div>
 
@@ -302,7 +335,7 @@
 
                     <h1>Portfolio Assessments</h1>
                     <p>
-                        <b>Portfolio assessments</b> are collections of student works associated with standards the teacher required them to learn. A portfolio assessment describes the student’s learning progression throughout the year; that is, you can regard it as a reflective storybook of the student’s development.
+                        <b>Portfolio assessments</b> are collections of student works associated with standards the teacher required them to learn. A portfolio assessment describes the student’s learning progression throughout the year. You can regard it as a reflective storybook of the student’s development.
                     </p>
 
                 </div>
@@ -314,10 +347,17 @@
                 <div class="content-text">
                     <h2>References</h2>
                     <ul>
-                        <li>Cardona, R. S., Reyes, A. S., & Tangalin, M. M. (2015). The bullying experiences and classroom discipline techniques in an Urban National High School in the Philippines: A basis for an Anti-Bullying Program. American International Journal of Contemporary Research, 5(2), 49-52.</li>
-                        <li>DepEd Teachers Club (2013). Implementing Rules and Regulations of R.A.10627 - The Anti-Bullying Act of 2013. Retrieved from: <span class="word-break-wrap">https://depedclub.com/implementing-rules-and-regulations-of-republic-act-no-10627-the-anti-bullying-act-of-2013/</span></li>
-                        <li>Official Gazette of the Republic of the Philippines (2013). Republic Act No. 10627. Retrieved from <span class="word-break-wrap">http://www.gov.ph/2013/09/12/republic-act-no-10627/</span></li>
-                        <li>UNICEF Canada (2012). Bullying and cyberbullying: Two sides of the same coin. Retrieved from: <span class="word-break-wrap">https://www.unicef.ca/sites/default/files/imce_uploads/TAKE%20ACTION/ADVOCATE/DOCS/cyberbulling_submission_to_senate_committee.pdf</span></li>
+                        <li>Assessment Definition. (2015, November 10). The Glossary of Education Reform. Retrieved from: <span class="word-break-wrap">https://www.edglossary.org/assessment</span></li>
+                        <li>
+                            Lee, A. M. I. (2022, May 23). Accommodations: What they are and how they work. Retrieved from: <span class="word-break-wrap">https://www.understood.org/en/articles/accommodations-what-they-are-and-how-they-work</span>
+                        </li>
+                        <li>
+                            National Center for Learning Disabilities. (n.d.). Learning Disabilities Checklist. Retrieved from: 
+                            <span class="word-break-wrap">https://pedineurologists.com/learning-disabilities-checklist.pdf</span>
+                        </li>
+                        <li>
+                            <span class="word-break-wrap">https://www.studocu.com/ph/document/urdaneta-city-university/understanding-the-self/chapter-4-types-of-assessments/34371861</span>
+                        </li>
                     </ul>
                 </div>
 

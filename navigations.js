@@ -13,9 +13,11 @@ $(document).ready(function() {
 
     // Initialize components
 
+    $("#image-preview-modal").hide();
+
     $(".tab-content").hide();
     $(".tab-content").first().show();
-
+    
     $(".structured-content .content-text").hide();
 
     // only shows the first content-text of a structured-content
@@ -25,12 +27,12 @@ $(document).ready(function() {
 
     $(".nav-tab").first().toggleClass("active");
     $(".content-nav .content-nav-tab:first-child").toggleClass("active");
-    $(".question > .question-content").slideToggle();
+    $(".modal-content").slideToggle(1000);
 
     // Event listeners
 
-    $(".question h4").click(function() {
-        $(".question > .question-content").slideToggle(1000);
+    $(".modal-body h4").click(function() {
+        $(this).parent().children(".modal-content").slideToggle(1000);
     });
 
     $(".nav-tab").click(function() {
@@ -58,6 +60,18 @@ $(document).ready(function() {
         structuredContents.hide();
         structuredContents.eq(index).css("display", "block");
 
+    });
+
+    $(".image-grid img").click(function() {
+        $("#image-preview-modal").fadeIn();
+        var src = $(this).attr("src");
+        var ref = $(this).attr("ref");
+        $("#image-preview-modal img").attr("src", src);
+        $("#image-preview-modal p").text(ref);
+    });
+
+    $("#image-preview-modal img").click(function() {
+        $("#image-preview-modal").fadeOut();
     });
 
 });

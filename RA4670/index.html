@@ -26,6 +26,7 @@
     
         :root {
             --accent-color: rgba(20, 80, 40, 0.75);
+            --anti-accent-color: #FEFEFE;
             --background-img: url("https://images.creativemarket.com/0.1.0/ps/2321248/1160/772/m1/fpnw/wm1/cover-.jpg?1487898325&s=1b088f3d83e0354fa15b61d49486a787");
         }
 
@@ -36,6 +37,11 @@
 </head>
 <body>
 
+    <div id="image-preview-modal">
+        <img src="">
+        <p class="subtitle"></p>
+    </div>
+
     <div class="wrapper-body">
 
         <header>
@@ -45,16 +51,10 @@
                     <img src="https://i.postimg.cc/cJ62t4xT/spcf-logo.png" alt="SPCF Logo">
                     <img src="https://i.postimg.cc/y6J6Cs0m/cassed-logo.png" alt="CASSED Logo">
                 </div>
-                <div>
-                    <h4>Systems Plus College Foundation<br>College of Social Sciences and Education</h4>
-                </div>
-                <div>
-                    <h4>April 2022</h4>
-                </div>
+                <p>Systems Plus College Foundation<br>College of Social Sciences and Education</p>    
+                <p>April 2022</p>
             </div>
-
             <hr>
-
             <h2 class="title"><span class="l0rge">Republic Act 4670</span><br>The Magna Carta for Public School Teachers</h2>
 
             <nav>
@@ -72,16 +72,27 @@
                 <div class="content-text">
 
                     <h1>Introduction</h1>
+                    
+                    <div class="content-art limit-height align-center">
+                        <img src="https://i.postimg.cc/Nf9QsMdc/pexels-sora-shimazaki-5668484-1.jpg" alt="law.png">
+                    </div>
+                    
+                    <p class="subtitle">Photo by <a href="https://www.pexels.com/photo/black-wooden-gavel-5668484/">Sora Shimazaki</a>.</p>
+
                     <p>
                         The <b>Magna Carta for Public School Teachers</b>, also known as <b>Republic Act No. 4670</b>, outlines the professional rights and protections that our public school teachers are entitled to in light of the demands and degree of difficulty involved in their profession. It was approved in <b>1966</b> and composed of 7 chapters and 35 sections.
                     </p>
-                    <div class="question-container">
-                        <div class="ribbon"></div>
-                        <div class="question">
+
+                    <div class="slidedown-modal">
+                        <div class="modal-body">
                             <h4>Hold on. What is the Magna Carta?</h4>
-                            <div class="question-content">
-                                <p><b>Magna Carta</b>, which means <b>'The Great Charter,’</b> is legal writing that establishes the rights and privileges of an entity.</p>
-                                <p>The term came from Europe when King John of England signed a charter of liberties as a countermeasure to the threat of civil war.</p>
+                            <div class="modal-content">
+                                <p>
+                                    <b>Magna Carta</b>, which means <b>'The Great Charter,’</b> is legal writing that establishes the rights and privileges of an entity.
+                                </p>
+                                <p>
+                                    The term came from Europe when King John of England signed a charter of liberties as a countermeasure to the threat of civil war.
+                                </p>
                             </div>
                         </div>
                     </div>
@@ -118,11 +129,10 @@
                     <h4>Section 2: Title Definition</h4>
                     <p>This act shall be known as the “Magna Carta for Public School Teachers” and shall apply to public school teachers except those in the professional staff of state colleges and universities.</p>
 
-                    <div class="question-container">
-                        <div class="ribbon"></div>
-                        <div class="question">
+                    <div class="slidedown-modal">
+                        <div class="modal-body">
                             <h4>Under this Act, what do we mean by a 'teacher'?</h4>
-                            <div class="question-content">
+                            <div class="modal-content">
                                 <p>
                                     The term <b>“teacher”</b> shall mean all personnel engaged in classroom teaching, at any level, on a full-time basis (including guidance counselors, school librarians, industrial arts or vocational instructors, supervisors, administrators, etc.) but shall not include school nurses, school physicians, school dentists, and other school employees.
                                 </p>
@@ -250,11 +260,10 @@
                         “Teachers shall enjoy academic freedom in the discharge of their professional duties, particularly with regard to teaching and classroom methods.”
                     </p>
 
-                    <div class="question-container">
-                        <div class="ribbon"></div>
-                        <div class="question">
+                    <div class="slidedown-modal">
+                        <div class="modal-body">
                             <h4>What do we mean by academic freedom?</h4>
-                            <div class="question-content">
+                            <div class="modal-content">
                                 <p>
                                     <b>Academic freedom</b> is "the freedom of teachers and students to teach, study, and pursue knowledge and research without unreasonable interference or restriction" (Britannica, 2020).
                                 </p>
@@ -280,17 +289,18 @@
                     <p>
                         Additional compensation is given to teachers engaging in co-curricular and out-of-school activities and any other activities outside of the normal duties of any teacher. The additional compensation is equivalent to at least 25% of his/her regular remuneration.
                     </p>
-                    <div class="question-container">
-                        <div class="ribbon"></div>
-                        <div class="question">
+
+                    <div class="slidedown-modal">
+                        <div class="modal-body">
                             <h4>What is the difference between co-curricular and extra-curricular activities?</h4>
-                            <div class="question-content">
+                            <div class="modal-content">
                                 <p>
                                     <b>Co-curricular activities</b> are inclined to the school’s academic curriculum while <b>extra-curricular</b> ones are not; that is, hosting a math club is co-curricular and coaching a volleyball team is extra-curricular.
                                 </p>
                             </div>
                         </div>
                     </div>
+
                     <p>
                         In the case of those teachers and school officials not engaged in actual classroom instruction, they gain compensation of 25% of their regular remuneration on the excess of 8 work hours.
                     </p>

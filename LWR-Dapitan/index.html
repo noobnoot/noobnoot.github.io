@@ -25,7 +25,8 @@
     <style>
     
         :root {
-            --accent-color: rgba(127, 43, 10, 0.75);
+            --accent-color: rgba(98, 30, 3, 0.75);
+            --anti-accent-color: #FEFEFE;
             --background-img: url("https://images.creativemarket.com/0.1.0/ps/2321248/1160/772/m1/fpnw/wm1/cover-.jpg?1487898325&s=1b088f3d83e0354fa15b61d49486a787");
         }
 
@@ -36,6 +37,11 @@
 </head>
 <body>
 
+    <div id="image-preview-modal">
+        <img src="">
+        <p class="subtitle"></p>
+    </div>
+
     <div class="wrapper-body">
 
         <header>
@@ -45,18 +51,11 @@
                     <img src="https://i.postimg.cc/cJ62t4xT/spcf-logo.png" alt="SPCF Logo">
                     <img src="https://i.postimg.cc/y6J6Cs0m/cassed-logo.png" alt="CASSED Logo">
                 </div>
-                <div>
-                    <h4>Systems Plus College Foundation<br>College of Social Sciences and Education</h4>
-                </div>
-                <div>
-                    <h4>April 2022</h4>
-                </div>
+                <p>Systems Plus College Foundation<br>College of Social Sciences and Education</p>    
+                <p>April 2022</p>
             </div>
-
             <hr>
-
             <h2 class="title"><span class="l0rge">Rizal's Exile in Dapitan</span><br>Life and Works of Rizal</h2>
-
             <nav>
                 <button class="nav-tab">INTRODUCTION</button>
                 <button class="nav-tab">CONTENT</button>
@@ -90,11 +89,10 @@
                         Days later, unsurprisingly, the Spanish authority arrested Rizal to be exiled in Dapitan for four years.
                     </p>
 
-                    <div class="question-container">
-                        <div class="ribbon"></div>
-                        <div class="question">
+                    <div class="slidedown-modal">
+                        <div class="modal-body">
                             <h4>Why was Rizal arrested and exiled to Dapitan?</h4>
-                            <div id="Q1" class="question-content">
+                            <div class="modal-content">
                                 <p>The following constitute charges the Spanish government accused to Rizal for him to be exiled in Dapitan for four years:</p>
                                 <ul>
                                     <li>
@@ -148,11 +146,10 @@
                         <li>conduct himself in an exemplary manner as a Spanish subject and a man of religion.</li>
                     </ul>
 
-                    <div class="question-container">
-                        <div class="ribbon"></div>
-                        <div class="question">
+                    <div class="slidedown-modal">
+                        <div class="modal-body">
                             <h4>What did Rizal chose?</h4>
-                            <div class="question-content">
+                            <div class="modal-content">
                                 <p>Rizal chose to stay with Carcinero. Allegedly, Rizal and Carcinero both enjoyed the company of one another as Carcinero treated Rizal more like a visitor than a captive. He even allowed Rizal to move freely inside the Dapitan.</p>
                             </div>
                         </div>
@@ -191,11 +188,10 @@
                     
                     <p>Soon, maybe far later, another visitor was Pio Valenzuela—an emissary of Andres Bonifacio—telling Rizal about the founding of Katipunan and asking for advice on how to launch a revolution.</p>
 
-                    <div class="question-container">
-                        <div class="ribbon"></div>
-                        <div class="question">
+                    <div class="slidedown-modal">
+                        <div class="modal-body">
                             <h4>What was Rizal's response?</h4>
-                            <div class="question-content">
+                            <div class="modal-content">
                                 <p>With cadency, Rizal outspokenly objected to the idea of the revolution for the reason of</p>
                                 <ul>
                                     <li>the Filipino people lacked preparedness for such a devastating revolution, and</li>
