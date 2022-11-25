@@ -159,7 +159,7 @@ nav {
 
 /** TAB CONTENTS **/
 
-.tab-content {
+.tab-item {
     grid-template-columns: 1fr;
     padding: 3vw;
     gap: 2vh;
