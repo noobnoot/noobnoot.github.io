@@ -17,7 +17,7 @@ p {
 
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-size: 20px;
+    font-size: 18px;
     margin: 0;
 }
 
@@ -198,6 +198,6 @@ body::after {
     background-repeat: no-repeat;
     background-size: 70%;
     border-radius: 100%;
-    width: 85%;
+    width: 80%;
     aspect-ratio: 1;
 }
