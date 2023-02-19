@@ -40,10 +40,18 @@ table {
     margin: 16px 0;
 }
 
-.cite {
-    border-left: #BBB 8px solid;
-    padding: 10px;
+.mini-quote {
+    display: grid;
+    grid-template-columns: 1fr 24fr;
+}
+
+.mini-quote .banner {
+    background-image: linear-gradient( var(--accent-color), var(--accent-color) ), var(--background-img);
+}
+
+.mini-quote .text {
     font-style: italic;
+    padding: 8px 16px;
 }
 
 .marginless-list li {
@@ -54,14 +62,6 @@ table {
 .block-image {
     display: block;
     width: 100%;
-}
-
-.wrapper-body {
-    height: auto;
-    min-height: calc(100vh - 10vw);
-    margin: 0 10vw;
-    padding: 5vw;
-    background-color: white;
 }
 
 .word-break-wrap {
@@ -103,10 +103,6 @@ body::after {
 .content-tiles {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-}
-
-.content-body {
-    
 }
 
 .tile {
