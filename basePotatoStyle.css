@@ -39,14 +39,18 @@ ul li, ol li {
     margin: 8px 0;
 }
 
-table {
-    margin: 16px 0;
+.mini-quote {
+    display: grid;
+    grid-template-columns: 1fr 24fr;
 }
 
-.cite {
-    border-left: #BBB 8px solid;
-    padding: 10px;
+.mini-quote .banner {
+    background-image: linear-gradient( var(--accent-color), var(--accent-color) ), var(--background-img);
+}
+
+.mini-quote .text {
     font-style: italic;
+    padding: 8px 16px;
 }
 
 .marginless-list li {
@@ -60,9 +64,14 @@ table {
 }
 
 table {
+    margin: 16px 0;
     border-collapse: collapse;
     font-size: 0.9em;
     width: 100%;
+}
+
+th {
+    text-align: center;
 }
 
 th, td {
