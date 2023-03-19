@@ -50,6 +50,7 @@ ul li, ol li {
 
 .mini-quote .text {
     font-style: italic;
+    font-size: 0.9em;
     padding: 8px 16px;
 }
 
