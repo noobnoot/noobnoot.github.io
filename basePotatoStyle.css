@@ -50,7 +50,7 @@ ul li, ol li {
 
 .mini-quote .text {
     font-style: italic;
-    font-size: 0.9em;
+    font-size: 0.95em;
     padding: 8px 16px;
 }
 
@@ -281,7 +281,7 @@ footer {
     margin: 8px 0;
     display: grid;
     gap: 2px;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
 }
 
 .image-grid img {
@@ -354,8 +354,8 @@ footer {
 
 #image-preview-modal img {
     text-align: center;
-    max-width: 100vw;
-    max-height: 100vh;
+    max-width: 80vw;
+    max-height: 80vh;
 }
 
 #image-preview-modal img:hover {
@@ -447,4 +447,26 @@ footer {
     body {
         font-size: 12px;
     }
+}
+
+.vertical-structured-content {
+    grid-template-columns: 1fr;
+}
+
+.vertical-structured-content .content-nav {
+    position: relative;
+    left: -3vw;
+    min-width: calc(100% + 6vw);
+    padding: 0 6vw;
+    max-height: 250px;
+    display: flex;
+    flex-direction: row;
+}
+
+.vertical-structured-content .content-nav .content-nav-tab {
+    padding: 16px 10px;
+    flex: 1;
+    font-size: 1em;
+    font-weight: bold;
+    text-transform: uppercase;
 }
