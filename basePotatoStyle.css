@@ -304,14 +304,14 @@
     }
 
     .mini-quote .text {
-        background-color: #CCC;
+        background: #DDD; 
         font-style: italic;
         font-size: 0.95em;
         padding: 8px 16px;
     }
 
     .mini-quote .text-with-image {
-        background-color: #CCC;
+        background: #DDD; 
         display: flex;
         padding: 0;
         align-items: center;
