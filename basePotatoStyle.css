@@ -522,9 +522,8 @@
 
 @media screen and (max-width: 400px) {
     .dual-column-2-by-3 {
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: 2fr 3fr;
+        display: flex;
+        flex-direction: column;
     }
 
     .dual-column-2-by-3 .left {
