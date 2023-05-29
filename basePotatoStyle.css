@@ -323,7 +323,8 @@
     }
 
     .mini-quote .text-with-image div {
-        padding: 0 1vw 0 1.5vw;
+        padding: 1.5vw;
+        font-size: 0.9em;
     }
 
 
@@ -364,7 +365,8 @@
     .dual-column-2-by-3 {
         display: grid;
         gap: 3vw;
-        grid-template-columns: 2fr 3fr;
+        grid-template-columns: minmax(0, 2fr) minmax(0, 3fr);
+        grid-auto-rows: auto;
     }
 
     .dual-column-2-by-3 .left div {
