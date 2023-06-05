@@ -14,28 +14,27 @@ $(document).ready(function() {
     // hide components
 
     var imagePreviewer = $("#image-preview-modal");
-    var tabItems = $(".tab-item");
-    var structuredTabs = $(".structured-content");
+    var tabItems = $("section.tab-item");
     var contents = $(".structured-content .content-text");
     var modalContents = $(".modal-content")
 
+    // hides previewer
     imagePreviewer.hide();
+
+    // hides all tabitems and shows the first one
     tabItems.hide();
     tabItems.first().show();
+
     contents.hide();
+    contents.first().show();
+
     modalContents.slideToggle(1000);
 
-    // only shows the first content-text of a structured-content
-    for (var i = 0; i < structuredTabs.length; i++)
-        structuredTabs.eq(i).children(".content-text").first().css("display", "block");
-
     // activate first tabs
-    var firstNavTab = $(".nav-tab").first();
-    firstNavTab.toggleClass("active");
-    var firstContentNavs = $(".content-nav .content-nav-tab:first-child");
-    firstContentNavs.toggleClass("active");
+    $(".nav-tab").first().toggleClass("active");
+    $(".content-nav .content-nav-tab:first-child").toggleClass("active");
     
-    // For Tab Items
+    // for Tab Items
     $(".nav-tab").click(function() {
 
         var navTabs = $(this).parent().children();
@@ -51,7 +50,7 @@ $(document).ready(function() {
 
     $(".content-nav-tab").click(function() {
 
-        var contents = $(this).parent().parent().children(".content-text");
+        var contents = $(this).parent().siblings(".content-text");
         var contentNavs = $(this).parent().children();
         var index = contentNavs.index(this);
 
