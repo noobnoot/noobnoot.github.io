@@ -21,7 +21,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>RA 4670</title>
     <link rel="stylesheet" href="../basePotatoStyle.css">
-
     <style>
     
         :root {
@@ -31,16 +30,11 @@
         }
 
     </style>
-
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="../Main.js" type="module"></script>
 
 </head>
 <body>
-
-    <div id="image-preview-modal">
-        <img src="">
-        <p class="subtitle"></p>
-    </div>
 
     <div class="wrapper-body">
 
@@ -76,31 +70,23 @@
             <div class="content-text">
 
                 <h1>Introduction</h1>
-                
-                <div class="content-art limit-height align-center">
-                    <img src="https://i.postimg.cc/Nf9QsMdc/pexels-sora-shimazaki-5668484-1.jpg" alt="law.png">
-                </div>
-                
-                <p class="subtitle">Photo by <a href="https://www.pexels.com/photo/black-wooden-gavel-5668484/">Sora Shimazaki</a>.</p>
-
+                <content-image limit-height
+                    src="https://i.postimg.cc/Nf9QsMdc/pexels-sora-shimazaki-5668484-1.jpg"
+                    author="Sora Shimazaki"
+                    href="https://www.pexels.com/photo/black-wooden-gavel-5668484/">
+                </content-image>
                 <p>
                     The <b>Magna Carta for Public School Teachers</b>, also known as <b>Republic Act No. 4670</b>, outlines the professional rights and protections that our public school teachers are entitled to in light of the demands and degree of difficulty involved in their profession. It was approved in <b>1966</b> and composed of 7 chapters and 35 sections.
                 </p>
 
-                <div class="slidedown-modal">
-                    <div class="modal-body">
-                        <h4>Hold on. What is the Magna Carta?</h4>
-                        <div class="modal-content">
-                            <p>
-                                <b>Magna Carta</b>, which means <b>'The Great Charter,’</b> is legal writing that establishes the rights and privileges of an entity.
-                            </p>
-                            <p>
-                                The term came from Europe when King John of England signed a charter of liberties as a countermeasure to the threat of civil war.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-
+                <slidedown-modal title="Hold on. What is the Magna Carta?">
+                    <p>
+                        <b>Magna Carta</b>, which means <b>'The Great Charter,’</b> is legal writing that establishes the rights and privileges of an entity.
+                    </p>
+                    <p>
+                        The term came from Europe when King John of England signed a charter of liberties as a countermeasure to the threat of civil war.
+                    </p>
+                </slidedown-modal>
             </div>
 
         </section>
@@ -134,16 +120,11 @@
                 <h4>Section 2: Title Definition</h4>
                 <p>This act shall be known as the “Magna Carta for Public School Teachers” and shall apply to public school teachers except those in the professional staff of state colleges and universities.</p>
 
-                <div class="slidedown-modal">
-                    <div class="modal-body">
-                        <h4>Under this Act, what do we mean by a 'teacher'?</h4>
-                        <div class="modal-content">
-                            <p>
-                                The term <b>“teacher”</b> shall mean all personnel engaged in classroom teaching, at any level, on a full-time basis (including guidance counselors, school librarians, industrial arts or vocational instructors, supervisors, administrators, etc.) but shall not include school nurses, school physicians, school dentists, and other school employees.
-                            </p>
-                        </div>
-                    </div>
-                </div>
+                <slidedown-modal title="Under this Act, what do we mean by a 'teacher'?">
+                    <p>
+                        The term <b>“teacher”</b> shall mean all personnel engaged in classroom teaching, at any level, on a full-time basis (including guidance counselors, school librarians, industrial arts or vocational instructors, supervisors, administrators, etc.) but shall not include school nurses, school physicians, school dentists, and other school employees.
+                    </p>
+                </slidedown-modal>
 
             </div>
 
@@ -215,7 +196,9 @@
                 </p>
 
                 <h4>Section 6. Consent for Transfer Transportation Expenses</h4>
-                <p class="cite">“No teacher shall be transferred without his consent from one station to another.”</p>
+                <boxed-quote>
+                    <p>“No teacher shall be transferred without his consent from one station to another.”</p>
+                </boxed-quote>
                 <p>
                     The teacher subject to an unjustified transfer can appeal his/her case to the Director of Public Schools or the Director of Vocational Education. If the pending case is approved, the transfer is rejected.
                 </p>
@@ -251,30 +234,30 @@
                 </p>
 
                 <h4>Section 10. No Discrimination</h4>
-                <p class="cite">
-                    “There shall be no discrimination whatsoever in the entrance to the teaching profession, or during its exercise, or in the termination of services, based on other than professional consideration.”
-                </p>
+                <boxed-quote>
+                    <p>
+                        “There shall be no discrimination whatsoever in the entrance to the teaching profession, or during its exercise, or in the termination of services, based on other than professional consideration.”
+                    </p>
+                </boxed-quote>
 
                 <h4>Section 11. Married Teachers</h4>
-                <p class="cite">
-                    “Whenever possible, the proper authorities shall take all steps to enable married couples, both of whom are public school teachers, to be employed in the same locality.”
-                </p>
+                <boxed-quote>
+                    <p>
+                        “Whenever possible, the proper authorities shall take all steps to enable married couples, both of whom are public school teachers, to be employed in the same locality.”
+                    </p>
+                </boxed-quote>
 
                 <h4>Section 12. Academic Freedom</h4>
-                <p class="cite">
-                    “Teachers shall enjoy academic freedom in the discharge of their professional duties, particularly with regard to teaching and classroom methods.”
-                </p>
-
-                <div class="slidedown-modal">
-                    <div class="modal-body">
-                        <h4>What do we mean by academic freedom?</h4>
-                        <div class="modal-content">
-                            <p>
-                                <b>Academic freedom</b> is "the freedom of teachers and students to teach, study, and pursue knowledge and research without unreasonable interference or restriction" (Britannica, 2020).
-                            </p>
-                        </div>
-                    </div>
-                </div>
+                <boxed-quote>
+                    <p>
+                        “Teachers shall enjoy academic freedom in the discharge of their professional duties, particularly with regard to teaching and classroom methods.”
+                    </p>
+                </boxed-quote>
+                <slidedown-modal title="What do we mean by academic freedom?">
+                    <p>
+                        <b>Academic freedom</b> is "the freedom of teachers and students to teach, study, and pursue knowledge and research without unreasonable interference or restriction" (Britannica, 2020).
+                    </p>
+                </slidedown-modal>
 
             </div>
 
@@ -294,17 +277,11 @@
                 <p>
                     Additional compensation is given to teachers engaging in co-curricular and out-of-school activities and any other activities outside of the normal duties of any teacher. The additional compensation is equivalent to at least 25% of his/her regular remuneration.
                 </p>
-
-                <div class="slidedown-modal">
-                    <div class="modal-body">
-                        <h4>What is the difference between co-curricular and extra-curricular activities?</h4>
-                        <div class="modal-content">
-                            <p>
-                                <b>Co-curricular activities</b> are inclined to the school’s academic curriculum while <b>extra-curricular</b> ones are not; that is, hosting a math club is co-curricular and coaching a volleyball team is extra-curricular.
-                            </p>
-                        </div>
-                    </div>
-                </div>
+                <slidedown-modal title="What is the difference between co-curricular and extra-curricular activities?">
+                    <p>
+                        <b>Co-curricular activities</b> are inclined to the school’s academic curriculum while <b>extra-curricular</b> ones are not; that is, hosting a math club is co-curricular and coaching a volleyball team is extra-curricular.
+                    </p>
+                </slidedown-modal>
 
                 <p>
                     In the case of those teachers and school officials not engaged in actual classroom instruction, they gain compensation of 25% of their regular remuneration on the excess of 8 work hours.
@@ -333,9 +310,11 @@
                 </p>
                 
                 <h4>Section 18. Cost of Living Allowance</h4>
-                <p class="cite">
-                    “Teacher's salaries shall, at the very least, keep pace with the rise in the cost of living by the payment of a cost-of-living allowance.”
-                </p>
+                <boxed-quote> 
+                    <p>
+                        “Teacher's salaries shall, at the very least, keep pace with the rise in the cost of living by the payment of a cost-of-living allowance.”
+                    </p>
+                </boxed-quote>
                 <p>
                     Annually, the Secretary of Education shall recommend to Congress the appropriation of the necessary funds for the cost-of-living allowances of teachers employed by the National Government.
                 </p>
@@ -394,9 +373,11 @@
                 </p>
 
                 <h4>Section 25. Indefinite Leave</h4>
-                <p class="cite">
-                    “An indefinite sick leave of absence shall be granted to teachers when the nature of the illness demands a long treatment that will exceed one year at the least.”
-                </p>
+                <boxed-quote>
+                    <p>
+                        “An indefinite sick leave of absence shall be granted to teachers when the nature of the illness demands a long treatment that will exceed one year at the least.”
+                    </p>
+                </boxed-quote>
 
                 <h4>Section 26. Salary Increase Upon Retirement</h4>
                 <p>
@@ -458,8 +439,6 @@
         </footer>
 
     </div>
-
-    <script src="../navigations.js"></script>
 
 </body>
 </html>

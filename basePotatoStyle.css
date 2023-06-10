@@ -1,7 +1,12 @@
 /*** INDEX ***/
 
     :root {
-        --kinda-light: #EEE;
+        --content-bg: #EEE;
+        --modal-bg: #DDD;
+        --aside-bg: #CCC;
+        --border: #BBB;
+        --modal-hover: #BBB;
+        --disabled: #666;
     }
 
     * {
@@ -9,8 +14,7 @@
     }
 
     h1, h2, h3, h4, h5, h6 {
-        margin: 12px 0;
-        line-height: 120%;
+        margin: 16px 0;
     }
 
     p {
@@ -35,7 +39,7 @@
     }
     
     th, td {
-        border: #BBB 2px solid;
+        border: var(--border) 2px solid;
     }
     
     td, th {
@@ -106,15 +110,15 @@
         font-family: inherit;
     }
 
-    .nav-tab:hover {
+    .nav-tab:hover, .nav-tab:focus {
         color: black;
         transition: all 0.5s ease;
-        background-color: var(--kinda-light);
+        background-color: var(--content-bg);
     }
 
     .nav-tab.active {
         color: black;
-        background-color: var(--kinda-light);
+        background-color: var(--content-bg);
     }
 
 /*** HEADER ***/
@@ -151,9 +155,9 @@
 
     .tab-item {
         grid-template-columns: 1fr;
-        padding: 1vw 3vw 2vw 3vw;
+        padding: 2vw 3vw;
         gap: 2vh;
-        background-color: var(--kinda-light);
+        background-color: var(--content-bg);
         grid-template-rows: auto;
     }
 
@@ -164,17 +168,6 @@
 
     .content-text {
         padding: 0 2vw;
-    }
-
-    .content-art {
-        object-fit: cover;
-        margin: 10px 0;
-        overflow: hidden;
-    }
-
-    .content-art img {
-        width: 100%;
-        height: auto;
     }
 
 /*** TAB CONTENT NAV ***/
@@ -204,15 +197,15 @@
         font-family: inherit;
     }
 
-    .content-nav-tab:hover {
+    .content-nav-tab:hover, .content-nav-tab:focus {
         color: black;
         transition: all 0.5s ease;
-        background-color: var(--kinda-light);
+        background-color: var(--content-bg);
     }
 
     .content-nav-tab.active {
         color: black;
-        background-color: var(--kinda-light);
+        background-color: var(--content-bg);
     }
 
     /* Vertical */
@@ -240,95 +233,14 @@
     footer {
         font-size: 0.9em;
         padding: 25px 25px 0 25px;
-        color: #666;
+        color: var(--disabled);
     }
 
     .subtitle {
         font-size: 0.8em;
         margin: 8px 0;
-        color: #444;
+        color: var(--disabled);
     }
-
-/*** SLIDEDOWN MODAL ***/
-
-    .slidedown-modal {
-        margin: 12px 0;
-        display: grid;
-        grid-template-columns: 1fr 24fr;
-        background: #DDD; 
-    }
-
-    .slidedown-modal .ribbon {
-        background-image: linear-gradient( var(--accent-color), var(--accent-color) ), var(--background-img);
-    }
-
-    .slidedown-modal .modal-body {
-        display: flex;
-        flex-direction: column;
-    }
-
-    .slidedown-modal::before {
-        content: "";
-        position: relative;
-        display: block;
-        background-image: linear-gradient( var(--accent-color), var(--accent-color) ), var(--background-img);
-    }
-
-    .slidedown-modal .modal-body h4 {
-        margin: 0;
-        padding: calc(2px + 1vw) calc(2px + 1.5vw);
-        border-bottom: #BBB 1px solid;
-        font-style: italic;
-    }
-
-    .slidedown-modal .modal-body h4:hover {
-        background: #BBB;
-        transition: all 0.5s ease;
-        cursor: pointer;
-    }
-
-    .slidedown-modal .modal-body .modal-content {
-        font-size: 0.9em;
-        padding: 0 calc(2px + 1.5vw);
-    }
-
-/*** MINIQUOTE ***/
-
-    .mini-quote {
-        display: grid;
-        margin: 12px 0;
-        max-height: 100%;
-        grid-template-columns: 1fr 24fr;
-    }
-
-    .mini-quote .banner {
-        background-image: linear-gradient( var(--accent-color), var(--accent-color) ), var(--background-img);
-    }
-
-    .mini-quote .text {
-        background: #DDD; 
-        font-style: italic;
-        font-size: 0.95em;
-        padding: 8px 16px;
-    }
-
-    .mini-quote .text-with-image {
-        background: #DDD; 
-        display: flex;
-        padding: 0;
-        align-items: center;
-    }
-
-    .mini-quote .text-with-image img {
-        object-fit: cover;
-        width: 12vw;
-    }
-
-    .mini-quote .text-with-image div {
-        padding: 1.5vw;
-        font-size: 0.9em;
-    }
-
 
 /*** PLUGGABLES ***/
 
@@ -346,20 +258,6 @@
         word-break: break-all;
     }
 
-    .align-center {
-        display: flex;
-        align-items: center;
-    }
-
-    .align-bottom {
-        display: flex;
-        align-items: flex-end;
-    }
-
-    .limit-height {
-        max-height: 30vh;
-    }
-
     .no-margin {
         margin: 0;
     }
@@ -372,7 +270,7 @@
     }
 
     .boxed-content {
-        background-color: #CCC;
+        background-color: var(--aside-bg);
         padding: 1em;
         font-size: 0.9em;
     }
@@ -387,58 +285,6 @@
 
     .very-sm0l {
         font-size: 0.69em;
-    }
-
-/*** IMAGE GRID ***/
-
-    .image-grid {
-        margin: 8px 0;
-        display: grid;
-        gap: 2px;
-        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-    }
-
-    .image-grid img {
-        display: block;
-        height: 100%;
-        width: 100%;
-        object-fit: cover;
-        transition: filter 0.5s ease;
-    }
-
-    .image-grid img:hover {
-        filter: brightness(0.6);
-        cursor: pointer;
-    }
-
-/*** IMAGE PREVIEW MODAL ***/
-
-    #image-preview-modal {
-        position: fixed;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        top: 0;
-        left: 0;
-        width: 100vw;
-        height: 100vh;
-        z-index: 100;
-        background-color: rgba(0, 0, 0, 0.5);
-    }
-
-    #image-preview-modal img {
-        text-align: center;
-        max-width: 80vw;
-        max-height: 80vh;
-    }
-
-    #image-preview-modal img:hover {
-        cursor: pointer;
-    }
-
-    #image-preview-modal p {
-        color: #EEE;
     }
 
 /*** MEDIA QUERIES ***/
@@ -464,10 +310,6 @@
         padding: 6px 8px;
     }
 
-    ul, ol {
-        padding-inline-start: 20px;
-    }
-
     .structured-content {
         grid-template-columns: 1fr;
     }
@@ -488,12 +330,6 @@
         font-size: 1em;
         font-weight: bold;
         text-transform: uppercase;
-    }
-
-    .image-grid {
-        display: grid;
-        gap: 2px;
-        grid-template-columns: 1fr 1fr 1fr;
     }
 
     .media-hide {

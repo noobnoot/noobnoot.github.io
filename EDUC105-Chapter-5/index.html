@@ -35,14 +35,10 @@
     </style>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="../Main.js" type="module"></script>
 
 </head>
 <body>
-
-    <div id="image-preview-modal">
-        <img src="">
-        <p class="subtitle"></p>
-    </div>
 
     <div class="wrapper-body">
 
@@ -75,87 +71,73 @@
         </header>
 
         <section class="tab-item">
+
             <div class="content-text">
                 
                 <h1>Introduction</h1>
-
-                <div class="content-art align-center" style="height: 40vh;">
-                    <img src="https://i.guim.co.uk/img/media/28766076ece429e53f1df347e3974d4730ffe1bf/0_0_6000_4000/master/6000.jpg?width=1010&quality=85&auto=format&fit=max&s=cd404ea69ee547fff6e9f6d782c178a5" alt="">
-                </div>
-                <p class="subtitle">Image from <a href="https://www.theguardian.com/environment/gallery/2019/sep/25/environmental-photographer-of-the-year-2019-winners-in-pictures#:~:text=The%20Plastic%20Quarry,of%20the%20year">Aragon Renuncio (2019)</a>.</p>
-                
+                <content-image
+                    src="https://i.guim.co.uk/img/media/28766076ece429e53f1df347e3974d4730ffe1bf/0_0_6000_4000/master/6000.jpg?width=1010&quality=85&auto=format&fit=max&s=cd404ea69ee547fff6e9f6d782c178a5" 
+                    author="Aragon Renuncio (2019)"
+                    href="https://www.theguardian.com/environment/gallery/2019/sep/25/environmental-photographer-of-the-year-2019-winners-in-pictures#:~:text=The%20Plastic%20Quarry,of%20the%20year">
+                </content-image>
                 <p>
                     The entire globe has evolved into a global community. We have joined the global community as citizens. What happens in one area of the world, no matter far away, impacts us. According to a song, “it’s a tiny world, after all.” And it is hoped that we are able to propose solutions to these global problems.
                 </p>
-
                 <p>So, to honor this ground, ponder by the question below:</p>
-
-                <div class="slidedown-modal">
-                    <div class="modal-body">
-                        <h4>Question to Ponder:</h4>
-                        <div class="modal-content">
-                            <p>As an educator, how would you devise a hypothetical solution to the problems we face today?</p>
-                        </div>
-                    </div>
-                </div>
+                <slidedown-modal title="Question to Ponder:">
+                    <p>As an educator, how would you devise a hypothetical solution to the problems we face today?</p>
+                </slidedown-modal>
 
             </div>
+
         </section>
 
         <section class="tab-item">
+
             <div class="content-text">
                 
                 <h1>A Second Life</h1>
-                
                 <p>Refer to the following premise below:</p>
-
-                <div class="mini-quote">
-                    <div class="banner"></div>
-                    <div class="text">
-                        Say you happened to die suddenly in a terrible accident in a world plagued by problems like climate change, pollution, violence, terrorism, and corruption. You wished to change something, even a tiny difference. But it all ended too soon.       
-                    </div>
-                </div>
-
+                <boxed-quote>
+                    <p>
+                        Say you happened to die suddenly in a terrible accident in a world plagued by problems like climate change, pollution, violence, terrorism, and corruption. You wished to change something, even a tiny difference. But it all ended too soon.     
+                    </p>
+                </boxed-quote>
                 <p>
                     Assuming reincarnation is real, which of the United Nations' 17 Sustainable Development Goals (SDGs) would you wish to see solved in your next life, and why?                       
                 </p>
-
-                <div class="slidedown-modal">
-                    <div class="modal-body">
-                        <h4>The UN's 17 SDGs</h4>
-                        <div class="modal-content">
-                            <div class="image-grid">
-                                <img src="https://i.postimg.cc/k4D7Pf24/E-WEB-Goal-01.png" alt="g1.png" ref="© United Nations">
-                                <img src="https://i.postimg.cc/MT4q6VBY/E-WEB-Goal-02.png" alt="g2.png" ref="© United Nations">
-                                <img src="https://i.postimg.cc/Wzkjhz6c/E-WEB-Goal-03.png" alt="g3.png" ref="© United Nations">
-                                <img src="https://i.postimg.cc/YjB7g7bG/E-WEB-Goal-04.png" alt="g4.png" ref="© United Nations">
-                                <img src="https://i.postimg.cc/9XRqGBLC/E-WEB-Goal-05.png" alt="g5.png" ref="© United Nations">
-                                <img src="https://i.postimg.cc/2jsLTBtv/E-WEB-Goal-06.png" alt="g6.png" ref="© United Nations">
-                                <img src="https://i.postimg.cc/x1YJVVn1/E-WEB-Goal-07.png" alt="g7.png" ref="© United Nations">
-                                <img src="https://i.postimg.cc/HsbcNkGN/E-WEB-Goal-08.png" alt="g8.png" ref="© United Nations">
-                                <img src="https://i.postimg.cc/MpDcW3pb/E-WEB-Goal-09.png" alt="g9.png" ref="© United Nations">
-                                <img src="https://i.postimg.cc/N0jKL8yh/E-WEB-Goal-10.png" alt="g10.png" ref="© United Nations">
-                                <img src="https://i.postimg.cc/MG3vBcRn/E-WEB-Goal-11.png" alt="g11.png" ref="© United Nations">
-                                <img src="https://i.postimg.cc/d17Djqm4/E-WEB-Goal-12.png" alt="g12.png" ref="© United Nations">
-                                <img src="https://i.postimg.cc/zB9vd9x5/E-WEB-Goal-13.png" alt="g13.png" ref="© United Nations">
-                                <img src="https://i.postimg.cc/fymL1BPd/E-WEB-Goal-14.png" alt="g14.png" ref="© United Nations">
-                                <img src="https://i.postimg.cc/dQyL7V00/E-WEB-Goal-15.png" alt="g15.png" ref="© United Nations">
-                                <img src="https://i.postimg.cc/m2Wh7Wcy/E-WEB-Goal-16.png" alt="g16.png" ref="© United Nations">
-                                <img src="https://i.postimg.cc/65Vq0bnJ/E-WEB-Goal-17.png" alt="g17.png" ref="© United Nations">
-                                <img src="https://i.postimg.cc/tJwGhxN4/E-SDG-logo-without-UN-emblem-square-CMYK.jpg" alt="final.png" ref="© United Nations">
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                <slidedown-modal title="The UN's 17 SDGs">
+                    <image-grid viewable>
+                        <img src="https://i.postimg.cc/k4D7Pf24/E-WEB-Goal-01.png" alt="g1.png" ref="© United Nations">
+                        <img src="https://i.postimg.cc/MT4q6VBY/E-WEB-Goal-02.png" alt="g2.png" ref="© United Nations">
+                        <img src="https://i.postimg.cc/Wzkjhz6c/E-WEB-Goal-03.png" alt="g3.png" ref="© United Nations">
+                        <img src="https://i.postimg.cc/YjB7g7bG/E-WEB-Goal-04.png" alt="g4.png" ref="© United Nations">
+                        <img src="https://i.postimg.cc/9XRqGBLC/E-WEB-Goal-05.png" alt="g5.png" ref="© United Nations">
+                        <img src="https://i.postimg.cc/2jsLTBtv/E-WEB-Goal-06.png" alt="g6.png" ref="© United Nations">
+                        <img src="https://i.postimg.cc/x1YJVVn1/E-WEB-Goal-07.png" alt="g7.png" ref="© United Nations">
+                        <img src="https://i.postimg.cc/HsbcNkGN/E-WEB-Goal-08.png" alt="g8.png" ref="© United Nations">
+                        <img src="https://i.postimg.cc/MpDcW3pb/E-WEB-Goal-09.png" alt="g9.png" ref="© United Nations">
+                        <img src="https://i.postimg.cc/N0jKL8yh/E-WEB-Goal-10.png" alt="g10.png" ref="© United Nations">
+                        <img src="https://i.postimg.cc/MG3vBcRn/E-WEB-Goal-11.png" alt="g11.png" ref="© United Nations">
+                        <img src="https://i.postimg.cc/d17Djqm4/E-WEB-Goal-12.png" alt="g12.png" ref="© United Nations">
+                        <img src="https://i.postimg.cc/zB9vd9x5/E-WEB-Goal-13.png" alt="g13.png" ref="© United Nations">
+                        <img src="https://i.postimg.cc/fymL1BPd/E-WEB-Goal-14.png" alt="g14.png" ref="© United Nations">
+                        <img src="https://i.postimg.cc/dQyL7V00/E-WEB-Goal-15.png" alt="g15.png" ref="© United Nations">
+                        <img src="https://i.postimg.cc/m2Wh7Wcy/E-WEB-Goal-16.png" alt="g16.png" ref="© United Nations">
+                        <img src="https://i.postimg.cc/65Vq0bnJ/E-WEB-Goal-17.png" alt="g17.png" ref="© United Nations">
+                        <img src="https://i.postimg.cc/tJwGhxN4/E-SDG-logo-without-UN-emblem-square-CMYK.jpg" alt="final.png" ref="© United Nations">
+                    </image-grid>
+                </slidedown-modal>
 
             </div>
+
         </section>
 
         <section class="tab-item structured-content vertical-structured-content">
 
             <div class="content-nav">
-                <button class="content-nav-tab"><b>Global Issues</b></button>
-                <button class="content-nav-tab"><b>The Sustainable Development Goals</b></button>
+                <button class="content-nav-tab">Global Issues</button>
+                <button class="content-nav-tab">The Sustainable Development Goals</button>
             </div>
 
             <div class="content-text">
@@ -165,160 +147,142 @@
 
                 <ol>
                     <li>
-                        <b>Climate Change</b>
-                        <div class="content-art align-center limit-height">
-                            <img src="https://images.pexels.com/photos/71116/hurricane-earth-satellite-tracking-71116.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="">
-                        </div>
-                        <p class="subtitle">Photo from <a href="https://www.pexels.com/photo/eye-of-the-storm-image-from-outer-space-71116/">Pixabay from Pexels</a>.</p>
+                        <h3>Climate Change</h3>
+                        <content-image limit-height
+                            src="https://images.pexels.com/photos/71116/hurricane-earth-satellite-tracking-71116.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" 
+                            author="Pixabay from Pexels"
+                            href="https://www.pexels.com/photo/eye-of-the-storm-image-from-outer-space-71116/">
+                        </content-image>
                         <p>
                             Global temperatures are rising, and by 2100, they are expected to rise from 2.6 degrees Celsius to 4.8 degrees Celsius. This would result in more severe weather, food, and resource shortages, and disease transmission.
                         </p>
-                        <div class="slidedown-modal">
-                            <div class="modal-body">
-                                <h4>
-                                    What is the difference between climate change and global warming?
-                                </h4>
-                                <div class="modal-content">
-                                    <p>
-                                        To put it simply, global warming causes climate change. 
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
+                        <slidedown-modal title="What is the difference between climate change and global warming?">
+                            <p>
+                                To put it simply, global warming causes climate change. 
+                            </p>
+                        </slidedown-modal>
                     </li>
                     <li>
-                        <b>Pollution</b>
+                        <h3>Pollution</h3>
                         <p>
                             Ocean trash, pesticides, and fertilizers, as well as air, light, and noise pollution, are all examples of such. Clean water is vital for humans and animals, but more than a billion do not have access to it because of harmful chemicals, unmaintained sewages, industrial wastes, etc. 
                         </p>
                     </li>
                     <li>
-                        <b>Violence</b>
-                        <div class="content-art align-center limit-height">
-                            <img src="https://images.pexels.com/photos/4614165/pexels-photo-4614165.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="">
-                        </div>
-                        <p class="subtitle">Photo from <a href="https://www.pexels.com/photo/crowd-of-protesters-holding-signs-4614165/">Life Matters from Pexels</a>.</p>
+                        <h3>Violence</h3>
+                        <content-image limit-height
+                            src="https://images.pexels.com/photos/4614165/pexels-photo-4614165.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" 
+                            author="Life Matters from Pexels"
+                            href="https://www.pexels.com/photo/crowd-of-protesters-holding-signs-4614165/">
+                        </content-image>
                         <p>
                             Whether it is a city-wide war, hatred directed at a specific group of people, or sexual harassment on the street, violence is prevalent but an avoidable problem that has gone unaddressed for far too long. 
                         </p>
-                        <div class="slidedown-modal">
-                            <div class="modal-body">
-                                <h4>
-                                    What are some examples of violence? 
-                                </h4>
-                                <div class="modal-content">
-                                    <table>
-                                        <tr>
-                                            <th>Type</th>
-                                            <th>Description</th>
-                                        </tr>
-                                        <tr>
-                                            <td><b>Physical Violence</b></td>
-                                            <td>
-                                                occurs when someone uses a part of their body or an object to control a person’s actions
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td><b>Psychological Violence</b></td>
-                                            <td>
-                                                occurs when someone uses threats and causes fear in an individual to gain control
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td><b>Sexual Violence</b></td>
-                                            <td>
-                                                occurs when a person is forced to unwillingly take part in a sexual activity
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td><b>Spiritual Violence</b></td>
-                                            <td>
-                                                occurs when someone uses an individual’s spiritual beliefs to manipulate, dominate, or control that person
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td><b>Emotional Violence</b></td>
-                                            <td>
-                                                occurs when someone says or does something to make a person feel naive or worthless.
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td><b>Cultural Violence</b></td>
-                                            <td>
-                                                occurs when an individual is harmed as a result of practices that are part of their culture, religion, or tradition
-                                            </td>
-                                        </tr>
-                                    </table>
-                                    <p class="subtitle">(Violence Prevention Initiative, 2014)</p>
-                                </div>
-                            </div>
-                        </div>
+                        <slidedown-modal title="What are some examples of violence?">
+                            <table>
+                                <tr>
+                                    <th>Type</th>
+                                    <th>Description</th>
+                                </tr>
+                                <tr>
+                                    <td><b>Physical Violence</b></td>
+                                    <td>
+                                        occurs when someone uses a part of their body or an object to control a person’s actions
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td><b>Psychological Violence</b></td>
+                                    <td>
+                                        occurs when someone uses threats and causes fear in an individual to gain control
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td><b>Sexual Violence</b></td>
+                                    <td>
+                                        occurs when a person is forced to unwillingly take part in a sexual activity
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td><b>Spiritual Violence</b></td>
+                                    <td>
+                                        occurs when someone uses an individual’s spiritual beliefs to manipulate, dominate, or control that person
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td><b>Emotional Violence</b></td>
+                                    <td>
+                                        occurs when someone says or does something to make a person feel naive or worthless.
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td><b>Cultural Violence</b></td>
+                                    <td>
+                                        occurs when an individual is harmed as a result of practices that are part of their culture, religion, or tradition
+                                    </td>
+                                </tr>
+                            </table>
+                            <p class="subtitle">(Violence Prevention Initiative, 2014)</p>
+                        </slidedown-modal>
 
                         <p>
                             In terms of “bullying” in the country, we have the RA 10627, or the Anti-Bullying Act of 2013, to address these issues in schools.
                         </p>
                     </li>
                     <li>
-                        <b>Security and Well-Being</b>
+                        <h3>Security and Well-Being</h3>
                         <p>
                             This involves the safety of an individual in their homes, the proximity of healthcare to people, etc. The United Nations began a momentum on abolishing issues involving these. International treaties, agreements, and pacts—to name a few.
                         </p>
-                        <div class="slidedown-modal">
-                            <div class="modal-body">
-                                <h4>
-                                    In the classroom, what is the importance of students’ sense of safety?
-                                </h4>
-                                <div class="modal-content">
-                                    <p>
-                                        As Muston (2022) stated, “students who do not feel safe at school—either emotionally or physically—are more distracted and less successful than their peers. School safety and student achievement are connected; it’s hard to have one without the other.”
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
+                        <slidedown-modal title="In the classroom, what is the importance of students’ sense of safety?">
+                            <p>
+                                As Muston (2022) stated, “students who do not feel safe at school—either emotionally or physically—are more distracted and less successful than their peers. School safety and student achievement are connected; it’s hard to have one without the other.”
+                            </p>
+                        </slidedown-modal>
                     </li>
                     <li>
-                        <b>Lack of Education</b>
-                        <div class="content-art align-center limit-height">
-                            <img src="https://i.postimg.cc/sxGG2r2Z/image-1.png" alt="">
-                        </div>
-                        <p class="subtitle">Photo from <a href="https://www.worldbank.org/en/topic">World Bank Group</a>.</p>
+                        <h3>Lack of Education</h3>
+                        <content-image limit-height
+                            src="https://i.postimg.cc/sxGG2r2Z/image-1.png" 
+                            author="World Bank Group"
+                            href="https://www.worldbank.org/en/topic">
+                        </content-image>
                         <p>
                             More than 72 million children of primary education age around the world remain unschooled due to marginalization, poverty, financial deficit, and inequality (Humanium.org, 2018).
                         </p>
                     </li>
                     <li>
-                        <b>Unemployment</b>
+                        <h3>Unemployment</h3>
                         <p>
                             Many people, particularly those aged 15 to 24, struggle to obtain work and provide a decent living for themselves and their families. This results in a scarcity of essential resources such as food, clothes, transportation, and adequate living circumstances.
                         </p>
                     </li>
                     <li>
-                        <b>Government Corruption</b>
+                        <h3>Government Corruption</h3>
                         <p>
                             Graft, bribery, embezzlement, backdoor deals, nepotism, and favoritism are all examples of corruption. As a major source of poverty, corruption disproportionately affects the poor, undermining political and economic growth, democracy, and other aspects of life. As of Transparency International’s 2013 corruption ranking, the Philippines stood at 94th among 177 nations (Moss, 2014).
                         </p>
                     </li>
                     <li>
-                        <b>Malnourishment and Hunger</b>
-                        <div class="content-art align-center limit-height">
-                            <img src="https://medicalanthropology547429724.files.wordpress.com/2021/04/f8015-1cdo7esjb3qsn-mn16cbz3w.jpeg" alt="">
-                        </div>
-                        <p class="subtitle">Photo from <a href="https://medicalanthropology547429724.wordpress.com/2021/04/07/malnutrition-in-africa-2/">Premium Times Nigeria</a>.</p>
+                        <h3>Malnourishment and Hunger</h3>
+                        <content-image limit-height
+                            src="https://medicalanthropology547429724.files.wordpress.com/2021/04/f8015-1cdo7esjb3qsn-mn16cbz3w.jpeg" 
+                            author="Premium Times Nigeria"
+                            href="https://medicalanthropology547429724.wordpress.com/2021/04/07/malnutrition-in-africa-2/">
+                        </content-image>
                         <p>
                             According to World Health Organization (2021),
                         </p>
-                        <div class="mini-quote">
-                            <div class="banner"></div>
-                            <div class="text">
+                        <boxed-quote>
+                            <p>
                                 “Malnutrition, in all its forms, includes undernutrition (wasting, stunting, being underweight), insufficient vitamins and minerals, overweight, obesity, and the resultant diet-related non-communicable illnesses.”
-                            </div>
-                        </div>
+                            </p>
+                        </boxed-quote>
                         <p>
                             It is a serious and lasting burden that impacts the developmental, economic, social, and medical sectors of many individuals and families, communities, and countries.
                         </p>
                     </li>
                     <li>
-                        <b>Substance Abuse</b>
+                        <h3>Substance Abuse</h3>
                         <p>
                             It is the “harmful or hazardous use of psychoactive substances, including alcohol and illicit drugs” (WHO, 2021).
                         </p>
@@ -327,26 +291,20 @@
                         </p>                    
                     </li>
                     <li>
-                        <b>Terrorism</b>
-                        <div class="content-art align-center limit-height">
-                            <img src="https://wp.cruxnow.com/wp-content/uploads/2023/01/Sahel.webp?w=828&q=75" alt="">
-                        </div>
-                        <p class="subtitle">Photo from <a href="https://cruxnow.com/church-in-africa/2023/01/bishop-warns-terrorism-in-africas-saheel-threatens-peace-cripples-church">cruxnow.com</a>.</p>
+                        <h3>Terrorism</h3>
+                        <content-image limit-height
+                            src="https://wp.cruxnow.com/wp-content/uploads/2023/01/Sahel.webp?w=828&q=75" 
+                            author="cruxnow.com"
+                            href="https://cruxnow.com/church-in-africa/2023/01/bishop-warns-terrorism-in-africas-saheel-threatens-peace-cripples-church">
+                        </content-image>
                         <p>
                             As the OHCHR (n.d.) implied, terrorism “involves the intimidation or coercion of populations or governments through the threat or perpetration of violence, causing death, serious injury or the taking of hostages.” It diminishes the public's sense of security and threatens democracy. Schools are one of the hotspots of these attacks.
-                        </p>
-                        <div class="slidedown-modal">
-                            <div class="modal-body">
-                                <h4>
-                                    As a teacher, what should you do when a terrorist attack occurred in your proximity?
-                                </h4>
-                                <div class="modal-content">
-                                    <p>
-                                        The study by Wansink et. al. (2021) revealed that teachers should first initiate a safe, calm classroom environment while monitoring students’ reactions. Teachers should also provide accurate information and help them make sense of what is happening in a neutral, coherent narration. And finally, and most importantly, listen and abide by the instructions of authorities.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>     
+                        </p> 
+                        <slidedown-modal title="As a teacher, what should you do when a terrorist attack occurred in your proximity?">
+                            <p>
+                                The study by Wansink et. al. (2021) revealed that teachers should first initiate a safe, calm classroom environment while monitoring students’ reactions. Teachers should also provide accurate information and help them make sense of what is happening in a neutral, coherent narration. And finally, and most importantly, listen and abide by the instructions of authorities.
+                            </p>
+                        </slidedown-modal>   
                     </li>
                 </ol>
 
@@ -355,164 +313,155 @@
             <div class="content-text">
 
                 <h1>The 17 Sustainable Development Goals</h1>
-                <div class="content-art align-bottom limit-height">
-                    <img src="https://www.un.org/sustainabledevelopment/wp-content/uploads/2019/08/E_SDG_logo_without_UN_emblem_horizontal_RGB-1024x187.png" alt="">
-                </div>
-                <p class="subtitle">Photo from <a href="https://www.un.org/sustainabledevelopment/news/communications-material/">United Nations</a>.</p>
+                <content-image limit-height align-bottom
+                    src="https://www.un.org/sustainabledevelopment/wp-content/uploads/2019/08/E_SDG_logo_without_UN_emblem_horizontal_RGB-1024x187.png" 
+                    author="United Nations"
+                    href="https://www.un.org/sustainabledevelopment/news/communications-material/">
+                </content-image>
                 <p>
                     In September 2015, The General Assembly adopted the 2030 Agenda for Sustainable Development which includes 17 SDGs. Building on the principle of “leaving no one behind,” the new Agenda emphasizes a holistic approach to achieving sustainable development (UN News, 2015). 
                 </p>
-                <p>
-                    The UN Secretary-General, Ban Ki-moon, said:
-                </p>
-                <div class="mini-quote">
-                    <div class="banner"></div>
-                    <div class="text">
+                <boxed-quote src="https://cdn.britannica.com/69/196869-050-4C5EAF29/Ban-Ki-Moon-2008.jpg">
+                    <h4>The UN Secretary-General, Ban Ki-moon, said:</h4>
+                    <p>
                         “The seventeen Sustainable Development Goals (SDGs) are our shared vision of humanity and a social contract between the world's leaders and the people… They are a to-do list for people and the planet, and a blueprint for success,”
-                    </div>
-                </div>
-                <div class="slidedown-modal">
-                    <div class="modal-body">
-                        <h4>
-                            The 17 Sustainable Development Goals
-                        </h4>
-                        <div class="modal-content">
-                            <table>
-                                <tr>
-                                    <th>No.</th>
-                                    <th>Type</th>
-                                    <th>Description</th>
-                                </tr>
-                                <tr>
-                                    <td>1</td>
-                                    <td><b>No Poverty</b></td>
-                                    <td>
-                                        End poverty in all its form everywhere
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>2</td>
-                                    <td><b>Zero Hunger</b></td>
-                                    <td>
-                                        End hunger, achieve food security and improved nutrition, and promote sustainable agriculture
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>3</td>
-                                    <td><b>Good Health and Well-being</b></td>
-                                    <td>
-                                        Ensure healthy lives and promote well-being for all at all ages
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>4</td>
-                                    <td><b>Quality Education</b></td>
-                                    <td>
-                                        Ensure inclusive and equitable quality education and promote life-long learning opportunities for all
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>5</td>
-                                    <td><b>Gender Equality</b></td>
-                                    <td>
-                                        Achieve gender equality and empower all women and girls
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>6</td>
-                                    <td><b>Clean Water and Sanitation</b></td>
-                                    <td>
-                                        Ensure availability and sustainable management of water and sanitation for all
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>7</td>
-                                    <td><b>Affordable and Clean Energy</b></td>
-                                    <td>
-                                        Ensure access to affordable, reliable, sustainable, and modern energy for all
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>8</td>
-                                    <td><b>Decent Work and Economic Growth</b></td>
-                                    <td>
-                                        Promote sustained, inclusive, and sustainable economic growth, full and productive employment and decent work for all
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>9</td>
-                                    <td><b>Industry, Innovation, and Infrastructure</b></td>
-                                    <td>
-                                        Build resilient infrastructure, promote inclusive and sustainable industrialization and foster innovation
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>10</td>
-                                    <td><b>Reduced Inequalities</b></td>
-                                    <td>
-                                        Reduce inequality within and among countries
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>11</td>
-                                    <td><b>Sustainable Cities and Communities</b></td>
-                                    <td>
-                                        Make cities and human settlements inclusive, safe, and resilient and sustainable
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>12</td>
-                                    <td><b>Responsible Consumption and Production</b></td>
-                                    <td>
-                                        Ensure sustainable consumption and production patterns
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>13</td>
-                                    <td><b>Climate Action</b></td>
-                                    <td>
-                                        Take urgent action to combat climate change and its impacts (in line with the United Nations Framework Convention on Climate Change)
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>14</td>
-                                    <td><b>Life below Water</b></td>
-                                    <td>
-                                        Conserve and sustainably use the oceans, seas and marine resources for sustainable development 
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>15</td>
-                                    <td><b>Life on Land</b></td>
-                                    <td>
-                                        Protect, restore, and promote sustainable use of terrestrial ecosystems, sustainably manage forests, combat desertification, and halt and reverse land degradation and half biodiversity loss
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>16</td>
-                                    <td><b>Peace, Justice, and Strong Institutions</b></td>
-                                    <td>
-                                        Promote peaceful and inclusive societies for sustainable development, provide access to justice for all and build effective, accountable and inclusive insitututions at all levels 
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>17</td>
-                                    <td><b>Partnerships for the Goals</b></td>
-                                    <td>
-                                        Strengthen the means of implementation and revitalize the global partnership for sustainable development
-                                    </td>
-                                </tr>
-                            </table>
-                        </div>
-                    </div>
-                </div>
+                    </p>
+                </boxed-quote>
+                <slidedown-modal title="The 17 Sustainable Development Goals">
+                    <table>
+                        <tr>
+                            <th>No.</th>
+                            <th>Type</th>
+                            <th>Description</th>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td><b>No Poverty</b></td>
+                            <td>
+                                End poverty in all its form everywhere
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td><b>Zero Hunger</b></td>
+                            <td>
+                                End hunger, achieve food security and improved nutrition, and promote sustainable agriculture
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td><b>Good Health and Well-being</b></td>
+                            <td>
+                                Ensure healthy lives and promote well-being for all at all ages
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td><b>Quality Education</b></td>
+                            <td>
+                                Ensure inclusive and equitable quality education and promote life-long learning opportunities for all
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>5</td>
+                            <td><b>Gender Equality</b></td>
+                            <td>
+                                Achieve gender equality and empower all women and girls
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>6</td>
+                            <td><b>Clean Water and Sanitation</b></td>
+                            <td>
+                                Ensure availability and sustainable management of water and sanitation for all
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>7</td>
+                            <td><b>Affordable and Clean Energy</b></td>
+                            <td>
+                                Ensure access to affordable, reliable, sustainable, and modern energy for all
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>8</td>
+                            <td><b>Decent Work and Economic Growth</b></td>
+                            <td>
+                                Promote sustained, inclusive, and sustainable economic growth, full and productive employment and decent work for all
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>9</td>
+                            <td><b>Industry, Innovation, and Infrastructure</b></td>
+                            <td>
+                                Build resilient infrastructure, promote inclusive and sustainable industrialization and foster innovation
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>10</td>
+                            <td><b>Reduced Inequalities</b></td>
+                            <td>
+                                Reduce inequality within and among countries
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>11</td>
+                            <td><b>Sustainable Cities and Communities</b></td>
+                            <td>
+                                Make cities and human settlements inclusive, safe, and resilient and sustainable
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>12</td>
+                            <td><b>Responsible Consumption and Production</b></td>
+                            <td>
+                                Ensure sustainable consumption and production patterns
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>13</td>
+                            <td><b>Climate Action</b></td>
+                            <td>
+                                Take urgent action to combat climate change and its impacts (in line with the United Nations Framework Convention on Climate Change)
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>14</td>
+                            <td><b>Life below Water</b></td>
+                            <td>
+                                Conserve and sustainably use the oceans, seas and marine resources for sustainable development 
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>15</td>
+                            <td><b>Life on Land</b></td>
+                            <td>
+                                Protect, restore, and promote sustainable use of terrestrial ecosystems, sustainably manage forests, combat desertification, and halt and reverse land degradation and half biodiversity loss
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>16</td>
+                            <td><b>Peace, Justice, and Strong Institutions</b></td>
+                            <td>
+                                Promote peaceful and inclusive societies for sustainable development, provide access to justice for all and build effective, accountable and inclusive insitututions at all levels 
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>17</td>
+                            <td><b>Partnerships for the Goals</b></td>
+                            <td>
+                                Strengthen the means of implementation and revitalize the global partnership for sustainable development
+                            </td>
+                        </tr>
+                    </table>
+                </slidedown-modal>
             </div>
 
         </section>
 
-        <section class="tab-item" style="grid-template-columns: 1fr;">
+        <section class="tab-item">
 
-            <div class="content-text" style="font-size: 0.9em;">
+            <div class="content-text">
                 <h2>References</h2>
                 <ul>
                     <li>
@@ -560,12 +509,10 @@
         </section>
 
         <footer>
-            This webpage is a part of my final requirement in the subject The Teacher and the Community, School Culture, and Organizational Leadership. You can contact us using this email <u>jorenlangbid2223@gmail.com</u> for queries, suggestions, corrections, and other concerns.
+            This webpage is a part of my final requirement in the subject <b>The Teacher and the Community, School Culture, and Organizational Leadership</b>. You can contact me using this email <u>jorenlangbid2223+gitweb@gmail.com</u> for queries, suggestions, corrections, and other concerns.
         </footer>
 
     </div>
-
-    <script src="../navigations.js"></script>
 
 </body>
 </html>

@@ -33,7 +33,7 @@
 
         .title-wrapper {
             position: relative;
-            margin: -1vw -5vw -2vw -5vw;
+            margin: -2vw -5vw -2vw -5vw;
         }
 
         .title {
@@ -62,16 +62,11 @@
         }
 
     </style>
-
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="../Main.js" type="module"></script>
 
 </head>
 <body>
-
-    <div id="image-preview-modal">
-        <img src="">
-        <p class="subtitle"></p>
-    </div>
 
     <div class="wrapper-body">
 
@@ -129,19 +124,14 @@
 
                 <div>
                     <h1>About Me</h1>
-                    <div class="content-art align-center" style="margin: 0;">
-                        <img src="https://i.postimg.cc/Wz0wsPMY/forda-portrait.png" alt="self-portrait">
-                    </div>
+                    <content-image src="https://i.postimg.cc/Wz0wsPMY/forda-portrait.png"></content-image>
                     <div class="boxed-content">
                         <div>
                             Hi! I am <b>Joren Langbid</b>. Folks call me <i>Jo</i>. I am taking a Bachelor of Secondary Education Major in Mathematics at Systems Plus College Foundation. I am also a self-taught rookie Frontend Developer, C# Programmer, and occasionally a Math tutor. My motto is
                         </div>
-                        <div class="mini-quote">
-                            <div class="banner"></div>
-                            <div class="text">
-                                “Learn everything. Become anything. Regret nothing.”
-                            </div>
-                        </div>
+                        <boxed-quote src="">
+                            <p>“Learn everything. Become anything. Regret nothing.”</p>
+                        </boxed-quote>
                         <div>
                             I took education because of my urge to contribute to society. I want to become part of shaping the future. Since day one, I knew it was my purpose.
                         </div>
@@ -152,39 +142,26 @@
 
                     <h1>Dedication</h1>
                     <p>I duly dedicate this work to the following unforgettable individual(s):</p>
-                    <div class="slidedown-modal">
-                        <div class="modal-body">
-                            <h4>
-                                Click to view cool people.
-                            </h4>
-                            <div class="modal-content">
-                                <ul class="marginless-list">
-                                    <li>my ever-supportive SEM04A/BPE04A classmates, friends, and family;</li>
-                                    <li>the wonderful folks in the CASSED department, hardworking CSC officers, staff, dean, and professors; and, of course,</li>
-                                    <li>our one and only, Prof. Razel Paglinawan, for constructively guiding us in our Professional Education courses.</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-
+                    <slidedown-modal title="Click to view cool people.">
+                        <ul class="marginless-list">
+                            <li>my ever-supportive SEM04A/BPE04A classmates, friends, and family;</li>
+                            <li>the wonderful folks in the CASSED department, hardworking CSC officers, staff, dean, and professors; and, of course,</li>
+                            <li>our one and only, Prof. Razel Paglinawan, for constructively guiding us in our Professional Education courses.</li>
+                        </ul>
+                    </slidedown-modal>
                     <h1>Introduction</h1>
                     <p>
                         This digital portfolio will walk you through my fruitful takeaways from the Professional Education course <i>EDUC105: The Teacher and the Community, School Culture, and Organizational Leadership.</i>
                     </p>
-                    <div class="slidedown-modal">
-                        <div class="modal-body">
-                            <h4>Portfolio Outline</h4>
-                            <div class="modal-content">
-                                <ul class="marginless-list">
-                                    <li>Philosophical Thoughts on Education</li>
-                                    <li>Social Sciences Theories and Their Implications to Education</li>
-                                    <li>The Why and How of School and Community Partnerships</li>
-                                    <li>Teacher's Ethical and Professional Behavior</li>
-                                    <li>Organizational Leadership</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
+                    <slidedown-modal title="Portfolio Outline">
+                        <ul class="marginless-list">
+                            <li>Philosophical Thoughts on Education</li>
+                            <li>Social Sciences Theories and Their Implications to Education</li>
+                            <li>The Why and How of School and Community Partnerships</li>
+                            <li>Teacher's Ethical and Professional Behavior</li>
+                            <li>Organizational Leadership</li>
+                        </ul>
+                    </slidedown-modal>
                     <p>
                         I tried my best to be direct in discussing my learnings in this venture with inspiring quotes along the journey. I hope this portfolio may not only serve as a school project. But a work that could help future pre-service teachers (such as myself) to understand the course from my humble outlook.
                     </p>
@@ -213,20 +190,16 @@
                     <h1 class="no-margin">Chapter I:</h1>
                     <h3 class="no-margin">Philosophical Thoughts on Education</h3>
                 </p>
-                <div class="mini-quote">
-                    <div class="banner"></div>
-                    <div class="text-with-image">
-                        <img src="https://hips.hearstapps.com/hmg-prod/images/john-dewey-9273497-1-402.jpg" alt="john-dewey-portrait">
-                        <div>
-                            <i>"Education is not preparation for life; education is life itself."</i><br>
-                            <span class="sm0l">— John Dewey</span>
-                        </div>
-                    </div>
-                </div>
+                <boxed-quote src="https://hips.hearstapps.com/hmg-prod/images/john-dewey-9273497-1-402.jpg" alt="dewey-portrait">
+                    <p>
+                        <i>"Education is not preparation for life; education is life itself."</i><br>
+                        <span class="sm0l">— John Dewey</span>
+                    </p>
+                </boxed-quote>
                 <p>
                     This chapter unravels different outlooks on education from notable thinkers. My takeaways are
                 </p>
-                <ul class="marginless-list">
+                <ul>
                     <li><b>John Locke</b> is an empiricist, highlighting the acquisition of experiences from the five senses.</li>
                     <li><b>Herbert Spencer</b> is more on utility—that is, usage of something—putting 'survival' as the focal point of education.</li>
                     <li><b>John Dewey</b>, a pragmatic and progressivist thinker, believed in democracy, experiential knowledge, and learner-centered theory.</li>
@@ -241,20 +214,16 @@
                     <h1 class="no-margin">Chapter II:</h1>
                     <h3 class="no-margin">Social Sciences Theories and Their Implications to Education</h3>
                 </p>
-                <div class="mini-quote">
-                    <div class="banner"></div>
-                    <div class="text-with-image">
-                        <img src="https://i.postimg.cc/RhRnfGVS/George-Herbert-Mead.jpg" alt="john-dewey-portrait">
-                        <div>
-                            <i>"Society is unity in diversity."</i><br>
-                            <span class="sm0l">— George Mead</span>
-                        </div>
-                    </div>
-                </div>
+                <boxed-quote src="https://i.postimg.cc/RhRnfGVS/George-Herbert-Mead.jpg" alt="portrait of George Herbert Mead">
+                    <p>
+                        <i>"Society is unity in diversity."</i><br>
+                        <span class="sm0l">— George Mead</span>
+                    </p>
+                </boxed-quote>
                 <p>
                     Schooling is a social function. Hence education is a social process, too. This chapter elaborates on three major theories in social science that imply education.
                 </p>
-                <ul class="marginless-list">
+                <ul>
                     <li>The <b>Structural-Functional Theory</b> views society as an interconnected whole—each part having its unique function—that works together for balance and stability.</li>
                     <li>The <b>Conflict Theory</b> puts conflict as the driving force of society. When conflicts occur, change duly happens. And for society to progress, change must happen. This process manifests naturally.</li>
                     <li>The <b>Symbolic Interactionists Theory</b> regards symbols as social cues with varying meanings. Different people view symbols uniquely. And, over time, these meanings change as people interact. Essentially, society is driven by the cues we make.</li>
@@ -266,32 +235,26 @@
                     <h1 class="no-margin">Chapter III:</h1>
                     <h3 class="no-margin">The Why and How of School and Community Partnerships</h3>
                 </p>
-                <div class="mini-quote">
-                    <div class="banner"></div>
-                    <div class="text-with-image">
-                        <div>
-                            <br>
-                            <i>“It takes a whole village to raise a child.”</i><br>
-                            <span class="sm0l">— an African proverb</span>
-                            <br><br>
-                        </div>
-                    </div>
-                </div>
+                <boxed-quote>
+                    <p>
+                        <i>“It takes a whole village to raise a child.”</i><br>
+                        <span class="sm0l">— an African proverb</span>
+                    </p>
+                </boxed-quote>
                 <p>
                     School is a sanctuary of the history and culture of people, reflected in the school’s philosophy, mission, and vision. Things to note include
                 </p>
-                <ul class="marginless-list">
+                <ul>
                     <li>The school and community are mutually correlated—each benefits one other.</li>
                     <li>Communities aid schools through Brigada Eskwela, Youth Development Programs, and Community Service. That is, schools implement many community projects, too, by sharing classrooms and facilities for meetings, events, or as evacuation centers.</li>
                     <li>In a functionalist view, schools perform their function to stabilize society. The school reflects what society needs, preserves, and visions.</li>
                     <li>
                         Laws support school-community partnerships as well. <b>Republic Act 9155</b>, Governance of the Basic Education Act, Section 3F states
-                        <div class="mini-quote">
-                            <div class="banner"></div>
-                            <div class="text">
+                        <boxed-quote>
+                            <p>
                                 “local initiatives for the improvement of schools and learning centers and to provide the means by which… improvements may be achieved and sustained.”
-                            </div>
-                        </div>
+                            </p>
+                        </boxed-quote>
                     </li>
                 </ul>
             </div>
@@ -301,20 +264,16 @@
                     <h1 class="no-margin">Chapter IV:</h1>
                     <h3 class="no-margin">Teacher's Ethical and Professional Behavior</h3>
                 </p>
-                <div class="mini-quote">
-                    <div class="banner"></div>
-                    <div class="text-with-image">
-                        <img src="https://alchetron.com/cdn/theodore-brameld-b0550055-e4bb-4dc2-b649-7ee082d2839-resize-750.jpeg" alt="john-dewey-portrait">
-                        <div>
-                            <i>"Teaching seems to me beyond doubt the greatest of the professions."</i><br>
-                            <span class="sm0l">— Theodore Brameld</span>
-                        </div>
-                    </div>
-                </div>
+                <boxed-quote src="https://alchetron.com/cdn/theodore-brameld-b0550055-e4bb-4dc2-b649-7ee082d2839-resize-750.jpeg" alt="theodore-brameld-portrait">
+                    <p>
+                        <i>"Teaching seems to me beyond doubt the greatest of the professions."</i><br>
+                        <span class="sm0l">— Theodore Brameld</span>
+                    </p>
+                </boxed-quote>
                 <p>
                     The Code of Ethics for Professional Teachers lays out the foundation of do’s and don’ts in the professional practice of teaching. The following are some qualities a professional teacher should possess.
                 </p>
-                <ul class="marginless-list">
+                <ul>
                     <li><b>Facilitator</b>. Teachers ought to make learning easier. They should be able to break down complex topics into simple ones while still making learning enjoyable in the process.</li>
                     <li><b>Leader</b>. Teachers are not only bound to the classroom. They are initiators of leadership. They are expected to participate in the community and practice their own rights.</li>
                     <li><b>Role Model</b>. Teachers are granted innate social recognition. They are expected to behave with honor and dignity at all times.</li>
@@ -329,29 +288,25 @@
                     <h1 class="no-margin">Chapter V:</h1>
                     <h3 class="no-margin">Organizational Leadership</h3>
                 </p>
-                <div class="mini-quote">
-                    <div class="banner"></div>
-                    <div class="text-with-image">
-                        <img src="https://blog.12min.com/wp-content/uploads/2018/04/34c-John-C.-Maxwell.gif" alt="john-maxwell-portrait">
-                        <div>
-                            <i>“A leader is one who knows the way, goes the way, and shows the way.”</i><br>
-                            <span class="sm0l">— John Maxwell</span>
-                        </div>
-                    </div>
-                </div>
+                <boxed-quote src="https://blog.12min.com/wp-content/uploads/2018/04/34c-John-C.-Maxwell.gif" alt="john-maxwell-portrait">
+                    <p>
+                        <i>“A leader is one who knows the way, goes the way, and shows the way.”</i><br>
+                        <span class="sm0l">— John Maxwell</span>
+                    </p>
+                </boxed-quote>
                 <p>
                     To be a leader is no easy role. It is a heavy but fulfilling duty at the same time. Organizational leadership is not limited to leading itself. It requires the leader in a work ethic that empowers individuals equally while working towards the goal.
                 </p>
                 <p>
                     A leader and a manager are different from one another. A manager is focused on achieving a working goal. A leader innovates and empowers people to achieve their goals. There are also types of leadership styles.
                 </p>
-                <ul class="marginless-list">
+                <ul>
                     <li><b>Autocratic leaders</b> are authoritarian. They do decision-making by themselves.</li>
                     <li><b>Consultative leaders</b> tend to consult the members before making a decision.</li>
                     <li><b>Democratic leaders</b> put the majority as the basis of a decision.</li>
                     <li><b>Laissez-faire leaders</b> follow a pseudo-tolerant style where participation is individual.</li>
                     <li><b>Situational leaders</b> are rather adaptive and quick-thinking in decision-making.</li>
-                    <li><b>Servant leader</b>s put themselves in a “servant” role to their members.</li>
+                    <li><b>Servant leaders</b> put themselves in a “servant” role to their members.</li>
                     <li><b>Transformational leaders</b> innovate ways. I often see them as kindlers of change.</li>
                 </ul>
             </div>
@@ -369,9 +324,7 @@
                             My favorite lesson is Chapter 1: Philosophical Thoughts in Education. <b>George Counts</b> would be my favorite among the six. 
                         </div>
                     </div>
-                    <div class="content-art align-center limit-height" style="margin: 0;">
-                        <img src="https://alchetron.com/cdn/george-counts-edad2a8d-8333-4812-a192-2165c925e6c-resize-750.jpeg" alt="self-portrait">
-                    </div>
+                    <content-image limit-height src="https://alchetron.com/cdn/george-counts-edad2a8d-8333-4812-a192-2165c925e6c-resize-750.jpeg"></content-image>
                     <div class="boxed-content">
                         <div>
                             He believed that teachers played an important role in changing the society. As society progresses, change happens—and that is where teachers come into play to ignite the flames of social improvement (Ornstein & Levine, 2016).
@@ -384,35 +337,21 @@
                     <p>
                         The school and society are one. School is not only a place for learning. It is a bulwark and mirror of society, culture, beliefs, and tradition. And the teacher's role is to embrace that with dignity.
                     </p>
-                    
-                    <div class="mini-quote">
-                        <div class="banner"></div>
-                        <div class="text-with-image">
-                            <img src="https://hips.hearstapps.com/hmg-prod/images/john-dewey-9273497-1-402.jpg" alt="john-dewey-portrait">
-                            <div>
-                                <i>"The school must be a 'genuine form of active community life, instead of a place set apart in which to learn lessons.'"</i><br>
-                                <span class="sm0l">— John Dewey</span>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="slidedown-modal">
-                        <div class="modal-body">
-                            <h4>
-                                In this course, I realized...
-                            </h4>
-                            <div class="modal-content">
-                                <ul class="marginless-list">
-                                    <li>There is no best philosophy in education. Each is right in its own way. The teacher is free to craft his philosophy.</li>
-                                    <li>School plays an important, integrated role in the society and vice versa. Schools will not exist without people.</li>
-                                    <li>The teaching profession is not only bound to a classroom; it could be everywhere.</li>
-                                    <li>Teachers are individuals regarded with social recognition. And they ought to practice it with respect and integrity.</li>
-                                    <li>My ideal leaders are the transformative ones. Leaders shouldn't only lead. They inspire others to lead.</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-
+                    <boxed-quote src="https://hips.hearstapps.com/hmg-prod/images/john-dewey-9273497-1-402.jpg" alt="john-dewey-portrait">
+                        <p>
+                            <i>"The school must be a 'genuine form of active community life, instead of a place set apart in which to learn lessons.'"</i><br>
+                            <span class="sm0l">— John Dewey</span>
+                        </p>
+                    </boxed-quote>
+                    <slidedown-modal title="In this course, I realized...">
+                        <ul>
+                            <li>There is no best philosophy in education. Each is right in its own way. The teacher is free to craft his philosophy.</li>
+                            <li>School plays an important, integrated role in the society and vice versa. Schools will not exist without people.</li>
+                            <li>The teaching profession is not only bound to a classroom; it could be everywhere.</li>
+                            <li>Teachers are individuals regarded with social recognition. And they ought to practice it with respect and integrity.</li>
+                            <li>My ideal leaders are the transformative ones. Leaders shouldn't only lead. They inspire others to lead.</li>
+                        </ul>
+                    </slidedown-modal>
                     <h1>References</h1>
                     <ul>
                         <li>Republic Act No. 9155 | GOVPH. (2001, August 11). Official Gazette of the Republic of the Philippines. <span class="word-break-wrap">https://www.officialgazette.gov.ph/2001/08/11/republic-act-no-9155/</span></li>
@@ -429,8 +368,6 @@
         </footer>
 
     </div>
-
-    <script src="../navigations.js"></script>
 
 </body>
 </html>

@@ -1,0 +1,32 @@
+#image-previewer-modal {
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 100;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+#image-previewer-modal img {
+    text-align: center;
+    max-width: 80vw;
+    max-height: 80vh;
+}
+
+#image-previewer-modal img:hover {
+    cursor: pointer;
+}
+
+#image-previewer-modal p {
+    color: var(--content-bg);
+}
+
+#image-previewer-modal .caption {
+    font-size: 0.8em;
+    margin: 8px 0 0 0;
+}

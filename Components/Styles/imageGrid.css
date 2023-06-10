@@ -1,0 +1,24 @@
+:host(image-grid) .container {
+    margin: 8px 0;
+    display: grid;
+    gap: 2px;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+}
+
+:host(image-grid) img {
+    display: block;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    transition: filter 0.5s ease;
+}
+
+:host(image-grid[viewable]) img:hover {
+    filter: brightness(0.6);
+    cursor: pointer;
+}
+
+:host(image-grid[viewable]) img:focus-visible {
+    outline: 5px auto Highlight;
+    outline: 5px auto -webkit-focus-ring-color;
+}

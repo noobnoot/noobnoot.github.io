@@ -1,42 +1,7 @@
-//
-// SPAGHETTI NAVIGATIONS
-// navigations.js 
-// by Joren C. Langbid
-//
-// Note: This script requires jquery to function.
-//
-// This script handles all the functionality of 'tabs' and
-// the click-to-open-elements accross the page.
-//
+class Navigations {
 
-$(document).ready(function() {
-
-    // hide components
-
-    var imagePreviewer = $("#image-preview-modal");
-    var tabItems = $("section.tab-item");
-    var contents = $(".structured-content .content-text");
-    var modalContents = $(".modal-content")
-
-    // hides previewer
-    imagePreviewer.hide();
-
-    // hides all tabitems and shows the first one
-    tabItems.hide();
-    tabItems.first().show();
-
-    contents.hide();
-    contents.first().show();
-
-    modalContents.slideToggle(1000);
-
-    // activate first tabs
-    $(".nav-tab").first().toggleClass("active");
-    $(".content-nav .content-nav-tab:first-child").toggleClass("active");
-    
-    // for Tab Items
-    $(".nav-tab").click(function() {
-
+    static onNavTabClick() {
+        var tabItems = $("section.tab-item");
         var navTabs = $(this).parent().children();
         var index = navTabs.index(this);
 
@@ -45,11 +10,9 @@ $(document).ready(function() {
 
         tabItems.hide();
         tabItems.eq(index).css("display", "grid");
+    }
 
-    });
-
-    $(".content-nav-tab").click(function() {
-
+    static onContentNavTabClick() {
         var contents = $(this).parent().siblings(".content-text");
         var contentNavs = $(this).parent().children();
         var index = contentNavs.index(this);
@@ -59,31 +22,29 @@ $(document).ready(function() {
 
         contents.hide();
         contents.eq(index).css("display", "block");
+    }
 
-    }); 
+    static initialize() {
+        var tabItems = $("section.tab-item");
+        var structuredContents = $(".structured-content");
+        var contents = structuredContents.children(".content-text");
+    
+        // hides all tabitems
+        tabItems.hide();
+        contents.hide();
+    
+        // shows first tabs/content
+        tabItems.first().show();
+        $(".nav-tab").first().toggleClass("active");
+        $(".content-nav .content-nav-tab:first-child").toggleClass("active");
+        for ( let i = 0; i < structuredContents.length; i++ ) {
+            structuredContents.eq(i).children(".content-text").first().show();
+        }
+    
+        $(".nav-tab").click(Navigations.onNavTabClick);
+        $(".content-nav-tab").click(Navigations.onContentNavTabClick); 
+    }
 
-    $(".image-grid img").click(function() {
+}
 
-        var src = $(this).attr("src");
-        var ref = $(this).attr("ref");
-
-        imagePreviewer.fadeIn();
-        $("#image-preview-modal img").attr("src", src);
-        $("#image-preview-modal p").text(ref);
-
-    });
-
-    $("#image-preview-modal img").click(function() {
-
-        imagePreviewer.fadeOut();
-
-    });
-
-    $(".modal-body h4").click(function() {
-
-        var modalContent = $(this).parent().children(".modal-content");
-        modalContent.slideToggle(1000);
-        
-    });
-
-});
+export default Navigations;

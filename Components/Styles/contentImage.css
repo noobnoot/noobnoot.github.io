@@ -1,0 +1,30 @@
+:host(content-image) {
+    display: block;
+    max-height: 100%;
+}
+
+:host(content-image) .align-top {
+    object-position: top;
+}
+
+:host(content-image) .align-bottom {
+    object-position: bottom;
+}
+
+:host(content-image) .limit-height {
+    max-height: 30vh;
+}
+
+:host(content-image) img {
+    display: block;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    overflow: hidden;
+}
+
+:host(content-image) .caption {
+    font-size: 0.8em;
+    margin-top: 0;
+    color: var(--disabled);
+}
