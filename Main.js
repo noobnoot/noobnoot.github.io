@@ -9,7 +9,7 @@ import ArticleWithTabs from "../Components/ArticleWithTabs.js";
 import ReferenceList from "../Components/ReferenceList.js";
 import FooterBox from "../Components/FooterBox.js";
 import Metadata from "./Metadata.js";
-import $ from "./Components/_jQuery.js";
+import $ from "../Components/_jQuery.js";
 
 class Main {
 
@@ -26,7 +26,6 @@ class Main {
             ArticleWithTabs.register();
             ReferenceList.register();
             FooterBox.register();
-            // Navigations.initialize();
         }
     }
 
