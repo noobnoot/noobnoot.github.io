@@ -1,3 +1,3 @@
-import "https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js";
+import "https://code.jquery.com/jquery-3.7.0.min.js";
 
 export default window.jQuery.noConflict(true);
