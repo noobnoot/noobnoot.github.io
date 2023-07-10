@@ -1,3 +1,4 @@
+import $ from "../Components/_jQuery.js";
 import BoxedQuote from "../Components/BoxedQuote.js";
 import ContentImage from "../Components/ContentImage.js";
 import ImageGrid from "../Components/ImageGrid.js";
@@ -9,7 +10,6 @@ import ArticleWithTabs from "../Components/ArticleWithTabs.js";
 import ReferenceList from "../Components/ReferenceList.js";
 import FooterBox from "../Components/FooterBox.js";
 import Metadata from "../Metadata.js";
-import $ from "../Components/_jQuery.js";
 
 class Main {
 
