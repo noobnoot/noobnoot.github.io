@@ -1,0 +1,3 @@
+:host(footer-box) p {
+    color: var(--disabled);
+}

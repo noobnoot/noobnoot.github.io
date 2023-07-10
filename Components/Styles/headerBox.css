@@ -1,0 +1,34 @@
+:host(header-box) {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+:host(header-box) div img {
+    height: 60px;
+}
+
+:host(header-box) p:first-of-type {
+    margin-left: 1em;
+    flex: 1;
+}
+
+:host(header-box) p:last-of-type {
+    text-align: end;
+}
+
+@media screen and (max-width: 800px) {
+    :host(header-box) {
+        text-align: center;
+        flex-direction: column;
+    }
+
+    :host(header-box) div img {
+        height: 40px;
+    }
+    
+    :host(header-box) p:first-of-type, :host(header-box) p:last-of-type {
+        margin: 8px 0 0 0;
+    }
+}
+

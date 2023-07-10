@@ -1,0 +1,73 @@
+:host(article-with-tabs) nav {
+    position: relative;
+    padding-top: 1.5em;
+    left: -5vw;
+    width: calc(100% + 3vw);
+    display: flex;
+    flex-direction: column;
+    background-image: linear-gradient( var(--accent-color), var(--accent-color) ), var(--background-img);
+}
+
+:host(article-with-tabs) nav button {
+    display: block;
+    background-color: inherit;
+    outline: none;
+    cursor: pointer;
+    border: none;
+    padding: 8px 10px;
+    transition: 0.3s;
+    color: var(--anti-accent-color);
+    font-size: 0.9em;
+    font-family: inherit;
+}
+
+:host(article-with-tabs) nav button:hover, :host(article-with-tabs) nav button:focus {
+    color: black;
+    transition: all 0.5s ease;
+    background-color: var(--content-bg);
+}
+
+:host(article-with-tabs) nav button.active {
+    color: black;
+    background-color: var(--content-bg);
+}
+
+:host(article-with-tabs) nav button p {
+    margin: 0;
+    font-size: 0.70em;
+}
+
+:host(article-with-tabs[vertical]) nav {
+    width: calc(100% + 10vw);
+    padding: 0 3vw;
+    flex-direction: row;
+}
+
+:host(article-with-tabs[vertical]) nav button {
+    flex: 1;
+    font-size: 1em;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+@media screen and (max-width: 800px) {
+
+    :host(article-with-tabs) nav {
+        position: relative;
+        left: -5vw;
+        min-width: calc(100% + 10vw);
+        padding: 0 6vw;
+        max-height: 250px;
+        display: flex;
+        flex-direction: row;
+    }
+
+    :host(article-with-tabs) nav button {
+        padding: 16px 10px;
+        flex: 1;
+        font-size: 1em;
+        font-weight: bold;
+        text-transform: uppercase;
+    }
+
+}

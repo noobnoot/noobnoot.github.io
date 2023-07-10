@@ -1,0 +1,9 @@
+:host(title-box) {
+    display: block;
+    margin: 20px 0;
+    line-height: 125%;
+}
+
+:host(title-box) * {
+    margin: 0;
+}

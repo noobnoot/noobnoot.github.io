@@ -20,7 +20,7 @@
 <head>
 
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="metadata" src="./metadata.json">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>EDUC101 - Types of Assessment</title>
     <link rel="stylesheet" href="../basePotatoStyle.css">
@@ -34,79 +34,45 @@
         }
 
     </style>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
     <script src="../main.js" type="module"></script>
     
 </head>
 <body>
 
-    <div class="wrapper-body">
+    <header>
+        <header-box meta="../Attributes/cassedBanner.json"></header-box>
+        <hr>
+        <title-box></title-box>
+    </header>
 
-        <header>
+    <article-tabber>
 
-            <div class="school-header">
-                <div>
-                    <img src="https://i.postimg.cc/cJ62t4xT/spcf-logo.png" alt="SPCF Logo">
-                    <img src="https://i.postimg.cc/y6J6Cs0m/cassed-logo.png" alt="CASSED Logo">
-                </div>
-                <p>Systems Plus College Foundation<br>College of Social Sciences and Education</p>    
-                <p>April 2022</p>
-            </div>
-            <hr>
-            <div class="title">
-                <h3 class="title">
-                    <span class="l0rge">Assessment, Learning Resources, and Instructional Accommodations:</span><br>
-                    Introduction and Types of Assessments
-                </h3>
-                <p class="subtitle">by Joren C. Langbid, SEM03A</p>
-            </div>
-            <nav>
-                <button class="nav-tab">INTRODUCTION</button>
-                <button class="nav-tab">BASIC TERMS</button>
-                <button class="nav-tab">ASSESSMENTS</button>
-                <button class="nav-tab">REFERENCES</button>
-            </nav>
+        <article title="Introduction">
+            <h1>Introduction</h1>
+            <content-image limit-height
+                src="https://iris.peabody.vanderbilt.edu/wp-content/uploads/2018/06/micro_accommodations_p01_d.jpg"
+                href="https://iris.peabody.vanderbilt.edu/"
+                author="IRIS Center">
+            </content-image>
+            <p>
+                Assessments play a fundamental role in facilitating classroom inclusion. It helps educators distinguish not just student needs but also what accommodation to consider for the disadvantaged ones.
+            </p>
+            <p>
+                So, to honor this ground, ponder the question below:
+            </p>
+            <slidedown-box title="Question to Ponder:">
+                <p>How do we address students at a disadvantage/disability in a classroom setting?</p>
+            </slidedown-box>
+        </article>
 
-        </header>
+        <article-with-tabs title="Basic Terms">
 
-        <section class="tab-item">
-            <div class="content-text">
-                
-                <h1>Introduction</h1>
-                <content-image limit-height
-                    src="https://iris.peabody.vanderbilt.edu/wp-content/uploads/2018/06/micro_accommodations_p01_d.jpg"
-                    href="https://iris.peabody.vanderbilt.edu/"
-                    author="IRIS Center">
-                </content-image>
-                <p>
-                    Assessments play a fundamental role in facilitating classroom inclusion. It helps educators distinguish not just student needs but also what accommodation to consider for the disadvantaged ones.
-                </p>
-                <p>
-                    So, to honor this ground, ponder the question below:
-                </p>
-
-                <slidedown-modal title="Question to Ponder:">
-                    <p>How do we address students at a disadvantage/disability in a classroom setting?</p>
-                </slidedown-modal>
-
-            </div>
-        </section>
-
-        <section class="tab-item structured-content">
-
-            <div class="content-nav">
-                <button class="content-nav-tab">Assessment</button>
-                <button class="content-nav-tab">Learning Resources</button>
-                <button class="content-nav-tab">Instructional Accomodation</button>
-            </div>
-
-            <div class="content-text">
-
+            <section title="Assessment">
                 <h1>Assessment</h1>
                 <p>
                     <b>Assessment</b> refers to the variety of methods or tools teachers use to evaluate, measure, or document students’ academic readiness, learning progress, skill acquisition, or educational needs.
                 </p>
-                <slidedown-modal title="How do we classify assessment?">
+                <slidedown-box title="How do we classify assessment?">
                     <p>Classifications of assessment include but are not limited to the following:</p>
                     <ul>
                         <li>
@@ -125,17 +91,14 @@
                             <b>Screening assessments</b> – determine whether students need specialized assistance or services or are ready to begin a course, grade level, or academic program.
                         </li>
                     </ul>
-                </slidedown-modal>
+                </slidedown-box>
                 <p>
                     Moreover, another classification of assessments is by their purpose (i.e., assessment <i>of</i> learning, assessment <i>for</i> learning, and assessment <i>as</i> learning).
                 </p>
-
                 <p class="subtitle">(Assessment Definition, 2015)</p>
+            </section>
 
-            </div>
-
-            <div class="content-text">
-
+            <section title="Learning Resources">
                 <h1>Learning Resources</h1>
                 <p>
                     <b>Learning resources</b> are any resource–print and non-print materials–and online/open-access resources which support and enhance–directly or indirectly–learning and teaching.
@@ -143,7 +106,7 @@
                 <p>
                     These may include <b>printed or digital materials</b> (textbooks, flashcards, computer software), <b>tools, equipment, and aids</b> (chalkboard, computer, projector), and <b>facilities</b> (classroom, school gym, science/computer laboratory).
                 </p>
-                <slidedown-modal title="What about the learning resources for disabled students?">
+                <slidedown-box title="What about the learning resources for disabled students?">
                     <p>We have specialized learning formats that include but are not limited to the following:</p>
                     <ul>
                         <li>
@@ -160,12 +123,10 @@
                         </li>
                     </ul>
                     <p class="subtitle">(PACER Center & the National Center on Accessible Instructional Materials at CAST, 2011)</p>
-                </slidedown-modal>
+                </slidedown-box>
+            </section>
 
-            </div>
-
-            <div class="content-text">
-
+            <section title="Instructional Accommodations">
                 <h1>Instructional Accommodations</h1>
                 <p>
                     <b>Instructional accommodations</b> change the student’s way of accessing academic content or progressing through the same learning goal. Note that these accommodations don’t change the standards a student is trying to achieve/accomplish.
@@ -179,7 +140,7 @@
                     <li><b>Setting</b>: A change in the learning or working environment.</li>
                     <li><b>Timing and scheduling</b>: A change to the time for a task.</li>
                 </ul>
-                <slidedown-modal title="Examples of accommodation based on disability/disadvantage">
+                <slidedown-box title="Examples of accommodation based on disability/disadvantage">
                     <table>
                         <tr>
                             <th>Disability or Disadvantage</th>
@@ -244,30 +205,22 @@
                             </td>
                         </tr>
                     </table>
-                </slidedown-modal>
+                </slidedown-box>
+            </section>
 
-            </div>
+        </article-with-tabs>
 
-        </section>
+        <article-with-tabs title="Assessments">
 
-        <section class="tab-item structured-content">
-
-            <div class="content-nav">
-                <button class="content-nav-tab">Observation Checklists</button>
-                <button class="content-nav-tab">Anecdotal Records</button>
-                <button class="content-nav-tab">Portfolio Assessments</button>
-            </div>
-
-            <div class="content-text">
-
-                <h1>Observation checklists</h1>
+            <section title="Observation Checklists">
+                <h1>Observation Checklists</h1>
                 <p>
                     <b>Observation checklists</b> are questions or descriptions that assist an observer in evaluating an individual's performance and behavior. Additionally, it can be used for diagnosis purposes so that educators can devise the best accommodation to consider if there is a need.
                 </p>
                 <p>
                     Below are some observation checklists for learning disabilities from the National Center for Learning Disabilities (n.d.): 
                 </p>
-                <slidedown-modal title="Gallery">
+                <slidedown-box title="Gallery">
                     <image-grid viewable col="3">
                         <img src="https://i.postimg.cc/wjJLn7xM/d1.png" alt="d1.png" ref="© National Center for Learning Disabilities">
                         <img src="https://i.postimg.cc/8PxLyhSx/d2.png" alt="d2.png" ref="© National Center for Learning Disabilities">
@@ -276,64 +229,41 @@
                         <img src="https://i.postimg.cc/WpWGkBfN/d5.png" alt="d5.png" ref="© National Center for Learning Disabilities">
                         <img src="https://i.postimg.cc/vBXWXkYv/d6.png" alt="d6.png" ref="© National Center for Learning Disabilities">
                     </image-grid>
-                </slidedown-modal>
+                </slidedown-box>
                 <p>You can check out this file at this <a href="https://pedineurologists.com/learning-disabilities-checklist.pdf">link</a>.</p>
+            </section>
 
-            </div>
-
-            <div class="content-text">
-
+            <section title="Anecdotal Records">
                 <h1>Anecdotal Records</h1>
                 <p>
                     <b>Anecdotal records</b> are narrative records (or can be short stories/comments) that educators use to document a significant incident that they have observed. These can help the teacher to understand their pupils realistically.
                 </p>
-                <!--
-                <slidedown-modal title="Gallery">
+                <slidedown-box title="Gallery">
                     <image-grid viewable col="2">
                         <img src="https://i.postimg.cc/TPVZjVWq/anecdotal-2.png" alt="a1.png" ref="© Laraisa Zamora and Yolanda Hernandez">
                         <img src="https://s3.studylib.net/store/data/025459709_1-9d85c2fba58eb99c20e6adef8a21a537.png" alt="a2.png" ref="© Dolores National High School @ Ormoc City, Leyte">
                     </image-grid>
-                </slidedown-modal>
-                -->
-            </div>
+                </slidedown-box>
+            </section>
 
-            <div class="content-text">
-
+            <section title="Portfolio Assessments">
                 <h1>Portfolio Assessments</h1>
                 <p>
                     <b>Portfolio assessments</b> are collections of student works associated with standards the teacher required them to learn. A portfolio assessment describes the student’s learning progression throughout the year. You can regard it as a reflective storybook of the student’s development.
                 </p>
+            </section>
 
-            </div>
+        </article-with-tabs>
 
-        </section>
+        <article title="References">
+            <reference-list></reference-list>
+        </article>
 
-        <section class="tab-item">
+    </article-tabber>
 
-            <div class="content-text">
-                <h2>References</h2>
-                <ul>
-                    <li>Assessment Definition. (2015, November 10). The Glossary of Education Reform. Retrieved from: <span class="word-break-wrap">https://www.edglossary.org/assessment</span></li>
-                    <li>
-                        Lee, A. M. I. (2022, May 23). Accommodations: What they are and how they work. Retrieved from: <span class="word-break-wrap">https://www.understood.org/en/articles/accommodations-what-they-are-and-how-they-work</span>
-                    </li>
-                    <li>
-                        National Center for Learning Disabilities. (n.d.). Learning Disabilities Checklist. Retrieved from: 
-                        <span class="word-break-wrap">https://pedineurologists.com/learning-disabilities-checklist.pdf</span>
-                    </li>
-                    <li>
-                        <span class="word-break-wrap">https://www.studocu.com/ph/document/urdaneta-city-university/understanding-the-self/chapter-4-types-of-assessments/34371861</span>
-                    </li>
-                </ul>
-            </div>
-
-        </section>
-
-        <footer>
-            This webpage is a part of my final requirement in the subject <b>Foundation of Inclusive and Special Education</b>. You can contact us using this email <u>jorenlangbid2223+gitweb@gmail.com</u> for queries, suggestions, corrections, and other concerns.
-        </footer>
-
-    </div>
+    <footer>
+        <footer-box></footer-box>
+    </footer>
     
 </body>
 </html>

@@ -1,25 +1,9 @@
-<!--
-
-    Created by Joren Langbid
-    Systems Plus College Foundation
-    May 2023
-
-    Please use this for personal use only.
-    I do not own the images and the color
-    palette that are used in this page.
-
-    Resources:
-
-    
-
--->
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
 
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="metadata" src="./metadata.json">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>EDUC105 - Digital Portfolio</title>
     <link rel="stylesheet" href="../basePotatoStyle.css">
@@ -32,97 +16,77 @@
             --background-img: url("https://images.creativemarket.com/0.1.0/ps/2321248/1160/772/m1/fpnw/wm1/cover-.jpg?1487898325&s=1b088f3d83e0354fa15b61d49486a787");
         }
 
-        .title-wrapper {
-            position: relative;
-            margin: -2vw -5vw -2vw -5vw;
-        }
-
-        .title {
-            margin: 0;
-            background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url("https://mb.com.ph/wp-content/uploads/2020/08/Photo-from-ADB.jpg");
-            background-position: center;
-            background-repeat: no-repeat;
-            background-size: cover;
-        }
-
-        .title .text {
-            padding: 35vh 6vw 30vh 6vw;
-            text-align: center;
-            color: #FFF; 
-            z-index: 1;
-            font-size: 1.20em;
-        }
-
-        .title ul {
-            display: inline-block;
-            list-style-type: none;
-            text-align: left;
-            padding: 0;
-            color: #CCC;
-            font-weight: bold;
-        }
-
     </style>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
     <script src="../Main.js" type="module"></script>
 
 </head>
 <body>
 
-    <div class="wrapper-body">
+    <header>
+        <header-box meta="../Attributes/cassedBanner.json"></header-box>
+        <br>
+    </header>
 
-        <header>
+    <article-tabber>
 
-            <div class="school-header">
-                <div>
-                    <img src="https://i.postimg.cc/cJ62t4xT/spcf-logo.png" alt="SPCF Logo">
-                    <img src="https://i.postimg.cc/y6J6Cs0m/cassed-logo.png" alt="CASSED Logo">
-                </div>
-                <p>Systems Plus College Foundation<br>College of Arts and Social Sciences and Education</p>    
-                <p>May 2023</p>
-            </div>
-            <br>
-            <nav>
-                <button class="nav-tab">TITLE</button>
-                <button class="nav-tab">INTRODUCTION</button>
-                <button class="nav-tab">CONTENT</button>
-                <button class="nav-tab">REFLECTION</button>
-            </nav>
+        <article title="title">
+            <style>
+                .title-wrapper {
+                    position: relative;
+                    margin: -2vw -5vw -2vw -5vw;
+                }
 
-        </header>
+                .title {
+                    margin: 0;
+                    background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url("https://mb.com.ph/wp-content/uploads/2020/08/Photo-from-ADB.jpg");
+                    background-position: center;
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                }
 
-        <section class="tab-item">
+                .title .text {
+                    padding: 35vh 6vw 30vh 6vw;
+                    text-align: center;
+                    color: #FFF; 
+                    z-index: 1;
+                    font-size: 1.20em;
+                }
 
-            <div class="content-text">
-
-                <div class="title-wrapper">
-
-                    <div class="title">
-                        <div class="text">
-                            <h1>
-                                <span class="l0rge">Portfolio in EDUC105:</span>
-                                <br>
-                                <span style="font-weight: normal;">The Teacher and the Community, School Culture, and Organizational Leadership</span>
-                            </h1>
-                            <br><br>
-                            <ul class="marginless-list subtitle">
-                                <li>Submitted by Joren C. Langbid, SEM04A</li>
-                                <li>Submitted to Prof. Razel Paglinawan</li>
-                            </ul>                                
-                        </div>
+                .title ul {
+                    display: inline-block;
+                    list-style-type: none;
+                    text-align: left;
+                    padding: 0;
+                    color: #CCC;
+                    font-weight: bold;
+                }
+            </style>
+            <div class="title-wrapper">
+    
+                <div class="title">
+                    <div class="text">
+                        <h1>
+                            <span class="l0rge">Portfolio in EDUC105:</span>
+                            <br>
+                            <span style="font-weight: normal;">The Teacher and the Community, School Culture, and Organizational Leadership</span>
+                        </h1>
+                        <br><br>
+                        <ul class="marginless-list subtitle">
+                            <li>Submitted by Joren C. Langbid, SEM04A</li>
+                            <li>Submitted to Prof. Razel Paglinawan</li>
+                        </ul>                                
                     </div>
-                    <p class="subtitle" style="padding-left: 1em;">Image from <a href="https://www.adb.org/results/teach-philippines-teach-development">Asian Development Bank (2015)</a>.</p>
-
                 </div>
+                <p class="subtitle" style="padding-left: 1em;">Image from <a href="https://www.adb.org/results/teach-philippines-teach-development">Asian Development Bank (2015)</a>.</p>
 
             </div>
-
-        </section>
-
-        <section class="tab-item">
-
-            <div class="content-text dual-column-2-by-3">
-
+    
+        </article>
+    
+        <article title="introduction">
+    
+            <section class="dual-column-2-by-3">
+    
                 <div>
                     <h1>About Me</h1>
                     <content-image src="https://i.postimg.cc/Wz0wsPMY/forda-portrait.png"></content-image>
@@ -138,23 +102,23 @@
                         </div>
                     </div>
                 </div>
-
+    
                 <div>
-
+    
                     <h1>Dedication</h1>
                     <p>I duly dedicate this work to the following unforgettable individual(s):</p>
-                    <slidedown-modal title="Click to view cool people.">
+                    <slidedown-box title="Click to view cool people.">
                         <ul class="marginless-list">
                             <li>my ever-supportive SEM04A/BPE04A classmates, friends, and family;</li>
                             <li>the wonderful folks in the CASSED department, hardworking CSC officers, staff, dean, and professors; and, of course,</li>
                             <li>our one and only, Prof. Razel Paglinawan, for constructively guiding us in our Professional Education courses.</li>
                         </ul>
-                    </slidedown-modal>
+                    </slidedown-box>
                     <h1>Introduction</h1>
                     <p>
                         This digital portfolio will walk you through my fruitful takeaways from the Professional Education course <i>EDUC105: The Teacher and the Community, School Culture, and Organizational Leadership.</i>
                     </p>
-                    <slidedown-modal title="Portfolio Outline">
+                    <slidedown-box title="Portfolio Outline">
                         <ul class="marginless-list">
                             <li>Philosophical Thoughts on Education</li>
                             <li>Social Sciences Theories and Their Implications to Education</li>
@@ -162,31 +126,23 @@
                             <li>Teacher's Ethical and Professional Behavior</li>
                             <li>Organizational Leadership</li>
                         </ul>
-                    </slidedown-modal>
+                    </slidedown-box>
                     <p>
                         I tried my best to be direct in discussing my learnings in this venture with inspiring quotes along the journey. I hope this portfolio may not only serve as a school project. But a work that could help future pre-service teachers (such as myself) to understand the course from my humble outlook.
                     </p>
                     <p>
                         Enjoy reading.
                     </p>
-
+    
                 </div>
-
-            </div>
-
-        </section>
-
-        <section class="tab-item structured-content">
-
-            <div class="content-nav">
-                <button class="content-nav-tab"><span class="media-hide">Chapter </span>I<br><div class="media-hide very-sm0l">Philosophical Thoughts on Education</div></button>
-                <button class="content-nav-tab"><span class="media-hide">Chapter </span>II<br><div class="media-hide very-sm0l">Social Sciences Theories and Their Implications to Education</div></button>
-                <button class="content-nav-tab"><span class="media-hide">Chapter </span>III<br><div class="media-hide very-sm0l">The Why and How of School and Community Partnerships</div></button>
-                <button class="content-nav-tab"><span class="media-hide">Chapter </span>IV<br><div class="media-hide very-sm0l">Teacher's Ethical and Professional Behavior</div></button>
-                <button class="content-nav-tab"><span class="media-hide">Chapter </span>V<br><div class="media-hide very-sm0l">Organizational Leadership</div></button>
-            </div>
+    
+            </section>
+    
+        </article>
+    
+        <article-with-tabs title="content">
             
-            <div class="content-text">
+            <section title="Chapter 1" alt-title="I" subtitle="Philosophical Thoughts on Education">
                 <p>
                     <h1 class="no-margin">Chapter I:</h1>
                     <h3 class="no-margin">Philosophical Thoughts on Education</h3>
@@ -208,9 +164,9 @@
                     <li><b>Theodore Brameld</b> pointed out fairness and social reform as the pioneering view of education.</li>
                     <li><b>Paulo Freire</b> advocates deprecating the banking method. A school must be an open book for dialogue.</li>
                 </ul>
-            </div>
-
-            <div class="content-text">
+            </section>
+    
+            <section title="Chapter 2" alt-title="II" subtitle="Social Sciences Theories and Their Implications to Education">
                 <p>
                     <h1 class="no-margin">Chapter II:</h1>
                     <h3 class="no-margin">Social Sciences Theories and Their Implications to Education</h3>
@@ -229,9 +185,9 @@
                     <li>The <b>Conflict Theory</b> puts conflict as the driving force of society. When conflicts occur, change duly happens. And for society to progress, change must happen. This process manifests naturally.</li>
                     <li>The <b>Symbolic Interactionists Theory</b> regards symbols as social cues with varying meanings. Different people view symbols uniquely. And, over time, these meanings change as people interact. Essentially, society is driven by the cues we make.</li>
                 </ul>
-            </div>
-
-            <div class="content-text">
+            </section>
+    
+            <section title="Chapter 3" alt-title="III" subtitle="The Why and How of School and Community Partnerships">
                 <p>
                     <h1 class="no-margin">Chapter III:</h1>
                     <h3 class="no-margin">The Why and How of School and Community Partnerships</h3>
@@ -258,9 +214,9 @@
                         </boxed-quote>
                     </li>
                 </ul>
-            </div>
-
-            <div class="content-text">
+            </section>
+    
+            <section title="Chapter 4" alt-title="IV" subtitle="Teacher's Ethical and Professional Behavior">
                 <p>
                     <h1 class="no-margin">Chapter IV:</h1>
                     <h3 class="no-margin">Teacher's Ethical and Professional Behavior</h3>
@@ -282,9 +238,9 @@
                     <li><b>Informant</b>. Teachers ought to aid the school in disseminating information for school projects, activities, memorandums, etc. to the community.</li>
                     <li><b>Collaborator</b>. Teachers are no lone creatures. They are expected to maintain a harmonious personal and professional relationship with the community and other stakeholders. </li>
                 </ul>
-            </div>
+            </section>
             
-            <div class="content-text">
+            <section title="Chapter 5" alt-title="V" subtitle="Organizational Leadership">
                 <p>
                     <h1 class="no-margin">Chapter V:</h1>
                     <h3 class="no-margin">Organizational Leadership</h3>
@@ -310,14 +266,14 @@
                     <li><b>Servant leaders</b> put themselves in a “servant” role to their members.</li>
                     <li><b>Transformational leaders</b> innovate ways. I often see them as kindlers of change.</li>
                 </ul>
-            </div>
-
-        </section>
-
-        <section class="tab-item">
-
+            </section>
+    
+        </article-with-tabs>
+    
+        <article title="reflection">
+    
             <div class="content-text dual-column-2-by-3">
-
+    
                 <div>
                     <h1>My Favorite Lesson</h1>
                     <div class="boxed-content">
@@ -332,7 +288,7 @@
                         </div>
                     </div>
                 </div>
-
+    
                 <div>
                     <h1>Reflection</h1>
                     <p>
@@ -344,7 +300,7 @@
                             <span class="sm0l">— John Dewey</span>
                         </p>
                     </boxed-quote>
-                    <slidedown-modal title="In this course, I realized...">
+                    <slidedown-box title="In this course, I realized...">
                         <ul>
                             <li>There is no best philosophy in education. Each is right in its own way. The teacher is free to craft his philosophy.</li>
                             <li>School plays an important, integrated role in the society and vice versa. Schools will not exist without people.</li>
@@ -352,23 +308,21 @@
                             <li>Teachers are individuals regarded with social recognition. And they ought to practice it with respect and integrity.</li>
                             <li>My ideal leaders are the transformative ones. Leaders shouldn't only lead. They inspire others to lead.</li>
                         </ul>
-                    </slidedown-modal>
-                    <h1>References</h1>
-                    <ul>
-                        <li>Republic Act No. 9155 | GOVPH. (2001, August 11). Official Gazette of the Republic of the Philippines. <span class="word-break-wrap">https://www.officialgazette.gov.ph/2001/08/11/republic-act-no-9155/</span></li>
-                        <li>Ornstein, A. C., Levine, D. U., Gutek, G., & Vocke, D. E. (2016). Foundations of education. Cengage learning.</li>
-                    </ul>
+                    </slidedown-box>
+
+                    <reference-list></reference-list>
+                        
                 </div>
-
+    
             </div>
+    
+        </article>
 
-        </section>
-        
-        <footer>
-            This webpage is a part of my final requirement in the subject The Teacher and the Community, School Culture, and Organizational Leadership. You can contact me using this email <u>jorenlangbid2223+gitweb@gmail.com</u> for queries, suggestions, corrections, and other concerns.
-        </footer>
-
-    </div>
+    </article-tabber>
+    
+    <footer>
+        <footer-box></footer-box>
+    </footer>
 
 </body>
 </html>

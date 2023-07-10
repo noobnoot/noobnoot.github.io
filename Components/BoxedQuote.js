@@ -1,4 +1,5 @@
-import ComponentHelper from "./ComponentHelper.js";
+import ComponentHelper from "./_ComponentHelper.js";
+import $ from "./_jQuery.js";
 
 class BoxedQuote extends HTMLElement {
 

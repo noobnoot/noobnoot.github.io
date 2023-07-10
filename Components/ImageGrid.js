@@ -1,4 +1,5 @@
-import ComponentHelper from "./ComponentHelper.js";
+import ComponentHelper from "./_ComponentHelper.js";
+import $ from "./_jQuery.js";
 
 class ImageGrid extends HTMLElement {
 
@@ -123,7 +124,7 @@ class ImageGrid extends HTMLElement {
             .children(".container")
             .children("img")
             .attr("tabindex", "0")
-            .click(function(event) {
+            .click(function() {
                 if ( !ImageGrid.isPreviewerShow ) {
                     ImageGrid.previewerDisplay(
                         $(this).attr("src"),

@@ -1,0 +1,60 @@
+:host(article-tabber) nav {
+    display: flex;
+    background-image: linear-gradient( var(--accent-color), var(--accent-color) ), var(--background-img);
+    background-size: cover;
+}
+
+:host(article-tabber) nav button {
+    display: block;
+    flex: 1;
+    background-color: transparent;
+    outline: none;
+    cursor: pointer;
+    border: none;
+    padding: 8px 14px;
+    transition: 0.3s;
+    letter-spacing: 2px;
+    color: var(--anti-accent-color);
+    font-size: 0.9em;
+    font-family: inherit;
+}
+
+:host(article-tabber) button:hover, :host(article-tabber) button:focus {
+    color: black;
+    transition: all 0.5s ease;
+    background-color: var(--content-bg);
+}
+
+:host(article-tabber) button.active {
+    color: black;
+    background-color: var(--content-bg);
+}
+
+:host(article-tabber) article, :host(article-tabber) article-with-tabs  {
+    padding: 2vw 5vw;
+    gap: 1vw;
+    background-color: var(--content-bg);
+    grid-template-rows: auto;
+}
+
+:host(article-tabber) article-with-tabs {
+    grid-template-columns: 3fr 10fr;
+}
+
+:host(article-tabber) article-with-tabs[vertical] {
+    grid-template-columns: 1fr;
+}
+
+@media screen and (max-width: 800px) {
+
+    :host(article-tabber) article-with-tabs {
+        grid-template-columns: 1fr;
+    }
+
+    :host(article-tabber) nav button {
+        letter-spacing: 1px;
+        font-family: inherit;
+        padding: 6px 8px;
+    }
+
+}

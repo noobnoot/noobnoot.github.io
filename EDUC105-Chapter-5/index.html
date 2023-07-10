@@ -20,7 +20,7 @@
 <head>
 
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="metadata" src="./metadata.json">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>EDUC105 - Global Issues that Concern Schools and Society</title>
     <link rel="stylesheet" href="../basePotatoStyle.css">
@@ -34,118 +34,74 @@
         }
 
     </style>
-
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
     <script src="../Main.js" type="module"></script>
 
 </head>
 <body>
 
-    <div class="wrapper-body">
+    <header>
+        <header-box meta="../Attributes/cassedBanner.json"></header-box>
+        <br>
+        <title-box></title-box>
+    </header>
 
-        <header>
+    <article-tabber>
 
-            <div class="school-header">
-                <div>
-                    <img src="https://i.postimg.cc/cJ62t4xT/spcf-logo.png" alt="SPCF Logo">
-                    <img src="https://i.postimg.cc/y6J6Cs0m/cassed-logo.png" alt="CASSED Logo">
-                </div>
-                <p>Systems Plus College Foundation<br>College of Arts and Social Sciences and Education</p>    
-                <p>March 2023</p>
-            </div>
-            <hr>
-            <div class="title">
-                <h3 class="title">
-                    <span class="l0rge">Chapter 5:</span>
-                    <br>
-                    Global Issues that Concern Schools and Society
-                </h3>
-                <p class="subtitle">by Joren C. Langbid, SEM04A, and Angela Nunag, BPE04A.</p>
-            </div>
-            <nav>
-                <button class="nav-tab">INTRODUCTION</button>
-                <button class="nav-tab">ACTION</button>
-                <button class="nav-tab">CONTENT</button>
-                <button class="nav-tab">REFERENCES</button>
-            </nav>
+        <article title="Introduction">
+            <h1>Introduction</h1>
+            <content-image limit-height
+                src="https://i.guim.co.uk/img/media/28766076ece429e53f1df347e3974d4730ffe1bf/0_0_6000_4000/master/6000.jpg?width=1010&quality=85&auto=format&fit=max&s=cd404ea69ee547fff6e9f6d782c178a5" 
+                author="Aragon Renuncio (2019)"
+                href="https://www.theguardian.com/environment/gallery/2019/sep/25/environmental-photographer-of-the-year-2019-winners-in-pictures#:~:text=The%20Plastic%20Quarry,of%20the%20year">
+            </content-image>
+            <p>
+                The entire globe has evolved into a global community. We have joined the global community as citizens. What happens in one area of the world, no matter far away, impacts us. According to a song, “it’s a tiny world, after all.” And it is hoped that we are able to propose solutions to these global problems.
+            </p>
+            <p>So, to honor this ground, ponder by the question below:</p>
+            <slidedown-box title="Question to Ponder:">
+                <p>As an educator, how would you devise a hypothetical solution to the problems we face today?</p>
+            </slidedown-box>
+        </article>
 
-        </header>
-
-        <section class="tab-item">
-
-            <div class="content-text">
-                
-                <h1>Introduction</h1>
-                <content-image
-                    src="https://i.guim.co.uk/img/media/28766076ece429e53f1df347e3974d4730ffe1bf/0_0_6000_4000/master/6000.jpg?width=1010&quality=85&auto=format&fit=max&s=cd404ea69ee547fff6e9f6d782c178a5" 
-                    author="Aragon Renuncio (2019)"
-                    href="https://www.theguardian.com/environment/gallery/2019/sep/25/environmental-photographer-of-the-year-2019-winners-in-pictures#:~:text=The%20Plastic%20Quarry,of%20the%20year">
-                </content-image>
+        <article title="Action">
+            <h1>A Second Life</h1>
+            <p>Refer to the following premise below:</p>
+            <boxed-quote>
                 <p>
-                    The entire globe has evolved into a global community. We have joined the global community as citizens. What happens in one area of the world, no matter far away, impacts us. According to a song, “it’s a tiny world, after all.” And it is hoped that we are able to propose solutions to these global problems.
+                    Say you happened to die suddenly in a terrible accident in a world plagued by problems like climate change, pollution, violence, terrorism, and corruption. You wished to change something, even a tiny difference. But it all ended too soon.     
                 </p>
-                <p>So, to honor this ground, ponder by the question below:</p>
-                <slidedown-modal title="Question to Ponder:">
-                    <p>As an educator, how would you devise a hypothetical solution to the problems we face today?</p>
-                </slidedown-modal>
+            </boxed-quote>
+            <p>
+                Assuming reincarnation is real, which of the United Nations' 17 Sustainable Development Goals (SDGs) would you wish to see solved in your next life, and why?                       
+            </p>
+            <slidedown-box title="The UN's 17 SDGs">
+                <image-grid viewable>
+                    <img src="https://i.postimg.cc/k4D7Pf24/E-WEB-Goal-01.png" alt="g1.png" ref="© United Nations">
+                    <img src="https://i.postimg.cc/MT4q6VBY/E-WEB-Goal-02.png" alt="g2.png" ref="© United Nations">
+                    <img src="https://i.postimg.cc/Wzkjhz6c/E-WEB-Goal-03.png" alt="g3.png" ref="© United Nations">
+                    <img src="https://i.postimg.cc/YjB7g7bG/E-WEB-Goal-04.png" alt="g4.png" ref="© United Nations">
+                    <img src="https://i.postimg.cc/9XRqGBLC/E-WEB-Goal-05.png" alt="g5.png" ref="© United Nations">
+                    <img src="https://i.postimg.cc/2jsLTBtv/E-WEB-Goal-06.png" alt="g6.png" ref="© United Nations">
+                    <img src="https://i.postimg.cc/x1YJVVn1/E-WEB-Goal-07.png" alt="g7.png" ref="© United Nations">
+                    <img src="https://i.postimg.cc/HsbcNkGN/E-WEB-Goal-08.png" alt="g8.png" ref="© United Nations">
+                    <img src="https://i.postimg.cc/MpDcW3pb/E-WEB-Goal-09.png" alt="g9.png" ref="© United Nations">
+                    <img src="https://i.postimg.cc/N0jKL8yh/E-WEB-Goal-10.png" alt="g10.png" ref="© United Nations">
+                    <img src="https://i.postimg.cc/MG3vBcRn/E-WEB-Goal-11.png" alt="g11.png" ref="© United Nations">
+                    <img src="https://i.postimg.cc/d17Djqm4/E-WEB-Goal-12.png" alt="g12.png" ref="© United Nations">
+                    <img src="https://i.postimg.cc/zB9vd9x5/E-WEB-Goal-13.png" alt="g13.png" ref="© United Nations">
+                    <img src="https://i.postimg.cc/fymL1BPd/E-WEB-Goal-14.png" alt="g14.png" ref="© United Nations">
+                    <img src="https://i.postimg.cc/dQyL7V00/E-WEB-Goal-15.png" alt="g15.png" ref="© United Nations">
+                    <img src="https://i.postimg.cc/m2Wh7Wcy/E-WEB-Goal-16.png" alt="g16.png" ref="© United Nations">
+                    <img src="https://i.postimg.cc/65Vq0bnJ/E-WEB-Goal-17.png" alt="g17.png" ref="© United Nations">
+                    <img src="https://i.postimg.cc/tJwGhxN4/E-SDG-logo-without-UN-emblem-square-CMYK.jpg" alt="final.png" ref="© United Nations">
+                </image-grid>
+            </slidedown-box>
+        </article>
 
-            </div>
-
-        </section>
-
-        <section class="tab-item">
-
-            <div class="content-text">
-                
-                <h1>A Second Life</h1>
-                <p>Refer to the following premise below:</p>
-                <boxed-quote>
-                    <p>
-                        Say you happened to die suddenly in a terrible accident in a world plagued by problems like climate change, pollution, violence, terrorism, and corruption. You wished to change something, even a tiny difference. But it all ended too soon.     
-                    </p>
-                </boxed-quote>
-                <p>
-                    Assuming reincarnation is real, which of the United Nations' 17 Sustainable Development Goals (SDGs) would you wish to see solved in your next life, and why?                       
-                </p>
-                <slidedown-modal title="The UN's 17 SDGs">
-                    <image-grid viewable>
-                        <img src="https://i.postimg.cc/k4D7Pf24/E-WEB-Goal-01.png" alt="g1.png" ref="© United Nations">
-                        <img src="https://i.postimg.cc/MT4q6VBY/E-WEB-Goal-02.png" alt="g2.png" ref="© United Nations">
-                        <img src="https://i.postimg.cc/Wzkjhz6c/E-WEB-Goal-03.png" alt="g3.png" ref="© United Nations">
-                        <img src="https://i.postimg.cc/YjB7g7bG/E-WEB-Goal-04.png" alt="g4.png" ref="© United Nations">
-                        <img src="https://i.postimg.cc/9XRqGBLC/E-WEB-Goal-05.png" alt="g5.png" ref="© United Nations">
-                        <img src="https://i.postimg.cc/2jsLTBtv/E-WEB-Goal-06.png" alt="g6.png" ref="© United Nations">
-                        <img src="https://i.postimg.cc/x1YJVVn1/E-WEB-Goal-07.png" alt="g7.png" ref="© United Nations">
-                        <img src="https://i.postimg.cc/HsbcNkGN/E-WEB-Goal-08.png" alt="g8.png" ref="© United Nations">
-                        <img src="https://i.postimg.cc/MpDcW3pb/E-WEB-Goal-09.png" alt="g9.png" ref="© United Nations">
-                        <img src="https://i.postimg.cc/N0jKL8yh/E-WEB-Goal-10.png" alt="g10.png" ref="© United Nations">
-                        <img src="https://i.postimg.cc/MG3vBcRn/E-WEB-Goal-11.png" alt="g11.png" ref="© United Nations">
-                        <img src="https://i.postimg.cc/d17Djqm4/E-WEB-Goal-12.png" alt="g12.png" ref="© United Nations">
-                        <img src="https://i.postimg.cc/zB9vd9x5/E-WEB-Goal-13.png" alt="g13.png" ref="© United Nations">
-                        <img src="https://i.postimg.cc/fymL1BPd/E-WEB-Goal-14.png" alt="g14.png" ref="© United Nations">
-                        <img src="https://i.postimg.cc/dQyL7V00/E-WEB-Goal-15.png" alt="g15.png" ref="© United Nations">
-                        <img src="https://i.postimg.cc/m2Wh7Wcy/E-WEB-Goal-16.png" alt="g16.png" ref="© United Nations">
-                        <img src="https://i.postimg.cc/65Vq0bnJ/E-WEB-Goal-17.png" alt="g17.png" ref="© United Nations">
-                        <img src="https://i.postimg.cc/tJwGhxN4/E-SDG-logo-without-UN-emblem-square-CMYK.jpg" alt="final.png" ref="© United Nations">
-                    </image-grid>
-                </slidedown-modal>
-
-            </div>
-
-        </section>
-
-        <section class="tab-item structured-content vertical-structured-content">
-
-            <div class="content-nav">
-                <button class="content-nav-tab">Global Issues</button>
-                <button class="content-nav-tab">The Sustainable Development Goals</button>
-            </div>
-
-            <div class="content-text">
-
+        <article-with-tabs title="Content">
+            <section title="The Top Ten Global Issues">
                 <h1>The Top Ten Global Issues</h1>
                 <p class="subtitle">(derived from Turner, 2018)</p>
-
                 <ol>
                     <li>
                         <h3>Climate Change</h3>
@@ -157,11 +113,11 @@
                         <p>
                             Global temperatures are rising, and by 2100, they are expected to rise from 2.6 degrees Celsius to 4.8 degrees Celsius. This would result in more severe weather, food, and resource shortages, and disease transmission.
                         </p>
-                        <slidedown-modal title="What is the difference between climate change and global warming?">
+                        <slidedown-box title="What is the difference between climate change and global warming?">
                             <p>
                                 To put it simply, global warming causes climate change. 
                             </p>
-                        </slidedown-modal>
+                        </slidedown-box>
                     </li>
                     <li>
                         <h3>Pollution</h3>
@@ -179,7 +135,7 @@
                         <p>
                             Whether it is a city-wide war, hatred directed at a specific group of people, or sexual harassment on the street, violence is prevalent but an avoidable problem that has gone unaddressed for far too long. 
                         </p>
-                        <slidedown-modal title="What are some examples of violence?">
+                        <slidedown-box title="What are some examples of violence?">
                             <table>
                                 <tr>
                                     <th>Type</th>
@@ -223,7 +179,7 @@
                                 </tr>
                             </table>
                             <p class="subtitle">(Violence Prevention Initiative, 2014)</p>
-                        </slidedown-modal>
+                        </slidedown-box>
 
                         <p>
                             In terms of “bullying” in the country, we have the RA 10627, or the Anti-Bullying Act of 2013, to address these issues in schools.
@@ -234,11 +190,11 @@
                         <p>
                             This involves the safety of an individual in their homes, the proximity of healthcare to people, etc. The United Nations began a momentum on abolishing issues involving these. International treaties, agreements, and pacts—to name a few.
                         </p>
-                        <slidedown-modal title="In the classroom, what is the importance of students’ sense of safety?">
+                        <slidedown-box title="In the classroom, what is the importance of students’ sense of safety?">
                             <p>
                                 As Muston (2022) stated, “students who do not feel safe at school—either emotionally or physically—are more distracted and less successful than their peers. School safety and student achievement are connected; it’s hard to have one without the other.”
                             </p>
-                        </slidedown-modal>
+                        </slidedown-box>
                     </li>
                     <li>
                         <h3>Lack of Education</h3>
@@ -301,18 +257,15 @@
                         <p>
                             As the OHCHR (n.d.) implied, terrorism “involves the intimidation or coercion of populations or governments through the threat or perpetration of violence, causing death, serious injury or the taking of hostages.” It diminishes the public's sense of security and threatens democracy. Schools are one of the hotspots of these attacks.
                         </p> 
-                        <slidedown-modal title="As a teacher, what should you do when a terrorist attack occurred in your proximity?">
+                        <slidedown-box title="As a teacher, what should you do when a terrorist attack occurred in your proximity?">
                             <p>
                                 The study by Wansink et. al. (2021) revealed that teachers should first initiate a safe, calm classroom environment while monitoring students’ reactions. Teachers should also provide accurate information and help them make sense of what is happening in a neutral, coherent narration. And finally, and most importantly, listen and abide by the instructions of authorities.
                             </p>
-                        </slidedown-modal>   
+                        </slidedown-box>   
                     </li>
                 </ol>
-
-            </div>
-
-            <div class="content-text">
-
+            </section>
+            <section title="The 17 Sustainable Development Goals">
                 <h1>The 17 Sustainable Development Goals</h1>
                 <content-image limit-height align-bottom
                     src="https://www.un.org/sustainabledevelopment/wp-content/uploads/2019/08/E_SDG_logo_without_UN_emblem_horizontal_RGB-1024x187.png" 
@@ -328,7 +281,7 @@
                         “The seventeen Sustainable Development Goals (SDGs) are our shared vision of humanity and a social contract between the world's leaders and the people… They are a to-do list for people and the planet, and a blueprint for success,”
                     </p>
                 </boxed-quote>
-                <slidedown-modal title="The 17 Sustainable Development Goals">
+                <slidedown-box title="The 17 Sustainable Development Goals">
                     <table>
                         <tr>
                             <th>No.</th>
@@ -455,65 +408,19 @@
                             </td>
                         </tr>
                     </table>
-                </slidedown-modal>
-            </div>
+                </slidedown-box>
+            </section>
+        </article-with-tabs>
 
-        </section>
+        <article title="References">
+            <reference-list></reference-list>
+        </article>
 
-        <section class="tab-item">
+    </article-tabber>
 
-            <div class="content-text">
-                <h2>References</h2>
-                <ul>
-                    <li>
-                        Humanium.org. (2018, February 22). Right to Education: Situation around the world. Retrieved March 20, 2023, from <span class="word-break-wrap">https://www.humanium.org/en/right-to-education/</span>
-                    </li>
-                    <li>
-                        Moss, T. (2014). Corruption Scandal Dogs Philippines as President Aquino Tries to Remake Nation’s Image. WSJ. <span class="word-break-wrap">https://www.wsj.com/articles/corruption-scandal-dogs-philippines-as-president-aquino-tries-to-remake-nations-image-1401387259</span>
-                    </li>
-                    <li>
-                        Muston, K. (2022). It’s Important for Students to Have a Safe Place to Learn. Retrieved March 19, 2023, from <span class="word-break-wrap">https://www.connectionsacademy.com/support/resources/article/important-for-students-to-have-a-safe-place-to-learn/ </span>
-                    </li>
-                    <li>
-                        OHCHR. (n.d.). OHCHR and terrorism and violent extremism. Retrieved March 3, 2023, from <span class="word-break-wrap">https://www.ohchr.org/en/terrorism</span> 
-                    </li>
-                    <li>
-                        Turner, C. (2018). The Top 10 Most Important Current Global Issues. The Borgen Project. Retrieved March 18, 2023, from <span class="word-break-wrap">https://borgenproject.org/top-10-current-global-issues/</span>
-                    </li>
-                    <li>
-                        UN News. (2015). Sustainable Development Goals to kick in with start of new year. Retrieved March 19, 2023, from <span class="word-break-wrap">https://news.un.org/en/story/2015/12/519172</span>
-                    </li>
-                    <li>
-                        UN News. (2015). Sustainable Development Goals to kick in with start of new year. Retrieved March 19, 2023, from <span class="word-break-wrap">https://news.un.org/en/story/2015/12/519172</span>
-                    </li>
-                    <li>
-                        UN Philippines. (2021). UN Philippines chief calls for science-based prevention and treatment to break the cycle of drug abuse. Retrieved March 19, 2023, from <span class="word-break-wrap">https://philippines.un.org/en/131561-un-philippines-chief-calls-science-based-prevention-and-treatment-break-cycle-drug-abuse</span>
-                    </li>
-                    <li>
-                        United Nations Office on Drugs and Crime. (2022). UNODC World Drug Report 2022 highlights trends on cannabis post-legalization, environmental impacts of illicit drugs, and drug use among women and youth. Retrieved March 19, 2023, from <span class="word-break-wrap">https://www.unodc.org/unodc/frontpage/2022/June/unodc-world-drug-report-2022-highlights-trends-on-cannabis-post-legalization--environmental-impacts-of-illicit-drugs--and-drug-use-among-women-and-youth.html</span>
-                    </li>
-                    <li>
-                        Violence Prevention Initiative. (2014). Nine Types of Violence and Abuse. Retrieved March 19, 2023, from <span class="word-break-wrap">https://www.gov.nl.ca/vpi/files/nine_types_of_violence.pdf</span>
-                    </li>
-                    <li>
-                        Wansink, B., De Graaf, B., & Berghuis, E. (2021). Teaching under attack: The dilemmas, goals, and practices of upper-elementary school teachers when dealing with terrorism in class. Theory and Research in Social Education, 49(4), 489–509. <span class="word-break-wrap">https://doi.org/10.1080/00933104.2021.1920523</span>
-                    </li>
-                    <li>
-                        WHO (2021), Substance Abuse. Regional Office for Africa. WHO | Regional Office for Africa. <span class="word-break-wrap">https://www.afro.who.int/health-topics/substance-abuse</span>
-                    </li>
-                    <li>
-                        World Economic Forum, WEF. (2023). The Global Risks Report 2023. Geneva: World Economic Forum.
-                    </li>
-                </ul>
-            </div>
-
-        </section>
-
-        <footer>
-            This webpage is a part of my final requirement in the subject <b>The Teacher and the Community, School Culture, and Organizational Leadership</b>. You can contact me using this email <u>jorenlangbid2223+gitweb@gmail.com</u> for queries, suggestions, corrections, and other concerns.
-        </footer>
-
-    </div>
+    <footer>
+        <footer-box></footer-box>
+    </footer>
 
 </body>
 </html>

@@ -24,7 +24,7 @@
 }
 
 :host(content-image) .caption {
+    margin-top: 4px;
     font-size: 0.8em;
-    margin-top: 0;
     color: var(--disabled);
 }

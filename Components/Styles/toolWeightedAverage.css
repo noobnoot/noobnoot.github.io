@@ -1,0 +1,36 @@
+:host(tool-weighted-average) {
+    display: block;
+}
+
+button[name="btn-calculate"] {
+    color: var(--anti-accent-color);
+    background-color: var(--accent-color);
+}
+
+:host(tool-weighted-average) .row-container > div {
+    display: grid;
+    grid-template-columns: 6fr 4fr 4fr;
+    margin: 0.25em 0;
+    gap: 0.25em;
+}
+
+:host(tool-weighted-average) .row-container > div > div {
+    display: flex;
+    flex-wrap:nowrap;
+}
+
+button[name="btn-remove-row"] {
+    background-color: var(--color-error);
+    padding: 0 0.5em;
+    aspect-ratio: 1/1;
+}
+
+button[name="btn-remove-row"]:hover {
+    background-color: var(--modal-hover);
+}
+
+.control-panel {
+    display: grid;
+    grid-template-columns: 6fr 4fr 4fr;
+    gap: 0.25em;
+}

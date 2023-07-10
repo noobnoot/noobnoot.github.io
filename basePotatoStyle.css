@@ -7,6 +7,7 @@
         --border: #BBB;
         --modal-hover: #BBB;
         --disabled: #666;
+        --color-error: #F66;
     }
 
     * {
@@ -64,169 +65,36 @@
     body {
         font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         font-size: 18px;
-        margin: 0;
+        margin: 0 10vw;
+        height: 100%;
+        min-height: 100vh;
+        padding: 4vw 5vw;
+    }
+
+    body::before {
+        content: "";
+        z-index: -1;
+        position: fixed;
+        display: block;
+        top: 0;
+        left: 10vw;
+        width: calc(100% - 20vw);
+        height: 100%;
+        background-color: white;
     }
 
     body::after {
         content: "";
-        z-index: -1;
+        z-index: -2;
         position: fixed;
         top: 0;
-        min-width: 100%;
-        min-height: 100%;
-        display: block;
+        left: 0;
+        min-width: 100vw;
+        min-height: 100vh;
         background-image: linear-gradient( var(--accent-color), var(--accent-color) ), var(--background-img);
         background-size: cover;
     }
 
-    .wrapper-body {
-        height: auto;
-        min-height: calc(100vh - 10vw);
-        margin: 0 10vw;
-        padding: 5vw 5vw 2vw 5vw;
-        background-color: white;
-    }
-
-/*** NAVIGATION BAR ***/
-
-    nav {
-        display: flex;
-        background-image: linear-gradient( var(--accent-color), var(--accent-color) ), var(--background-img);
-        background-size: cover;
-    }
-
-    .nav-tab {
-        display: block;
-        flex: 1;
-        background-color: transparent;
-        outline: none;
-        cursor: pointer;
-        border: none;
-        padding: 8px 14px;
-        transition: 0.3s;
-        letter-spacing: 2px;
-        color: var(--anti-accent-color);
-        font-size: 0.9em;
-        font-family: inherit;
-    }
-
-    .nav-tab:hover, .nav-tab:focus {
-        color: black;
-        transition: all 0.5s ease;
-        background-color: var(--content-bg);
-    }
-
-    .nav-tab.active {
-        color: black;
-        background-color: var(--content-bg);
-    }
-
-/*** HEADER ***/
-
-    .title {
-        margin: 20px 0;
-        line-height: 125%;
-    }
-
-    .title * {
-        margin: 0;
-    }
-
-    .school-header {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-    }
-
-    .school-header div img {
-        height: 60px;
-    }
-
-    .school-header p:first-of-type {
-        margin-left: 1em;
-        flex: 1;
-    }
-
-    .school-header p:last-of-type {
-        text-align: end;
-    }
-
-/*** TAB CONTENTS ***/
-
-    .tab-item {
-        grid-template-columns: 1fr;
-        padding: 2vw 3vw;
-        gap: 2vh;
-        background-color: var(--content-bg);
-        grid-template-rows: auto;
-    }
-
-    .structured-content {
-        grid-template-columns: 3fr 10fr;
-        gap: 1vw;
-    }
-
-    .content-text {
-        padding: 0 2vw;
-    }
-
-/*** TAB CONTENT NAV ***/
-
-    /* Generic */
-
-    .content-nav {
-        position: relative;
-        left: -3vw;
-        width: calc(100% + 3vw);
-        display: flex;
-        flex-direction: column;
-        background-image:
-            linear-gradient( var(--accent-color), var(--accent-color) ), var(--background-img);
-    }
-
-    .content-nav-tab {
-        display: block;
-        background-color: inherit;
-        outline: none;
-        cursor: pointer;
-        border: none;
-        padding: 8px 10px;
-        transition: 0.3s;
-        color: var(--anti-accent-color);
-        font-size: 0.9em;
-        font-family: inherit;
-    }
-
-    .content-nav-tab:hover, .content-nav-tab:focus {
-        color: black;
-        transition: all 0.5s ease;
-        background-color: var(--content-bg);
-    }
-
-    .content-nav-tab.active {
-        color: black;
-        background-color: var(--content-bg);
-    }
-
-    /* Vertical */
-
-    .vertical-structured-content {
-        grid-template-columns: 1fr;
-    }
-
-    .vertical-structured-content .content-nav {
-        width: calc(100% + 6vw);
-        padding: 0 3vw;
-        flex-direction: row;
-    }
-
-    .vertical-structured-content .content-nav .content-nav-tab {
-        padding: 16px;
-        flex: 1;
-        font-size: 1em;
-        font-weight: bold;
-        text-transform: uppercase;
-    }
 
 /*** FOOTER ***/
 
@@ -287,21 +155,45 @@
         font-size: 0.69em;
     }
 
+/*** FORMS ***/
+
+    input[type="text"], input[type="number"], button {
+        border: none;
+        padding: 0.25em 0.75em;
+        font: inherit;
+        font-style: normal;
+    }
+
+    input[type="text"], input[type="number"] {
+        width: 100%;
+        display: block;
+    }
+
+    input[disabled] {
+        background-color: field;
+    }
+
+    button {
+        transition: background-color 0.25s ease;
+        background-color: var(--modal-bg);
+    }
+
+    button:hover {
+        cursor: pointer;
+        background-color: var(--modal-hover);
+    }
+
 /*** MEDIA QUERIES ***/
 
 @media screen and (max-width: 800px) {
 
-    .wrapper-body{
+    body {
         margin: 0;
     }
 
-    .school-header {
-        text-align: center;
-        flex-direction: column;
-    }
-
-    .school-header p:last-child {
-        margin: 0;
+    body::before {
+        left: 0;
+        width: 100vw;
     }
 
     .nav-tab {
@@ -330,10 +222,6 @@
         font-size: 1em;
         font-weight: bold;
         text-transform: uppercase;
-    }
-
-    .media-hide {
-        display: none;
     }
 
 }

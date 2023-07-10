@@ -1,17 +1,34 @@
-import Navigations from "./Navigations.js";
+// import Navigations from "./Navigations.js";
 import BoxedQuote from "../Components/BoxedQuote.js";
 import ContentImage from "../Components/ContentImage.js";
 import ImageGrid from "../Components/ImageGrid.js";
-import SlidedownModal from "../Components/SlidedownModal.js";
+import SlidedownModal from "../Components/SlidedownBox.js";
+import HeaderBox from "../Components/HeaderBox.js";
+import TitleBox from "../Components/TitleBox.js";
+import ArticleTabber from "../Components/ArticleTabber.js";
+import ArticleWithTabs from "../Components/ArticleWithTabs.js";
+import ReferenceList from "../Components/ReferenceList.js";
+import FooterBox from "../Components/FooterBox.js";
+import Metadata from "./Metadata.js";
+import $ from "./Components/_jQuery.js";
 
 class Main {
-    
+
     static onready() {
-        BoxedQuote.register();
-        ContentImage.register();
-        ImageGrid.register();
-        SlidedownModal.register();
-        Navigations.initialize();
+        Metadata.initialize();
+        Metadata.onready = function() {
+            BoxedQuote.register();
+            ContentImage.register();
+            ImageGrid.register();
+            SlidedownModal.register();
+            HeaderBox.register();
+            TitleBox.register();
+            ArticleTabber.register();
+            ArticleWithTabs.register();
+            ReferenceList.register();
+            FooterBox.register();
+            // Navigations.initialize();
+        }
     }
 
     static main() {

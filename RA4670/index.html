@@ -1,24 +1,10 @@
-<!--
-
-    Created by Joren Langbid
-    Systems Plus College Foundation
-    April 2022
-
-    Please use this for personal use only.
-    I do not own the images and the color
-    palette that are used in this page.
-
-    Resources:
-
--->
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
 
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="metadata" src="./metadata.json">
     <title>RA 4670</title>
     <link rel="stylesheet" href="../basePotatoStyle.css">
     <link rel="icon" type="image/x-icon" href="../favicon.ico">
@@ -37,77 +23,43 @@
 </head>
 <body>
 
-    <div class="wrapper-body">
+    <header>
+        <header-box meta="../Attributes/cassedBanner.json"></header-box>
+        <hr>
+        <title-box></title-box>
+    </header>
 
-        <header>
+    <article-tabber>
+        
+        <article title="introduction">
 
-            <div class="school-header">
-                <div>
-                    <img src="https://i.postimg.cc/cJ62t4xT/spcf-logo.png" alt="SPCF Logo">
-                    <img src="https://i.postimg.cc/y6J6Cs0m/cassed-logo.png" alt="CASSED Logo">
-                </div>
-                <p>Systems Plus College Foundation<br>College of Social Sciences and Education</p>    
-                <p>April 2022</p>
-            </div>
-            <hr>
-            <div class="title">
-                <h3 class="title">
-                    <span class="l0rge">Republic Act 4670</span>
-                    <br>
-                    The Magna Carta for Public School Teachers
-                </h3>
-                <p class="subtitle">by Joren Langbid and Nicole Rhadley Hardee, SEM03A</p>
-            </div>
-            <nav>
-                <button class="nav-tab">INTRODUCTION</button>
-                <button class="nav-tab">CONTENT</button>
-                <button class="nav-tab">REFERENCES</button>
-            </nav>
-
-        </header>
-
-        <section class="tab-item">
-
-            <div class="content-text">
-
-                <h1>Introduction</h1>
-                <content-image limit-height
-                    src="https://i.postimg.cc/Nf9QsMdc/pexels-sora-shimazaki-5668484-1.jpg"
-                    author="Sora Shimazaki"
-                    href="https://www.pexels.com/photo/black-wooden-gavel-5668484/">
-                </content-image>
+            <h1>Introduction</h1>
+            <content-image limit-height
+                src="https://i.postimg.cc/Nf9QsMdc/pexels-sora-shimazaki-5668484-1.jpg"
+                author="Sora Shimazaki"
+                href="https://www.pexels.com/photo/black-wooden-gavel-5668484/">
+            </content-image>
+            <p>
+                The <b>Magna Carta for Public School Teachers</b>, also known as <b>Republic Act No. 4670</b>, outlines the professional rights and protections that our public school teachers are entitled to in light of the demands and degree of difficulty involved in their profession. It was approved in <b>1966</b> and composed of 7 chapters and 35 sections.
+            </p>
+    
+            <slidedown-box title="Hold on. What is the Magna Carta?">
                 <p>
-                    The <b>Magna Carta for Public School Teachers</b>, also known as <b>Republic Act No. 4670</b>, outlines the professional rights and protections that our public school teachers are entitled to in light of the demands and degree of difficulty involved in their profession. It was approved in <b>1966</b> and composed of 7 chapters and 35 sections.
+                    <b>Magna Carta</b>, which means <b>'The Great Charter,’</b> is legal writing that establishes the rights and privileges of an entity.
                 </p>
-
-                <slidedown-modal title="Hold on. What is the Magna Carta?">
-                    <p>
-                        <b>Magna Carta</b>, which means <b>'The Great Charter,’</b> is legal writing that establishes the rights and privileges of an entity.
-                    </p>
-                    <p>
-                        The term came from Europe when King John of England signed a charter of liberties as a countermeasure to the threat of civil war.
-                    </p>
-                </slidedown-modal>
-            </div>
-
-        </section>
-
-        <section id="content" class="tab-item structured-content">
-
-            <div class="content-nav">
-                <button class="content-nav-tab"><span class="media-hide">Chapter</span> I</button>
-                <button class="content-nav-tab"><span class="media-hide">Chapter</span> II</button>
-                <button class="content-nav-tab"><span class="media-hide">Chapter</span> III</button>
-                <button class="content-nav-tab"><span class="media-hide">Chapter</span> IV</button>
-                <button class="content-nav-tab"><span class="media-hide">Chapter</span> V</button>
-                <button class="content-nav-tab"><span class="media-hide">Chapter</span> VI</button>
-                <button class="content-nav-tab"><span class="media-hide">Chapter</span> VII</button>
-            </div>
-
-            <div id="chapter 1" class="content-text">
-
+                <p>
+                    The term came from Europe when King John of England signed a charter of liberties as a countermeasure to the threat of civil war.
+                </p>
+            </slidedown-box>
+    
+        </article>
+    
+        <article-with-tabs title="content">
+    
+            <section title="Chapter 1" alt-title="I">
+    
                 <h1>I. Declaration of Policy Coverage</h1>
-
+    
                 <h4>Section 1: Declaration of Policy</h4>
                 <p>The act’s policy is to promote and improve</p>
                 <ol>
@@ -117,20 +69,20 @@
                     <li>their career prospects so they may compare favorably with other career opportunities; while</li>
                     <li>attracting more on the teaching profession with proper qualifications.</li>
                 </ol>
-
+    
                 <h4>Section 2: Title Definition</h4>
                 <p>This act shall be known as the “Magna Carta for Public School Teachers” and shall apply to public school teachers except those in the professional staff of state colleges and universities.</p>
-
-                <slidedown-modal title="Under this Act, what do we mean by a 'teacher'?">
+    
+                <slidedown-box title="Under this Act, what do we mean by a 'teacher'?">
                     <p>
                         The term <b>“teacher”</b> shall mean all personnel engaged in classroom teaching, at any level, on a full-time basis (including guidance counselors, school librarians, industrial arts or vocational instructors, supervisors, administrators, etc.) but shall not include school nurses, school physicians, school dentists, and other school employees.
                     </p>
-                </slidedown-modal>
-
-            </div>
-
-            <div class="content-text">
-
+                </slidedown-box>
+    
+            </section>
+    
+            <section title="Chapter 2" alt-title="II">
+    
                 <h2>II. Recruitment and Career</h2>
                 
                 <h4>Section 3. Recruitment and Qualification</h4>
@@ -182,12 +134,12 @@
                 <p>
                     Moreover, all applicants are mandated to take competitive examinations in which preference in hiring is affected by their respective ranks in the examination.
                 </p>
-
+    
                 <h4>Section 4. Probationary Period</h4>
                 <p>
                     Hired teachers who possess the minimum educational qualifications, but lack the appropriate civil service eligibility, are put into provisional status for a year or so.
                 </p>
-
+    
                 <h4>Section 5. Tenure of Office</h4>
                 <p>
                     Stability on employment and security of tenure shall be assured the teachers as provided under existing laws.
@@ -195,7 +147,7 @@
                 <p>
                     Moreover, a teacher with provisional status shall be held in an extended permanent status if the teacher rendered at least 10 years of continuous, efficient, and faithful service in the position.
                 </p>
-
+    
                 <h4>Section 6. Consent for Transfer Transportation Expenses</h4>
                 <boxed-quote>
                     <p>“No teacher shall be transferred without his consent from one station to another.”</p>
@@ -209,12 +161,12 @@
                 <p>
                     The Government covers the necessary transfer expenses of the teacher and his/her family if the transfer is approved.
                 </p>
-
+    
                 <h4>Section 7. Code of Professional Conduct for Teachers</h4>
                 <p>
                     Each teacher must have an available copy of the Code of Professional Conduct for Teachers. Alternatively, the office of the school principal or head teacher must hold copies of the Code where they may be accessible to teachers.
                 </p>
-
+    
                 <h4>Section 8. Safeguards in Disciplinary Procedure</h4>
                 <p>
                     Teachers subject to any disciplinary procedure shall have
@@ -233,37 +185,37 @@
                 <p>
                     Formal administrative charges against a teacher shall go first on the committee of the School Superintendent of the Division or duly authorized eligible parties in the division where the teacher belongs. The responsible authorities will formulate recommendations  to the Director of Public Schools.
                 </p>
-
+    
                 <h4>Section 10. No Discrimination</h4>
                 <boxed-quote>
                     <p>
                         “There shall be no discrimination whatsoever in the entrance to the teaching profession, or during its exercise, or in the termination of services, based on other than professional consideration.”
                     </p>
                 </boxed-quote>
-
+    
                 <h4>Section 11. Married Teachers</h4>
                 <boxed-quote>
                     <p>
                         “Whenever possible, the proper authorities shall take all steps to enable married couples, both of whom are public school teachers, to be employed in the same locality.”
                     </p>
                 </boxed-quote>
-
+    
                 <h4>Section 12. Academic Freedom</h4>
                 <boxed-quote>
                     <p>
                         “Teachers shall enjoy academic freedom in the discharge of their professional duties, particularly with regard to teaching and classroom methods.”
                     </p>
                 </boxed-quote>
-                <slidedown-modal title="What do we mean by academic freedom?">
+                <slidedown-box title="What do we mean by academic freedom?">
                     <p>
                         <b>Academic freedom</b> is "the freedom of teachers and students to teach, study, and pursue knowledge and research without unreasonable interference or restriction" (Britannica, 2020).
                     </p>
-                </slidedown-modal>
-
-            </div>
-
-            <div class="content-text">
-
+                </slidedown-box>
+    
+            </section>
+    
+            <section title="Chapter 3" alt-title="III">
+    
                 <h2>III. Hours of Work and Renumeration</h2>
                 
                 <h4>Section 13. Teaching Hours</h4>
@@ -273,24 +225,24 @@
                 <p>
                     Exigencies of service may require the teacher to render more than six hours a day, but not exceeding eight hours, of classroom instruction.
                 </p>
-
+    
                 <h4>Section 14. Additional Compensation</h4>
                 <p>
                     Additional compensation is given to teachers engaging in co-curricular and out-of-school activities and any other activities outside of the normal duties of any teacher. The additional compensation is equivalent to at least 25% of his/her regular remuneration.
                 </p>
-                <slidedown-modal title="What is the difference between co-curricular and extra-curricular activities?">
+                <slidedown-box title="What is the difference between co-curricular and extra-curricular activities?">
                     <p>
                         <b>Co-curricular activities</b> are inclined to the school’s academic curriculum while <b>extra-curricular</b> ones are not; that is, hosting a math club is co-curricular and coaching a volleyball team is extra-curricular.
                     </p>
-                </slidedown-modal>
-
+                </slidedown-box>
+    
                 <p>
                     In the case of those teachers and school officials not engaged in actual classroom instruction, they gain compensation of 25% of their regular remuneration on the excess of 8 work hours.
                 </p>
                 <p>
                     In alignment with this section, other agencies utilizing the services of teachers shall pay the additional compensation required.
                 </p>
-
+    
                 <h4>Section 15. Criteria for Salaries</h4>
                 <p>Teacher salaries shall correspond to the following criteria:</p>
                 <ul>
@@ -319,7 +271,7 @@
                 <p>
                     Annually, the Secretary of Education shall recommend to Congress the appropriation of the necessary funds for the cost-of-living allowances of teachers employed by the National Government.
                 </p>
-
+    
                 <h4>Section 19. Special Hardship Allowances</h4>
                 <p>
                     Teachers subject to hardship such as difficulty commuting to the place of work or other hazards present to the place of employment shall be compensated special hardship allowances equivalent to at least 25% of their monthly salary.
@@ -337,12 +289,12 @@
                     <li>premiums property due on insurance policies.</li>
                 </ul>
                 
-            </div>
-
-            <div class="content-text">
-
+            </section>
+    
+            <section title="Chapter 4" alt-title="IV">
+    
                 <h2>IV. Health Measures and Injury Benefits</h2>
-
+    
                 <h4>Section 22. Medical Examination and Treatment</h4>
                 <p>
                     Teachers are mandated to have a free-of-charge medical examination before they take up teaching, repeating annually. Medical examinations requiring medical treatment and/or hospitalization are provided free by the government entity responsible.
@@ -350,18 +302,18 @@
                 <p>
                     Teachers may also take necessary medical care with the right to be repaid for their traveling expenses if the facility is reasonably distant.
                 </p>
-
+    
                 <h4>Section 23. Compensation for Injuries </h4>
                 <p>
                     Teachers shall be protected against employment injuries (including physical and nervous strain) and shall be recognized as compensable in accordance with existing laws.
                 </p>
                 
-            </div>
-
-            <div class="content-text">
-
+            </section>
+    
+            <section title="Chapter 5" alt-title="V">
+    
                 <h2>V. Leave and Retirement Benefits</h2>
-
+    
                 <h4>Section 24. Study Leave</h4>
                 <p>
                     Teachers shall be entitled to study leave in accordance with the school calendar not exceeding one school year after seven years of service.
@@ -372,41 +324,41 @@
                 <p>
                     The teacher must take the regular study load and pass at least 70% of his courses in order to gain his/her compensation.
                 </p>
-
+    
                 <h4>Section 25. Indefinite Leave</h4>
                 <boxed-quote>
                     <p>
                         “An indefinite sick leave of absence shall be granted to teachers when the nature of the illness demands a long treatment that will exceed one year at the least.”
                     </p>
                 </boxed-quote>
-
+    
                 <h4>Section 26. Salary Increase Upon Retirement</h4>
                 <p>
                     Teachers of eligible retirement age who fulfilled the minimum service years shall be given one range salary raise upon retirement, which becomes the basis for the sum of the retirement pay and the monthly benefits thereafter.
                 </p>
-
-            </div>
-
-            <div class="content-text">
-
+    
+            </section>
+    
+            <section title="Chapter 6" alt-title="VI">
+    
                 <h2>VI. Teacher's Organization</h2>
-
+    
                 <h4>Section 27. Freedom to Organize</h4>
                 <p>
                     Teachers has the right to establish and join organizations of their choosing, local or national, to defend their interests.
                 </p>
-
+    
                 <h4>Section 28. Discrimination Against Teachers Prohibited</h4>
                 <p>
                     It shall be unlawful for any person to commit any acts of discrimination or dismissal against teachers because of his membership or participation in an organization.
                 </p>
-
-            </div>
-
-            <div class="content-text">
-
+    
+            </section>
+    
+            <section title="Chapter 7" alt-title="VII">
+    
                 <h2>VII. Administration and Enforcement</h2>
-
+    
                 <h4>Section 32. Penal Provision</h4>
                 <p>
                     A person who interferes with the exercise of the rights guaranteed by this Act, upon conviction, be punished by a fine of ₱100 - ₱1000, or by imprisonment, at the discretion of the court.
@@ -414,32 +366,20 @@
                 <p>
                     If the offender is a public official, the court shall order his dismissal from the Government service.
                 </p>
+    
+            </section>
+    
+        </article-with-tabs>
+    
+        <article title="references">
+            <reference-list></reference-list>
+        </article>
 
-            </div>
+    </article-tabber>
 
-        </section>
-
-        <section class="tab-item">
-
-            <div class="content-text">
-                <h2>References</h2>
-                <ul>
-                    <li>
-                        Republic Act No. 4670. (n.d.). Retrieved October 8, 2022, from <span class="word-break-wrap">https://lawphil.net/statutes/repacts/ra1966/ra_4670_1966.html</span>
-                    </li>
-                    <li>
-                        Britannica, T. Editors of Encyclopaedia (2020, April 13). academic freedom. Encyclopedia Britannica. <span class="word-break-wrap">https://www.britannica.com/topic/academic-freedom</span>
-                    </li>
-                </ul>
-            </div>
-
-        </section>
-
-        <footer>
-            This webpage is a part of our requirement in the subject <b>The Teaching Profession</b> presented by <b>Mr. Joren C. Langbid</b> and <b>Ms. Nicole Rhadley Hardee</b>. You can contact us using this email <u>jorenlangbid2223@gmail.com</u> for queries, suggestions, corrections, and other concerns.
-        </footer>
-
-    </div>
+    <footer>
+        <footer-box></footer-box>
+    </footer>
 
 </body>
 </html>

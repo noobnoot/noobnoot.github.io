@@ -1,25 +1,21 @@
-:host(slidedown-modal) {
+:host(slidedown-box) {
     margin: 12px 0;
     display: grid;
     grid-template-columns: 1fr 24fr;
     background: var(--modal-bg); 
 }
 
-:host(slidedown-modal) .ribbon {
-    background-image: linear-gradient( var(--accent-color), var(--accent-color) ), var(--background-img);
-}
-
-:host(slidedown-modal) .modal-body {
+:host(slidedown-box) .modal-body {
     display: flex;
     flex-direction: column;
 }
 
-:host(slidedown-modal)::before {
+:host(slidedown-box)::before {
     content: "";
     background-image: linear-gradient( var(--accent-color), var(--accent-color) ), var(--background-img);
 }
 
-:host(slidedown-modal) .modal-body button {
+:host(slidedown-box) .modal-body button {
     all: unset;
     display: block;
     margin: 0;
@@ -30,17 +26,17 @@
     transition: background-color 0.5s ease;
 }
 
-:host(slidedown-modal) .modal-body button:hover {
+:host(slidedown-box) .modal-body button:hover {
     background: var(--modal-hover);
     cursor: pointer;
 }
 
-:host(slidedown-modal) .modal-body button:focus-visible {
+:host(slidedown-box) .modal-body button:focus-visible {
     outline: 5px auto Highlight;
     outline: 5px auto -webkit-focus-ring-color;
 }
 
-:host(slidedown-modal) .modal-body .modal-content {
+:host(slidedown-box) .modal-body .modal-content {
     font-size: 0.92em;
     padding: 0 calc(2px + 1.5vw);
 }

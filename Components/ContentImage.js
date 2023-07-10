@@ -1,4 +1,5 @@
-import ComponentHelper from "./ComponentHelper.js";
+import ComponentHelper from "./_ComponentHelper.js";
+import $ from "./_jQuery.js";
 
 class ContentImage extends HTMLElement {
 
@@ -29,6 +30,26 @@ class ContentImage extends HTMLElement {
         this.shadowRoot.appendChild( ComponentHelper.createTemplate(ContentImage.templateRaw) );
     }
 
+    setCaption(title, author, href) {
+        $(this.shadowRoot)
+            .children(".caption")
+            .empty();
+        if (!title && !author) {
+            $(this.shadowRoot)
+                .children(".caption")
+                .remove();
+            return;
+        }
+        let link = $("<a>")
+            .attr({ href: href })
+            .text(author);
+        $(this.shadowRoot)
+            .children(".caption")
+            .append(title ? title + " | " : "")
+            .append("Photo by: ")
+            .append(link);
+    }
+
     attributeChangedCallback(name, oldValue, newValue) {
         let img = $(this.shadowRoot).children("img");
         switch( name ) {
@@ -36,27 +57,20 @@ class ContentImage extends HTMLElement {
                 img.attr("src", newValue);
                 break;
             } case "author": {
-                img.attr("alt", `Photo by ${newValue}`)
-            } case "align-top": case "align-bottom": case "limit-height": {
+                img.attr("alt", `Photo by ${newValue}`);
+            // eslint-disable-next-line no-fallthrough
+            } case "align-top":
+              case "align-bottom":
+              case "limit-height": {
                 img.addClass(name);
                 break;
             }
         }
-    }
-
-    connectedCallback() {
-        let link = $("<a>")
-            .attr({ href: this.getAttribute("href") })
-            .text(this.getAttribute("author"));
-        $(this.shadowRoot)
-            .children(".caption")
-            .append( this.getAttribute("title") ? this.getAttribute("title") + " | " : "" )
-            .append("Photo by: ")
-            .append(link);
-        // removes caption if title and author not set
-        if ( !this.getAttribute("title") && !this.getAttribute("author") ) {
-            $(this.shadowRoot).children(".caption").remove();
-        }
+        this.setCaption(
+            this.getAttribute("title"),
+            this.getAttribute("author"),
+            this.getAttribute("href")
+        );
     }
 
 }

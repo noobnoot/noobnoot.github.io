@@ -1,13 +1,14 @@
-import ComponentHelper from "./ComponentHelper.js";
+import ComponentHelper from "./_ComponentHelper.js";
+import $ from "./_jQuery.js";
 
-class SlidedownModal extends HTMLElement {
+class SlidedownBox extends HTMLElement {
 
     static get templateRaw() {
         return `
-            <link rel="stylesheet" href="../Components/Styles/slidedownModal.css">
+            <link rel="stylesheet" href="../Components/Styles/slidedownBox.css">
             <link rel="stylesheet" href="../basePotatoStyle.css">
             <div class="modal-body">
-                <button tabindex="0"></button>
+                <button tabindex="0" type="button"></button>
                 <div class="modal-content">
                 </div>
             </div>
@@ -15,7 +16,7 @@ class SlidedownModal extends HTMLElement {
     }
 
     static get name() {
-        return "slidedown-modal";
+        return "slidedown-box";
     }
 
     static get observedAttributes() {
@@ -23,13 +24,13 @@ class SlidedownModal extends HTMLElement {
     }
 
     static register() {
-        customElements.define(SlidedownModal.name, SlidedownModal);
+        customElements.define(SlidedownBox.name, SlidedownBox);
     }
 
     constructor() {
         super();
         this.attachShadow({mode: "open"});
-        $(this.shadowRoot).append(ComponentHelper.createTemplate(SlidedownModal.templateRaw));
+        $(this.shadowRoot).append(ComponentHelper.createTemplate(SlidedownBox.templateRaw));
         this.initialize();
     }
 
@@ -40,7 +41,7 @@ class SlidedownModal extends HTMLElement {
             .slideToggle();
     }
 
-    attributeChangedCallback(name, oldValue, newValue) {
+    attributeChangedCallback(name) {
         // moves the innerHTML of the <slidedown-modal> to `shadowRoot`;
         if ( name == "title" ) {
             $(this.shadowRoot)
@@ -79,4 +80,4 @@ class SlidedownModal extends HTMLElement {
     }
 }
 
-export default SlidedownModal;
+export default SlidedownBox;
