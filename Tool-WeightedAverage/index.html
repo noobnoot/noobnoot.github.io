@@ -18,12 +18,11 @@
 
     </style>
     <script src="../Main.js" type="module"></script>
-    
     <script type="module">
-        import FooterBox from "../Components/ToolWeightedAverage.js";
-        import $ from "../Components/_jQuery.js";
+        import ToolWeightedAverage from "../Components/ToolWeightedAverage.js";
+        import $ from "../Components/Libs/jQuery.js";
         function prepareTool() {
-            FooterBox.register();
+            ToolWeightedAverage.register();
         }
         $(document).ready(prepareTool);
     </script>
