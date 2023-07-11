@@ -1,4 +1,4 @@
-import $ from "../Components/_jQuery.js";
+import $ from "../Components/Libs/jQuery.js";
 import BoxedQuote from "../Components/BoxedQuote.js";
 import ContentImage from "../Components/ContentImage.js";
 import ImageGrid from "../Components/ImageGrid.js";

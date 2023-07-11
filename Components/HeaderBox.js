@@ -1,6 +1,6 @@
-import ComponentHelper from "./_ComponentHelper.js";
+import ComponentHelper from "./Libs/ComponentHelper.js";
+import $ from "./Libs/jQuery.js";
 import Metadata from "../Metadata.js";
-import $ from "./_jQuery.js";
 
 class HeaderBox extends HTMLElement {
 

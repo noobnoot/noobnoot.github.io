@@ -1,4 +1,4 @@
-import $ from "./_jQuery.js";
+import $ from "./jQuery.js";
 
 class ComponentHelper {
 

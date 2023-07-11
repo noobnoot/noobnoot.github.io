@@ -1,5 +1,5 @@
-import ComponentHelper from "./_ComponentHelper.js";
-import $ from "./_jQuery.js";
+import ComponentHelper from "./Libs/ComponentHelper.js";
+import $ from "./Libs/jQuery.js";
 
 class ArticleWithTabs extends HTMLElement {
 
