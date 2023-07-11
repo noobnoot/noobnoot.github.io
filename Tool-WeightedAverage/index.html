@@ -9,24 +9,19 @@
     <link rel="stylesheet" href="../basePotatoStyle.css">
     <link rel="icon" type="image/x-icon" href="../favicon.ico">
     <style>
-    
         :root {
             --accent-color: rgba(20, 80, 40, 0.75);
             --anti-accent-color: #FEFEFE;
             --background-img: url("https://images.creativemarket.com/0.1.0/ps/2321248/1160/772/m1/fpnw/wm1/cover-.jpg?1487898325&s=1b088f3d83e0354fa15b61d49486a787");
         }
-
     </style>
     <script src="../Main.js" type="module"></script>
     <script type="module">
         import ToolWeightedAverage from "../Components/ToolWeightedAverage.js";
         import $ from "../Components/Libs/jQuery.js";
-        function prepareTool() {
-            ToolWeightedAverage.register();
-        }
+        function prepareTool() { ToolWeightedAverage.register(); }
         $(document).ready(prepareTool);
     </script>
-
     <!-- For LaTeX embedding. -->
     <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
     <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3.0.1/es5/tex-mml-chtml.js"></script>
