@@ -39,10 +39,13 @@ class TitleBox extends HTMLElement {
         // sets up subtitle; refer to `metadata.json::{ authors[], section }`
         let pSubtitle = $(this.shadowRoot).children("p.subtitle");
         let authorsText = "";
-        for (let i = 0; i < Metadata.data.authors.length; i++) {    
-            if (i == Metadata.data.authors.length - 1 && i != 0) {
-                authorsText += " and ";
-            }
+        for (let i = 0; i < Metadata.data.authors.length; i++) {   
+            if (i != 0) {
+                authorsText += ", ";
+                if (i == Metadata.data.authors.length - 1) {
+                    authorsText += " and ";
+                }
+            } 
             authorsText += Metadata.data.authors[i];
         }
         pSubtitle.append(`by ${authorsText}${Metadata.data.section.length > 0 ? "," : ""} ${Metadata.data.section}`);
