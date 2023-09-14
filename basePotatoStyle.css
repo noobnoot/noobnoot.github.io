@@ -8,6 +8,7 @@
         --modal-hover: #BBB;
         --disabled: #666;
         --color-error: #F66;
+        --table-header: #00000018;
     }
 
     * {
@@ -26,6 +27,10 @@
         margin: 8px 0;
     }
 
+    ol li {
+        padding-left: 0.5em;
+    }
+
     /* Table */
 
     table {
@@ -37,6 +42,7 @@
     
     th {
         text-align: center;
+        background-color: var(--table-header);
     }
     
     th, td {
@@ -46,8 +52,8 @@
     td, th {
         padding: 6px;
     }
-    
-    tr td:first-of-type {
+
+    .center-first td:first-of-type {
         text-align: center;
     }
     
