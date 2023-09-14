@@ -77,7 +77,7 @@ class ArticleWithTabs extends HTMLElement {
             .children()
             .first()
             .addClass("active");
-        window.onresize = function() {
+        window.addEventListener("resize", function() {
             nav
                 .children("button")
                 .each(
@@ -89,7 +89,7 @@ class ArticleWithTabs extends HTMLElement {
                         }
                     }
                 );
-        }
+        });
     }
 
 }

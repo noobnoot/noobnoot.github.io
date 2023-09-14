@@ -53,6 +53,7 @@
 
     :host(article-tabber) nav button {
         letter-spacing: 1px;
+        font-size: 0.7em;
         font-family: inherit;
         padding: 6px 8px;
     }
