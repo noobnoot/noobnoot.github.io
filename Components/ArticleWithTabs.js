@@ -77,6 +77,7 @@ class ArticleWithTabs extends HTMLElement {
             .children()
             .first()
             .addClass("active");
+        
         window.addEventListener("resize", function() {
             nav
                 .children("button")
@@ -90,6 +91,18 @@ class ArticleWithTabs extends HTMLElement {
                     }
                 );
         });
+
+        nav
+            .children("button")
+            .each(
+                function() {
+                    if ( window.innerWidth <= 800 ) {
+                        $(this).text( $(this).prop("alt") );
+                    } else {
+                        $(this).html( $(this).prop("gen") );
+                    }
+                }
+            );
     }
 
 }
