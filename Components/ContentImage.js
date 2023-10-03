@@ -17,7 +17,7 @@ class ContentImage extends HTMLElement {
     }
 
     static get observedAttributes() {
-        return ["src", "author", "href", "title", "limit-height", "align-top", "align-bottom"];
+        return ["src", "author", "href", "title", "limit-height", "limit-height-med", "align-top", "align-bottom"];
     }
 
     static register() {
@@ -61,7 +61,8 @@ class ContentImage extends HTMLElement {
             // eslint-disable-next-line no-fallthrough
             } case "align-top":
               case "align-bottom":
-              case "limit-height": {
+              case "limit-height":
+              case "limit-height-med": {
                 img.addClass(name);
                 break;
             }

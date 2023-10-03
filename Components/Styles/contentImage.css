@@ -15,6 +15,10 @@
     max-height: 30vh;
 }
 
+:host(content-image) .limit-height-med {
+    max-height: 45vh;
+}
+
 :host(content-image) img {
     display: block;
     width: 100%;
