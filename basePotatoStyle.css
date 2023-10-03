@@ -163,12 +163,17 @@
 
 /*** FORMS ***/
 
-    input[type="text"], input[type="number"], button {
+    input[type="text"], input[type="number"], select, button {
         border: none;
         padding: 0.25em 0.75em;
         font: inherit;
         font-style: normal;
     }
+
+    input[type="text"], input[type="number"] {
+        border-bottom: 2.25px solid;
+    }
+
 
     input[type="text"], input[type="number"] {
         width: 100%;

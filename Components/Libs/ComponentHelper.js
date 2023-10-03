@@ -38,6 +38,10 @@ class ComponentHelper {
         return arr.join(', ') + ' and ' + last;
     }
 
+    static roundToTwo(num) {
+        return +(Math.round(num + "e+2")  + "e-2");
+    }
+
 }
 
 export default ComponentHelper;
