@@ -9,8 +9,10 @@ $(document).ready(function() {
     var contents = $(".content");
     var tiles = $(".tile");
 
-    contents.hide();
+    contents.hide(); 
     contents.eq(4).show();
+
+    // wtf
 
     for (var i = 0; i < tiles.length; i++)
         tiles.eq(i).children(".tile-text").hide();
