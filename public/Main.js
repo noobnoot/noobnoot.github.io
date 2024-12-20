@@ -9,7 +9,7 @@ import ArticleTabber from "../Components/ArticleTabber.js";
 import ArticleWithTabs from "../Components/ArticleWithTabs.js";
 import ReferenceList from "../Components/ReferenceList.js";
 import FooterBox from "../Components/FooterBox.js";
-import Metadata from "../Metadata.js";
+import Metadata from "./Metadata.js";
 
 class Main {
 

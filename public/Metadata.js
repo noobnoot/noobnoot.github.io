@@ -1,5 +1,5 @@
-import ComponentHelper from "../Components/Libs/ComponentHelper.js";
-import $ from "../Components/Libs/jQuery.js";
+import ComponentHelper from "./Components/Libs/ComponentHelper.js";
+import $ from "./Components/Libs/jQuery.js";
 
 class Metadata {
 

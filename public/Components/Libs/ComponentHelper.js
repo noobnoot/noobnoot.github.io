@@ -14,7 +14,9 @@ class ComponentHelper {
             return;
         }
         let filename = src.split('/').pop();
-        let jsxhr = $.getJSON(src,
+        console.log(src);
+        let jsxhr = $.getJSON(
+            src,
             function() {
                 console.log(`[OK] JSON: '${filename}'.`);
             }
