@@ -37,6 +37,9 @@ class FooterBox extends HTMLElement {
             } case "edu" : {
                 text = `This webpage is designed to provide students with access to their lesson in the subject ${Metadata.data.subject} through a local server. The goal is to make learning accessible and efficient, regardless of external internet availability. You can contact ${tag} using this email <u>${Metadata.data.email}</u> for queries, suggestions, corrections, and other concerns.`
                 break;
+            } case "home": {
+                text = `This webpage is designed to provide students with access to their learning resources through a local server. The goal is to make learning accessible and efficient, regardless of external internet availability. You can contact ${tag} using this email <u>${Metadata.data.email}</u> for queries, suggestions, corrections, and other concerns.`
+                break;
             }
         }
         

@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>belday</title>
+    <style>
+        body {
+            margin: 0;
+            height: 100vh;
+            background: #000;
+            overflow-x: hidden;
+            overflow-y: hidden;
+        }
+        
+        .container {
+            position: absolute;
+            height: 100vh;
+            width: 100vw;
+            display: flex;
+            align-items: center;
+            text-align: center;
+            margin: 0;
+        }
+
+        h1 {
+            font-size: 64px;
+            color: white;
+            width: 100%;
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>HAPPY BIRTHDAY RASHAD</h1>
+    </div>
+    <canvas></canvas>
+    <script>
+        onload = function() {
+            
+            class Circle {
+            
+                constructor(x, y, dx, dy, radius, defaultRadius, colorIndex) {
+                
+                    this.x = x;
+                    this.y = y;
+                    this.dx = dx;
+                    this.dy = dy;
+                    this.radius = radius;
+                    this.defaultRadius = defaultRadius;
+                    this.colorIndex = colorIndex;
+                    
+                }
+                        
+                draw() {
+                
+                    c.beginPath();
+                    c.arc(this.x, this.y, this.radius, 0, Math.PI * 2);
+                    c.fillStyle = colorSheet[this.colorIndex];
+                    c.fill();
+                    c.closePath();
+                    
+                }
+                
+                update() {
+                    
+                    if (mouse.x - this.x < 40 && mouse.x - this.x > -40 && mouse.y - this.y < 40 && mouse.y - this.y > -40) {
+                        
+                        if (this.radius < 30) {
+                            this.radius += 2;
+                        }
+                        
+                    } else if (this.radius > this.defaultRadius) {
+                        this.radius -= 1;
+                    }
+                    
+                    if (this.x + this.radius > innerWidth || this.x - this.radius < 0) {
+                        this.dx = -this.dx;
+                    }
+
+                    if (this.y + this.radius > innerHeight || this.y - this.radius < 0) {
+                        this.dy = -this.dy;
+                    }          
+                
+                    this.x += this.dx;
+                    this.y += this.dy;
+                    
+                    this.draw();
+                    
+                }
+                
+            } 
+            
+            const canvas = document.querySelector("canvas");
+            const c = canvas.getContext("2d");
+            const cset = [];
+            const circleCount = 1500;
+            const colorSheet = ["#173F5F", "#20639B", "#3CAEA3", "#F6D55C", "#ED553B"];
+            const mouse = {
+                x: undefined,
+                y: undefined
+            }
+            
+            let radius;
+            let defaultRadius; 
+            let x;
+            let y;
+            let dx;
+            let dy;
+            let colorIndex;
+            
+            function adaptScreen() {
+            
+                canvas.width = screen.width;
+                canvas.height = screen.height;
+                
+                if (cset.length > 0) {
+                    cset.splice(0, cset.length);
+                }
+                
+                start();
+                
+            }
+            
+            addEventListener("resize", adaptScreen);
+            
+            addEventListener("mousemove", function(event) {
+            
+                if (event.x > 60 && event.x < canvas.width - 60 && event.y > 60 && event.y < canvas.height - 60) {
+                    mouse.x = event.x;
+                    mouse.y = event.y;
+                }    
+                
+            });
+            
+            function animate() {
+                
+                requestAnimationFrame(animate);
+                c.fillStyle = "rgba(0, 0, 0, 0.1)";
+                c.fillRect(0, 0, canvas.width, canvas.height);
+                
+                cset.forEach(function(circle) {
+                    circle.update();
+                });
+                
+            }
+
+            function start() {
+                
+                for (var i = 0; i < circleCount; i++) {
+            
+                    radius = Math.floor(Math.random() * 10) + 2;
+                    defaultRadius = radius;
+                    x = Math.floor(Math.random() * (innerWidth - radius * 2) + radius);
+                    y = Math.floor(Math.random() * (innerHeight - radius * 2) + radius);
+                    dx = (Math.random() - 0.4);
+                    dy = (Math.random() - 0.4);
+                    colorIndex = Math.floor(Math.random() * colorSheet.length);
+                
+                    cset.push(new Circle(x, y, dx, dy, radius, defaultRadius, colorIndex));
+                
+                }
+                
+                animate();
+            
+            }
+            
+            adaptScreen();
+            
+        };
+    </script>
+</body>
+</html>

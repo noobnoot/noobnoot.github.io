@@ -1,7 +1,7 @@
 :host(article-tabber) nav {
     display: flex;
     background-image: linear-gradient( var(--accent-color), var(--accent-color) ), var(--background-img);
-    background-size: cover;
+    background-size: auto;
 }
 
 :host(article-tabber) nav button {

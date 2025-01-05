@@ -1,13 +1,14 @@
 {
-    "title": "Welcome to my Local Domain!",
-    "subtitle": "Homepage",
-    "dueMonth": "April",
-    "dueYear": "2024",
-    "subject": "Foundation of Inclusive and Special Education",
+    "title": "Math Notes for Dummies",
+    "subtitle": "",
+    "dueMonth": "December",
+    "dueYear": "2025",
+    "subject": "Mathematics 10",
     "authors": [
-        "Joren C. Langbid"
+        "Langbid, J. C."
     ],
-    "section": "SST-I",
+    "type": "home",
+    "section": "",
     "email": "jorenlangbid2223+gitweb@gmail.com",
     "references": [
         {
