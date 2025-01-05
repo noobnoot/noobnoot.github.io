@@ -28,12 +28,13 @@
             color: white;
             width: 100%;
             margin: 0;
+            background: rgba(255, 255, 255, 0.8);
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <h1>HAPPY BIRTHDAY RASHAD</h1>
+        <h1 id="main">HAPPY BIRTHDAY RASHAD</h1>
     </div>
     <canvas></canvas>
     <script>
@@ -165,9 +166,38 @@
                 animate();
             
             }
-            
+
             adaptScreen();
             
+            const colors = ["#173F5F", "#20639B", "#3CAEA3", "#F6D55C", "#ED553B"];
+
+            function applyRainbowText(element) {
+            const text = element.textContent;
+            let rainbowHTML = '';
+
+            for (let i = 0; i < text.length; i++) {
+                const color = colors[i % colors.length];
+                rainbowHTML += `<span style="color: ${color};">${text[i]}</span>`;
+            }
+
+            element.innerHTML = rainbowHTML;
+            }
+
+            function shuffleColors(element) {
+            const spans = element.querySelectorAll('span');
+            spans.forEach(span => {
+                const randomColor = colors[Math.floor(Math.random() * colors.length)];
+                span.style.color = randomColor;
+            });
+            }
+
+            const rainbowTextElement = document.getElementById('main');
+            applyRainbowText(rainbowTextElement);
+
+            setInterval(() => {
+            shuffleColors(rainbowTextElement);
+            }, 500); // Shuffle every 500ms
+
         };
     </script>
 </body>
