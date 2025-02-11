@@ -1,0 +1,16 @@
+{
+    "logos": [
+        {
+            "src": "../Assets/spcf-logo.png",
+            "alt": "spcf-logo"
+        },
+        {
+            "src": "../Assets/basic-ed-logo.png",
+            "alt": "basic-ed-logo"
+        }
+    ],
+    "text": [
+        "Systems Plus College Foundation",
+        "Basic Education Department"
+    ]
+}

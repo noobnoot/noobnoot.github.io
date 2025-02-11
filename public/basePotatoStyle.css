@@ -186,7 +186,7 @@
 
     button {
         transition: background-color 0.25s ease;
-        background-color: var(--modal-bg);
+        background-color: var(--accent-color);
     }
 
     button:hover {
@@ -194,6 +194,13 @@
         background-color: var(--modal-hover);
     }
 
+    button[type="submit"] {
+        font-weight: bold;
+        color: white;
+        border-radius: 24px;
+    }
+
+    
 /*** MEDIA QUERIES ***/
 
 @media screen and (max-width: 800px) {
