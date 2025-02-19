@@ -10,6 +10,7 @@ import ArticleWithTabs from "../Components/ArticleWithTabs.js";
 import ReferenceList from "../Components/ReferenceList.js";
 import FooterBox from "../Components/FooterBox.js";
 import Metadata from "./Metadata.js";
+import SelectionSheet from "./Components/SelectionSheet.js";
 
 class Main {
 
@@ -26,6 +27,7 @@ class Main {
             ArticleWithTabs.register();
             ReferenceList.register();
             FooterBox.register();
+            SelectionSheet.register();
         }
     }
 
