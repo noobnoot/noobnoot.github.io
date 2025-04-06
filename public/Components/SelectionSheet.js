@@ -54,7 +54,7 @@ class SelectionSheet extends HTMLElement {
         }
     }
 
-    attributeChangedCallback(name, oldValue, newValue) {
+    attributeChangedCallback() {
         if ($(this).attr("choices") !== undefined && $(this).attr("count") !== undefined) {
             this.render();
         }

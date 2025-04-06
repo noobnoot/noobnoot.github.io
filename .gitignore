@@ -8,4 +8,6 @@
 
 /.eslintrc.json
 
+eslint.config.js
+
 Template/
