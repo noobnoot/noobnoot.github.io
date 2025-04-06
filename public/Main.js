@@ -1,16 +1,16 @@
-import $ from "/Components/Libs/jQuery.js";
-import BoxedQuote from "/Components/BoxedQuote.js";
-import ContentImage from "/Components/ContentImage.js";
-import ImageGrid from "/Components/ImageGrid.js";
-import SlidedownModal from "/Components/SlidedownBox.js";
-import HeaderBox from "/Components/HeaderBox.js";
-import TitleBox from "/Components/TitleBox.js";
-import ArticleTabber from "/Components/ArticleTabber.js";
-import ArticleWithTabs from "/Components/ArticleWithTabs.js";
-import ReferenceList from "/Components/ReferenceList.js";
-import FooterBox from "/Components/FooterBox.js";
-import Metadata from "/Metadata.js";
-import SelectionSheet from "/Components/SelectionSheet.js";
+import $ from "../public/Components/Libs/jQuery.js";
+import BoxedQuote from "../public/Components/BoxedQuote.js";
+import ContentImage from "../public/Components/ContentImage.js";
+import ImageGrid from "../public/Components/ImageGrid.js";
+import SlidedownModal from "../public/Components/SlidedownBox.js";
+import HeaderBox from "../public/Components/HeaderBox.js";
+import TitleBox from "../public/Components/TitleBox.js";
+import ArticleTabber from "../public/Components/ArticleTabber.js";
+import ArticleWithTabs from "../public/Components/ArticleWithTabs.js";
+import ReferenceList from "../public/Components/ReferenceList.js";
+import FooterBox from "../public/Components/FooterBox.js";
+import Metadata from "../public/Metadata.js";
+import SelectionSheet from "../public/Components/SelectionSheet.js";
 
 class Main {
 
