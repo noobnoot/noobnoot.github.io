@@ -15,7 +15,6 @@ class SelectionSheet extends HTMLElement {
             <link rel="stylesheet" href="../Components/Styles/boxedQuote.css">
             <link rel="stylesheet" href="../basePotatoStyle.css">
             <div class="wrapper">
-                
             </div>
         `;
     }
