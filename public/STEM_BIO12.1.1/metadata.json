@@ -1,0 +1,19 @@
+{
+    "title": "Introduction to Biology",
+    "subtitle": "General Biology 1, Midterms Lesson 1",
+    "dueMonth": "July",
+    "dueYear": "2025",
+    "type": "edu",
+    "subject": "General Biology 1",
+    "authors": [
+        "Langbid, J. C."
+    ],
+    "section": "SHS Teacher",
+    "email": "j.langbid.edu+gitweb@gmail.com",
+    "references": [
+        {
+            "content": "Assessment Definition. (2015, November 10). The Glossary of Education Reform.",
+            "link": "https://www.edglossary.org/assessment"
+        }
+    ]
+}

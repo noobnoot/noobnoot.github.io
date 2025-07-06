@@ -3,11 +3,12 @@ import $ from "./Libs/jQuery.js";
 
 class ContentImage extends HTMLElement {
 
+    #img = $("<img>");
+
     static get templateRaw() {
         return `
             <link rel="stylesheet" href="../Components/Styles/contentImage.css"/>
             <link rel="stylesheet" href="../basePotatoStyle.css">
-            <img>
             <p class="caption"></p>
         `;
     }
@@ -17,7 +18,7 @@ class ContentImage extends HTMLElement {
     }
 
     static get observedAttributes() {
-        return ["src", "author", "href", "title", "limit-height", "limit-height-med", "align-top", "align-bottom"];
+        return ["src", "author", "href", "caption", "limit-height", "limit-height-med", "align-top", "align-bottom"];
     }
 
     static register() {
@@ -30,11 +31,11 @@ class ContentImage extends HTMLElement {
         this.shadowRoot.appendChild( ComponentHelper.createTemplate(ContentImage.templateRaw) );
     }
 
-    setCaption(title, author, href) {
+    setCaption(caption, author, href) {
         $(this.shadowRoot)
             .children(".caption")
             .empty();
-        if (!title && !author) {
+        if (!caption && !author) {
             $(this.shadowRoot)
                 .children(".caption")
                 .remove();
@@ -43,35 +44,51 @@ class ContentImage extends HTMLElement {
         let link = $("<a>")
             .attr({ href: href })
             .text(author);
-        $(this.shadowRoot)
-            .children(".caption")
-            .append(title ? title + " | " : "")
-            .append("Photo by: ")
-            .append(link);
+        if (!author) {
+            $(this.shadowRoot)
+                .children(".caption")
+                .append(caption);
+        } else {
+            $(this.shadowRoot)
+                .children(".caption")
+                .append(caption ? caption + " | " : "")
+                .append("Photo by: ")
+                .append(link);
+        }
     }
-
+        
     attributeChangedCallback(name, oldValue, newValue) {
-        let img = $(this.shadowRoot).children("img");
         switch( name ) {
-            case "src": {
-                img.attr("src", newValue);
-                break;
-            } case "author": {
-                img.attr("alt", `Photo by ${newValue}`);
+            case "author": {
+                this.#img.attr("alt", `Photo by ${newValue}`);
             // eslint-disable-next-line no-fallthrough
             } case "align-top":
               case "align-bottom":
               case "limit-height":
               case "limit-height-med": {
-                img.addClass(name);
+                this.#img.addClass(name);
+                break;
+            } case "src": {
+                this.#img.prependTo(this.shadowRoot);
+                this.#img.attr("src", newValue);
                 break;
             }
         }
         this.setCaption(
-            this.getAttribute("title"),
+            this.getAttribute("caption"),
             this.getAttribute("author"),
             this.getAttribute("href")
         );
+    }
+
+    connectedCallback() {
+        // moves children of <content-image> to the shadow realm lol;
+        // I used `.appendTo` to prevent cloning of moved elements;
+        $(this)
+            .children()
+            .prependTo(
+                $(this.shadowRoot)
+            );
     }
 
 }
