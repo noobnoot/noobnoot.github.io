@@ -8,12 +8,28 @@
     "authors": [
         "Langbid, J. C."
     ],
-    "section": "SHS Teacher",
+    "section": "SHS STEM Teacher",
     "email": "j.langbid.edu+gitweb@gmail.com",
     "references": [
         {
-            "content": "Assessment Definition. (2015, November 10). The Glossary of Education Reform.",
-            "link": "https://www.edglossary.org/assessment"
+            "content": "Creationism (Stanford Encyclopedia of Philosophy). (2018).",
+            "link":"https://plato.stanford.edu/entries/creationism/"
+        },
+        {
+            "content": "Libretexts. (2024a). 1.3: The Science of Biology - the scientific method. Biology LibreTexts.",
+            "link":"https://bio.libretexts.org/Bookshelves/Introductory_and_General_Biology/General_Biology_(Boundless)"
+        },
+        {
+            "content": "Libretexts. (2024b). 3.1: Spontaneous generation. Biology LibreTexts.",
+            "link":"https://bio.libretexts.org/Bookshelves/Microbiology/Microbiology_%28OpenStax%29/03%3A_The_Cell/"
+        },
+        {
+            "content": "Libretexts. (2024c). 18.1B: Charles Darwin and Natural Selection. Biology LibreTexts. ",
+            "link":"https://bio.libretexts.org/Bookshelves/Introductory_and_General_Biology/General_Biology_(Boundless)"
+        },
+        {
+            "content": "NASA Astrobiology. (n.d.).",
+            "link": "https://astrobiology.nasa.gov/news/in-search-of-panspermia/"
         }
     ]
 }
