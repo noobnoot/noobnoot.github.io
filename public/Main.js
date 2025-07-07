@@ -31,8 +31,18 @@ class Main {
         }
     }
 
+    static onhover() {
+        $(this).attr("org_title", $(this).attr('title'));
+        $(this).attr('title', '');
+    }
+
+    static outhover() {
+        $(this).attr('title', $(this).attr("org_title"));
+    }
+    
     static main() {
         $(document).ready(Main.onready);
+        $("[title]").hover(Main.onhover, Main.outhover);
     }
 
 }
