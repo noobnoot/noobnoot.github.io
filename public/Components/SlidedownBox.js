@@ -20,7 +20,7 @@ class SlidedownBox extends HTMLElement {
     }
 
     static get observedAttributes() {
-        return ["title"];
+        return ["header"];
     }
 
     static register() {
@@ -43,11 +43,11 @@ class SlidedownBox extends HTMLElement {
 
     attributeChangedCallback(name) {
         // moves the innerHTML of the <slidedown-modal> to `shadowRoot`;
-        if ( name == "title" ) {
+        if ( name == "header" ) {
             $(this.shadowRoot)
                 .children(".modal-body")
                 .children("button")
-                .text(this.getAttribute("title"));
+                .text(this.getAttribute("header"));
         }
     }
 
