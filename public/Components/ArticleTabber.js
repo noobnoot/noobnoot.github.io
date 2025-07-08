@@ -21,8 +21,8 @@ class ArticleTabber extends HTMLElement {
 
 
     static createNavButton(nav, index, article) {
-        let title = $(article)
-            .attr("title")
+        let header = $(article)
+            .attr("header")
             .toUpperCase();
         // creates a <button>; also binds onclick event to it,
         // moving :active to it and hiding the article's sibling
@@ -38,7 +38,7 @@ class ArticleTabber extends HTMLElement {
                     .siblings("article, article-with-tabs")
                     .hide();
             })
-            .append(title);
+            .append(header);
         nav
             .append(button);
     }

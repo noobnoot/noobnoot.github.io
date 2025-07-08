@@ -21,8 +21,8 @@ class ArticleWithTabs extends HTMLElement {
 
 
     static createNavButton(nav, index, section) {
-        let title = $(section)
-            .attr("title");
+        let header = $(section)
+            .attr("header");
         // creates a <button>; also binds onclick event to it,
         // moving :active to it and hiding the section's sibling
         // elements;
@@ -41,7 +41,7 @@ class ArticleWithTabs extends HTMLElement {
                     .siblings("section")
                     .hide();
             })
-            .append(title)
+            .append(header)
             .append(subtitleText);
         nav
             .append(button);
