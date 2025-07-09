@@ -43,7 +43,7 @@ class FooterBox extends HTMLElement {
             } case "form": {
                 text = `© 2025 VSYS v0.9.0.
                 <p>This voting form is strictly for academic use. All responses are confidential and final upon submission. One vote per student only. Please review your choices before submitting.</p>
-                <p>Designed and developed by <b>Joren C. Langbid</b>.</p>`
+                <p>Designed and developed by <b>${authors}</b>.</p>`
             }
         }
         
