@@ -8,6 +8,8 @@
 
 /.eslintrc.json
 
+/_FormData
+
 eslint.config.js
 
 Template/
