@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="metadata" src="./metadata.json">
+    <title>VSYS 1.0</title>
+    <link rel="stylesheet" href="../basePotatoStyle.css">
+    <link rel="icon" type="image/x-icon" href="../favicon.ico">
+    <style>
+    
+        :root {
+            --accent-color: rgba(20, 80, 40, 0.75);
+            --anti-accent-color: #FEFEFE;
+            --background-img: url("https://images.creativemarket.com/0.1.0/ps/2321248/1160/772/m1/fpnw/wm1/cover-.jpg?1487898325&s=1b088f3d83e0354fa15b61d49486a787");
+        }
+
+    </style>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="../Main.js" type="module"></script>
+
+</head>
+<body>
+
+    <header>
+        <header-box meta="../Attributes/cassedBanner.json"></header-box>
+        <hr>
+        <title-box></title-box>
+    </header>
+
+    <article-tabber>
+        
+        <article header="introduction">
+
+            <h1>[VSYS Balot]</h1>
+            <form method="POST" action="/submit">
+                <div class="form-item">
+                    <div class="wrapper">
+                        <label for="class_number"><b>Your Class Number (CN):</b></label><br>
+                        Please input your assigned class number. 
+                        <div>
+                            <input type="number" min="1" max="43" id="class_number" name="class_number" required>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-item">
+                    <div class="wrapper">
+                        <label for="1"><b>President's CN:</b></label><br>
+                        <i>Someone with a heart, trusted in their decisions, and someone who can stand up for you and share everyone's burden.</i>
+                        <div>
+                            <input type="number" min="1" max="43" id="1" name="1" required> 
+                        </div>
+                    </div>
+                </div>
+                <div class="form-item">
+                    <div class="wrapper">
+                        <label for="2"><b>Vice President's CN:</b></label><br>
+                        <i>Someone who is detail-oriented, strategist, and often a perfectionist, making sure nothing is overlooked in class plans.</i>
+                        <div>
+                            <input type="number" min="1" max="43" id="2" name="2" required>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-item">
+                    <div class="wrapper">
+                        <label for="3"><b>Secretary's CN:</b></label><br>
+                        <i>Someone organized and has a good sense of aesthetics—especially in handling records, attendance, designs, or presentations.</i>
+                        <div>
+                            <input type="number" min="1" max="43" id="3" name="3" required>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-item">
+                    <div class="wrapper">
+                        <label for="4"><b>Treasurer's CN:</b></label><br>
+                        <i>Someone you truly trust, honest and good at keeping money (a plus if they have a working GCash).</i>
+                        <div>
+                            <input type="number" min="1" max="43" id="4" name="4" required>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-item">
+                    <div class="wrapper"> 
+                        <label for="5"><b>Auditor's CN:</b></label><br>
+                        <i>Someone you trust on handling class-funds or monetary records.</i>
+                        <div>
+                            <input type="number" min="1" max="43" id="5" name="5" required>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-item">
+                    <div class="wrapper">
+                        <label for="6"><b>Public Info. Officer's CN:</b></label><br>
+                        <i>Someone who replies fast, active, and "walang hiya."</i>
+                        <div>
+                            <input type="number" min="1" max="43" id="6" name="6" required>
+                        </div> 
+                    </div>
+                </div>
+                <button type="submit">Submit</button>
+            </form>
+            <br>  
+        </article>
+    
+        <article header="references">
+            <reference-list></reference-list>
+        </article>
+
+    </article-tabber>
+
+    <footer>
+        <footer-box></footer-box>
+    </footer>
+
+</body>
+</html>

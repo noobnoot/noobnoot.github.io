@@ -31,7 +31,6 @@ class Server {
     }
 
     handleFormSubmission(req, res) {
-        const { name, answer } = req.body;
         const filePath = path.join(this.__dirname, "responses.json");
 
         fs.readFile(filePath, "utf8", (err, data) => {
@@ -44,7 +43,7 @@ class Server {
                 }
             }
 
-            const newResponse = { name, answer, timestamp: new Date().toISOString() };
+            const newResponse = [ new Date().toISOString(), ...Object.values(req.body) ];
             responses.push(newResponse);
 
             fs.writeFile(filePath, JSON.stringify(responses, null, 2), (writeErr) => {
