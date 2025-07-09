@@ -1,17 +1,17 @@
 import express from "express";
 import path from "path";
 import bodyParser from "body-parser";
-import fs from "fs";
+import fs from "fs/promises";
 import { fileURLToPath } from "url";
 
 class Server {
-
     constructor(host, port) {
         this.app = express();
         this.host = host;
         this.port = port;
         this.__filename = fileURLToPath(import.meta.url);
         this.__dirname = path.dirname(this.__filename);
+        this.locks = new Set();
         this.configureMiddleware();
         this.setRoutes();
     }
@@ -22,61 +22,116 @@ class Server {
     }
 
     setRoutes() {
-        this.app.get("/", (req, res) => this.handleHome(req, res));
-        this.app.post("/submit", (req, res) => this.handleFormSubmission(req, res));
+        const self = this; // `const` for scope consistency
+        this.app.get("/", function(req, res) {
+            self.handleHome(req, res);
+        });
+        this.app.post("/submit", function(req, res) {
+            self.handleFormSubmission(req, res);
+        });
     }
 
     handleHome(req, res) {
         res.sendFile(path.join(this.__dirname, "/public/index.html"));
     }
 
-    handleFormSubmission(req, res) {
+    async lock(filePath) {
+        const self = this;
+        const lockFile = filePath + ".lock";
+        while (self.locks.has(lockFile)) {
+            await new Promise(function(resolve) {
+                setTimeout(resolve, 50);
+            });
+        }
+        self.locks.add(lockFile);
+        try {
+            await fs.writeFile(lockFile, "LOCK");
+        } catch (err) {
+            self.locks.delete(lockFile);
+            throw err;
+        }
+    }
 
-        const body = { ...req.body};
-        const formName = body.form_name.replace(/[^a-z0-9_-]/gi, '_');
-        const filePath = path.join(this.__dirname, "public/_FormData", `${formName}.csv`);
+    async unlock(filePath) {
+        const self = this;
+        const lockFile = filePath + ".lock";
+        try {
+            await fs.unlink(lockFile);
+        } catch (err) {
+            console.warn("Could not remove lock file:", err);
+        }
+        self.locks.delete(lockFile);
+    }
+
+    async handleFormSubmission(req, res) {
+        const self = this;
+        const body = Object.assign({}, req.body);
+        const formName = body.form_name.replace(/[^a-z0-9_-]/gi, "_");
+        const filePath = path.join(this.__dirname, "public/_FormData", formName + ".csv");
+        const classNumber = body.class_number;
+
+        if (classNumber === undefined || classNumber === null || classNumber === "") {
+            return res.status(400).redirect("/VSYS1.0/submit.html?stat=1");
+        }
 
         delete body.form_name;
-
-        const columnNames = Object.keys(body);
-        const values = Object.values(body);
         const timestamp = new Date().toISOString();
-        const row = [timestamp, ...values].join(",") + "\n";
+        const values = Object.values(body);
+        const row = [timestamp].concat(values).join(",") + "\n";
 
-        if (!fs.existsSync(filePath)) {
-            const headers = ["Timestamp", ...columnNames].join(",") + "\n";
-            fs.writeFileSync(filePath, headers)
-        }
+        try {
+            await self.lock(filePath);
 
-        const classNumber = body.class_number;
-        
-        if (classNumber) {
-            const existingData = fs.readFileSync(filePath, "utf8");
-            const lines = existingData.trim().split("\n").slice(1); // skip header
-
-            const duplicate = lines.some(line => {
-                const columns = line.split(",");
-                return columns[1] === classNumber; // assuming class_number is always second column
-            });
-
-            if (duplicate) {
-                return res.status(400).redirect("/VSYS1.0/submit.html?stat=2"); // stat=2 = duplicate
-            }
-        }
-
-        fs.appendFile(filePath, row,
-            function(error) {
-                if (error) {
-                    res.status(500).redirect("/VSYS1.0/submit.html?stat=1");
+            let fileExists = true; // `let` because it might be reassigned
+            let existingData = "";
+            try {
+                existingData = await fs.readFile(filePath, "utf8");
+            } catch (err) {
+                if (err.code === "ENOENT") {
+                    fileExists = false;
+                } else {
+                    throw err;
                 }
-                res.redirect("/VSYS1.0/submit.html?stat=0");
             }
-        );
+
+            if (fileExists === false) {
+                const headers = ["Timestamp"].concat(Object.keys(body)).join(",") + "\n";
+                await fs.writeFile(filePath, headers);
+            } else {
+                const lines = existingData.trim().split("\n");
+                const headers = lines[0].split(",");
+                const classNumberIndex = headers.indexOf("class_number");
+
+                if (classNumberIndex !== -1) {
+                    for (let i = 1; i < lines.length; i++) {
+                        const columns = lines[i].split(",");
+                        if (columns[classNumberIndex] === classNumber) {
+                            await self.unlock(filePath);
+                            return res.status(400).redirect("/VSYS1.0/submit.html?stat=2");
+                        }
+                    }
+                }
+            }
+
+            await fs.appendFile(filePath, row);
+            await self.unlock(filePath);
+            return res.redirect("/VSYS1.0/submit.html?stat=0");
+
+        } catch (err) {
+            console.error("Submission error:", err);
+            try {
+                await self.unlock(filePath);
+            } catch (unlockErr) {
+                console.warn("Failed to unlock:", unlockErr);
+            }
+            return res.status(500).redirect("/VSYS1.0/submit.html?stat=1");
+        }
     }
 
     start() {
-        this.app.listen(this.port, this.host, () => {
-            console.log(`Server running on http://${this.host}:${this.port}/`);
+        const self = this;
+        this.app.listen(this.port, this.host, function() {
+            console.log("Server running on http://" + self.host + ":" + self.port + "/");
         });
     }
 }
