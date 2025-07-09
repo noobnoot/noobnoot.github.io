@@ -24,22 +24,40 @@
 <body>
 
     <header>
-        <header-box meta="../Attributes/cassedBanner.json"></header-box>
+        <header-box meta="../Attributes/spcfBanner.json"></header-box>
         <hr>
         <title-box></title-box>
     </header>
 
     <article-tabber>
         
-        <article header="introduction">
+        <article header="VSYS 0.9.0">
 
-            <h1>Thank you.</h1>
-            <p>Your response has been recorded.</p>
+            <script>
+                const params = new URLSearchParams(window.location.search);
+                const stat = params.get("stat");
 
-        </article>
-    
-        <article header="references">
-            <reference-list></reference-list>
+                document.addEventListener("DOMContentLoaded",
+                    function() {
+                        let header = "Something went wrong :(";
+                        let content = "The server is maybe busy or under maintenance.";
+                        console.log(stat, Number(stat));
+                        if (Number(stat) === 0) {
+                            header = "Thank you!";
+                            content = "Your response has been recorded.";
+                        } else if (Number(stat) === 2) {
+                            header = "Sorry! You have already inputted.";
+                            content = "You already have an existing input. Please contact your teacher or administrator if you think this is a mistake.";
+                        }
+                        document.getElementById("header").textContent = header;
+                        document.getElementById("content").textContent = content;
+                    }
+                );
+            </script>
+
+            <h1 id="header"></h1>
+            <p id="content"></p>
+
         </article>
 
     </article-tabber>

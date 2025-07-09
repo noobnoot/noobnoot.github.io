@@ -24,17 +24,18 @@
 <body>
 
     <header>
-        <header-box meta="../Attributes/cassedBanner.json"></header-box>
+        <header-box meta="../Attributes/spcfBanner.json"></header-box>
         <hr>
         <title-box></title-box>
     </header>
 
     <article-tabber>
         
-        <article header="introduction">
+        <article header="VSYS Form 0.9.0">
 
-            <h1>[VSYS Balot]</h1>
+            <h1>Voting Balot</h1>
             <form method="POST" action="/submit">
+                <input type="hidden" name="form_name" value="election">
                 <div class="form-item">
                     <div class="wrapper">
                         <label for="class_number"><b>Your Class Number (CN):</b></label><br>
@@ -101,10 +102,6 @@
                 <button type="submit">Submit</button>
             </form>
             <br>  
-        </article>
-    
-        <article header="references">
-            <reference-list></reference-list>
         </article>
 
     </article-tabber>

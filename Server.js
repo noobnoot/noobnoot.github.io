@@ -31,30 +31,47 @@ class Server {
     }
 
     handleFormSubmission(req, res) {
-        const filePath = path.join(this.__dirname, "responses.json");
 
-        fs.readFile(filePath, "utf8", (err, data) => {
-            let responses = [];
-            if (!err) {
-                try {
-                    responses = JSON.parse(data);
-                } catch (parseErr) {
-                    console.error("Failed to parse JSON:", parseErr);
-                }
-            }
+        const body = { ...req.body};
+        const formName = body.form_name.replace(/[^a-z0-9_-]/gi, '_');
+        const filePath = path.join(this.__dirname, "public/_FormData", `${formName}.csv`);
 
-            const newResponse = [ new Date().toISOString(), ...Object.values(req.body) ];
-            responses.push(newResponse);
+        delete body.form_name;
 
-            fs.writeFile(filePath, JSON.stringify(responses, null, 2), (writeErr) => {
-                if (writeErr) {
-                    console.error("Failed to write JSON:", writeErr);
-                    res.status(500).send("Failed to save response.");
-                } else {
-                    res.send("Thank you for your submission!");
-                }
+        const columnNames = Object.keys(body);
+        const values = Object.values(body);
+        const timestamp = new Date().toISOString();
+        const row = [timestamp, ...values].join(",") + "\n";
+
+        if (!fs.existsSync(filePath)) {
+            const headers = ["Timestamp", ...columnNames].join(",") + "\n";
+            fs.writeFileSync(filePath, headers)
+        }
+
+        const classNumber = body.class_number;
+        
+        if (classNumber) {
+            const existingData = fs.readFileSync(filePath, "utf8");
+            const lines = existingData.trim().split("\n").slice(1); // skip header
+
+            const duplicate = lines.some(line => {
+                const columns = line.split(",");
+                return columns[1] === classNumber; // assuming class_number is always second column
             });
-        });
+
+            if (duplicate) {
+                return res.status(400).redirect("/VSYS1.0/submit.html?stat=2"); // stat=2 = duplicate
+            }
+        }
+
+        fs.appendFile(filePath, row,
+            function(error) {
+                if (error) {
+                    res.status(500).redirect("/VSYS1.0/submit.html?stat=1");
+                }
+                res.redirect("/VSYS1.0/submit.html?stat=0");
+            }
+        );
     }
 
     start() {

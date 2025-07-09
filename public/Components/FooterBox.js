@@ -40,6 +40,10 @@ class FooterBox extends HTMLElement {
             } case "home": {
                 text = `This webpage is designed to provide students with access to their learning resources through a local server. The goal is to make learning accessible and efficient, regardless of external internet availability. You can contact ${tag} using this email <u>${Metadata.data.email}</u> for queries, suggestions, corrections, and other concerns.`
                 break;
+            } case "form": {
+                text = `© 2025 VSYS v0.9.0.
+                <p>This voting form is strictly for academic use. All responses are confidential and final upon submission. One vote per student only. Please review your choices before submitting.</p>
+                <p>Designed and developed by <b>Joren C. Langbid</b>.</p>`
             }
         }
         

@@ -1,14 +1,13 @@
 {
-    "title": "[Base] VSYS Forms",
-    "subtitle": "[Base] Untitled Form",
-    "dueMonth": "July 7, 2025",
+    "title": "St. Raphael Election",
+    "subtitle": "S.Y. 2025 - 2026",
+    "dueMonth": "July",
     "dueYear": "2025",
     "subject": "N/A",
     "authors": [
         "Joren C. Langbid"
     ],
-    "section": "N/A",
-    "type": "edu",
+    "type": "form",
     "email": "j.langbid.edu+gitweb@gmail.com",
     "references": [
         {
