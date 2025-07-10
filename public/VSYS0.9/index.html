@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="metadata" src="./metadata.json">
-    <title>VSYS 1.0</title>
+    <title>VSYS 0.9</title>
     <link rel="stylesheet" href="../basePotatoStyle.css">
     <link rel="icon" type="image/x-icon" href="../favicon.ico">
     <style>
@@ -17,7 +17,19 @@
         }
 
     </style>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+
+    <script>
+        // Clears form onsubmit
+        window.addEventListener('DOMContentLoaded', function() {
+            const form = document.getElementById('form');
+            form.addEventListener('submit', function() {
+                window.onbeforeunload = function() {
+                    form.reset();
+                };
+            });
+        });
+    </script>
+
     <script src="../Main.js" type="module"></script>
 
 </head>
@@ -34,7 +46,7 @@
         <article header="VSYS Form 0.9.0">
 
             <h1>Voting Balot</h1>
-            <form method="POST" action="/submit">
+            <form id="form" method="POST" action="/submit" autocomplete="off" novalidate>
                 <input type="hidden" name="form_name" value="election">
                 <div class="form-item">
                     <div class="wrapper">

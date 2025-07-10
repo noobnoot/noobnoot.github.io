@@ -19,16 +19,18 @@ class Server {
     configureMiddleware() {
         this.app.use(bodyParser.urlencoded({ extended: true }));
         this.app.use(express.static(path.join(this.__dirname, "public")));
+        this.app.use(
+            function(req, res, next) {
+                res.set("Cache-Control", "no-store, no-cache, must-revalidate, private");
+                next();
+            }
+        );
     }
 
     setRoutes() {
         const self = this; // `const` for scope consistency
-        this.app.get("/", function(req, res) {
-            self.handleHome(req, res);
-        });
-        this.app.post("/submit", function(req, res) {
-            self.handleFormSubmission(req, res);
-        });
+        this.app.get("/", function(req, res) { self.handleHome(req, res); });
+        this.app.post("/submit", function(req, res) { self.handleFormSubmission(req, res); });
     }
 
     handleHome(req, res) {
@@ -39,9 +41,7 @@ class Server {
         const self = this;
         const lockFile = filePath + ".lock";
         while (self.locks.has(lockFile)) {
-            await new Promise(function(resolve) {
-                setTimeout(resolve, 50);
-            });
+            await new Promise(function(resolve) { setTimeout(resolve, 50); });
         }
         self.locks.add(lockFile);
         try {
@@ -71,7 +71,7 @@ class Server {
         const classNumber = body.class_number;
 
         if (classNumber === undefined || classNumber === null || classNumber === "") {
-            return res.status(400).redirect("/VSYS1.0/submit.html?stat=1");
+            return res.status(400).redirect("/VSYS0.9/submit.html?stat=1");
         }
 
         delete body.form_name;
@@ -107,7 +107,7 @@ class Server {
                         const columns = lines[i].split(",");
                         if (columns[classNumberIndex] === classNumber) {
                             await self.unlock(filePath);
-                            return res.status(400).redirect("/VSYS1.0/submit.html?stat=2");
+                            return res.status(400).redirect("/VSYS0.9/submit.html?stat=2");
                         }
                     }
                 }
@@ -115,7 +115,7 @@ class Server {
 
             await fs.appendFile(filePath, row);
             await self.unlock(filePath);
-            return res.redirect("/VSYS1.0/submit.html?stat=0");
+            return res.redirect("/VSYS0.9/submit.html?stat=0");
 
         } catch (err) {
             console.error("Submission error:", err);
@@ -124,7 +124,7 @@ class Server {
             } catch (unlockErr) {
                 console.warn("Failed to unlock:", unlockErr);
             }
-            return res.status(500).redirect("/VSYS1.0/submit.html?stat=1");
+            return res.status(500).redirect("/VSYS0.9/submit.html?stat=1");
         }
     }
 

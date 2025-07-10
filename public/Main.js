@@ -39,7 +39,7 @@ class Main {
     static outhover() {
         $(this).attr('title', $(this).attr("org_title"));
     }
-    
+
     static main() {
         $(document).ready(Main.onready);
         $("[title]").hover(Main.onhover, Main.outhover);
