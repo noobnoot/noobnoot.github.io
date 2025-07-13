@@ -1,0 +1,192 @@
+<!--
+
+    Created by Joren Langbid
+    Systems Plus College Foundation
+    July 2025
+
+    Please use this for personal use only.
+    I do not own the images and the color
+    palette that are used in this page.
+
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="metadata" src="./metadata.json">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GENBIO1 - Basic Cell Biology</title>
+    <link rel="stylesheet" href="../basePotatoStyle.css">
+    <link rel="icon" type="image/x-icon" href="../favicon.ico">
+    <style>
+    
+        :root {
+            --accent-color: rgba(6, 51, 0, 0.75);
+            --anti-accent-color: #FEFEFE;
+            --background-img: url("https://images.creativemarket.com/0.1.0/ps/2321248/1160/772/m1/fpnw/wm1/cover-.jpg?1487898325&s=1b088f3d83e0354fa15b61d49486a787");
+        }
+
+    </style>
+    <script src="../Main.js" type="module"></script>
+    
+</head>
+<body>
+
+    <header>
+        <header-box meta="../Attributes/spcfBanner.json"></header-box>
+        <hr>
+        <title-box></title-box>
+    </header>
+
+    <article-tabber>
+
+        <article header="Cell">
+            <h1>The Cell</h1>
+            <p>
+                The human body is made up of many specialized cells, each with a specific role. For example, epithelial cells protect surfaces of the body, bone cells provide support, immune cells fight infection, and blood cells transport nutrients and oxygen.
+            </p>
+            <p>Despite their diversity, all cells, from bacteria to humans, share basic features.</p>
+            <slidedown-box header="Lesson's Objectives:">
+                <p>In this lesson, you are expected to:</p>
+                <ol>
+                    <li>Introduces the cell and its functions.</li>
+                    <li>Explains the postulates of the cell theory (<b>STEM_BIO11/12-Ia-c-1</b>).</li>
+                    <li>Distinguish prokaryotic and eukaryotic cells according to their distinguishing features (<b>STEM_BIO11/12-Ia-c-3</b>).</li>
+                    <li>Describes the structure and function of major and subcellular organelles (<b>STEM_BIO11/12-Ia-c-2</b>).</li>
+                    <li>Classify different cell types (plant/animal tissues) and specify the function(s) of each (<b>STEM_BIO11/12-Ia-c-4</b>)</li>
+                </ol>
+            </slidedown-box>
+            <content-image limit-height
+                caption="(a) Nasal sinus cells (viewed with a light microscope), (b) onion cells (viewed with a light microscope), and (c) <i>Vibrio tasmaniensis</i> bacterial cells (seen through a scanning electron microscope)."
+            >
+                <image-grid viewable col="1">
+                    <img src="https://bio.libretexts.org/@api/deki/files/970/Figure_04_00_00new.jpg?revision=1" alt="CellExamples.png" ref="© Biology Libretexts"> 
+                </image-grid>
+            </content-image>
+            <slidedown-box header="Then, how do we define the cell?"> 
+                <p>The <b>cell</b> is the <b>fundamental unit of life</b>.</p>
+            </slidedown-box> 
+            <p>
+                Most cells are too small to see without a microscope. Scientists use light and electron microscopes, with the latter offering greater detail.
+            </p>
+        </article>
+
+        <article header="Theory"> 
+            <h2>Discovery of Cells</h2>
+                <p>The invention of the basic compound microscope by <b>Hans and Zacharias Janssen</b> in 1590 led to a series of discoveries by many scientists that shaped our understanding of cells and their role in all living organisms.</p>
+                <content-image
+                    caption="Figure 2: Robert Hook, an English polymath, sketched the cork cells as they appeared under a simple light microscope."
+                >
+                    <image-grid viewable col="1">
+                        <img src="https://pressbooks.bccampus.ca/053humanbiology/wp-content/uploads/sites/1601/2019/06/Robert-Hookes-Diagrams-768x450.jpg" ref="© CK-12, Christine Miller">  
+                    </image-grid>
+                </content-image>
+                <table>
+                    <tr><th>Scientist</th><th>Contribution</th></tr>
+                    <tr><td><b>Robert Hooke</b></td><td>Observed cork tissue under the first compound microscope and coined the term “cell.”</td></tr>
+                    <tr><td><b>Antonie van Leeuwenhoek</b></td><td>The first to observe living cells, such as bacteria and protozoa.</td></tr>
+                    <tr><td><b>Matthias Schleiden</b></td><td>Proposed that all <b>plants</b> are made up of cells.</td></tr>
+                    <tr><td><b>Theodor Schwann</b></td><td>Stated that all <b>animals</b> are also composed of cells.</td></tr>
+                    <tr><td><b>Rudolf Virchow</b></td><td>Declared that all cells come from pre-existing cells.</td></tr> 
+                </table>
+                <h1>Cell Theory</h1>
+                <p>The discovery of the cell opened the gates for the <b>Cell Theory</b>—the fundamental principle in biology that explains the structure and function of all living organisms in terms of cells. There are two main theories.</p>
+                <ol>
+                    <li>
+                        <h3>Classical Cell Theory</h3> 
+                        <p>Introduced by 19th-century scientists such as Schwann, this theory states that:</p>
+                        <boxed-quote>
+                            <b>
+                                <ol style="padding-left: 1.4em;"> 
+                                    <li>All organisms are composed of one or more cells.</li>
+                                    <li>The cell is the basic unit of life.</li>
+                                    <li>All cells arise from pre-existing cells.</li> 
+                                </ol> 
+                            </b>
+                        </boxed-quote>
+                    </li>
+                    <li>
+                        <h3>Modern Cell Theory</h3>
+                        <p>Advancements in molecular biology led to this theory, which includes the following additions:</p>
+                        <boxed-quote>
+                            <b>
+                                <ol style="padding-left: 1.4em;" start="4">
+                                    <li>Energy flow occurs within cells.</li>
+                                    <li>DNA is passed from one cell to another.</li>
+                                    <li>All cells have the same basic chemical composition, regardless of species.</li>
+                                </ol>
+                            </b>
+                        </boxed-quote>
+                    </li>
+                </ol>
+        </article>
+
+        <article-with-tabs header="Types">
+
+            <section header="Introduction"> 
+                <h1>Introduction</h1>
+                <p>Cells are classified as either prokaryotic or eukaryotic. <b>Prokaryotes</b>, like bacteria and archaea, lack a nucleus. <b>Eukaryotes</b>, such as animals, plants, fungi, and protists, have cells with a true nucleus.</p>
+            </section>
+
+            <section header="Prokaryotic Cells">
+                <h1>Prokaryotic Cells</h1>
+                <p>A <b>prokaryote</b> is a simple, mostly single-celled (unicellular) organism that <b>lacks a nucleus</b> or any other membrane-bound organelle.</p>
+                <content-image
+                    caption="Figure 2: Generalized structure of a prokaryotic cell."
+                >
+                    <image-grid viewable col="1">
+                        <img src="https://bio.libretexts.org/@api/deki/files/976/Figure_04_02_01.jpg?revision=1" ref="© Biology Libretexts"> 
+                    </image-grid>
+                </content-image>
+                <p>
+                    Most prokaryotes have a protective cell wall made of <b>peptidoglycan</b>, a long chain of carbohydrates. The cell wall maintains the cell shape and prevents it from dehydration, while the capsule helps it stick to surfaces.
+                </p>
+                <p>
+                    Some prokaryotes also have <b>flagella</b> (for movement), <b>pili</b> (for sharing DNA during conjugation), and <b>fimbriae</b> (for attaching to host cells).
+                </p>
+                <boxed-quote>
+                    <p>All <b>bacteria</b> and <b>archaea</b> are prokaryotic cells.</p>
+                    <p>Their difference lies in their cell walls: bacteria use peptidoglycan, while archaea use pseudopeptidoglycan, helping them thrive in extreme environments.</p>
+                </boxed-quote>
+            </section>
+
+            <section header="Eukaryotic Cells">
+                <h1>Eukaryotic Cells</h1>
+                <p>
+                    Unlike prokaryotic cells, eukaryotic cells have a <b>membrane-bound</b> nucleus and organelles (like the ER, Golgi apparatus, chloroplasts, and mitochondria). <b>Organelles</b>, meaning “little organs,” each have specific jobs, similar to how organs in the body function.
+                </p>
+                <content-image
+                    caption="Figure 3: Generalized structure of a typical animal cell."
+                >
+                    <image-grid viewable col="1">
+                        <img src="https://images.my.labster.com/8c89ec59-dc26-4e4e-a954-4077f7597f7b/MIT_eukaryotic_cell.en.x512.png" ref="© Labster Theory Pages"> 
+                    </image-grid>
+                </content-image>
+                <p>Eukaryotic cells are larger and more structurally complex than prokaryotes. Their outer is composed of a <b>plasma membrane</b>, a phospholipid bilayer with proteins.</p>
+                <boxed-quote>
+                    <p>All living things that are <b>NOT</b> bacteria or archaea are eukaryotic cells.</p>
+                    <p>Eukaryotes include <b>protists</b>, <b>fungi</b>, <b>plants</b>, and <b>animals</b>. Unlike prokaryotes, eukaryotes have complex cellular structures that allow for compartmentalized functions. This internal organization supports more advanced processes like multicellularity, specialized tissues, and many ways of reproduction.</p>
+                </boxed-quote> 
+            </section>
+
+        </article-with-tabs>
+
+        <article header="Organelles">
+            <h1>ಥ‿ಥ</h1>
+            <p>Sorry! This part is still under construction.</p> 
+        </article>
+
+        <article header="References">
+            <reference-list></reference-list>
+        </article>
+
+    </article-tabber>
+
+    <footer>
+        <footer-box></footer-box>
+    </footer>
+    
+</body>
+</html>
