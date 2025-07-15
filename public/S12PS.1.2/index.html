@@ -1,0 +1,164 @@
+<!--
+
+    Created by Joren Langbid
+    Systems Plus College Foundation
+    July 2025
+
+    Please use this for personal use only.
+    I do not own the images and the color
+    palette that are used in this page.
+
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="metadata" src="./metadata.json">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PHYSCI - Origin of the Elements</title>
+    <link rel="stylesheet" href="../basePotatoStyle.css">
+    <link rel="icon" type="image/x-icon" href="../favicon.ico">
+    <style>
+    
+        :root {
+            --accent-color: rgba(148, 0, 0, 0.75);
+            --anti-accent-color: #FEFEFE;
+            --background-img: url("https://images.creativemarket.com/0.1.0/ps/2321248/1160/772/m1/fpnw/wm1/cover-.jpg?1487898325&s=1b088f3d83e0354fa15b61d49486a787");
+        }
+
+    </style>
+    <script src="../Main.js" type="module"></script>
+    
+</head>
+<body>
+
+    <header>
+        <header-box meta="../Attributes/spcfBanner.json"></header-box>
+        <hr>
+        <title-box></title-box>
+    </header>
+
+    <article-tabber>
+
+        <article header="Introduction">
+            <h1>The Origin of the Elements</h1>
+            <content-image limit-height
+                caption="Figure 1: The heart of our Solar System, <b>the sun</b>. Like all stars, the Sun will eventually run out of energy. It will expand into a red giant, possibly engulfing Mercury, Venus, and maybe Earth, before shrinking into a white dwarf in about 5 billion years."
+            >
+                <image-grid viewable col="1">
+                    <img limit-height src="https://science.nasa.gov/wp-content/uploads/2023/06/sun-h1180-jpg.webp" ref="© NASA"> 
+                </image-grid>
+            </content-image>
+            <p>
+                Did you know that the calcium in your bones and the iron in your blood were made in exploding stars? This means that the elements in your body—carbon, oxygen, nitrogen, and more—once lived in the star’s core.
+            </p>
+            <slidedown-box header="In this lesson, we will answer:">
+                <p>How were elements formed?</p>
+            </slidedown-box>
+            <p>
+                All the matter in the universe, from the smallest grain of sand to the largest stars, originated from elements formed in cosmic events through nucleosynthesis.
+            </p>
+        </article>
+
+        <article-with-tabs header="Nucleosynthesis">
+            
+            <section header="Big Bang">
+                <h1>Big Bang Nucleosynthesis</h1>
+                <content-image limit-height
+                    caption="Figure 2: Artist's interpretation of the Big Bang, with representations of the early universe and its expansion. Every second in this video is approximately 350 million years."
+                >
+                    <image-grid viewable col="1">
+                        <img limit-height src="./assets/big-bang.gif" ref="© NASA"> 
+                    </image-grid>
+                </content-image>
+                <p>In the beginning, there was a burst of extreme energy and a billion degrees Celsius of heat—the <b>Big Bang</b>. The universe soon expanded rapidly, filled with a thick cloud of subatomic particles like protons, neutrons, and electrons.</p>
+                <p>As the universe cooled just enough, protons and neutrons began to collide and stick together, forming the simplest, light elements like hydrogen, helium, and lithium. We call this process the <b>Big Bang Nucleosynthesis</b>.</p>
+                <boxed-quote>
+                    <p>Key Light Elements Formed:</p>
+                    <ul>
+                        <li><b>Hydrogen</b> (H-2, H-3)—the most abundant element</li>
+                        <li><b>Helium</b> (He-4)—the fusion of two hydrogen nuclei</li>
+                        <li><b>Lithium</b> (Li-6)—formed only in small amounts</li>
+                    </ul>
+                </boxed-quote>
+            </section>
+
+            <section header="Stellar">
+                <h1>Stellar Nucleosynthesis</h1>
+                <content-image limit-height
+                    caption="Figure 3: <b>Sirius A</b> (left) and <b>Sirius B</b> (right), a binary star system in the constellation Orion. Sirius A is the brightest star in the night sky. Sirius B is a white dwarf, a leftover remnant of a star similar to our Sun."
+                >
+                    <image-grid viewable col="1">
+                        <img limit-height src="https://assets.science.nasa.gov/content/dam/science/missions/hubble/releases/2005/12/STScI-01EVT7Z416PH8S7BGJQZH87ARV.tif/jcr:content/renditions/800x600.jpg" ref="© NASA"> 
+                    </image-grid>
+                </content-image>
+                <p>As the universe aged, gravity pulled vast clouds of hydrogen and helium together, forming the first <b>stars</b>. Deep within the cores of these stars, temperatures reached millions of degrees, the perfect environment for <b>nuclear fission</b>.</p>
+                <boxed-quote>
+                    <p>Key Elements Formed:</p>
+                    <ul>
+                        <li>
+                            Through <b>Hydrogen fusion</b>: 
+                            <ul class="marginless-list">
+                                <li><b>Hydrogen</b> (H-2, H-3)</li>
+                                <li><b>Helium</b> (He-4)</li>
+                            </ul>
+                        </li>
+                        <li>
+                            Through <b>Helium fusion</b>:
+                            <ul class="marginless-list">
+                                <li><b>Beryllium</b>* (Be-8)</li>
+                                <li><b>Carbon</b> (C-12)</li>
+                                <li><b>Oxygen</b> (O)</li>
+                                <li><b>Neon</b> (Ne)</li>
+                                <li><b>Magnesium</b> (Mg) → <b>Iron</b> (Fe)</li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <p class="subtitle">* <b>Berylium-8</b> is a very unstable element. It immediately becomes Carbon-12 after formation.</p>
+                </boxed-quote>
+            </section>
+
+            <section header="Supernova">
+                <h1>Supernova Nucleosynthesis</h1>
+                <content-image limit-height
+                    caption="Figure 4: <b>The Helix nebula</b>, a 650 light-years away glowing gas around a dying, Sun-like star. At its center is now a newly born, almost earth-sized white dwarf. Similarly, when our sun reaches its end, it will collapse, releasing a cloud of glowing gas called a planetary nebula and becoming a white dwarf."
+                >
+                    <image-grid viewable col="1">
+                        <img limit-height src="https://u.cubeupload.com/noobnoot/nebulae.png" ref="© NASA">
+                    </image-grid>
+                </content-image>
+                <p>When stars begin fusing iron, they gradually lose their internal energy. This makes the star weaker. When it can no longer support itself, it dies and explodes as a <b>supernova</b>.</p>
+                <p>This explosion is not just the death of a star. It’s the birthplace of the universe’s heaviest elements.</p> 
+                <boxed-quote>
+                    <p>Key Heavy Elements Formed:</p>
+                    <ul>
+                        <li>All <b>elements heavier than iron</b> (e.g, Gold (Au), Silver (Ag), Tin (Sn), and Polonium (Po)).</li>
+                    </ul>
+                    <p class="subtitle">Note that supernovae do not make elements heavier than Uranium. Elements heavier than Uranium are generally synthetic, man-made elements.</p>
+                </boxed-quote>
+                <content-image limit-height
+                    caption="Figure 5: <b>The Crab Nebula</b> (Messier 1), a supernova remnant from an unknown massive star seen in 1054 CE. It lies about 6,500 light-years away in Taurus and contains a fast-spinning <b>neutron star</b> at its center."
+                >
+                    <image-grid viewable col="1">
+                        <img limit-height src="https://u.cubeupload.com/noobnoot/crabnebulamosaicjpg.jpg" ref="© NASA">
+                    </image-grid>
+                </content-image>
+                <p>Note that massive stars either become a <b>neutron star</b> or a <b>black hole</b>.</p>
+            </section>
+
+        </article-with-tabs>
+
+        <article header="References">
+            <reference-list></reference-list>
+        </article>
+
+    </article-tabber>
+
+    <footer>
+        <footer-box></footer-box>
+    </footer>
+    
+</body>
+</html>
