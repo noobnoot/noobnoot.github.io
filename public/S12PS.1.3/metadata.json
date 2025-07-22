@@ -1,0 +1,19 @@
+{
+    "title": "The Atomic Structure",
+    "subtitle": "Physical Science 1, Midterms Lesson 3",
+    "dueMonth": "July",
+    "dueYear": "2025",
+    "type": "edu",
+    "subject": "Physical Science 1",
+    "authors": [
+        "Langbid, J. C."
+    ],
+    "section": "SHS-STEM Teacher",
+    "email": "j.langbid.edu+gitweb@gmail.com",
+    "references": [
+        {
+            "content": "Libretexts. (2023, January 21). 1.2: Origin of the elements. Chemistry LibreTexts.",
+            "link": "https://chem.libretexts.org/Bookshelves/Environmental_Chemistry/Geochemistry_(Lower)/01%3A_The_Earth_and_its_Lithosphere/1.02%3A_Origin_of_the_Elements"
+        }
+    ]
+}

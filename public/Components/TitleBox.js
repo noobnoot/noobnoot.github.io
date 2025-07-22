@@ -3,15 +3,13 @@ import $ from "./Libs/jQuery.js";
 import Metadata from "../Metadata.js";
 
 class TitleBox extends HTMLElement {
-
+    
     static get templateRaw() {
         return `
             <link rel="stylesheet" href="../Components/Styles/titleBox.css">
             <link rel="stylesheet" href="../basePotatoStyle.css">
-            <h3>
-                <span class="l0rge"></span>
-                <br>
-            </h3>
+            <h1 style="margin: 0px;"></h1>
+            <h3></h3>
             <p class="subtitle"></p>
         `;
     }
@@ -32,10 +30,11 @@ class TitleBox extends HTMLElement {
 
     connectedCallback() {
         // sets up title; refer to `metadata.json::{ title, subtitle }`
-        let h3 = $(this.shadowRoot).children("h3");
-        let spanL0rge = h3.children("span.l0rge");
-        spanL0rge.append(Metadata.data.title);
+        let h1 = $(this.shadowRoot).children("h1");
+        let h3 = $(this.shadowRoot).children("h3"); 
+        h1.html(Metadata.data.title);
         h3.append(Metadata.data.subtitle);
+
         // sets up subtitle; refer to `metadata.json::{ authors[], section }`
         let pSubtitle = $(this.shadowRoot).children("p.subtitle");
         let authorsText = "";

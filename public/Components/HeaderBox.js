@@ -62,7 +62,7 @@ class HeaderBox extends HTMLElement {
     }
 
     connectedCallback() {
-
+        
     }
 
 }

@@ -1,7 +1,11 @@
 :host(title-box) {
     display: block;
     margin: 20px 0;
-    line-height: 125%;
+    line-height: 150%; 
+}
+
+:host(title-box) p {
+    line-height: 100%;  
 }
 
 :host(title-box) * {

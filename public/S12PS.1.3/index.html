@@ -1,0 +1,333 @@
+<!--
+
+    Created by Joren Langbid
+    Systems Plus College Foundation
+    July 2025
+
+    Please use this for personal use only.
+    I do not own the images and the color
+    palette that are used in this page.
+
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="metadata" src="./metadata.json">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PHYSCI - Atomic Structure</title>
+    <link rel="stylesheet" href="../basePotatoStyle.css">
+    <link rel="icon" type="image/x-icon" href="../favicon.ico">
+    <style>
+    
+        :root {
+            --accent-color: rgba(148, 0, 0, 0.75);
+            --anti-accent-color: #FEFEFE;
+            --background-img: url("https://images.creativemarket.com/0.1.0/ps/2321248/1160/772/m1/fpnw/wm1/cover-.jpg?1487898325&s=1b088f3d83e0354fa15b61d49486a787");
+        }
+
+    </style>
+    <script>window.MathJax = { tex: { inlineMath: [['$', '$']], displayMath: [['$$', '$$']] }, };</script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3.0.1/es5/tex-mml-chtml.js"></script>
+    <script src="../Main.js" type="module"></script>
+    
+</head>
+<body>
+
+    <header>
+        <header-box meta="../Attributes/spcfBanner.json"></header-box>
+        <hr>
+        <title-box></title-box>
+    </header>
+
+    <article-tabber>
+
+        <article header="Introduction">
+            <h1>The Atomic Structure</h1>
+            <p>
+                Atoms aren't just science—they are your daily life.
+            </p>
+            <boxed-quote>
+                <p> 
+                    For instance, did you know that nuclear power plants split <b>U-235</b> atoms (through nuclear fission) to generate massive electricity?
+                </p>
+            </boxed-quote>
+            <p>
+                But when this powerful reaction goes uncontrolled, the consequences can be catastrophic, like at the Chernobyl nuclear power plant in 1986.
+            </p>
+            <content-image
+                caption="Figure 1: (a) An aerial view of the Chernobyl nuclear power plant in Ukraine, the site of the world's worst nuclear accident, (captured on 1986 a few days after the explosion). (b) General view of Ukraine's ghost town of Pripyat."
+            >
+                <image-grid viewable col="2">
+                    <img src="https://cdn.theatlantic.com/thumbor/UeVv9rJs-E9x9xQ7HAjLp2_LSh8=/900x599/media/img/photo/2011/03/the-chernobyl-disaster-25-years-ago/c02_05010183/original.jpg" ref="© AP Photo">
+                    <img src="https://cdn.theatlantic.com/thumbor/VDXEa-sgRqyoRXRWQFTD73gNd_8=/900x521/media/img/photo/2011/03/the-chernobyl-disaster-25-years-ago/c22_0RTXOI0K/original.jpg" ref="© Reuters, Gleb Garanich"> 
+                </image-grid>
+            </content-image>
+            <p>
+                This disaster revealed both the immense power of atomic energy. But how did we even discover these fundamental building blocks of matter?
+            </p>
+            <slidedown-box header="In this lesson, we will answer:">
+                <ol>
+                    <li>What does an atom really look like?</li>
+                    <li>How was the atomic model developed?</li>
+                </ol>
+            </slidedown-box>
+        </article> 
+
+        <article header="History">
+            <h1>History of the Atomic Model</h1>
+            <p>
+                The concept of the atom began with ancient Greek philosophers.
+            </p>
+            <p>
+                <b>Democritus</b> believed that all matter was made of tiny, indivisible particles called <i>atomos</i>. His idea was rejected by <b>Aristotle</b>, who believed that all matter was composed of four elements: <i>earth</i>, <i>water</i>, <i>air</i>, and <i>fire</i>.
+            </p>
+            <p>
+                It was not until 1803 that modern atomic model developed.
+            </p>
+            <ol>
+                <li>
+                    <h3>Solid Sphere Model—John Dalton</h3>
+                    <p>Dalton proposed a model stating that all matter is made of tiny spherical particles called <b>atoms</b>.</p>
+                    <boxed-quote>
+                        <ul> 
+                            <li>Atoms are solid, indestructible spheres.</li>
+                            <li>Atoms of the same element are identical.</li>
+                        </ul>
+                    </boxed-quote>
+                </li>
+                <li>
+                    <h3>Plum Pudding Model—J. J. Thomson</h3>
+                    <p>In addition to Dalton's model, Thomson introduced the <b>electron</b>.</p> 
+                    <boxed-quote>
+                        <ul>
+                            <li>Atoms are made of a positively charged cloud (or “pudding”) with electrons scattered inside.</li>
+                        </ul>
+                    </boxed-quote>
+                </li>
+                <li>
+                    <h3>Nuclear Model—Ernest Rutherford</h3>
+                    <p>Rutherford disproved Thomson's model after his gold-foil experiment.</p>
+                    <boxed-quote>
+                        <ul>
+                            <li>The positive charge (<b>protons</b>) is concentrated at the center (the <b>nucleus</b>), not spread out.</li>
+                            <li>Electrons move around the <b>nucleus</b>.</li>
+                        </ul>
+                    </boxed-quote>
+                </li>
+                <li>
+                    <h3>Planetary Model—Niels Bohr's</h3>
+                    <p>Improving on Rutherford's model, Bohr clarified the electron's stable orbit.</p>
+                    <boxed-quote>
+                        <ul>
+                            <li><b>Electrons</b> move around the nucleus in orbits of fixed sizes and energies.</li>
+                        </ul>
+                    </boxed-quote>
+                </li>
+                <li>
+                    <h3>Quantum Model—Erwin Schrodinger</h3>
+                    <p>Schrodinger further clarified Bohr's model and used quantum mechanics to show:</p>
+                    <boxed-quote>
+                        <ul>
+                            <li>Electrons exist as <b>probability clouds</b>, not set paths.</li>
+                            <li><b>Neutrons</b> were soon discovered by <b>James Chadwick</b>.</li>
+                        </ul>
+                    </boxed-quote>
+                </li>
+            </ol>
+            <content-image limit-height
+                caption="Figure 2: A summary of the visualization of the atom."
+            >
+                <image-grid viewable col="1">
+                    <img limit-height src="https://u.cubeupload.com/noobnoot/historyofatomicmodel.jpg " ref="© Compound Interest"> 
+                </image-grid>
+            </content-image>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Model</th><th>Year</th><th>Scientist</th><th>Contribution/Key Idea</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Solid Sphere Model</td>
+                        <td>1803</td>
+                        <td>Dalton</td>
+                        <td>Solid, indivisible atoms</td>
+                    </tr>
+                    <tr>
+                        <td>Plum Pudding Model</td>
+                        <td>1897</td>
+                        <td>Thomson</td>
+                        <td>Discovery of electrons</td>
+                    </tr>
+                    <tr>
+                        <td>Nuclear Model</td>
+                        <td>1911</td>
+                        <td>Rutherford</td>
+                        <td>Discovery of the nucleus</td>
+                    </tr>
+                    <tr>
+                        <td>Planetary Model</td>
+                        <td>1913</td>
+                        <td>Bohr</td>
+                        <td>Energy levels (orbitals) for electrons</td>
+                    </tr>
+                    <tr>
+                        <td>Quantum Model</td>
+                        <td>1926</td>
+                        <td>Schrödinger</td>
+                        <td>Electron behavior as wave-like. Orbitals as "clouds of probabilities"</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>1932</td>
+                        <td>Chadwick</td>
+                        <td>Discovery of the neutron</td>
+                    </tr>
+                </tbody>
+            </table>
+        </article>
+
+        <article header="Atom">
+            <h1>The Atomic Structure</h1>
+            <content-image
+                caption="Figure 3: Neil Bohr's atomic model of a nitrogen atom (with neutrons)."
+            >
+                <image-grid viewable col="1">
+                    <img src="https://cdn.britannica.com/09/149209-050-57443291/Bohr-model-nitrogen-atom.jpg" ref="© Encyclopedia Britannica, Inc."> 
+                </image-grid>
+            </content-image>
+            <p>
+                An <b>atom</b> consists of a positively charged nucleus (composed of <b>protons</b> and <b>neutrons</b>), surrounded by negatively charged particles called <b>electrons</b>.
+            </p>
+            <ul>
+                <li>The number of <b>protons</b> tells the atom's <b>atomic number</b> ($Z$) and <b>element</b>.</li>
+                <li>The number of <b>neutrons</b> tells the element's <b>isotope</b>.</li>
+                <li>The number of <b>electrons</b> is the same as the number of <b>protons</b>.</li>
+            </ul>
+            <p>
+                Also, the <b>sum of protons' and neutrons' masses</b> tells the atom's <b>atomic mass</b> ($A$).
+            </p>
+            <p>
+                For example, the atoms of Hydrogen, Nitrogen, Neon, Iron, Iodine, and Uranium exhibit the following characteristics.
+            </p>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Element</th>
+                        <th>Average Atomic Mass*</th>
+                        <th>Protons</th> 
+                        <th>Neutrons</th> 
+                        <th>Electrons</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Hydrogen</td>
+                        <td>1.008</td>
+                        <td>1</td>
+                        <td>1</td>
+                        <td>1</td>
+                    </tr>
+                    <tr>
+                        <td>Nitrogen</td>
+                        <td>14.010</td>
+                        <td>7</td>
+                        <td>7</td>
+                        <td>7</td>
+                    </tr>
+                    <tr>
+                        <td>Neon</td>
+                        <td>20.18</td>
+                        <td>10</td>
+                        <td>10</td>
+                        <td>10</td>
+                    </tr>
+                    <tr>
+                        <td>Iron</td>
+                        <td>55.85</td>
+                        <td>26</td>
+                        <td>30</td>
+                        <td>26</td>
+                    </tr>
+                    <tr>
+                        <td>Iodine</td>
+                        <td>126.90</td>
+                        <td>53</td>
+                        <td>74</td>
+                        <td>53</td>
+                    </tr>
+                    <tr>
+                        <td>Uranium</td>
+                        <td>238.00</td>
+                        <td>92</td>
+                        <td>146</td>
+                        <td>92</td>
+                    </tr>
+                </tbody>
+            </table> 
+            <p> 
+                The <b>average atomic mass</b> ($\overline{A_Z}$) is the weighted average of all naturally occurring isotopes of an element. We use the following formula to solve for it:
+            </p>
+            <p>$\overline{A_Z} = m_1 f_1 + m_2 f_2 + m_3f_3 + \cdots + m_n f_n$</p> 
+            <p> 
+                For example, for all Neon atoms,
+            </p>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Isotope</th><th>Atomic Mass</th><th>Abundance</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Ne-20</td>
+                        <td>19.99 u</td>
+                        <td>90.48%</td>
+                    </tr>
+                    <tr>
+                        <td>Ne-20</td>
+                        <td>19.99 u</td>
+                        <td>90.48%</td>
+                    </tr>
+                    <tr>
+                        <td>Ne-21</td>
+                        <td>20.99 u</td>
+                        <td>0.27%</td>
+                    </tr>
+                    <tr>
+                        <td>Ne-22</td>
+                        <td>21.99 u</td>
+                        <td>9.25%</td> 
+                    </tr>
+                </tbody>
+            </table>
+            <p>
+                We can get the average atomic mass of Neon by taking its weighted average:
+            </p>
+            <p>
+                $$
+                \begin{align*}
+                \overline{A_Z} = m_1 f_1 + m_2 f_2 + m_3f_3 + \cdots + m_n f_n \\
+                \overline{A}_{10} = 19.9924(0.9048) + 20.9938(0.0027) + 21.9914(0.0925) \\
+                \overline{A}_{10} = 20.18 \ \text{u}
+                \end{align*}
+                $$
+            </p>
+        </article> 
+
+        <article header="References">
+            <reference-list></reference-list>
+        </article>
+
+    </article-tabber>
+
+    <footer>
+        <footer-box></footer-box>
+    </footer>
+    
+</body>
+</html>

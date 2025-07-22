@@ -52,19 +52,16 @@
 
 @media screen and (max-width: 800px) {
 
-    :host(article-with-tabs) nav {
-        position: relative;
-        left: -5vw;
-        min-width: calc(100% + 10vw);
-        padding: 0 6vw;
-        max-height: 250px;
+    :host(article-with-tabs) nav {  
+        max-width: calc(100% - 2vw); 
+        padding: 0 6vw; 
         display: flex;
         flex-direction: row;
     }
 
     :host(article-with-tabs) nav button {
-        padding: 16px 10px;
-        flex: 1;
+        padding: 16px 0;
+        flex-grow: 1;
         font-size: 1em;
         font-weight: bold;
         text-transform: uppercase;

@@ -6,7 +6,7 @@ class ComponentHelper {
         let e = $("<template></template>")[0];
         e.innerHTML = innerHTML;
         return e.content.cloneNode(true);
-    }
+    } 
 
     static jsonLoad(src, callback) {
         if (!src) {
