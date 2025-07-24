@@ -38,7 +38,6 @@
 }
 
 :host(article-with-tabs[vertical]) nav {
-    width: calc(100% + 10vw);
     padding: 0 3vw;
     flex-direction: row;
 }
@@ -52,9 +51,9 @@
 
 @media screen and (max-width: 800px) {
 
-    :host(article-with-tabs) nav {  
-        max-width: calc(100% - 2vw); 
-        padding: 0 6vw; 
+    :host(article-with-tabs) nav {
+        width: calc(100% + 10vw); 
+        padding: 0 6vw;
         display: flex;
         flex-direction: row;
     }

@@ -29,10 +29,21 @@
         }
 
     </style>
-    <script>window.MathJax = { tex: { inlineMath: [['$', '$']], displayMath: [['$$', '$$']] }, };</script>
-    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3.0.1/es5/tex-mml-chtml.js"></script>
     <script src="../Main.js" type="module"></script>
-    
+    <script type="text/x-mathjax-config">
+        MathJax.Hub.Config({
+            tex2jax: {
+                inlineMath: [['$', '$']],
+                displayMath: [['$$', '$$']],
+                processEscapes: true,
+                processEnvironments: false
+            },
+            "HTML-CSS": {
+                availableFonts: ["TeX"] 
+            }
+        });
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js?config=TeX-AMS_HTML"></script> 
 </head>
 <body>
 
@@ -85,7 +96,7 @@
                 <b>Democritus</b> believed that all matter was made of tiny, indivisible particles called <i>atomos</i>. His idea was rejected by <b>Aristotle</b>, who believed that all matter was composed of four elements: <i>earth</i>, <i>water</i>, <i>air</i>, and <i>fire</i>.
             </p>
             <p>
-                It was not until 1803 that modern atomic model developed.
+                It was not until 1803 that the modern atomic model was developed.
             </p>
             <ol>
                 <li>
@@ -127,8 +138,8 @@
                     </boxed-quote>
                 </li>
                 <li>
-                    <h3>Quantum Model—Erwin Schrodinger</h3>
-                    <p>Schrodinger further clarified Bohr's model and used quantum mechanics to show:</p>
+                    <h3>Quantum Model—Erwin Schrodinger & Werner Heisenberg</h3>
+                    <p>The two further clarified Bohr’s model and used quantum mechanics to show:</p>
                     <boxed-quote>
                         <ul>
                             <li>Electrons exist as <b>probability clouds</b>, not set paths.</li>
@@ -137,187 +148,122 @@
                     </boxed-quote>
                 </li>
             </ol>
-            <content-image limit-height
-                caption="Figure 2: A summary of the visualization of the atom."
-            >
-                <image-grid viewable col="1">
-                    <img limit-height src="https://u.cubeupload.com/noobnoot/historyofatomicmodel.jpg " ref="© Compound Interest"> 
-                </image-grid>
-            </content-image>
-            <table>
-                <thead>
-                    <tr>
-                        <th>Model</th><th>Year</th><th>Scientist</th><th>Contribution/Key Idea</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>Solid Sphere Model</td>
-                        <td>1803</td>
-                        <td>Dalton</td>
-                        <td>Solid, indivisible atoms</td>
-                    </tr>
-                    <tr>
-                        <td>Plum Pudding Model</td>
-                        <td>1897</td>
-                        <td>Thomson</td>
-                        <td>Discovery of electrons</td>
-                    </tr>
-                    <tr>
-                        <td>Nuclear Model</td>
-                        <td>1911</td>
-                        <td>Rutherford</td>
-                        <td>Discovery of the nucleus</td>
-                    </tr>
-                    <tr>
-                        <td>Planetary Model</td>
-                        <td>1913</td>
-                        <td>Bohr</td>
-                        <td>Energy levels (orbitals) for electrons</td>
-                    </tr>
-                    <tr>
-                        <td>Quantum Model</td>
-                        <td>1926</td>
-                        <td>Schrödinger</td>
-                        <td>Electron behavior as wave-like. Orbitals as "clouds of probabilities"</td>
-                    </tr>
-                    <tr>
-                        <td></td>
-                        <td>1932</td>
-                        <td>Chadwick</td>
-                        <td>Discovery of the neutron</td>
-                    </tr>
-                </tbody>
-            </table>
+            <p>In senior high school chemistry, Bohr’s model is preferred for better visualization and simplicity.</p>
+            <slidedown-box header="Summary">
+                <content-image limit-height
+                    caption="Figure 2: A summary of the visualization of the atom."
+                >
+                    <image-grid viewable col="1">
+                        <img limit-height src="https://u.cubeupload.com/noobnoot/historyofatomicmodel.jpg " ref="© Compound Interest"> 
+                    </image-grid>
+                </content-image>
+                <table style="font-size: 0.8em;"> 
+                    <thead>
+                        <tr>
+                            <th>Model</th><th>Year</th><th>Scientist</th><th>Contribution/Key Idea</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Solid Sphere Model</td>
+                            <td>1803</td>
+                            <td>Dalton</td>
+                            <td>Solid, indivisible atoms</td>
+                        </tr>
+                        <tr>
+                            <td>Plum Pudding Model</td>
+                            <td>1897</td>
+                            <td>Thomson</td>
+                            <td>Discovery of electrons</td>
+                        </tr>
+                        <tr>
+                            <td>Nuclear Model</td>
+                            <td>1911</td>
+                            <td>Rutherford</td>
+                            <td>Discovery of the nucleus</td>
+                        </tr>
+                        <tr>
+                            <td>Planetary Model</td>
+                            <td>1913</td>
+                            <td>Bohr</td>
+                            <td>Energy levels (orbitals) for electrons</td>
+                        </tr>
+                        <tr>
+                            <td rowspan="2">Quantum Model</td> 
+                            <td>1926</td>
+                            <td>Schrödinger</td>
+                            <td>Electron behavior as wave-like. Orbitals as "clouds of probabilities"</td>
+                        </tr>
+                        <tr>
+                            <td>1932</td>
+                            <td>Chadwick</td>
+                            <td>Discovery of the neutron</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </slidedown-box>
         </article>
 
-        <article header="Atom">
-            <h1>The Atomic Structure</h1>
-            <content-image
-                caption="Figure 3: Neil Bohr's atomic model of a nitrogen atom (with neutrons)."
-            >
-                <image-grid viewable col="1">
-                    <img src="https://cdn.britannica.com/09/149209-050-57443291/Bohr-model-nitrogen-atom.jpg" ref="© Encyclopedia Britannica, Inc."> 
-                </image-grid>
-            </content-image>
-            <p>
-                An <b>atom</b> consists of a positively charged nucleus (composed of <b>protons</b> and <b>neutrons</b>), surrounded by negatively charged particles called <b>electrons</b>.
-            </p>
-            <ul>
-                <li>The number of <b>protons</b> tells the atom's <b>atomic number</b> ($Z$) and <b>element</b>.</li>
-                <li>The number of <b>neutrons</b> tells the element's <b>isotope</b>.</li>
-                <li>The number of <b>electrons</b> is the same as the number of <b>protons</b>.</li>
-            </ul>
-            <p>
-                Also, the <b>sum of protons' and neutrons' masses</b> tells the atom's <b>atomic mass</b> ($A$).
-            </p>
-            <p>
-                For example, the atoms of Hydrogen, Nitrogen, Neon, Iron, Iodine, and Uranium exhibit the following characteristics.
-            </p>
-            <table>
-                <thead>
-                    <tr>
-                        <th>Element</th>
-                        <th>Average Atomic Mass*</th>
-                        <th>Protons</th> 
-                        <th>Neutrons</th> 
-                        <th>Electrons</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>Hydrogen</td>
-                        <td>1.008</td>
-                        <td>1</td>
-                        <td>1</td>
-                        <td>1</td>
-                    </tr>
-                    <tr>
-                        <td>Nitrogen</td>
-                        <td>14.010</td>
-                        <td>7</td>
-                        <td>7</td>
-                        <td>7</td>
-                    </tr>
-                    <tr>
-                        <td>Neon</td>
-                        <td>20.18</td>
-                        <td>10</td>
-                        <td>10</td>
-                        <td>10</td>
-                    </tr>
-                    <tr>
-                        <td>Iron</td>
-                        <td>55.85</td>
-                        <td>26</td>
-                        <td>30</td>
-                        <td>26</td>
-                    </tr>
-                    <tr>
-                        <td>Iodine</td>
-                        <td>126.90</td>
-                        <td>53</td>
-                        <td>74</td>
-                        <td>53</td>
-                    </tr>
-                    <tr>
-                        <td>Uranium</td>
-                        <td>238.00</td>
-                        <td>92</td>
-                        <td>146</td>
-                        <td>92</td>
-                    </tr>
-                </tbody>
-            </table> 
-            <p> 
-                The <b>average atomic mass</b> ($\overline{A_Z}$) is the weighted average of all naturally occurring isotopes of an element. We use the following formula to solve for it:
-            </p>
-            <p>$\overline{A_Z} = m_1 f_1 + m_2 f_2 + m_3f_3 + \cdots + m_n f_n$</p> 
-            <p> 
-                For example, for all Neon atoms,
-            </p>
-            <table>
-                <thead>
-                    <tr>
-                        <th>Isotope</th><th>Atomic Mass</th><th>Abundance</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>Ne-20</td>
-                        <td>19.99 u</td>
-                        <td>90.48%</td>
-                    </tr>
-                    <tr>
-                        <td>Ne-20</td>
-                        <td>19.99 u</td>
-                        <td>90.48%</td>
-                    </tr>
-                    <tr>
-                        <td>Ne-21</td>
-                        <td>20.99 u</td>
-                        <td>0.27%</td>
-                    </tr>
-                    <tr>
-                        <td>Ne-22</td>
-                        <td>21.99 u</td>
-                        <td>9.25%</td> 
-                    </tr>
-                </tbody>
-            </table>
-            <p>
-                We can get the average atomic mass of Neon by taking its weighted average:
-            </p>
-            <p>
-                $$
-                \begin{align*}
-                \overline{A_Z} = m_1 f_1 + m_2 f_2 + m_3f_3 + \cdots + m_n f_n \\
-                \overline{A}_{10} = 19.9924(0.9048) + 20.9938(0.0027) + 21.9914(0.0925) \\
-                \overline{A}_{10} = 20.18 \ \text{u}
-                \end{align*}
-                $$
-            </p>
-        </article> 
+        <article-with-tabs header="Atom">
+
+            <section header="Atomic Structure">
+                <h1>The Atomic Structure</h1>
+                <p>
+                    An <b>atom</b> consists of a positively charged <b>nucleus</b> (composed of protons and neutrons), surrounded by negatively charged particles called <b>electrons</b>.
+                </p>
+                <ul>
+                    <li><b>Protons</b> tell the atom’s <b>element</b> and <b>atomic number</b> ($Z$).</li>
+                    <li><b>Neutrons</b> tell the element’s <b>isotope</b> (e.g., Ne-20, Ne-21, and Ne-22).</li>
+                    <li><b>Electrons</b> is the same as the number of <b>protons</b>.</li>
+                </ul>
+                <content-image
+                    caption="Figure 3: Bohr model of Lithium (Li), Fluorine (F), and Aluminum (Al). Notice how many electrons each orbital houses."
+                >
+                    <image-grid viewable col="1">
+                        <img src="https://chem.libretexts.org/@api/deki/files/53809/MuortGpmSwmsC0elWBWY.jpg" ref="© Chemistry Libretexts"> 
+                    </image-grid>
+                </content-image>
+            </section>
+
+            <section header="Atomic Mass">
+                <h1>The Atomic Mass</h1>
+                <p>
+                    The <b>atomic mass</b> of an atom is equal to the <b>sum of protons’ and neutrons’ masses</b>. Since isotopes vary by neutrons, isotopes of the same element have different masses.
+                </p>
+                <p> 
+                    For example, for all Neon atoms,
+                </p>
+                <table style="overflow-x: hidden;">
+                    <thead>
+                        <tr><th>Isotope</th><th>Atomic Mass</th><th>Abundance</th></tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>Ne-20</td><td>19.99 u</td><td>90.48%</td></tr>
+                        <tr><td>Ne-21</td><td>20.99 u</td><td>0.27%</td></tr>
+                        <tr><td>Ne-22</td><td>21.99 u</td><td>9.25%</td></tr>
+                    </tbody>
+                </table>
+                <boxed-quote>
+                    <p> 
+                        Since atomic mass varies by isotopes, the periodic table only shows the <b>average atomic mass</b> ($\overline{A}_Z$). It is the weighted average of all naturally occurring isotopes of that element.
+                    </p> 
+                </boxed-quote>
+                <p>
+                    We use the following formula to solve for average atomic mass:
+                </p>
+                <p>$$\overline{A}_Z = m_1 f_1 + m_2 f_2 + m_3f_3 + \cdots + m_n f_n$$</p>
+                <p>
+                    Solving for Neon’s average atomic mass:
+                </p>
+                <p>
+                    $$\begin{align*}
+                    \overline{A}_{10} &= 19.9924(0.9048) + 20.9938(0.0027) + 21.9914(0.0925) \\
+                    \overline{A}_{10} &= 20.18 \ \text{u} 
+                    \end{align*}$$ 
+                </p>
+            </section>
+
+        </article-with-tabs> 
 
         <article header="References">
             <reference-list></reference-list>
@@ -329,5 +275,7 @@
         <footer-box></footer-box>
     </footer>
     
+    
+
 </body>
 </html>

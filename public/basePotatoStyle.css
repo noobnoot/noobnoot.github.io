@@ -20,7 +20,8 @@
     }
 
     p {
-        margin: 12px 0;
+        margin: 12px 0; 
+        overflow: hidden;
     }
 
     ul li, ol li {
@@ -37,7 +38,6 @@
         margin: 16px 0;
         border-collapse: collapse;
         font-size: 0.9em; 
-        width: 100%;
     }
     
     th {
