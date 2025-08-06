@@ -1,0 +1,160 @@
+<!--
+
+    Created by Joren Langbid
+    Systems Plus College Foundation
+    July 2025
+
+    Please use this for personal use only.
+    I do not own the images and the color
+    palette that are used in this page.
+
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="metadata" src="./metadata.json">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PHYSCI - Periodic Table</title>
+    <link rel="stylesheet" href="../basePotatoStyle.css">
+    <link rel="icon" type="image/x-icon" href="../favicon.ico">
+    <style>
+    
+        :root {
+            --accent-color: rgba(148, 0, 0, 0.75);
+            --anti-accent-color: #FEFEFE;
+            --background-img: url("https://images.creativemarket.com/0.1.0/ps/2321248/1160/772/m1/fpnw/wm1/cover-.jpg?1487898325&s=1b088f3d83e0354fa15b61d49486a787");
+        }
+
+    </style>
+    <script src="../Main.js" type="module"></script>
+</head>
+<body>
+
+    <header>
+        <header-box meta="../Attributes/spcfBanner.json"></header-box>
+        <hr>
+        <title-box></title-box>
+    </header>
+
+    <article-tabber>
+
+        <article header="Introduction">
+            <h1>The Periodic Table of Elements</h1>
+            <content-image
+                caption="(a) Dmitri Mendeleev, a Russian chemist known for formulating the periodic law of elements. (b) Mendeleev's initial draft of the periodic table was arranged by atomic mass."
+            >
+                <image-grid viewable col="2">
+                    <img src="https://cdn.britannica.com/63/194763-050-891EAC31/Dmitri-Mendeleev-oil-canvas-Ivan-Kramskoi-1878.jpg " ref="© Britannica Encyclopedia">
+                    <img src="https://lynceans.org/wp-content/uploads/2016/01/Mendeleev_sipsawiyagif.gif" ref="© The Lyncean Group of San Diego"> 
+                </image-grid>
+            </content-image>
+            <slidedown-box header="In this lesson, we will answer:">
+                <ol>
+                    <li>How to use the periodic table?</li>
+                    <li>What is the purpose of electrons?</li>
+                </ol>
+            </slidedown-box>
+            <p>
+                Here's a short history of the periodic table:
+            </p>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Scientist</th>
+                        <th>Contribution</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Johann Döbereiner</strong></td>
+                        <td>Grouped elements in <strong>triads</strong>.</td>
+                    </tr>
+                    <tr>
+                    <td><strong>John Newlands</strong></td>
+                    <td>Proposed <strong>Law of Octaves</strong>—properties repeated every 8th element</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Dmitri Mendeleev</strong></td>
+                        <td>Created the <strong>first functional periodic table</strong></td>
+                    </tr>
+                    <tr>
+                    <td><strong>Henry Moseley</strong></td>
+                    <td>Rearranged elements by <strong>atomic number</strong>, forming the modern periodic table</td>
+                    </tr>
+                </tbody>
+            </table>
+            <p>So, what exactly is the periodic table of elements?</p>
+            <boxed-quote>
+                <p>
+                    The <b>Periodic Table of Elements</b> arranges elements (by <b>atomic number</b>) to reveal patterns of their properties and characteristics.
+                </p>
+            </boxed-quote>
+        </article> 
+
+        <article header="Divisions">
+            <h1>Divisions</h1>
+            <p>
+                The modern periodic table is divided into different parts. Here are key things to note:
+            </p>
+            <p>Here are key things to note:</p>
+            <boxed-quote> 
+                <ul class="marginless-list">
+                    <li><b>Groups</b> are the vertical columns.</li>
+                    <li><b>Periods</b> are the horizontal rows.</li>
+                </ul>
+            </boxed-quote>
+            <p>The elements can be broken up into <b>metals</b>, <b>metalloids</b>, and <b>nonmetals</b>.</p>
+            <ol>
+                <li>
+                    <h3>Metals</h3>
+                    <p><b>Metals</b> are typically shiny, very dense, and have high melting points. Most are <b>ductile</b> (formed into thin wires), <b>malleable</b> (hammered into thin sheets), and good <b>conductors</b> of both heat and electricity.</p>
+                    <content-image
+                        caption="Figure 2: An assorted group of metals and alloys. An alloy is a substance formed from the combination of metals."
+                    >
+                        <image-grid viewable col="1">
+                            <img src="https://www.nde-ed.org/Physics/Materials/Graphics/MixedMetals(mayFranInt.).jpg" ref="© Nondesctructive Evaluation Physics">
+                        </image-grid>
+                    </content-image>
+                </li>
+                <li>
+                    <h3>Nonmetals</h3>
+                    <p><b>Nonmetals</b> are generally brittle, dull, have low melting points, and are mostly poor conductors of heat and electricity.</p>
+                    <content-image
+                        caption="Figure 3: (a) Sulfur, a bright yellow and brittle element. (b) Graphite (allotrope of Carbon) is used in pencils and batteries, and (c) Diamond (allotrope of Carbon), the hardest known substance on earth."
+                    >
+                        <image-grid viewable col="1">
+                            <img src="https://media.geeksforgeeks.org/wp-content/uploads/20230416225328/Non-Metals.jpg" ref="© GeeksForGeeks">
+                        </image-grid>
+                    </content-image>
+                </li>
+                <li>
+                    <h3>Metalloids</h3>
+                    <p><b>Metalloids</b> (<i>semimetals</i>) have properties of both metals and nonmetals. Metalloids are <b>semiconductors</b>—they conduct electricity better than nonmetals but not as well as metals. They also do not react as easily as metals.</p> 
+                    <content-image
+                        caption="Figure 4: An assortment of different metalloid elements."
+                    >
+                        <image-grid viewable col="1">
+                            <img src="https://www.chemistrylearner.com/wp-content/uploads/2018/12/Examples-of-Metalloids.gif" ref="© Chemistry Learner">
+                        </image-grid>
+                    </content-image>
+                </li>
+            </ol>
+        </article>
+
+        <article header="References">
+            <reference-list></reference-list>
+        </article>
+
+    </article-tabber>
+
+    <footer>
+        <footer-box></footer-box>
+    </footer>
+    
+    
+
+</body>
+</html>
