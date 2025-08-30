@@ -1,0 +1,19 @@
+{
+    "title": "Cell Cycle and Cell Division",
+    "subtitle": "General Biology 1, Midterms Lesson 3",
+    "dueMonth": "August",
+    "dueYear": "2025",
+    "type": "edu",
+    "subject": "General Biology 1",
+    "authors": [
+        "Langbid, J. C."
+    ],
+    "section": "SHS STEM Teacher",
+    "email": "j.langbid.edu+gitweb@gmail.com",
+    "references": [
+        {
+            "content": "Libretexts. (2021, December 23). 6.2: the cell cycle. Biology LibreTexts.",
+            "link":"https://bio.libretexts.org/Bookshelves/Introductory_and_General_Biology/Concepts_in_Biology_(OpenStax)/06%3A_Reproduction_at_the_Cellular_Level/6.02%3A_The_Cell_Cycle"
+        }
+    ]
+}

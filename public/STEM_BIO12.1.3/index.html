@@ -1,0 +1,149 @@
+<!--
+
+    Created by Joren Langbid
+    Systems Plus College Foundation
+    July 2025
+
+    Please use this for personal use only.
+    I do not own the images and the color
+    palette that are used in this page.
+
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="metadata" src="./metadata.json">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GENBIO1 - Basic Cell Biology</title>
+    <link rel="stylesheet" href="../basePotatoStyle.css">
+    <link rel="icon" type="image/x-icon" href="../favicon.ico">
+    <style>
+    
+        :root {
+            --accent-color: rgba(6, 51, 0, 0.75);
+            --anti-accent-color: #FEFEFE;
+            --background-img: url("https://images.creativemarket.com/0.1.0/ps/2321248/1160/772/m1/fpnw/wm1/cover-.jpg?1487898325&s=1b088f3d83e0354fa15b61d49486a787");
+        }
+
+    </style>
+    <script src="../Main.js" type="module"></script>
+    
+</head>
+<body>
+
+    <header>
+        <header-box meta="../Attributes/spcfBanner.json"></header-box>
+        <hr>
+        <title-box></title-box>
+    </header>
+
+    <article-tabber>
+
+        <article header="Cell">
+            <h1>The Cell</h1>
+            <p>
+                Have you ever wondered how a small cut on your skin heals after just a few days? Or how a kitten grows bigger month after month?
+            </p>
+            <content-image limit-height
+                caption="(a) When the skin is injured, cells around the wound undergo cell cycle to divide and replace damaged cells. (b) A juvenile cat can reach full “adulthood” after one year, and can live from 13 to 20 years."
+            >
+                <image-grid viewable col="2">
+                    <img src="https://stjude.scene7.com/is/image/stjude/iStock-1306008357?wid=500" alt="CellExamples.png" ref="© St. Jude Children’s Research Hospital">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/bc/Juvenile_Ragdoll.jpg/1200px-Juvenile_Ragdoll.jpg" alt="CellExamples.png" ref="© Wikimedia Commons"> 
+                </image-grid>
+            </content-image>
+            <slidedown-box header="Lesson's Objectives:">
+                <p>In this lesson, you are expected to:</p>
+                <ol>
+                    <li>Characterize the phases of the cell cycle and their control points (<b>STEM_BIO11/12-Id-f-6</b>).</li>
+                    <li>Discuss crossing over and recombination in meiosis (<b>STEM_BIO11/12-Id-f-8</b>).</li>
+                    <li>Explain the significance or applications of mitosis/meiosis (<b>STEM_BIO11/12-Id-f-9</b>).
+                    </li>
+                </ol>
+            </slidedown-box>
+            <p>
+                These everyday events are possible because the cells in your body are constantly dividing and replacing old or damaged cells. The secret behind this process lies in the <b>cell cycle</b>.
+            </p>
+            <boxed-quote>
+                <p>The <b>cell cycle</b> is a series of events involving cell growth and division that produces two new daughter cells.</p>
+            </boxed-quote>
+            <p>
+                The cell cycle has two major stages: <b>Interphase</b> (where the cell grows and prepares) and <b>M-phase</b> (where the cell divides). 
+            </p>
+        </article>
+
+        <article-with-tabs header="Cell Cycle">
+
+            <section header="Interphase">
+                <h1>Interphase</h1>
+                <p>Cells spend most of their time in <b>interphase</b>. It is where the cell is not dividing but is actively preparing for division.</p>
+                <content-image
+                    caption="Figure 2:  A cell moves through a series of phases in an orderly manner called cell cycle. Notice that interphase is divided into three stages."
+                >
+                    <image-grid viewable col="1">
+                        <img src="https://bio.libretexts.org/@api/deki/files/9319/Figure_06_02_01.jpg?revision=1&size=bestfit&width=800&height=561" ref="© Biology Libretexts"> 
+                    </image-grid>
+                </content-image>
+                <p>
+                    The interphase is divided into three sub-stages:
+                </p>
+                <ol class="marginless-list"> 
+                    <li>
+                        <h3>G1 Phase (Gap 1)</h3>
+                        <p>The cell grows in size, produces proteins, and does its normal functions. A checkpoint here ensures conditions are suitable for the DNA replication.</p>
+                    </li>
+                    <li>
+                        <h3>S Phase (Synthesis)</h3>
+                        <p>The cell replicates its DNA, producing identical copies of chromosomes.</p>
+                    </li>
+                    <li>
+                        <h3>G2 Phase (Gap 2)</h3>
+                        <p>Further growth and preparation for cell division. Organelles and enzymes needed for division are produced. Final checkpoint ensures DNA replication is accurate.</p>
+                    </li>
+                </ol>
+                <slidedown-box header="What happens if the checkpoints are not met?">
+                    <p>If DNA is damaged or conditions aren't favorable, the cell enters a resting state. If the damage is too severe, they undergo <b>apoptosis</b> (programmed cell death).</p>
+                </slidedown-box>
+            </section>
+
+            <section header="M-phase">
+                <h1>M-phase</h1>
+                <p>In this stage, the cell actively divides. It has two pathways:</p>
+                <ol>
+                    <li>
+                        <h3>Mitosis</h3>
+                        <p>Mitosis is the process by which a single cell divides to produce <b>two genetically identical daughter cells</b>. It is used for growth, repair, and asexual reproduction.</p>
+                    </li>
+                    <li>
+                        <h3>Meiosis</h3>
+                        <p>Meiosis is a special type of cell division in <b>reproductive cells</b> (e.g., sperm and egg). It reduces the chromosome number by half, producing <b>four unique daughter cells</b>, each with genetic variation.</p>
+                    </li>
+                </ol>
+                <p>For each pathways, the cell undergoes four phases: (1) <b>prophase</b>, (2) <b>metaphase</b>, (3) <b>anaphase</b>, and (4) <b>telophase</b>.</p>
+                <content-image
+                    caption="Figure 3:  The phases of mitosis after interphase. It is during <b>metaphase</b> that spindle fibers attach to centrosomes to help chromosomes line up at the equator of the cell."
+                >
+                    <image-grid viewable col="1">
+                        <img src="https://media.geeksforgeeks.org/wp-content/uploads/20220803112423/Mitosis.png" ref="© GeeksForGeek"> 
+                    </image-grid>
+                </content-image>
+                <p>After mitosis or meiosis, the cell's cytoplasm divides into two distinct daughter cells in a final phase called <b>cytokinesis</b>.</p>
+            </section>
+
+        </article-with-tabs>
+
+        <article header="References">
+            <reference-list></reference-list>
+        </article>
+
+    </article-tabber>
+
+    <footer>
+        <footer-box></footer-box>
+    </footer>
+    
+</body>
+</html>
