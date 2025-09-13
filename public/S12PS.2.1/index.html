@@ -1,0 +1,211 @@
+<!--
+
+    Created by Joren Langbid
+    Systems Plus College Foundation
+    July 2025
+
+    Please use this for personal use only.
+    I do not own the images and the color
+    palette that are used in this page.
+
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="metadata" src="./metadata.json">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PHYSCI - Greek Astronomy</title>
+    <link rel="stylesheet" href="../basePotatoStyle.css">
+    <link rel="icon" type="image/x-icon" href="../favicon.ico">
+    <style>
+    
+        :root {
+            --accent-color: rgba(148, 0, 0, 0.75);
+            --anti-accent-color: #FEFEFE;
+            --background-img: url("https://images.creativemarket.com/0.1.0/ps/2321248/1160/772/m1/fpnw/wm1/cover-.jpg?1487898325&s=1b088f3d83e0354fa15b61d49486a787");
+        }
+
+    </style>
+    <script src="../Main.js" type="module"></script>
+    
+</head>
+<body>
+
+    <header>
+        <header-box meta="../Attributes/spcfBanner.json"></header-box>
+        <hr>
+        <title-box></title-box>
+    </header>
+
+    <article-tabber>
+
+        <article header="Introduction">
+            <h1>Introduction</h1>
+            <content-image limit-height
+                caption="Figure 1: Apollo 8, the first manned mission to the moon, entered lunar orbit on Christmas Eve, Dec. 24, 1968. That evening, the astronauts broadcast from lunar orbit, showing pictures of the Earth and moon as seen from their spacecraft."
+            >
+                <image-grid viewable col="1">
+                    <img limit-height src="https://miro.medium.com/v2/resize:fit:1400/1*fJAWfA-ipSKSrmZzIlozdA.jpeg" ref="© NASA Science"> 
+                </image-grid>
+            </content-image>
+            <p>
+                Today, we can see pictures of Earth from space, but more than two thousand years ago, we already knew that Earth was spherical.
+            </p>
+            <slidedown-box header="In this lesson, we will answer:">
+                <p>How did we figure out that the Earth was spherical before rockets, satellites, or telescopes?</p>
+            </slidedown-box>
+            <p>
+                The discovery of Earth's spherical shape dates back to the <b>ancient Greeks</b>. 
+            </p>
+        </article>
+
+        <article-with-tabs header="Greek Astronomy">
+            
+            <section header="Earth as a Sphere">
+                <h1>Earth as a Sphere</h1>
+                <p>The Greeks used careful observations and logical reasoning to prove Earth's spherical shape.</p>
+                <boxed-quote>
+                    <p>The Greeks' key observations and evidences:</p>
+                    <ul>
+                        <li>Ships disappear as they sail away, as if going over a curved surface.</li>
+                        <li>Earth's shadow cast on the Moon is always round during Lunar eclipses (see Figure 2).</li>
+                    </ul>
+                </boxed-quote>
+                <content-image limit-height
+                    caption="Figure 2: When Earth is precisely between the Sun and Moon, Earth's shadow falls upon the Moon's surface. We call this phenomenon a lunar eclipse."
+                >
+                    <image-grid viewable col="1">
+                        <img src="https://archive-images.prod.global.a201836.reutersmedia.net/2022/05/16/2022-05-16T165108Z_18735_MRPRC248U9YWVIQ_RTRMADP_0_LUNAR-ECLIPSE-MEXICO.JPG" ref="© JP Reuters"> 
+                    </image-grid>
+                </content-image>
+                <p>These clues convinced Greek thinkers that Earth was not flat, but round like a ball—a sphere.</p>
+                <boxed-quote>
+                    <p>In fact, the shape of the Earth is an <b>oblate spheroid</b>.</p>
+                </boxed-quote>
+            </section>
+
+            <section header="Heavenly Motion">
+                <h1>Heavenly Motion</h1>
+                <p>Once convinced that Earth was spherical, the Greeks turned their attention to the sky. They observed three major types of heavenly motion:</p>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Motion</th>
+                            <th>Description</th>
+                            <th>Result</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>Diurnal Motion</strong></td>
+                            <td>Daily rising and setting of celestial bodies.</td>
+                            <td>
+                                <ul>
+                                    <li>The day-night cycle</li>
+                                    <li>The slow change of stars and planet positions each night</li>
+                                </ul>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><strong>Annual Motion</strong></td>
+                            <td>The yearly revolution of Earth around the Sun (365 days).</td>
+                            <td>
+                                <ul>
+                                    <li>The cycle of seasons</li>
+                                    <li>The cycle of constellations</li>
+                                    <li>The varying daylight length</li>
+                                </ul>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><strong>Precession of the Equinoxes</strong></td>
+                            <td>The slow change in the orientation of Earth's axis.</td>
+                            <td>
+                                <ul>
+                                    <li>The slow drift of zodiac alignment</li>
+                                    <li>The changing position of the North Star</li>
+                                </ul>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+
+            <section header="Plato's Challenge">
+                <h1>Plato's Challenge</h1>
+                <p>To the Greeks, observations are not enough to represent the “perfect” heaven that they believe in. <b>Plato</b>, one of their greatest philosophers, posed a challenge to astronomers:</p>
+                <boxed-quote>
+                    <p>How can we explain the motion of the heavenly bodies?</p>
+                </boxed-quote>
+                <p>This was termed "<b><i>Saving the Appearances</i></b>," inspiring the following models that tried to organize the universe:</p>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Astronomer</th>
+                            <th>Model</th>
+                            <th>Description</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>Aristotle</strong></td>
+                            <td><strong>Geocentric</strong></td>
+                            <td>
+                                <ul>
+                                    <li>Earth as the center of the universe</li>
+                                    <li>Heaven is perfect and unchanging</li>
+                                </ul>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><strong>Aristarchus</strong></td>
+                            <td><strong>Heliocentric</strong></td>
+                            <td>
+                                <ul>
+                                    <li>Introduced the first Sun-centered model</li>
+                                    <li>Rejected due to lack of evidence</li>
+                                </ul>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><strong>Ptolemy</strong></td>
+                            <td><strong>Geocentric</strong></td>
+                            <td>
+                                <ul>
+                                    <li>Proposed a detailed Earth-centered universe model</li>
+                                    <li>The dominant model for 1,000 years</li>
+                                </ul>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><strong>Copernicus</strong></td>
+                            <td><strong>Heliocentric</strong></td>
+                            <td>
+                                <ul>
+                                    <li>Revived the Sun-centered model</li>
+                                    <li>The sun is the center of the universe</li>
+                                    <li>Planets orbit around the sun on circular paths</li>
+                                </ul>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+
+        </article-with-tabs>
+
+        <article header="References">
+            <reference-list></reference-list>
+        </article>
+
+    </article-tabber>
+
+    <footer>
+        <footer-box></footer-box>
+    </footer>
+    
+</body>
+</html>
