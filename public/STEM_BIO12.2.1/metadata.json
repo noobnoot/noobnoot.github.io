@@ -1,0 +1,19 @@
+{
+    "title": "Biochemistry: Carbohydrates",
+    "subtitle": "General Biology 1, Finals Lesson 1",
+    "dueMonth": "September",
+    "dueYear": "2025",
+    "type": "edu",
+    "subject": "General Biology 1",
+    "authors": [
+        "Langbid, J. C."
+    ],
+    "section": "SHS STEM Teacher",
+    "email": "j.langbid.edu+gitweb@gmail.com",
+    "references": [
+        {
+            "content": "Cherian, G. (2019, April 14). III. Carbohydrates, Structures and Types. A Guide to the Principles of Animal Nutrition.",
+            "link": "https://open.oregonstate.education/animalnutrition/chapter/chapter-3/"
+        }
+    ]
+}
