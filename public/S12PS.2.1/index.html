@@ -30,6 +30,20 @@
 
     </style>
     <script src="../Main.js" type="module"></script>
+    <script type="text/x-mathjax-config">
+        MathJax.Hub.Config({
+            tex2jax: {
+                inlineMath: [['$', '$']], 
+                displayMath: [['$$', '$$']],
+                processEscapes: true,
+                processEnvironments: false
+            },
+            "HTML-CSS": {
+                availableFonts: ["TeX"] 
+            }
+        });
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js?config=TeX-AMS_HTML"></script> 
     
 </head>
 <body>
@@ -183,6 +197,30 @@
                         </tr>
                     </tbody>
                 </table>
+            </section>
+
+            <section header="Kepler's Laws">
+                <h1>Kepler's Laws of Planetary Motion</h1>
+                <p>Tycho Brahe's model led Kepler to develop his laws: Laws of Planetary Motion.</p>
+                <ul>
+                    <li><b>Law of Ellipses</b>—planets move around the Sun on elliptical orbits.</li>
+                    <li>
+                        <p><b>Law of Equal Areas</b>—planet speed and distance are inversely proportional (see Figure 3).</p>
+                        <ol>
+                            <li><b>Perihelion</b>—planet's position closest to the sun.</li>
+                            <li><b>Aphelion</b>—planet's position farthest from the sun.</li>
+                        </ol>
+                        <content-image limit-height
+                            caption="Figure 3: The law of equal areas includes perihelion and aphelion, which explains the cycle of seasons in Earth's temperate zones."
+                        >
+                            <image-grid viewable col="1">
+                                <img src="https://www.almanac.com/sites/default/files/users/AlmanacStaffArchive/mars-orbit-year-seasons-winter-spring-summer-autumn-aphelion-perihelion_0_full_width.jpg" ref="© Almanac"> 
+                            </image-grid>
+                        </content-image>
+                    </li>
+                    <li><p><b>Law of Harmonies</b>—orbital period ($T$) is directly proportional to its average distance ($R$) such that $T^2 = R^3$.</p></li>
+                </ul>
+               
             </section>
 
         </article-with-tabs>
