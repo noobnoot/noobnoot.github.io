@@ -17,7 +17,7 @@
     <meta charset="UTF-8">
     <meta name="metadata" src="./metadata.json">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PHYSCI - Horizontal Motion</title>
+    <title>PHYSCI - Views of Motion</title>
     <link rel="stylesheet" href="../basePotatoStyle.css">
     <link rel="icon" type="image/x-icon" href="../favicon.ico">
     <style>
@@ -59,61 +59,68 @@
         <article header="Introduction">
             <h1>Introduction</h1>
             <content-image limit-height
-                caption="Figure 1: Motorcycles can travel 100 km/h on an expressway (or 40-80 km/h on common major roads like boulevards). Unlike other vehicles, they are more mobile and economically flexible."
+                caption="Figure 1: A ball rolling on a surface. When you kick a ball, what makes it move? Why does it gradually stop?"
             >
                 <image-grid viewable col="1">
-                    <img limit-height src="https://cdn.motor1.com/images/mgl/pKzBg/s3/2021-honda-cb1000r-5four---on-road.jpg" ref="© RideApart"> 
+                    <img limit-height src="https://blenderartists.org/uploads/default/original/4X/9/1/f/91fb7a087408c1dbec44f7f5925d1639e5cffe15.jpeg" ref="© Pond5"> 
                 </image-grid>
             </content-image>
-            <p>
-                Assume you are driving on a highway at a speed of 50 km/h. How many hours will it take you to reach a destination 120 km away?
-            </p>
-            <p>
-                To solve questions like this, we resort to the branch of physics that deals with motion—<b>kinematics</b>.
-            </p>
-            <boxed-quote>
-                <p><b>Kinematics</b> is the study of motion. It focuses on measurable quantities such as distance, speed, and acceleration.</p>
-            </boxed-quote>
-            <p>
-                To know the answer to the problem, we have to understand the concept of distance, time, and speed.
-            </p>
+            <p><b>Kinematics</b> is the study of motion. Its roots can be traced back to the ancient Greeks, particularly Aristotle’s concept of motion.</p>
+            <slidedown-box header="In this lesson, we will answer:">
+                <p>What truly causes objects to move, and what keeps them in motion?</p>
+            </slidedown-box>
         </article>
 
-        <article-with-tabs header="Kinematics">
+        <article header="Views of Motion">
             
-            <section header="Distance and Speed">
-                <h1>Distance and Speed</h1>
-                <p>When describing motion with kinematics, you must know how far an object is.</p>
-                <boxed-quote>
-                    <p>
-                        <b>Distance</b> ($d$) is the total length of the path traveled by an object. Meanwhile, <b>displacement</b> ($\vec{d}$) tells you the change of distance (with direction considered).
-                    </p>
-                </boxed-quote>
-                <p>Dividing distance and displacement by time $t$ gives you speed and velocity, respectively.</p>
-                <boxed-quote>
-                    <p>
-                        <b>Speed</b> ($v$) is the rate at which an object covers distance. Similarly, <b>velocity</b> ($\vec{v}$) is the rate of change of displacement over time with direction. They are defined as:
-                    </p>
-                    <p style="text-align: center;"> 
-                        $v = \frac{d}{t}$ (for distance) or $\vec{v} = \frac{\vec{d}}{t}$ (for displacement) 
-                    </p>
-                </boxed-quote>
-                <p>So, how do we solve the motorcycle problem?</p>
-                <p>The problem defines distance $d=120 \text{ km}$ and $v=50 \text{ km/h}$, solving for time $t$. Using the speed formula, we can solve for time $t$:</p>
-                <p>$$v = \frac{d}{t} \to 50 \text{ km/h} = \frac{120 \text{ km}}{t} \to t = \frac{120 \text{ km}}{50 \text{ km/h}}=\boxed{2.4 \text{ h}}$$</p>
-                <p>So, you still have 2.4 hours to reach the destination.</p>
-                <boxed-quote>
-                    <p>An object moving on an $x$-axis (like a motorcycle coursing through a straight road) is considered <b>horizontal motion</b>.</p>
-                </boxed-quote>
-                <p>Other examples of horizontal motion include a ball rolling on the floor, a car speeding up on a highway, or you jogging towards school.</p>
-            </section>
-
-            <section header="Acceleration">
-                <h1>Whoops! This part is still under construction. (ó﹏ò｡)</h1>
-                <p>Please come back sometime, haha! (*ᴗ͈ˬᴗ͈) ...</p>
-            </section>
-
-        </article-with-tabs>
+            <h1>Views of Motion</h1>
+            <p>
+                We classify classical views of motion into two: (1) <b>Aristotelian</b> and (2) <b>Galilean</b> views of motion.
+            </p>
+            <h2>1. Aristotelian View of Motion</h2>
+            <p>
+                <b>Aristotle</b> explained motion based on observation and philosophical reasoning. His framework was <b>qualitative</b> rather than quantitative.
+            </p>
+            <boxed-quote>
+                <p>Key Features:</p>
+                <ol>
+                    <li>
+                        <p><b>Continuous Force</b>—an object will only keep moving if force is continuously applied.</p>
+                    </li>
+                    <li>
+                        <p><b>Two Types of Motion:</b></p>
+                        <ol>
+                            <li><b>Natural Motion</b>—inherent nature of objects</li>
+                            <li><b>Violent Motion</b>—motion caused by an external force</li>
+                        </ol>
+                    </li>
+                    <li>
+                        <p><b>Free Fall</b>—heavier objects fall faster than lighter ones.</p>
+                    </li>
+                </ol>
+            </boxed-quote>
+            <h2>2. Galilean View of Motion</h2>
+            <p>
+                While Aristotle’s ideas dominated scientific thought for nearly two thousand years, Galileo’s revolutionary perspective laid the foundation for modern physics.
+            </p>
+            <p>
+                <b>Galileo Galilei</b>, often called the “Father of Modern Science,” challenged Aristotle’s ideas through experiments and mathematical, <b>quantitative</b> reasoning.
+            </p>
+            <boxed-quote>
+                <p>Key Features:</p>
+                <ol>
+                    <li>
+                        <p><b>Inertia</b>—objects in motion will move at constant speed unless acted upon by an external force.</p>
+                    </li>
+                    <li>
+                        <p><b>Forces Change Motion</b>—a force is not required to keep an object moving, but to change its state of motion.</p>
+                    </li>
+                    <li>
+                        <p><b>Free Fall</b>—all objects, regardless of weight, fall with the same acceleration without air resistance.</p>
+                    </li>
+                </ol>
+            </boxed-quote>
+        </article>
 
         <article header="References">
             <reference-list></reference-list>

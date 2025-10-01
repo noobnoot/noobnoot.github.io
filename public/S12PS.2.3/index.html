@@ -1,0 +1,129 @@
+<!--
+
+    Created by Joren Langbid
+    Systems Plus College Foundation
+    July 2025
+
+    Please use this for personal use only.
+    I do not own the images and the color
+    palette that are used in this page.
+
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="metadata" src="./metadata.json">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PHYSCI - Horizontal Motion</title>
+    <link rel="stylesheet" href="../basePotatoStyle.css">
+    <link rel="icon" type="image/x-icon" href="../favicon.ico">
+    <style>
+    
+        :root {
+            --accent-color: rgba(148, 0, 0, 0.75);
+            --anti-accent-color: #FEFEFE;
+            --background-img: url("https://images.creativemarket.com/0.1.0/ps/2321248/1160/772/m1/fpnw/wm1/cover-.jpg?1487898325&s=1b088f3d83e0354fa15b61d49486a787");
+        }
+
+    </style>
+    <script src="../Main.js" type="module"></script>
+    <script type="text/x-mathjax-config">
+        MathJax.Hub.Config({
+            tex2jax: {
+                inlineMath: [['$', '$']], 
+                displayMath: [['$$', '$$']],
+                processEscapes: true,
+                processEnvironments: false
+            },
+            "HTML-CSS": {
+                availableFonts: ["TeX"] 
+            }
+        });
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js?config=TeX-AMS_HTML"></script> 
+    
+</head>
+<body>
+
+    <header>
+        <header-box meta="../Attributes/spcfBanner.json"></header-box>
+        <hr>
+        <title-box></title-box>
+    </header>
+
+    <article-tabber>
+
+        <article header="Introduction">
+            <h1>Introduction</h1>
+            <content-image limit-height
+                caption="Figure 1: Motorcycles can travel 100 km/h on an expressway (or 40-80 km/h on common major roads like boulevards). Unlike other vehicles, they are more mobile and economically flexible."
+            >
+                <image-grid viewable col="1">
+                    <img limit-height src="https://cdn.motor1.com/images/mgl/pKzBg/s3/2021-honda-cb1000r-5four---on-road.jpg" ref="© RideApart"> 
+                </image-grid>
+            </content-image>
+            <p>
+                Assume you are driving on a highway at a speed of 50 km/h. How many hours will it take you to reach a destination 120 km away?
+            </p>
+            <p>
+                To solve questions like this, we resort to the branch of physics that deals with motion—<b>kinematics</b>.
+            </p>
+            <boxed-quote>
+                <p><b>Kinematics</b> is the study of motion. It focuses on measurable quantities such as distance, speed, and acceleration.</p>
+            </boxed-quote>
+            <p>
+                To know the answer to the problem, we have to understand the concept of distance, time, and speed.
+            </p>
+        </article>
+
+        <article-with-tabs header="Kinematics">
+            
+            <section header="Distance and Speed">
+                <h1>Distance and Speed</h1>
+                <p>When describing motion with kinematics, you must know how far an object is.</p>
+                <boxed-quote>
+                    <p>
+                        <b>Distance</b> ($d$) is the total length of the path traveled by an object. Meanwhile, <b>displacement</b> ($\vec{d}$) tells you the change of distance (with direction considered).
+                    </p>
+                </boxed-quote>
+                <p>Dividing distance and displacement by time $t$ gives you speed and velocity, respectively.</p>
+                <boxed-quote>
+                    <p>
+                        <b>Speed</b> ($v$) is the rate at which an object covers distance. Similarly, <b>velocity</b> ($\vec{v}$) is the rate of change of displacement over time with direction. They are defined as:
+                    </p>
+                    <p style="text-align: center;"> 
+                        $v = \frac{d}{t}$ (for distance) or $\vec{v} = \frac{\vec{d}}{t}$ (for displacement) 
+                    </p>
+                </boxed-quote>
+                <p>So, how do we solve the motorcycle problem?</p>
+                <p>The problem defines distance $d=120 \text{ km}$ and $v=50 \text{ km/h}$, solving for time $t$. Using the speed formula, we can solve for time $t$:</p>
+                <p>$$v = \frac{d}{t} \to 50 \text{ km/h} = \frac{120 \text{ km}}{t} \to t = \frac{120 \text{ km}}{50 \text{ km/h}}=\boxed{2.4 \text{ h}}$$</p>
+                <p>So, you still have 2.4 hours to reach the destination.</p>
+                <boxed-quote>
+                    <p>An object moving on an $x$-axis (like a motorcycle coursing through a straight road) is considered <b>horizontal motion</b>.</p>
+                </boxed-quote>
+                <p>Other examples of horizontal motion include a ball rolling on the floor, a car speeding up on a highway, or you jogging towards school.</p>
+            </section>
+
+            <section header="Acceleration">
+                <h1>Whoops! This part is still under construction. (ó﹏ò｡)</h1>
+                <p>Please come back sometime, haha! (*ᴗ͈ˬᴗ͈) ...</p>
+            </section>
+
+        </article-with-tabs>
+
+        <article header="References">
+            <reference-list></reference-list>
+        </article>
+
+    </article-tabber>
+
+    <footer>
+        <footer-box></footer-box>
+    </footer>
+    
+</body>
+</html>
