@@ -1,0 +1,204 @@
+<!--
+
+    Created by Joren Langbid
+    Systems Plus College Foundation
+    July 2025
+
+    Please use this for personal use only.
+    I do not own the images and the color
+    palette that are used in this page.
+
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="metadata" src="./metadata.json">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GENBIO1 - Proteins</title>
+    <link rel="stylesheet" href="../basePotatoStyle.css">
+    <link rel="icon" type="image/x-icon" href="../favicon.ico">
+    <style>
+    
+        :root {
+            --accent-color: rgba(6, 51, 0, 0.75);
+            --anti-accent-color: #FEFEFE;
+            --background-img: url("https://images.creativemarket.com/0.1.0/ps/2321248/1160/772/m1/fpnw/wm1/cover-.jpg?1487898325&s=1b088f3d83e0354fa15b61d49486a787");
+        }
+
+    </style>
+    <script src="../Main.js" type="module"></script>
+    
+</head>
+<body>
+
+    <header>
+        <header-box meta="../Attributes/spcfBanner.json"></header-box>
+        <hr>
+        <title-box></title-box>
+    </header>
+
+    <article-tabber>
+
+        <article header="Introduction">
+            <h1>Introduction</h1>
+            <p>If carbohydrates serve as a quick source of energy and lipids act as energy storage and insulation, proteins take on a far more diverse role. Proteins are the body's builders and workers. </p>
+            <content-image limit-height
+                caption="Figure 1: An assortment of food with proteins: eggs, cheese, meat, legumes, milk, oats, and some nuts."
+            >
+                <image-grid viewable col="1">
+                    <img src="https://article-cdn.prod.gabit.com/cover/production/06-12-2023/3a72c4f3-f5d4-417f-90bd-504dc70e1c8b/bc7b776f-53aa-4f1f-869d-ebd39062f158.jpg" alt="food" ref="© Gabit">
+                </image-grid>
+            </content-image>
+            <p>Proteins are unique biomolecules due to Nitrogen (CHO + N).</p>
+            <boxed-quote>
+                <p>
+                    <b>Proteins</b> are polymers constructed from combinations of <b>amino acids</b>. It is also the most abundant compound in all living organisms.
+                </p>
+            </boxed-quote>
+            <p>
+                Proteins also have many functions, including, but not limited to, structure, regulation, sensory, transport, signaling, defense, enzymes, motor, and storage.
+            </p>
+            <slidedown-box header="Lesson's Objectives:">
+                <p>In this lesson, you are expected to:</p>
+                <ol>
+                    <li>Explain the biochemical process involving proteins and amino acids, describe their structure, types, and functions.</li>
+                </ol>
+            </slidedown-box>
+        </article>
+
+        <article-with-tabs header="Lipids">
+            
+            <section header="Amino Acids">
+                <h1>Amino Acids</h1>
+                <p>
+                    The presence of nitrogen allows proteins to take the form of complex structures called <b>amino acids</b>.
+                </p>
+                <boxed-quote>
+                    <p>
+                        <b>Amino acids</b> are the monomers of proteins. They are composed of: (a) a <i>carboxyl group</i>, (b) an <i>amino group</i>, and (c) an <i>R-group</i> (side chain) (Figure 2).
+                    </p>
+                </boxed-quote>
+                <content-image limit-height
+                    caption="Figure 2: The general structure of an amino acid."
+                >
+                    <image-grid viewable col="1">
+                        <img src="https://u.cubeupload.com/noobnoot/aminoacidgenstructur.png" alt="amino-acid-template.png" ref="© Wikimedia Commons">
+                    </image-grid>
+                </content-image>
+                <p>
+                    The human body contains twenty primary amino acids (Figure 3). We classify them as either <i>polar</i>, <i>nonpolar</i>, or <i>charged</i>.
+                </p>
+                <content-image limit-height
+                    caption="Figure 3: The twenty primary amino acids present in the human body. (Sir J's note: Don't even ask me about them.)"
+                >
+                    <image-grid viewable col="1">
+                        <img src="https://u.cubeupload.com/noobnoot/image1.png" alt="amino-acid-template.png" ref="© Osmosis (from Youtube)">
+                    </image-grid>
+                </content-image>
+                <p>These amino acids form peptide bonds together to form polymers:</p>
+                <ul>
+                    <li>
+                        <p><b>Peptides</b>—fewer than 50 amino acids.</p>
+                        <ul>
+                            <li><i>Oligopeptides</i>—2 to 19 amino acids.</li>
+                            <li><i>Polypeptides</i>—20 to 49 amino acids.</li>
+                        </ul>
+                    </li>
+                    <li><b>Proteins</b>—at least 50 amino acids.</li>
+                </ul>
+            </section>
+
+            <section header="Codons">
+                <h1>Codons</h1>
+                <p>Codons explain how amino acids are created.</p>
+                <boxed-quote>
+                    <p>A <b>codon</b> is a sequence of three nitrogen bases in the mRNA corresponding to one specific amino acid (see Figure 2).</p>
+                </boxed-quote>
+                <p>During protein synthesis, the DNA code is transcribed into mRNA, which is then read by the ribosome. Each codon instructs the ribosome on what amino acid to append.</p>
+                <content-image limit-height
+                    caption="Figure 4: The codon chart comprises 20 primary amino acids and a stop codon."
+                >
+                    <image-grid viewable col="1">
+                        <img src="https://u.cubeupload.com/noobnoot/codonwheel.jpg" alt="codon-wheel" ref="© Sir Eyy?">
+                    </image-grid>
+                </content-image>
+                <slidedown-box header="For example...">
+                    <p>The DNA template strand</p>
+                    <p class="code">3' - TAC AAG GAA CGA - 5'</p>
+                    <p>has a complementary strand of</p>
+                    <p class="code">5' - ATG TTC CTT GCT - 3'.</p>
+                    <p>The nucleus transcribes this into mRNA to be sent to ribosomes. The ribosomes convert this into</p>
+                    <p class="code">5' - AUG UUC CUU GCU - 3'.</p>
+                    <p>So, the amino-acid chain is: <b>Met—Phe—Leu—Ala.</b>.</p>
+                </slidedown-box>
+            </section>
+
+            <section header="Types">
+                <h3>Types of Proteins</h3>
+                <p>Proteins serve many roles in the body. They are classified based on their function:</p>
+                <ul>
+                    <li>
+                        <p><b>Structural</b>—strengthen cells, tissues, organs, and more (collagen [Figure 5], fibroin).</p>
+                        <content-image limit-height
+                            caption="Figure 5: Collagen is a fibrous structural protein that provides strength, flexibility, and support to tissues in the body. It is the most abundant animal protein."
+                        >
+                            <image-grid viewable col="1">
+                                <img src="https://u.cubeupload.com/noobnoot/collagenstructuresci.jpg" alt="collagen" ref="© MD A. A. Hamja, Vecteezy">
+                            </image-grid>
+                        </content-image>
+                    </li>
+                    <li>
+                        <p><b>Transport</b>—moves molecules around the body and into/out of cells (hemoglobin [Figure 6]).</p>
+                        <content-image limit-height
+                            caption="Figure 6: Hemoglobin is a transport protein in red blood cells that carries oxygen from the lungs to the body’s tissues and returns carbon dioxide to the lungs for exhalation."
+                        >
+                            <image-grid viewable col="1">
+                                <img src="https://u.cubeupload.com/noobnoot/hemo.jpg" alt="hemoglobin" ref="© A Level Biology Revision">
+                            </image-grid>
+                        </content-image>
+                    </li>
+                    <li><b>Enzymes</b>—ensure catabolic and anabolic chemical reactions occur efficiently (amylase, cellulase, lactase).</li>
+                    <li><b>Regulatory</b>—influences DNA regions during transcription to turn genes on and off (p53, androgen & estrogen receptors).</li>
+                    <li>
+                        <p><b>Signaling</b>—allows cells to communicate with each other (insulin [Figure 7], adrenergic receptors).</p>
+                        <content-image limit-height
+                            caption="Figure 7: Insulin is a hormonal protein that helps regulate blood sugar levels by allowing cells to absorb glucose from the bloodstream."
+                        >
+                            <image-grid viewable col="1">
+                                <img src="https://u.cubeupload.com/noobnoot/insulinfig220190822.png" alt="insulin" ref="© RCSB PDB-101">
+                            </image-grid>
+                        </content-image>
+                    </li>
+                    <li><b>Motor</b>—assists with the movement of cells and their internal and external components (actin and myosin).</li>
+                    <li><b>Sensory</b>—assist in observing changes in an organism's internal and external environment.</li>
+                    <li>
+                        <p><b>Defense</b>—helps organisms fight infection, heal damaged tissue, and evade predators (antibodies).</p>
+                        <content-image limit-height
+                            caption="Figure 8: Antibodies are protective proteins made by the immune cells that recognize and neutralize foreign substances such as bacteria and viruses."
+                        >
+                            <image-grid viewable col="1">
+                                <img src="https://absoluteantibody.com/wp-content/uploads/2014/03/Resizedimage.png" alt="hemoglobin" ref="© Absolute Antibody">
+                            </image-grid>
+                        </content-image>
+                    </li>
+                    <li><b>Storage</b>—stores nutrients and energy-rich molecules for later use (ovalbumin, placental proteins).</li>
+                </ul>
+            </section>
+
+        </article-with-tabs>
+
+        <article header="References">
+            <reference-list></reference-list>
+        </article>
+
+    </article-tabber>
+
+    <footer>
+        <footer-box></footer-box>
+    </footer>
+    
+</body>
+</html>

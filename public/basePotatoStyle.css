@@ -161,6 +161,10 @@
         font-size: 0.69em;
     }
 
+    .code {
+        font-family: monospace;
+    }
+
 /*** FORMS ***/
 
     input[type="text"], input[type="number"], select, button {
