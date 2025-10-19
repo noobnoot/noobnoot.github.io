@@ -1,0 +1,165 @@
+<!--
+
+    Created by Joren Langbid
+    Systems Plus College Foundation
+    July 2025
+
+    Please use this for personal use only.
+    I do not own the images and the color
+    palette that are used in this page.
+
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="metadata" src="./metadata.json">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GENBIO1 - Nucleic Acids</title>
+    <link rel="stylesheet" href="../basePotatoStyle.css">
+    <link rel="icon" type="image/x-icon" href="../favicon.ico">
+    <style>
+    
+        :root {
+            --accent-color: rgba(6, 51, 0, 0.75);
+            --anti-accent-color: #FEFEFE;
+            --background-img: url("https://images.creativemarket.com/0.1.0/ps/2321248/1160/772/m1/fpnw/wm1/cover-.jpg?1487898325&s=1b088f3d83e0354fa15b61d49486a787");
+        }
+
+    </style>
+    <script src="../Main.js" type="module"></script>
+    
+</head>
+<body>
+
+    <header>
+        <header-box meta="../Attributes/spcfBanner.json"></header-box>
+        <hr>
+        <title-box></title-box>
+    </header>
+
+    <article-tabber>
+
+        <article header="Introduction">
+            <h1>Introduction</h1>
+            <p>Just a single change in the DNA code, and red blood cells can twist into sharp, sickle-like shapes. This is what happens in sickle cell anemia, a genetic disorder that makes it hard for blood to carry oxygen because of deformed hemoglobin.</p>
+            <content-image limit-height
+                caption="Figure 1: Sickle cell disease, particularly sickle cell anemia, results in an abnormality of red blood cells' hemoglobin. This leads to blood cells adopting an abnormal sickle-like shape. The general cause is a point mutation of a gene on 11p15.4 and 16p13.3."
+            >
+                <image-grid viewable col="1">
+                    <img src="https://magazine.medlineplus.gov/images/uploads/main_images/sicklecellwhatyoushouldknow-v2-wt18.jpg" alt="sickle-cell" ref="© NIH National Library of Medicine">
+                </image-grid>
+            </content-image>
+            <p>This shows how complex genetic information is in biology. That genetic information is stored and transmitted through <b>nucleic acids</b>.</p>
+            <boxed-quote>
+                <p>
+                    <b>Nucleic acids</b> are polymers of <b>nucleotides</b>. They carry the genetic code of life, affecting heredity and guiding how cells develop, function, and reproduce.
+                </p>
+            </boxed-quote>
+            <p>
+                Nucleic acids take form as either <b>deoxyribonucleic acid</b> (DNA) or <b>ribonucleic acid</b> (RNA).
+            </p>
+            <slidedown-box header="Lesson's Objectives:">
+                <p>In this lesson, you are expected to:</p>
+                <ol>
+                    <li>Explain the biochemical process involving proteins and nucleic acids, describe their structure, types, and functions.</li>
+                </ol>
+            </slidedown-box>
+        </article>
+
+        <article-with-tabs header="Proteins">
+            
+            <section header="Nucleic Acids">
+                <h1>Nucleotides</h1>
+                <p>
+                    The basic building blocks (monomers) of nucleic acids are called <b>nucleotides</b>. Each nucleotide is composed of three parts:
+                </p>
+                <ol>
+                    <li><i>Phosphate group</i>—forms the backbone of the molecule.</li>
+                    <li><i>Pentose sugar</i>—a five-carbon sugar (deoxyribose or ribose).</li>
+                    <li><i>Nitrogenous base</i>—contains the coded genetic message.</li>
+                </ol>
+                <content-image limit-height
+                    caption="Figure 2: he general structure of a nucleotide,"
+                >
+                    <image-grid viewable col="1">
+                        <img src="https://u.cubeupload.com/noobnoot/nucleotides.png" alt="amino-acid-template.png" ref="© Wikimedia Commons">
+                    </image-grid>
+                </content-image>
+                <p>
+                    The nitrogenous bases take the form of <b>adenine</b> (A), <b>guanine</b> (G), <b>cytosine</b> (C), or <b>thymine</b> (T). In RNA, <b>uracil</b> (U) replaces thymine. Adenine pairs with thymine (or uracil in RNA), while guanine pairs with cytosine. 
+                </p>
+                <p>
+                    Three consecutive nucleotide bases form a <b>triplet code</b> (or a <b>codon</b>), which codes for a particular amino acid during protein synthesis.
+                </p>
+                <p>
+                    When many nucleotides bond, they form long strands called <b>polynucleotides</b>, which make up DNA or RNA molecules.
+                </p>
+            </section>
+
+            <section header="Types">
+                <h1>Types</h1>
+                <p>
+                    Nucleic acids come in the form of <b>deoxyribonucleic acid</b> (DNA) or <b>ribonucleic acid</b> (RNA). Figure 3 below represents the graphic difference. 
+                </p>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Differences</th>
+                            <th>DNA</th>
+                            <th>RNA</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><em>Function</em></td>
+                            <td>Holds the genetic blueprint of life</td>
+                            <td>Carries instructions from DNA to build proteins</td>
+                        </tr>
+                        <tr>
+                            <td><em>Structure</em></td>
+                            <td>Double helix</td>
+                            <td>Single-stranded</td>
+                        </tr>
+                        <tr>
+                            <td><em>Location</em></td>
+                            <td>Mainly in the nucleus</td>
+                            <td>Mainly in the cytoplasm</td>
+                        </tr>
+                        <tr>
+                            <td><em>Sugar</em></td>
+                            <td>Deoxyribose</td>
+                            <td>Ribose</td>
+                        </tr>
+                        <tr>
+                            <td><em>Bases</em></td>
+                            <td>Adenine (A) — Thymine (T)<br/>Cytosine (C) — Guanine (G)</td>
+                            <td>Adenine (A) — Uracil (U)<br/>Cytosine (C) — Guanine (G)</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <content-image limit-height
+                    caption="Figure 3: The differences between RNA and DNA come from their structure. DNA primarily acts as genetic storage, while RNA acts as the mobile, versatile one, but is limited in form."
+                >
+                    <image-grid viewable col="1">
+                        <img src="https://static.diffen.com/uploadz/a/ad/dna-vs-rna.png " alt="codon-wheel" ref="© Diffen">
+                    </image-grid>
+                </content-image>
+            </section>
+
+        </article-with-tabs>
+
+        <article header="References">
+            <reference-list></reference-list>
+        </article>
+
+    </article-tabber>
+
+    <footer>
+        <footer-box></footer-box>
+    </footer>
+    
+</body>
+</html>
