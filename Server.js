@@ -35,7 +35,7 @@ class Server {
     }
 
     handleHome(req, res) {
-        res.sendFile(path.join(this.__dirname, "/public/index.html"));
+        res.sendFile(path.join(this.__dirname, "/public/Main/index.html"));
     }
 
     async lock(filePath) {

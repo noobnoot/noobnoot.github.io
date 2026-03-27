@@ -5,7 +5,8 @@
 }
 
 :host(title-box) p {
-    line-height: 100%;  
+    line-height: 100%;
+    overflow: visible;
 }
 
 :host(title-box) * {
