@@ -5,6 +5,7 @@ import fs from "fs/promises";
 import { fileURLToPath } from "url";
 
 class Server {
+
     constructor(host, port) {
         this.app = express();
         this.host = host;
@@ -28,7 +29,7 @@ class Server {
     }
 
     setRoutes() {
-        const self = this; // `const` for scope consistency
+        const self = this;
         this.app.get("/", function(req, res) { self.handleHome(req, res); });
         this.app.post("/submit", function(req, res) { self.handleFormSubmission(req, res); });
     }
