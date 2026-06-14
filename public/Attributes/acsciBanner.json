@@ -1,0 +1,16 @@
+{
+    "logos": [
+        {
+            "src": "../Assets/deped-logo.png",
+            "alt": "deped-logo"
+        },
+        {
+            "src": "../Assets/acsci-logo.jpg",
+            "alt": "acsci-logo"
+        }
+    ],
+    "text": [
+        "Department of Education",
+        "Angeles City Science High School"
+    ]
+}
